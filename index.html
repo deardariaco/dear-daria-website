@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dear Daria — Handmade Wedding &amp; Event Stationery, Switzerland</title>
+<meta name="description" content="Dear Daria is a Switzerland-based studio creating handmade, customizable wedding invitation jackets, sleeves and coordinated stationery suites.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav" id="site-nav"></nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-media">
+    <img id="hero-image" src="" alt="Dear Daria wedding invitation">
+  </div>
+  <div class="hero-copy">
+    <span class="eyebrow">Switzerland — Est. Studio</span>
+    <h1>Dear Daria</h1>
+    <p class="lede">Handmade wedding &amp; event stationery, designed and crafted in Switzerland. Choose an existing collection, adapt it to your colors, or commission something entirely your own.</p>
+    <div class="btn-row">
+      <a href="collections.html" class="btn primary">Explore the Collections</a>
+      <a href="bespoke.html" class="btn ghost">Create Something Bespoke</a>
+    </div>
+  </div>
+</header>
+
+<!-- FEATURED COLLECTIONS -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Signature Collections</span>
+        <h2>Where every suite begins</h2>
+        <p class="lede">A selection of our most-loved designs — each one available to personalize, recolor, or open as a starting point for something bespoke.</p>
+      </div>
+      <a href="collections.html" class="btn ghost">View All Collections</a>
+    </div>
+    <div id="featured-grid" class="grid cols-3"></div>
+  </div>
+</section>
+
+<!-- SIGNATURE: JACKETS & SLEEVES -->
+<section class="section border-top">
+  <div class="container">
+    <div class="split-row">
+      <div class="media">
+        <img id="jacket-hero-img" class="lazy-img" loading="lazy" src="" alt="Dear Daria invitation jacket">
+      </div>
+      <div class="copy">
+        <span class="eyebrow rosewood">The Dear Daria Signature</span>
+        <h2>Invitation Jackets &amp; Sleeves</h2>
+        <p>Our invitations open like the day itself — layered, considered, a little theatrical. Every jacket and sleeve design can be personalized with your wording and, where available, adapted to a different color palette.</p>
+        <a href="invitation-jackets.html" class="btn primary">Explore Jackets &amp; Sleeves</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WEDDING SUITES -->
+<section class="section border-top">
+  <div class="container">
+    <div class="split-row reverse">
+      <div class="media">
+        <img id="suite-hero-img" class="lazy-img" loading="lazy" src="" alt="Dear Daria wedding suite">
+      </div>
+      <div class="copy">
+        <span class="eyebrow">Complete &amp; Coordinated</span>
+        <h2>Wedding Suites</h2>
+        <p>From the invitation to the place card, a coordinated suite carries one story through every piece of the day — save the date, RSVP, menu, and the details in between.</p>
+        <a href="wedding-suites.html" class="btn primary">Explore Wedding Suites</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CUSTOMIZATION -->
+<section class="section border-top">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow brass">Three Ways to Begin</span>
+        <h2>Make it yours</h2>
+      </div>
+    </div>
+    <div class="custom-grid">
+      <div class="custom-card">
+        <span class="eyebrow">01 — Personalize</span>
+        <h3>An Existing Design</h3>
+        <p>Names, wording, dates, language and event details, personalized on any collection in the studio.</p>
+      </div>
+      <div class="custom-card">
+        <span class="eyebrow">02 — Recolor</span>
+        <h3>Choose Your Palette</h3>
+        <p>Selected collections can be adapted to a different cardstock and artwork color, to match your day.</p>
+      </div>
+      <div class="custom-card">
+        <span class="eyebrow">03 — Commission</span>
+        <h3>A Bespoke Design</h3>
+        <p>A completely new design, created specifically for your event, from a first conversation to final production.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer" id="site-footer"></footer>
+
+<script src="js/shell.js"></script>
+<script src="js/data.js"></script>
+<script>
+(async function () {
+  const data = await DearDaria.loadData();
+  const collections = data.collections;
+
+  // hero: strongest featured bundle/jacket image
+  const heroCollection = collections.find(c => c.id === 'calla_bloom') || collections[0];
+  document.getElementById('hero-image').src = DearDaria.imgUrl(heroCollection.hero);
+  document.getElementById('hero-image').alt = heroCollection.name + ' wedding invitation';
+
+  // featured grid — first 6 featured collections
+  const featured = collections.filter(c => c.featured).slice(0, 6);
+  DearDaria.renderGrid('featured-grid', featured.map(DearDaria.collectionCardHTML).join(''), 3);
+
+  // jacket/sleeve split image
+  const jacketSource = collections.find(c => c.products.some(p => p.type === 'sleeve'));
+  if (jacketSource) {
+    const sleeveProduct = jacketSource.products.find(p => p.type === 'sleeve');
+    document.getElementById('jacket-hero-img').src = DearDaria.imgUrl(sleeveProduct.images[0]);
+  }
+
+  // suite split image
+  const suiteSource = collections.find(c => c.products.some(p => p.type === 'bundle'));
+  if (suiteSource) {
+    const bundleProduct = suiteSource.products.find(p => p.type === 'bundle');
+    document.getElementById('suite-hero-img').src = DearDaria.imgUrl(bundleProduct.images[0]);
+  }
+
+  DearDaria.initLazyImages();
+})();
+</script>
+</body>
+</html>

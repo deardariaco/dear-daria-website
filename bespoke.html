@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bespoke — Dear Daria</title>
+<meta name="description" content="Commission a completely bespoke wedding stationery design from Dear Daria, designed and crafted in Switzerland.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav" id="site-nav"></nav>
+
+<header class="hero" style="min-height:70vh;">
+  <div class="hero-media">
+    <img id="hero-image" class="lazy-img" loading="lazy" src="" alt="Dear Daria bespoke wedding invitation">
+  </div>
+  <div class="hero-copy">
+    <span class="eyebrow brass">Made Specifically For You</span>
+    <h1 style="font-size:clamp(36px,4.6vw,64px);">Bespoke</h1>
+    <p class="lede">A completely new design, considered around your venue, your season, your names. Every bespoke commission begins with a conversation.</p>
+    <div class="btn-row"><a href="#inquire" class="btn primary">Start an Inquiry</a></div>
+  </div>
+</header>
+
+<section class="section border-top">
+  <div class="container">
+    <div class="section-head"><div><span class="eyebrow">The Process</span><h2>Four steps to your suite</h2></div></div>
+    <div class="process-list">
+      <div class="process-step">
+        <div class="num">01</div>
+        <h3>Tell me about your event</h3>
+        <p>Share your venue, season, colors, flowers, atmosphere and stationery requirements.</p>
+      </div>
+      <div class="process-step">
+        <div class="num">02</div>
+        <h3>Design</h3>
+        <p>A stationery concept is developed specifically around your event.</p>
+      </div>
+      <div class="process-step">
+        <div class="num">03</div>
+        <h3>Refinement</h3>
+        <p>Typography, colors, wording and details are refined together with you.</p>
+      </div>
+      <div class="process-step">
+        <div class="num">04</div>
+        <h3>Production</h3>
+        <p>The final stationery is carefully prepared, cut and produced by hand.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section border-top" id="inquire">
+  <div class="container" style="max-width:760px;">
+    <div class="section-head"><div><span class="eyebrow">Start Here</span><h2>Tell me about your day</h2></div></div>
+    <form class="form-grid" onsubmit="event.preventDefault(); this.querySelector('.submit-note').style.display='block';">
+      <div class="field"><label for="name">Your Name(s)</label><input id="name" type="text" required></div>
+      <div class="field"><label for="email">Email</label><input id="email" type="email" required></div>
+      <div class="field"><label for="date">Event Date</label><input id="date" type="date"></div>
+      <div class="field"><label for="venue">Venue / Location</label><input id="venue" type="text"></div>
+      <div class="field full"><label for="details">Tell me about your event</label><textarea id="details" placeholder="Colors, flowers, atmosphere, inspirations, and which pieces you're looking for..."></textarea></div>
+      <div class="field full">
+        <button type="submit" class="btn primary">Send Inquiry</button>
+        <p class="submit-note" style="display:none; margin-top:16px; color:var(--sage-deep); font-size:14px;">Thank you — your inquiry has been noted. Dear Daria will be in touch shortly.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer" id="site-footer"></footer>
+
+<script src="js/shell.js"></script>
+<script src="js/data.js"></script>
+<script>
+(async function () {
+  const data = await DearDaria.loadData();
+  const heroCollection = data.collections.find(c => c.id === 'calla_bloom') || data.collections[0];
+  document.getElementById('hero-image').src = DearDaria.imgUrl(heroCollection.hero);
+  DearDaria.initLazyImages();
+})();
+</script>
+</body>
+</html>

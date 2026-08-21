@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wedding Suites — Dear Daria</title>
+<meta name="description" content="Coordinated Dear Daria wedding stationery suites — invitation, save the date, RSVP, menu and place card, designed as one story.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav" id="site-nav"></nav>
+
+<header class="hero" style="min-height:70vh;">
+  <div class="hero-media">
+    <img id="hero-image" src="" alt="Dear Daria wedding suite">
+  </div>
+  <div class="hero-copy">
+    <span class="eyebrow">Complete &amp; Coordinated</span>
+    <h1 style="font-size:clamp(36px,4.6vw,64px);">Wedding Suites</h1>
+    <p class="lede">One story, carried through every piece of the day. Suites can include the invitation, save the date, RSVP, menu, place card and envelope liner — not every collection includes every piece.</p>
+  </div>
+</header>
+
+<section class="section tight border-top">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Browse Suites</span>
+        <h2>Every coordinated collection</h2>
+      </div>
+    </div>
+    <div id="products-grid" class="grid cols-3"></div>
+  </div>
+</section>
+
+<footer class="site-footer" id="site-footer"></footer>
+
+<script src="js/shell.js"></script>
+<script src="js/data.js"></script>
+<script>
+(async function () {
+  const data = await DearDaria.loadData();
+  const withSuites = data.collections.filter(c => c.products.some(p => p.type === 'bundle'));
+
+  const heroCollection = withSuites.find(c => c.id === 'calla_lily') || withSuites[0];
+  const heroProduct = heroCollection.products.find(p => p.type === 'bundle');
+  document.getElementById('hero-image').src = DearDaria.imgUrl(heroProduct.images[0]);
+
+  const cards = withSuites.map(c => {
+    const product = c.products.find(p => p.type === 'bundle');
+    return DearDaria.productCardHTML(c, product, product.images[0]);
+  }).join('');
+  DearDaria.renderGrid('products-grid', cards, 3);
+})();
+</script>
+</body>
+</html>

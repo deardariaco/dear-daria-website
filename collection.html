@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="page-title">Collection — Dear Daria</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav" id="site-nav"></nav>
+
+<div id="content"></div>
+
+<footer class="site-footer" id="site-footer"></footer>
+
+<script src="js/shell.js"></script>
+<script src="js/data.js"></script>
+<script>
+(async function () {
+  const slug = DearDaria.getQueryParam('slug');
+  const data = await DearDaria.loadData();
+  const collection = data.collections.find(c => c.slug === slug);
+  const content = document.getElementById('content');
+
+  if (!collection) {
+    content.innerHTML = `<div class="section container"><div class="empty-state"><h3>Collection not found</h3><p><a href="collections.html">Return to Collections</a></p></div></div>`;
+    return;
+  }
+
+  document.getElementById('page-title').textContent = `${collection.name} — Dear Daria`;
+
+  const piecesHTML = collection.products.map(p => {
+    const label = DearDaria.PRODUCT_TYPE_LABELS[p.type] || 'Stationery';
+    const price = DearDaria.formatPrice(p.price);
+    return `
+      <a class="piece-row" href="product.html?slug=${collection.slug}&type=${p.type}" style="color:inherit;">
+        <span class="piece-name">${label}</span>
+        <span class="piece-price">${price || 'Inquire'}</span>
+      </a>`;
+  }).join('');
+
+  const galleryImgs = collection.gallery.slice(0, 12).map(img =>
+    `<img class="lazy-img" loading="lazy" src="${DearDaria.imgUrl(img)}" alt="${collection.name} detail">`
+  ).join('');
+
+  content.innerHTML = `
+    <section class="section tight">
+      <div class="container">
+        <div class="breadcrumb"><a href="collections.html">Collections</a> &nbsp;/&nbsp; ${collection.name}</div>
+        <div class="detail-hero">
+          <div class="media">
+            <img src="${DearDaria.imgUrl(collection.hero)}" alt="${collection.name} wedding stationery">
+          </div>
+          <div class="copy">
+            <span class="eyebrow">Collection</span>
+            <h1>${collection.name}</h1>
+            <p class="desc">${collection.description}</p>
+            <div class="btn-row">
+              <a href="bespoke.html" class="btn primary">Personalize This Collection</a>
+              <a href="#pieces" class="btn ghost">View Available Pieces</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tight border-top" id="pieces">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow">Available Pieces</span><h2>What's included</h2></div></div>
+        <div class="pieces-list">${piecesHTML}</div>
+      </div>
+    </section>
+
+    <section class="section tight border-top">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow">Gallery</span><h2>The full collection</h2></div></div>
+        <div class="gallery-strip">${galleryImgs}</div>
+      </div>
+    </section>
+  `;
+
+  DearDaria.initLazyImages();
+})();
+</script>
+</body>
+</html>

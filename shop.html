@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop — Dear Daria</title>
+<meta name="description" content="Shop Dear Daria wedding stationery: invitation jackets, sleeves, suites, save the dates, RSVP cards, menus and place cards.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav" id="site-nav"></nav>
+
+<header class="section tight">
+  <div class="container">
+    <span class="eyebrow">Purchase Directly</span>
+    <h1 style="font-size:clamp(36px,5vw,64px); font-style:italic; margin-top:14px;">Shop</h1>
+    <p style="color:var(--ink-soft); max-width:52ch; margin-top:20px; font-size:16px; line-height:1.7;">
+      Every piece can be personalized with your names, wording and date. Filter by category to find exactly what your suite needs.
+    </p>
+  </div>
+</header>
+
+<section class="section tight border-top">
+  <div class="container">
+    <div class="filter-bar" id="filter-bar"></div>
+    <div id="shop-grid" class="grid cols-4"></div>
+    <div id="empty-state" class="empty-state" style="display:none;">
+      <h3>Nothing here yet</h3>
+      <p>Try a different category, or get in touch about a bespoke piece.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer" id="site-footer"></footer>
+
+<script src="js/shell.js"></script>
+<script src="js/data.js"></script>
+<script>
+(async function () {
+  const data = await DearDaria.loadData();
+  const collections = data.collections;
+
+  // flatten into individual purchasable products
+  const allProducts = [];
+  collections.forEach(c => {
+    c.products.forEach(p => {
+      allProducts.push({ collection: c, product: p });
+    });
+  });
+
+  const categories = ['all', ...Array.from(new Set(allProducts.map(x => x.product.type)))];
+
+  function renderFilters(active) {
+    const bar = document.getElementById('filter-bar');
+    bar.innerHTML = categories.map(cat => {
+      const label = cat === 'all' ? 'All' : (DearDaria.PRODUCT_TYPE_LABELS[cat] || cat);
+      return `<button class="filter-pill ${cat === active ? 'active' : ''}" data-cat="${cat}">${label}</button>`;
+    }).join('');
+    bar.querySelectorAll('.filter-pill').forEach(btn => {
+      btn.addEventListener('click', () => {
+        renderFilters(btn.dataset.cat);
+        renderProducts(btn.dataset.cat);
+      });
+    });
+  }
+
+  function renderProducts(filter) {
+    const filtered = filter === 'all' ? allProducts : allProducts.filter(x => x.product.type === filter);
+    const grid = document.getElementById('shop-grid');
+    const empty = document.getElementById('empty-state');
+    if (filtered.length === 0) {
+      grid.style.display = 'none';
+      empty.style.display = 'block';
+      return;
+    }
+    grid.style.display = 'grid';
+    empty.style.display = 'none';
+    DearDaria.renderGrid('shop-grid', filtered.map(x => DearDaria.productCardHTML(x.collection, x.product, x.product.images[0])).join(''), 4);
+  }
+
+  renderFilters('all');
+  renderProducts('all');
+})();
+</script>
+</body>
+</html>

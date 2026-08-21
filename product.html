@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="page-title">Product — Dear Daria</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav" id="site-nav"></nav>
+
+<div id="content"></div>
+
+<footer class="site-footer" id="site-footer"></footer>
+
+<script src="js/shell.js"></script>
+<script src="js/data.js"></script>
+<script>
+(async function () {
+  const slug = DearDaria.getQueryParam('slug');
+  const type = DearDaria.getQueryParam('type');
+  const data = await DearDaria.loadData();
+  const collection = data.collections.find(c => c.slug === slug);
+  const content = document.getElementById('content');
+
+  if (!collection) {
+    content.innerHTML = `<div class="section container"><div class="empty-state"><h3>Product not found</h3><p><a href="shop.html">Return to Shop</a></p></div></div>`;
+    return;
+  }
+  const product = collection.products.find(p => p.type === type) || collection.products[0];
+
+  document.getElementById('page-title').textContent = `${product.title} — Dear Daria`;
+
+  const label = DearDaria.PRODUCT_TYPE_LABELS[product.type] || 'Stationery';
+  const price = DearDaria.formatPrice(product.price);
+
+  const galleryImgs = product.images.slice(0, 8).map(img =>
+    `<img class="lazy-img" loading="lazy" src="${DearDaria.imgUrl(img)}" alt="${product.title}">`
+  ).join('');
+
+  const otherPieces = collection.products
+    .filter(p => p.type !== product.type)
+    .map(p => `<a class="tag" href="product.html?slug=${collection.slug}&type=${p.type}">${DearDaria.PRODUCT_TYPE_LABELS[p.type] || p.type}</a>`)
+    .join('');
+
+  content.innerHTML = `
+    <section class="section tight">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="shop.html">Shop</a> &nbsp;/&nbsp; <a href="collection.html?slug=${collection.slug}">${collection.name}</a> &nbsp;/&nbsp; ${label}
+        </div>
+        <div class="detail-hero">
+          <div class="media">
+            <img src="${DearDaria.imgUrl(product.images[0])}" alt="${product.title}">
+          </div>
+          <div class="copy">
+            <span class="eyebrow">${collection.name} — ${label}</span>
+            <h1>${product.title}</h1>
+            ${price ? `<div class="price-tag">${price}</div>` : ''}
+            <p class="desc">${collection.description} Every piece is personalized with your names, wording, date and event details.</p>
+            <div class="btn-row">
+              ${product.shopLink ? `<a href="${product.shopLink}" target="_blank" rel="noopener" class="btn primary">Shop on Etsy</a>` : `<a href="info.html#contact" class="btn primary">Inquire to Order</a>`}
+              <a href="bespoke.html" class="btn ghost">Request a Custom Color</a>
+            </div>
+            ${otherPieces ? `<div style="margin-top:32px;"><span class="eyebrow">Also in this collection</span><div class="tag-row">${otherPieces}</div></div>` : ''}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tight border-top">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow">Gallery</span><h2>A closer look</h2></div></div>
+        <div class="gallery-strip">${galleryImgs}</div>
+      </div>
+    </section>
+  `;
+
+  DearDaria.initLazyImages();
+})();
+</script>
+</body>
+</html>

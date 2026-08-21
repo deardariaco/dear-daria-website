@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Invitation Jackets &amp; Sleeves — Dear Daria</title>
+<meta name="description" content="The Dear Daria signature: handmade wedding invitation jackets and sleeves, personalized and available in multiple colorways.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav" id="site-nav"></nav>
+
+<header class="hero" style="min-height:70vh;">
+  <div class="hero-media">
+    <img id="hero-image" src="" alt="Dear Daria invitation jacket">
+  </div>
+  <div class="hero-copy">
+    <span class="eyebrow rosewood">The Dear Daria Signature</span>
+    <h1 style="font-size:clamp(36px,4.6vw,64px);">Invitation Jackets &amp; Sleeves</h1>
+    <p class="lede">A layered opening moment for your guests. Every jacket and sleeve is personalized with your wording, and selected designs are available across multiple colorways.</p>
+  </div>
+</header>
+
+<section class="section tight border-top">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Browse Designs</span>
+        <h2>Every jacket &amp; sleeve</h2>
+      </div>
+    </div>
+    <div id="products-grid" class="grid cols-3"></div>
+  </div>
+</section>
+
+<footer class="site-footer" id="site-footer"></footer>
+
+<script src="js/shell.js"></script>
+<script src="js/data.js"></script>
+<script>
+(async function () {
+  const data = await DearDaria.loadData();
+  const withSleeves = data.collections.filter(c => c.products.some(p => p.type === 'sleeve'));
+
+  const heroCollection = withSleeves.find(c => c.id === 'hummingbird') || withSleeves[0];
+  const heroProduct = heroCollection.products.find(p => p.type === 'sleeve');
+  document.getElementById('hero-image').src = DearDaria.imgUrl(heroProduct.images[0]);
+
+  const cards = withSleeves.map(c => {
+    const product = c.products.find(p => p.type === 'sleeve');
+    return DearDaria.productCardHTML(c, product, product.images[0]);
+  }).join('');
+  DearDaria.renderGrid('products-grid', cards, 3);
+})();
+</script>
+</body>
+</html>
