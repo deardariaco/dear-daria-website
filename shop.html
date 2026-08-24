@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shop — Dear Daria</title>
-<meta name="description" content="Shop Dear Daria wedding stationery: invitation jackets, sleeves, suites, save the dates, RSVP cards, menus and place cards.">
+<title>Boutique — Dear Daria</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,11 +12,9 @@
 
 <header class="section tight">
   <div class="container">
-    <span class="eyebrow">Purchase Directly</span>
-    <h1 style="font-size:clamp(36px,5vw,64px); font-style:italic; margin-top:14px;">Shop</h1>
-    <p style="color:var(--ink-soft); max-width:52ch; margin-top:20px; font-size:16px; line-height:1.7;">
-      Every piece can be personalized with your names, wording and date. Filter by category to find exactly what your suite needs.
-    </p>
+    <span class="eyebrow" data-i18n="shop_eyebrow"></span>
+    <h1 style="font-size:clamp(36px,5vw,64px); font-style:italic; margin-top:14px;" data-i18n="shop_title"></h1>
+    <p style="color:var(--ink-soft); max-width:52ch; margin-top:20px; font-size:16px; line-height:1.7;" data-i18n="shop_lede"></p>
   </div>
 </header>
 
@@ -26,14 +23,15 @@
     <div class="filter-bar" id="filter-bar"></div>
     <div id="shop-grid" class="grid cols-4"></div>
     <div id="empty-state" class="empty-state" style="display:none;">
-      <h3>Nothing here yet</h3>
-      <p>Try a different category, or get in touch about a bespoke piece.</p>
+      <h3 data-i18n="nothing_here"></h3>
+      <p data-i18n="nothing_here_desc"></p>
     </div>
   </div>
 </section>
 
 <footer class="site-footer" id="site-footer"></footer>
 
+<script src="js/i18n.js"></script>
 <script src="js/shell.js"></script>
 <script src="js/data.js"></script>
 <script>
@@ -41,7 +39,6 @@
   const data = await DearDaria.loadData();
   const collections = data.collections;
 
-  // flatten into individual purchasable products
   const allProducts = [];
   collections.forEach(c => {
     c.products.forEach(p => {
@@ -50,23 +47,25 @@
   });
 
   const categories = ['all', ...Array.from(new Set(allProducts.map(x => x.product.type)))];
+  let activeFilter = 'all';
 
-  function renderFilters(active) {
+  function renderFilters() {
     const bar = document.getElementById('filter-bar');
     bar.innerHTML = categories.map(cat => {
-      const label = cat === 'all' ? 'All' : (DearDaria.PRODUCT_TYPE_LABELS[cat] || cat);
-      return `<button class="filter-pill ${cat === active ? 'active' : ''}" data-cat="${cat}">${label}</button>`;
+      const label = cat === 'all' ? DearDaria.t('all_filter') : DearDaria.productTypeLabel(cat);
+      return `<button class="filter-pill ${cat === activeFilter ? 'active' : ''}" data-cat="${cat}">${label}</button>`;
     }).join('');
     bar.querySelectorAll('.filter-pill').forEach(btn => {
       btn.addEventListener('click', () => {
-        renderFilters(btn.dataset.cat);
-        renderProducts(btn.dataset.cat);
+        activeFilter = btn.dataset.cat;
+        renderFilters();
+        renderProducts();
       });
     });
   }
 
-  function renderProducts(filter) {
-    const filtered = filter === 'all' ? allProducts : allProducts.filter(x => x.product.type === filter);
+  function renderProducts() {
+    const filtered = activeFilter === 'all' ? allProducts : allProducts.filter(x => x.product.type === activeFilter);
     const grid = document.getElementById('shop-grid');
     const empty = document.getElementById('empty-state');
     if (filtered.length === 0) {
@@ -79,8 +78,12 @@
     DearDaria.renderGrid('shop-grid', filtered.map(x => DearDaria.productCardHTML(x.collection, x.product, x.product.images[0])).join(''), 4);
   }
 
-  renderFilters('all');
-  renderProducts('all');
+  function render() {
+    renderFilters();
+    renderProducts();
+  }
+  DearDaria.reRenderDynamic = render;
+  render();
 })();
 </script>
 </body>

@@ -5,15 +5,19 @@
       "slug": "boho-peony",
       "name": "Boho Peony",
       "colorway": "blush",
-      "description": "Loose peonies and eucalyptus in warm blush, for a free-spirited celebration.",
+      "description": {
+        "fr": "Pivoines généreuses et eucalyptus en blush chaud, pour une célébration libre et bohème.",
+        "en": "Loose peonies and eucalyptus in warm blush, for a free-spirited celebration.",
+        "de": "Lockere Pfingstrosen und Eukalyptus in warmem Blush, für eine freigeistige Feier."
+      },
       "hero": "boho-peony-bundle-1.jpg",
       "gallery": [
         "boho-peony-bundle-1.jpg",
-        "boho-peony-menu-2.png",
-        "boho-peony-menu-3.png",
-        "boho-peony-menu-4.png",
-        "boho-peony-menu-5.png",
-        "boho-peony-menu-6.png",
+        "boho-peony-menu-2.jpg",
+        "boho-peony-menu-3.jpg",
+        "boho-peony-menu-4.jpg",
+        "boho-peony-menu-5.jpg",
+        "boho-peony-menu-6.jpg",
         "boho-peony-place-card-7.jpg",
         "boho-peony-place-card-8.jpg",
         "boho-peony-place-card-9.jpg",
@@ -30,9 +34,9 @@
         "boho-peony-save-the-date-20.jpg",
         "boho-peony-save-the-date-21.jpg",
         "boho-peony-sleeve-22.jpg",
-        "boho-peony-sleeve-23.png",
-        "boho-peony-sleeve-24.png",
-        "boho-peony-sleeve-25.png"
+        "boho-peony-sleeve-23.jpg",
+        "boho-peony-sleeve-24.jpg",
+        "boho-peony-sleeve-25.jpg"
       ],
       "products": [
         {
@@ -50,11 +54,11 @@
           "price": 5.99,
           "shopLink": "https://deardariaco.etsy.com/listing/4532483232/boho-peony-wedding-menu-svg-blush-oval",
           "images": [
-            "boho-peony-menu-2.png",
-            "boho-peony-menu-3.png",
-            "boho-peony-menu-4.png",
-            "boho-peony-menu-5.png",
-            "boho-peony-menu-6.png"
+            "boho-peony-menu-2.jpg",
+            "boho-peony-menu-3.jpg",
+            "boho-peony-menu-4.jpg",
+            "boho-peony-menu-5.jpg",
+            "boho-peony-menu-6.jpg"
           ]
         },
         {
@@ -103,9 +107,9 @@
           "shopLink": "https://deardariaco.etsy.com/listing/4523880248/peony-wedding-invitation-sleeve-template",
           "images": [
             "boho-peony-sleeve-22.jpg",
-            "boho-peony-sleeve-23.png",
-            "boho-peony-sleeve-24.png",
-            "boho-peony-sleeve-25.png"
+            "boho-peony-sleeve-23.jpg",
+            "boho-peony-sleeve-24.jpg",
+            "boho-peony-sleeve-25.jpg"
           ]
         }
       ],
@@ -116,11 +120,15 @@
       "slug": "calla-bloom",
       "name": "Calla Bloom",
       "colorway": "sage",
-      "description": "An interactive trifold gatefold invitation, calla lilies unfolding around your names.",
-      "hero": "calla-bloom-bundle-1.png",
+      "description": {
+        "fr": "Une invitation interactive à volets, où les callas se déploient autour de vos noms.",
+        "en": "An interactive trifold gatefold invitation, calla lilies unfolding around your names.",
+        "de": "Eine interaktive Dreifach-Falteinladung, bei der sich Calla-Lilien um Ihre Namen entfalten."
+      },
+      "hero": "calla-bloom-bundle-1.jpg",
       "gallery": [
-        "calla-bloom-bundle-1.png",
-        "calla-bloom-bundle-2.png",
+        "calla-bloom-bundle-1.jpg",
+        "calla-bloom-bundle-2.jpg",
         "calla-bloom-bundle-3.jpg",
         "calla-bloom-bundle-4.jpg",
         "calla-bloom-bundle-5.jpg"
@@ -132,8 +140,8 @@
           "price": null,
           "shopLink": "https://deardariaco.etsy.com/listing/4543756379/calla-lily-interactive-wedding",
           "images": [
-            "calla-bloom-bundle-1.png",
-            "calla-bloom-bundle-2.png",
+            "calla-bloom-bundle-1.jpg",
+            "calla-bloom-bundle-2.jpg",
             "calla-bloom-bundle-3.jpg",
             "calla-bloom-bundle-4.jpg",
             "calla-bloom-bundle-5.jpg"
@@ -147,7 +155,11 @@
       "slug": "calla-lily",
       "name": "Calla Lily",
       "colorway": "sage",
-      "description": "Clean-lined calla lilies in sage green, for a modern, botanical wedding.",
+      "description": {
+        "fr": "Callas épurés en vert sauge, pour un mariage moderne et botanique.",
+        "en": "Clean-lined calla lilies in sage green, for a modern, botanical wedding.",
+        "de": "Klar-linige Calla-Lilien in Salbeigrün, für eine moderne, botanische Hochzeit."
+      },
       "hero": "calla-lily-bundle-1.jpg",
       "gallery": [
         "calla-lily-bundle-1.jpg",
@@ -282,7 +294,11 @@
       "slug": "hummingbird-magnolia",
       "name": "Hummingbird Magnolia",
       "colorway": "blush",
-      "description": "Hummingbirds and magnolia branches, in sleeve and jacket silhouettes.",
+      "description": {
+        "fr": "Colibris et branches de magnolia, en pochette ou en enveloppe.",
+        "en": "Hummingbirds and magnolia branches, in sleeve and jacket silhouettes.",
+        "de": "Kolibris und Magnolienzweige, als Hülle oder Umschlag."
+      },
       "hero": "hummingbird-bundle-1.jpg",
       "gallery": [
         "hummingbird-bundle-1.jpg",
@@ -321,7 +337,11 @@
       "slug": "hydrangea",
       "name": "Hydrangea",
       "colorway": "dusty-blue",
-      "description": "Full, romantic hydrangea blooms in dusty blue - coastal and timeless.",
+      "description": {
+        "fr": "Hortensias pleins et romantiques en bleu poudré, intemporels et inspirés du bord de mer.",
+        "en": "Full, romantic hydrangea blooms in dusty blue - coastal and timeless.",
+        "de": "Volle, romantische Hortensienblüten in Staubblau — küstennah und zeitlos."
+      },
       "hero": "hydrangea-bundle-1.jpg",
       "gallery": [
         "hydrangea-bundle-1.jpg",
@@ -446,12 +466,16 @@
       "slug": "chapel-gatefold",
       "name": "Chapel Gatefold",
       "colorway": "ivory",
-      "description": "A church gatefold invitation, doors opening onto the ceremony scene.",
+      "description": {
+        "fr": "Une invitation à volets en forme de porte d'église, s'ouvrant sur la scène de la cérémonie.",
+        "en": "A church gatefold invitation, doors opening onto the ceremony scene.",
+        "de": "Eine Kirchen-Falteinladung, deren Türen sich zur Zeremonie öffnen."
+      },
       "hero": "chapel-other-1.jpg",
       "gallery": [
         "chapel-other-1.jpg",
-        "chapel-other-2.png",
-        "chapel-other-3.png",
+        "chapel-other-2.jpg",
+        "chapel-other-3.jpg",
         "chapel-other-4.jpg",
         "chapel-other-5.jpg",
         "chapel-other-6.jpg"
@@ -464,8 +488,8 @@
           "shopLink": "https://deardariaco.etsy.com/listing/4527793192/chapel-wedding-invitation-template-svg",
           "images": [
             "chapel-other-1.jpg",
-            "chapel-other-2.png",
-            "chapel-other-3.png",
+            "chapel-other-2.jpg",
+            "chapel-other-3.jpg",
             "chapel-other-4.jpg",
             "chapel-other-5.jpg",
             "chapel-other-6.jpg"
@@ -479,17 +503,21 @@
       "slug": "cherry-blossom",
       "name": "Cherry Blossom",
       "colorway": "blush",
-      "description": "Sakura branches in soft blush - romantic, springtime detail.",
-      "hero": "cherry-blossom-bundle-1.png",
+      "description": {
+        "fr": "Branches de sakura en blush tendre — romantique et détail printanier.",
+        "en": "Sakura branches in soft blush - romantic, springtime detail.",
+        "de": "Sakura-Zweige in zartem Blush — romantisches Frühlingsdetail."
+      },
+      "hero": "cherry-blossom-bundle-1.jpg",
       "gallery": [
-        "cherry-blossom-bundle-1.png",
-        "cherry-blossom-sleeve-2.png",
-        "cherry-blossom-sleeve-3.png",
-        "cherry-blossom-sleeve-4.png",
-        "cherry-blossom-sleeve-5.png",
-        "cherry-blossom-sleeve-6.png",
-        "cherry-blossom-sleeve-7.png",
-        "cherry-blossom-sleeve-8.png"
+        "cherry-blossom-bundle-1.jpg",
+        "cherry-blossom-sleeve-2.jpg",
+        "cherry-blossom-sleeve-3.jpg",
+        "cherry-blossom-sleeve-4.jpg",
+        "cherry-blossom-sleeve-5.jpg",
+        "cherry-blossom-sleeve-6.jpg",
+        "cherry-blossom-sleeve-7.jpg",
+        "cherry-blossom-sleeve-8.jpg"
       ],
       "products": [
         {
@@ -498,7 +526,7 @@
           "price": 31.99,
           "shopLink": "https://deardariaco.etsy.com/listing/4524577162/cherry-blossom-wedding-suite-bundle",
           "images": [
-            "cherry-blossom-bundle-1.png"
+            "cherry-blossom-bundle-1.jpg"
           ]
         },
         {
@@ -507,13 +535,13 @@
           "price": 12.99,
           "shopLink": "https://deardariaco.etsy.com/listing/4520881260/cherry-blossom-wedding-invitation-jacket",
           "images": [
-            "cherry-blossom-sleeve-2.png",
-            "cherry-blossom-sleeve-3.png",
-            "cherry-blossom-sleeve-4.png",
-            "cherry-blossom-sleeve-5.png",
-            "cherry-blossom-sleeve-6.png",
-            "cherry-blossom-sleeve-7.png",
-            "cherry-blossom-sleeve-8.png"
+            "cherry-blossom-sleeve-2.jpg",
+            "cherry-blossom-sleeve-3.jpg",
+            "cherry-blossom-sleeve-4.jpg",
+            "cherry-blossom-sleeve-5.jpg",
+            "cherry-blossom-sleeve-6.jpg",
+            "cherry-blossom-sleeve-7.jpg",
+            "cherry-blossom-sleeve-8.jpg"
           ]
         }
       ],
@@ -524,7 +552,11 @@
       "slug": "coastal-villa",
       "name": "Coastal Villa",
       "colorway": "dusty-blue",
-      "description": "Cliffside scenes and coastal linework for a destination celebration.",
+      "description": {
+        "fr": "Scènes de falaises et traits côtiers pour une célébration de destination.",
+        "en": "Cliffside scenes and coastal linework for a destination celebration.",
+        "de": "Kliffszenen und küstennahe Liniengrafik für eine Destination-Feier."
+      },
       "hero": "coastal-villa-sleeve-23.jpg",
       "gallery": [
         "coastal-villa-rsvp-1.jpg",
@@ -629,16 +661,20 @@
       "slug": "floral-bouquet",
       "name": "Floral Bouquet",
       "colorway": "blush",
-      "description": "A classic floral bouquet motif in soft blush.",
+      "description": {
+        "fr": "Un motif de bouquet floral classique en blush tendre.",
+        "en": "A classic floral bouquet motif in soft blush.",
+        "de": "Ein klassisches Blumenstraußmotiv in zartem Blush."
+      },
       "hero": "floral-bouquet-sleeve-1.jpg",
       "gallery": [
         "floral-bouquet-sleeve-1.jpg",
-        "floral-bouquet-sleeve-2.png",
+        "floral-bouquet-sleeve-2.jpg",
         "floral-bouquet-sleeve-3.jpg",
         "floral-bouquet-sleeve-4.jpg",
         "floral-bouquet-sleeve-5.jpg",
         "floral-bouquet-sleeve-6.jpg",
-        "floral-bouquet-sleeve-7.png"
+        "floral-bouquet-sleeve-7.jpg"
       ],
       "products": [
         {
@@ -648,12 +684,12 @@
           "shopLink": "https://deardariaco.etsy.com/listing/4521690452/floral-wedding-invitation-sleeve-wrap",
           "images": [
             "floral-bouquet-sleeve-1.jpg",
-            "floral-bouquet-sleeve-2.png",
+            "floral-bouquet-sleeve-2.jpg",
             "floral-bouquet-sleeve-3.jpg",
             "floral-bouquet-sleeve-4.jpg",
             "floral-bouquet-sleeve-5.jpg",
             "floral-bouquet-sleeve-6.jpg",
-            "floral-bouquet-sleeve-7.png"
+            "floral-bouquet-sleeve-7.jpg"
           ]
         }
       ],
@@ -664,7 +700,11 @@
       "slug": "freesia",
       "name": "Freesia",
       "colorway": "sage",
-      "description": "Delicate freesia sprays in sage, airy and whimsical.",
+      "description": {
+        "fr": "Fines grappes de frésias en vert sauge, aériennes et fantaisistes.",
+        "en": "Delicate freesia sprays in sage, airy and whimsical.",
+        "de": "Zarte Fresienzweige in Salbei, luftig und verspielt."
+      },
       "hero": "freesia-bundle-1.jpg",
       "gallery": [
         "freesia-bundle-1.jpg",
@@ -701,9 +741,9 @@
         "freesia-sleeve-32.jpg",
         "freesia-sleeve-33.jpg",
         "freesia-sleeve-34.jpg",
-        "freesia-sleeve-35.png",
+        "freesia-sleeve-35.jpg",
         "freesia-sleeve-36.jpg",
-        "freesia-sleeve-37.png",
+        "freesia-sleeve-37.jpg",
         "freesia-sleeve-38.jpg",
         "freesia-sleeve-39.jpg",
         "freesia-sleeve-40.jpg",
@@ -790,9 +830,9 @@
             "freesia-sleeve-32.jpg",
             "freesia-sleeve-33.jpg",
             "freesia-sleeve-34.jpg",
-            "freesia-sleeve-35.png",
+            "freesia-sleeve-35.jpg",
             "freesia-sleeve-36.jpg",
-            "freesia-sleeve-37.png",
+            "freesia-sleeve-37.jpg",
             "freesia-sleeve-38.jpg",
             "freesia-sleeve-39.jpg",
             "freesia-sleeve-40.jpg",
@@ -807,7 +847,11 @@
       "slug": "garden-gate",
       "name": "Garden Gate",
       "colorway": "sage",
-      "description": "A garden gate motif opening onto a chateau venue scene.",
+      "description": {
+        "fr": "Un motif de portail de jardin s'ouvrant sur une scène de château.",
+        "en": "A garden gate motif opening onto a chateau venue scene.",
+        "de": "Ein Gartentor-Motiv, das sich zu einer Schlossszene öffnet."
+      },
       "hero": "gatefold-garden-other-1.jpg",
       "gallery": [
         "gatefold-garden-other-1.jpg",
@@ -820,7 +864,7 @@
       "products": [
         {
           "type": "other",
-          "title": "Gatefold Wedding Invitation Template SVG, Garden Gate Cricut Print Then Cut, Ch\u00e2teau Venue Die Cut Card, 4 Sizes",
+          "title": "Gatefold Wedding Invitation Template SVG, Garden Gate Cricut Print Then Cut, Château Venue Die Cut Card, 4 Sizes",
           "price": 14.99,
           "shopLink": "https://deardariaco.etsy.com/listing/4527278934/gatefold-wedding-invitation-template-svg",
           "images": [
@@ -840,7 +884,11 @@
       "slug": "iris",
       "name": "Iris",
       "colorway": "dusty-blue",
-      "description": "Dusty blue iris botanicals, elegant and garden-inspired.",
+      "description": {
+        "fr": "Iris botaniques en bleu poudré, élégants et inspirés du jardin.",
+        "en": "Dusty blue iris botanicals, elegant and garden-inspired.",
+        "de": "Staubblaue Iris-Motive, elegant und garteninspiriert."
+      },
       "hero": "iris-sleeve-1.jpg",
       "gallery": [
         "iris-sleeve-1.jpg",
@@ -867,7 +915,11 @@
       "slug": "lily",
       "name": "Lily",
       "colorway": "dusty-blue",
-      "description": "Graceful lilies in dusty blue, garden-inspired and classic.",
+      "description": {
+        "fr": "Lys gracieux en bleu poudré, inspirés du jardin et intemporels.",
+        "en": "Graceful lilies in dusty blue, garden-inspired and classic.",
+        "de": "Anmutige Lilien in Staubblau, garteninspiriert und klassisch."
+      },
       "hero": "lily-bundle-1.jpg",
       "gallery": [
         "lily-bundle-1.jpg",
@@ -890,28 +942,28 @@
         "lily-rsvp-18.jpg",
         "lily-rsvp-19.jpg",
         "lily-rsvp-20.jpg",
-        "lily-save-the-date-21.png",
-        "lily-save-the-date-22.png",
-        "lily-save-the-date-23.png",
-        "lily-save-the-date-24.png",
-        "lily-save-the-date-25.png",
-        "lily-save-the-date-26.png",
-        "lily-save-the-date-27.png",
-        "lily-sleeve-28.png",
-        "lily-sleeve-29.png",
-        "lily-sleeve-30.png",
-        "lily-sleeve-31.png",
-        "lily-sleeve-32.png",
-        "lily-sleeve-33.png",
-        "lily-sleeve-34.png",
+        "lily-save-the-date-21.jpg",
+        "lily-save-the-date-22.jpg",
+        "lily-save-the-date-23.jpg",
+        "lily-save-the-date-24.jpg",
+        "lily-save-the-date-25.jpg",
+        "lily-save-the-date-26.jpg",
+        "lily-save-the-date-27.jpg",
+        "lily-sleeve-28.jpg",
+        "lily-sleeve-29.jpg",
+        "lily-sleeve-30.jpg",
+        "lily-sleeve-31.jpg",
+        "lily-sleeve-32.jpg",
+        "lily-sleeve-33.jpg",
+        "lily-sleeve-34.jpg",
         "lily-sleeve-35.jpg",
-        "lily-sleeve-36.png",
-        "lily-sleeve-37.png",
+        "lily-sleeve-36.jpg",
+        "lily-sleeve-37.jpg",
         "lily-sleeve-38.jpg",
         "lily-sleeve-39.jpg",
-        "lily-sleeve-40.png",
+        "lily-sleeve-40.jpg",
         "lily-sleeve-41.jpg",
-        "lily-sleeve-42.png",
+        "lily-sleeve-42.jpg",
         "lily-sleeve-43.jpg"
       ],
       "products": [
@@ -973,13 +1025,13 @@
           "price": 5.99,
           "shopLink": "https://deardariaco.etsy.com/listing/4531470922/lily-save-the-date-svg-dusty-blue",
           "images": [
-            "lily-save-the-date-21.png",
-            "lily-save-the-date-22.png",
-            "lily-save-the-date-23.png",
-            "lily-save-the-date-24.png",
-            "lily-save-the-date-25.png",
-            "lily-save-the-date-26.png",
-            "lily-save-the-date-27.png"
+            "lily-save-the-date-21.jpg",
+            "lily-save-the-date-22.jpg",
+            "lily-save-the-date-23.jpg",
+            "lily-save-the-date-24.jpg",
+            "lily-save-the-date-25.jpg",
+            "lily-save-the-date-26.jpg",
+            "lily-save-the-date-27.jpg"
           ]
         },
         {
@@ -988,21 +1040,21 @@
           "price": 12.99,
           "shopLink": "https://deardariaco.etsy.com/listing/4523429680/lily-wedding-invitation-jacket-template",
           "images": [
-            "lily-sleeve-28.png",
-            "lily-sleeve-29.png",
-            "lily-sleeve-30.png",
-            "lily-sleeve-31.png",
-            "lily-sleeve-32.png",
-            "lily-sleeve-33.png",
-            "lily-sleeve-34.png",
+            "lily-sleeve-28.jpg",
+            "lily-sleeve-29.jpg",
+            "lily-sleeve-30.jpg",
+            "lily-sleeve-31.jpg",
+            "lily-sleeve-32.jpg",
+            "lily-sleeve-33.jpg",
+            "lily-sleeve-34.jpg",
             "lily-sleeve-35.jpg",
-            "lily-sleeve-36.png",
-            "lily-sleeve-37.png",
+            "lily-sleeve-36.jpg",
+            "lily-sleeve-37.jpg",
             "lily-sleeve-38.jpg",
             "lily-sleeve-39.jpg",
-            "lily-sleeve-40.png",
+            "lily-sleeve-40.jpg",
             "lily-sleeve-41.jpg",
-            "lily-sleeve-42.png",
+            "lily-sleeve-42.jpg",
             "lily-sleeve-43.jpg"
           ]
         }
@@ -1014,7 +1066,11 @@
       "slug": "mixed-floral",
       "name": "Mixed Floral",
       "colorway": "blush",
-      "description": "A mixed garden bouquet in blush, romantic and abundant.",
+      "description": {
+        "fr": "Un bouquet de jardin mélangé en blush, romantique et généreux.",
+        "en": "A mixed garden bouquet in blush, romantic and abundant.",
+        "de": "Ein gemischter Gartenstrauß in Blush, romantisch und üppig."
+      },
       "hero": "mixed-floral-sleeve-1.jpg",
       "gallery": [
         "mixed-floral-sleeve-1.jpg",
@@ -1047,7 +1103,11 @@
       "slug": "olive-branch",
       "name": "Olive Branch",
       "colorway": "sage",
-      "description": "Mediterranean olive branches, minimal and destination-ready.",
+      "description": {
+        "fr": "Rameaux d'olivier méditerranéens, minimalistes et prêts pour une destination.",
+        "en": "Mediterranean olive branches, minimal and destination-ready.",
+        "de": "Mediterrane Olivenzweige, minimalistisch und reisebereit."
+      },
       "hero": "olive-branch-sleeve-1.jpg",
       "gallery": [
         "olive-branch-sleeve-1.jpg",
@@ -1080,7 +1140,11 @@
       "slug": "orange-blossom",
       "name": "Orange Blossom",
       "colorway": "terracotta",
-      "description": "Citrus blossoms in warm terracotta for an Italian summer wedding.",
+      "description": {
+        "fr": "Fleurs d'agrumes en terracotta chaud, pour un mariage d'été italien.",
+        "en": "Citrus blossoms in warm terracotta for an Italian summer wedding.",
+        "de": "Zitrusblüten in warmem Terrakotta für eine italienische Sommerhochzeit."
+      },
       "hero": "orange-blossom-sleeve-1.jpg",
       "gallery": [
         "orange-blossom-sleeve-1.jpg",
@@ -1113,7 +1177,11 @@
       "slug": "peony",
       "name": "Peony",
       "colorway": "blush",
-      "description": "Full blush peonies, romantic and lush.",
+      "description": {
+        "fr": "Pivoines blush généreuses, romantiques et pleines.",
+        "en": "Full blush peonies, romantic and lush.",
+        "de": "Volle Blush-Pfingstrosen, romantisch und üppig."
+      },
       "hero": "peony-sleeve-1.jpg",
       "gallery": [
         "peony-sleeve-1.jpg",
@@ -1124,14 +1192,14 @@
         "peony-sleeve-6.jpg",
         "peony-sleeve-7.jpg",
         "peony-sleeve-8.jpg",
-        "peony-sleeve-9.png",
-        "peony-sleeve-10.png",
+        "peony-sleeve-9.jpg",
+        "peony-sleeve-10.jpg",
         "peony-sleeve-11.jpg",
         "peony-sleeve-12.jpg",
         "peony-sleeve-13.jpg",
-        "peony-sleeve-14.png",
+        "peony-sleeve-14.jpg",
         "peony-sleeve-15.jpg",
-        "peony-sleeve-16.png"
+        "peony-sleeve-16.jpg"
       ],
       "products": [
         {
@@ -1148,14 +1216,14 @@
             "peony-sleeve-6.jpg",
             "peony-sleeve-7.jpg",
             "peony-sleeve-8.jpg",
-            "peony-sleeve-9.png",
-            "peony-sleeve-10.png",
+            "peony-sleeve-9.jpg",
+            "peony-sleeve-10.jpg",
             "peony-sleeve-11.jpg",
             "peony-sleeve-12.jpg",
             "peony-sleeve-13.jpg",
-            "peony-sleeve-14.png",
+            "peony-sleeve-14.jpg",
             "peony-sleeve-15.jpg",
-            "peony-sleeve-16.png"
+            "peony-sleeve-16.jpg"
           ]
         }
       ],
@@ -1166,16 +1234,20 @@
       "slug": "provence-lavender",
       "name": "Provence Lavender",
       "colorway": "lavender",
-      "description": "Provence lavender fields rendered in soft violet linework.",
-      "hero": "lavender-sleeve-1.png",
+      "description": {
+        "fr": "Champs de lavande de Provence, dessinés en fins traits violets.",
+        "en": "Provence lavender fields rendered in soft violet linework.",
+        "de": "Provenzalische Lavendelfelder in zarter violetter Liniengrafik."
+      },
+      "hero": "lavender-sleeve-1.jpg",
       "gallery": [
-        "lavender-sleeve-1.png",
-        "lavender-sleeve-2.png",
-        "lavender-sleeve-3.png",
-        "lavender-sleeve-4.png",
-        "lavender-sleeve-5.png",
-        "lavender-sleeve-6.png",
-        "lavender-sleeve-7.png",
+        "lavender-sleeve-1.jpg",
+        "lavender-sleeve-2.jpg",
+        "lavender-sleeve-3.jpg",
+        "lavender-sleeve-4.jpg",
+        "lavender-sleeve-5.jpg",
+        "lavender-sleeve-6.jpg",
+        "lavender-sleeve-7.jpg",
         "lavender-sleeve-8.jpg"
       ],
       "products": [
@@ -1185,13 +1257,13 @@
           "price": 12.99,
           "shopLink": "https://deardariaco.etsy.com/listing/4522121514/provence-lavender-wedding-invitation",
           "images": [
-            "lavender-sleeve-1.png",
-            "lavender-sleeve-2.png",
-            "lavender-sleeve-3.png",
-            "lavender-sleeve-4.png",
-            "lavender-sleeve-5.png",
-            "lavender-sleeve-6.png",
-            "lavender-sleeve-7.png",
+            "lavender-sleeve-1.jpg",
+            "lavender-sleeve-2.jpg",
+            "lavender-sleeve-3.jpg",
+            "lavender-sleeve-4.jpg",
+            "lavender-sleeve-5.jpg",
+            "lavender-sleeve-6.jpg",
+            "lavender-sleeve-7.jpg",
             "lavender-sleeve-8.jpg"
           ]
         }
@@ -1203,11 +1275,15 @@
       "slug": "seashell",
       "name": "Seashell",
       "colorway": "dusty-blue",
-      "description": "Nautical shell and starfish motifs for a seaside wedding.",
+      "description": {
+        "fr": "Coquillages et étoiles de mer pour un mariage au bord de l'océan.",
+        "en": "Nautical shell and starfish motifs for a seaside wedding.",
+        "de": "Maritime Muschel- und Seesternmotive für eine Hochzeit am Meer."
+      },
       "hero": "seashell-bundle-1.jpg",
       "gallery": [
         "seashell-bundle-1.jpg",
-        "seashell-bundle-2.png",
+        "seashell-bundle-2.jpg",
         "seashell-rsvp-3.jpg",
         "seashell-rsvp-4.jpg",
         "seashell-rsvp-5.jpg",
@@ -1259,7 +1335,7 @@
           "shopLink": "https://deardariaco.etsy.com/listing/4535749235/seashell-wedding-suite-svg-bundle-dusty",
           "images": [
             "seashell-bundle-1.jpg",
-            "seashell-bundle-2.png"
+            "seashell-bundle-2.jpg"
           ]
         },
         {
@@ -1360,22 +1436,26 @@
       "slug": "tulip",
       "name": "Tulip",
       "colorway": "sage",
-      "description": "Garden tulips for a fresh, cheerful springtime celebration.",
+      "description": {
+        "fr": "Tulipes de jardin pour une célébration printanière fraîche et joyeuse.",
+        "en": "Garden tulips for a fresh, cheerful springtime celebration.",
+        "de": "Gartentulpen für eine frische, fröhliche Frühlingsfeier."
+      },
       "hero": "tulip-bundle-1.jpg",
       "gallery": [
         "tulip-bundle-1.jpg",
         "tulip-glass-tag-2.jpg",
         "tulip-glass-tag-3.jpg",
         "tulip-rsvp-4.jpg",
-        "tulip-rsvp-5.png",
+        "tulip-rsvp-5.jpg",
         "tulip-rsvp-6.jpg",
         "tulip-rsvp-7.jpg",
         "tulip-rsvp-8.jpg",
         "tulip-rsvp-9.jpg",
-        "tulip-save-the-date-10.png",
-        "tulip-save-the-date-11.png",
-        "tulip-save-the-date-12.png",
-        "tulip-save-the-date-13.png",
+        "tulip-save-the-date-10.jpg",
+        "tulip-save-the-date-11.jpg",
+        "tulip-save-the-date-12.jpg",
+        "tulip-save-the-date-13.jpg",
         "tulip-sleeve-14.jpg",
         "tulip-sleeve-15.jpg",
         "tulip-sleeve-16.jpg",
@@ -1412,7 +1492,7 @@
           "shopLink": "https://deardariaco.etsy.com/listing/4525956854/tulip-die-cut-rsvp-card-template-for",
           "images": [
             "tulip-rsvp-4.jpg",
-            "tulip-rsvp-5.png",
+            "tulip-rsvp-5.jpg",
             "tulip-rsvp-6.jpg",
             "tulip-rsvp-7.jpg",
             "tulip-rsvp-8.jpg",
@@ -1425,10 +1505,10 @@
           "price": 5.99,
           "shopLink": "https://deardariaco.etsy.com/listing/4526557623/tulip-save-the-date-template-editable",
           "images": [
-            "tulip-save-the-date-10.png",
-            "tulip-save-the-date-11.png",
-            "tulip-save-the-date-12.png",
-            "tulip-save-the-date-13.png"
+            "tulip-save-the-date-10.jpg",
+            "tulip-save-the-date-11.jpg",
+            "tulip-save-the-date-12.jpg",
+            "tulip-save-the-date-13.jpg"
           ]
         },
         {
@@ -1455,7 +1535,11 @@
       "slug": "vintage-floral",
       "name": "Vintage Floral",
       "colorway": "dusty-blue",
-      "description": "Blue toile florals with a grandmillennial, heirloom feel.",
+      "description": {
+        "fr": "Motifs floraux toile bleue, esprit grandmillennial et patrimoine familial.",
+        "en": "Blue toile florals with a grandmillennial, heirloom feel.",
+        "de": "Blaue Toile-Blumenmuster mit grandmillennial-Erbstück-Gefühl."
+      },
       "hero": "vintage-floral-sleeve-1.jpg",
       "gallery": [
         "vintage-floral-sleeve-1.jpg",
@@ -1488,7 +1572,11 @@
       "slug": "watercolor-floral",
       "name": "Watercolor Floral",
       "colorway": "sage",
-      "description": "Soft painterly botanicals for an airy, romantic suite.",
+      "description": {
+        "fr": "Motifs botaniques doux et peints à l'aquarelle, pour une suite aérienne et romantique.",
+        "en": "Soft painterly botanicals for an airy, romantic suite.",
+        "de": "Weiche, gemalte botanische Motive für ein luftiges, romantisches Set."
+      },
       "hero": "watercolor-floral-sleeve-1.jpg",
       "gallery": [
         "watercolor-floral-sleeve-1.jpg",

@@ -3,13 +3,13 @@ window.DearDaria = window.DearDaria || {};
 
 (function () {
   const NAV_LINKS = [
-    { href: 'index.html', label: 'Home' },
-    { href: 'collections.html', label: 'Collections' },
-    { href: 'invitation-jackets.html', label: 'Invitation Jackets' },
-    { href: 'wedding-suites.html', label: 'Wedding Suites' },
-    { href: 'shop.html', label: 'Shop' },
-    { href: 'bespoke.html', label: 'Bespoke' },
-    { href: 'info.html', label: 'Info' },
+    { href: 'index.html', key: 'nav_home' },
+    { href: 'wedding-suites.html', key: 'nav_suites' },
+    { href: 'invitation-jackets.html', key: 'nav_jackets' },
+    { href: 'collections.html', key: 'nav_collections' },
+    { href: 'shop.html', key: 'nav_shop' },
+    { href: 'bespoke.html', key: 'nav_bespoke' },
+    { href: 'info.html', key: 'nav_info' },
   ];
 
   function currentPage() {
@@ -22,13 +22,14 @@ window.DearDaria = window.DearDaria || {};
     if (!mount) return;
     const current = currentPage();
     const items = NAV_LINKS.map(
-      (l) => `<li><a href="${l.href}" class="${l.href === current ? 'active' : ''}">${l.label}</a></li>`
+      (l) => `<li><a href="${l.href}" data-i18n="${l.key}" class="${l.href === current ? 'active' : ''}"></a></li>`
     ).join('');
 
     mount.innerHTML = `
       <div class="container">
         <a href="index.html" class="nav-logo">Dear Daria</a>
         <ul class="nav-links" id="nav-links">${items}</ul>
+        <div class="nav-lang" id="nav-lang-desktop"></div>
         <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
         </button>
@@ -40,6 +41,8 @@ window.DearDaria = window.DearDaria || {};
       const open = navLinks.classList.toggle('open');
       toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
+
+    DearDaria.renderLangSwitcher('nav-lang-desktop');
   }
 
   function renderFooter() {
@@ -50,37 +53,37 @@ window.DearDaria = window.DearDaria || {};
         <div class="footer-grid">
           <div class="footer-brand">
             <span class="nav-logo">Dear Daria</span>
-            <p>Handmade wedding &amp; event stationery, designed and crafted in Switzerland.</p>
+            <p data-i18n-html="footer_tagline"></p>
           </div>
           <div class="footer-col">
-            <h4>Explore</h4>
+            <h4 data-i18n="footer_explore"></h4>
             <ul>
-              <li><a href="collections.html">Collections</a></li>
-              <li><a href="invitation-jackets.html">Invitation Jackets</a></li>
-              <li><a href="wedding-suites.html">Wedding Suites</a></li>
-              <li><a href="shop.html">Shop</a></li>
+              <li><a href="collections.html" data-i18n="nav_collections"></a></li>
+              <li><a href="invitation-jackets.html" data-i18n="nav_jackets"></a></li>
+              <li><a href="wedding-suites.html" data-i18n="nav_suites"></a></li>
+              <li><a href="shop.html" data-i18n="nav_shop"></a></li>
             </ul>
           </div>
           <div class="footer-col">
-            <h4>Studio</h4>
+            <h4 data-i18n="footer_studio"></h4>
             <ul>
-              <li><a href="bespoke.html">Bespoke</a></li>
-              <li><a href="info.html#about">About</a></li>
-              <li><a href="info.html#professionals">For Professionals</a></li>
-              <li><a href="info.html#faq">FAQ</a></li>
+              <li><a href="bespoke.html" data-i18n="nav_bespoke"></a></li>
+              <li><a href="info.html#about" data-i18n="footer_about"></a></li>
+              <li><a href="info.html#professionals" data-i18n="footer_professionals"></a></li>
+              <li><a href="info.html#faq" data-i18n="footer_faq"></a></li>
             </ul>
           </div>
           <div class="footer-col">
-            <h4>Get in Touch</h4>
+            <h4 data-i18n="footer_contact"></h4>
             <ul>
-              <li><a href="info.html#contact">Contact</a></li>
+              <li><a href="info.html#contact" data-i18n="contact_eyebrow"></a></li>
               <li><a href="mailto:hello@deardaria.com">hello@deardaria.com</a></li>
             </ul>
           </div>
         </div>
         <div class="footer-bottom">
-          <span>&copy; ${new Date().getFullYear()} Dear Daria. Handmade in Switzerland.</span>
-          <span>Designed with care, one suite at a time.</span>
+          <span>&copy; ${new Date().getFullYear()} Dear Daria. <span data-i18n="footer_rights"></span></span>
+          <span data-i18n="footer_note"></span>
         </div>
       </div>`;
   }
@@ -105,13 +108,12 @@ window.DearDaria = window.DearDaria || {};
     imgs.forEach((img) => io.observe(img));
   }
 
-  // Expose immediately so page scripts can call it regardless of timing,
-  // not only after DOMContentLoaded fires.
   DearDaria.initLazyImages = initLazyImages;
 
   document.addEventListener('DOMContentLoaded', () => {
     renderNav();
     renderFooter();
+    DearDaria.applyTranslations();
     initLazyImages();
   });
 })();

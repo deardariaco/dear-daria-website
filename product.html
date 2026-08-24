@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title id="page-title">Product — Dear Daria</title>
+<title id="page-title">Produit — Dear Daria</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -14,6 +14,7 @@
 
 <footer class="site-footer" id="site-footer"></footer>
 
+<script src="js/i18n.js"></script>
 <script src="js/shell.js"></script>
 <script src="js/data.js"></script>
 <script>
@@ -24,60 +25,65 @@
   const collection = data.collections.find(c => c.slug === slug);
   const content = document.getElementById('content');
 
-  if (!collection) {
-    content.innerHTML = `<div class="section container"><div class="empty-state"><h3>Product not found</h3><p><a href="shop.html">Return to Shop</a></p></div></div>`;
-    return;
-  }
-  const product = collection.products.find(p => p.type === type) || collection.products[0];
+  function render() {
+    if (!collection) {
+      content.innerHTML = `<div class="section container"><div class="empty-state"><h3>${DearDaria.t('product_not_found')}</h3><p><a href="shop.html">${DearDaria.t('return_shop')}</a></p></div></div>`;
+      return;
+    }
+    const product = collection.products.find(p => p.type === type) || collection.products[0];
 
-  document.getElementById('page-title').textContent = `${product.title} — Dear Daria`;
+    document.getElementById('page-title').textContent = `${product.title} — Dear Daria`;
 
-  const label = DearDaria.PRODUCT_TYPE_LABELS[product.type] || 'Stationery';
-  const price = DearDaria.formatPrice(product.price);
+    const label = DearDaria.productTypeLabel(product.type);
+    const price = DearDaria.formatPrice(product.price);
 
-  const galleryImgs = product.images.slice(0, 8).map(img =>
-    `<img class="lazy-img" loading="lazy" src="${DearDaria.imgUrl(img)}" alt="${product.title}">`
-  ).join('');
+    const galleryImgs = product.images.slice(0, 8).map(img =>
+      `<img class="lazy-img" loading="lazy" src="${DearDaria.imgUrl(img)}" alt="${product.title}">`
+    ).join('');
 
-  const otherPieces = collection.products
-    .filter(p => p.type !== product.type)
-    .map(p => `<a class="tag" href="product.html?slug=${collection.slug}&type=${p.type}">${DearDaria.PRODUCT_TYPE_LABELS[p.type] || p.type}</a>`)
-    .join('');
+    const otherPieces = collection.products
+      .filter(p => p.type !== product.type)
+      .map(p => `<a class="tag" href="product.html?slug=${collection.slug}&type=${p.type}">${DearDaria.productTypeLabel(p.type)}</a>`)
+      .join('');
 
-  content.innerHTML = `
-    <section class="section tight">
-      <div class="container">
-        <div class="breadcrumb">
-          <a href="shop.html">Shop</a> &nbsp;/&nbsp; <a href="collection.html?slug=${collection.slug}">${collection.name}</a> &nbsp;/&nbsp; ${label}
-        </div>
-        <div class="detail-hero">
-          <div class="media">
-            <img src="${DearDaria.imgUrl(product.images[0])}" alt="${product.title}">
+    content.innerHTML = `
+      <section class="section tight">
+        <div class="container">
+          <div class="breadcrumb">
+            <a href="shop.html">${DearDaria.t('nav_shop')}</a> &nbsp;/&nbsp; <a href="collection.html?slug=${collection.slug}">${collection.name}</a> &nbsp;/&nbsp; ${label}
           </div>
-          <div class="copy">
-            <span class="eyebrow">${collection.name} — ${label}</span>
-            <h1>${product.title}</h1>
-            ${price ? `<div class="price-tag">${price}</div>` : ''}
-            <p class="desc">${collection.description} Every piece is personalized with your names, wording, date and event details.</p>
-            <div class="btn-row">
-              ${product.shopLink ? `<a href="${product.shopLink}" target="_blank" rel="noopener" class="btn primary">Shop on Etsy</a>` : `<a href="info.html#contact" class="btn primary">Inquire to Order</a>`}
-              <a href="bespoke.html" class="btn ghost">Request a Custom Color</a>
+          <div class="detail-hero">
+            <div class="media">
+              <img src="${DearDaria.imgUrl(product.images[0])}" alt="${product.title}">
             </div>
-            ${otherPieces ? `<div style="margin-top:32px;"><span class="eyebrow">Also in this collection</span><div class="tag-row">${otherPieces}</div></div>` : ''}
+            <div class="copy">
+              <span class="eyebrow">${collection.name} — ${label}</span>
+              <h1>${product.title}</h1>
+              ${price ? `<div class="price-tag">${price}</div>` : ''}
+              <p class="desc">${DearDaria.collectionDescription(collection)} ${DearDaria.t('every_piece_personalized')}</p>
+              <div class="btn-row">
+                ${product.shopLink ? `<a href="${product.shopLink}" target="_blank" rel="noopener" class="btn primary">${DearDaria.t('shop_on_etsy')}</a>` : `<a href="info.html#contact" class="btn primary">${DearDaria.t('inquire_to_order')}</a>`}
+                <a href="bespoke.html" class="btn ghost">${DearDaria.t('request_custom_color')}</a>
+              </div>
+              ${otherPieces ? `<div style="margin-top:32px;"><span class="eyebrow">${DearDaria.t('also_in_collection')}</span><div class="tag-row">${otherPieces}</div></div>` : ''}
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section tight border-top">
-      <div class="container">
-        <div class="section-head"><div><span class="eyebrow">Gallery</span><h2>A closer look</h2></div></div>
-        <div class="gallery-strip">${galleryImgs}</div>
-      </div>
-    </section>
-  `;
+      <section class="section tight border-top">
+        <div class="container">
+          <div class="section-head"><div><span class="eyebrow">${DearDaria.t('gallery_label')}</span><h2>${DearDaria.t('closer_look')}</h2></div></div>
+          <div class="gallery-strip">${galleryImgs}</div>
+        </div>
+      </section>
+    `;
 
-  DearDaria.initLazyImages();
+    DearDaria.initLazyImages();
+  }
+
+  DearDaria.reRenderDynamic = render;
+  render();
 })();
 </script>
 </body>

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dear Daria — Handmade Wedding &amp; Event Stationery, Switzerland</title>
-<meta name="description" content="Dear Daria is a Switzerland-based studio creating handmade, customizable wedding invitation jackets, sleeves and coordinated stationery suites.">
+<title>Dear Daria — Papeterie de Mariage et d'Événement, Suisse</title>
+<meta name="description" content="Dear Daria est un atelier suisse créant des pochettes d'invitation, enveloppes et suites de papeterie de mariage faites à la main et personnalisables.">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,12 +17,12 @@
     <img id="hero-image" src="" alt="Dear Daria wedding invitation">
   </div>
   <div class="hero-copy">
-    <span class="eyebrow">Switzerland — Est. Studio</span>
-    <h1>Dear Daria</h1>
-    <p class="lede">Handmade wedding &amp; event stationery, designed and crafted in Switzerland. Choose an existing collection, adapt it to your colors, or commission something entirely your own.</p>
+    <span class="eyebrow" data-i18n="home_eyebrow"></span>
+    <h1 data-i18n="home_title"></h1>
+    <p class="lede" data-i18n="home_lede" data-i18n-html></p>
     <div class="btn-row">
-      <a href="collections.html" class="btn primary">Explore the Collections</a>
-      <a href="bespoke.html" class="btn ghost">Create Something Bespoke</a>
+      <a href="collections.html" class="btn primary" data-i18n="btn_explore_collections"></a>
+      <a href="bespoke.html" class="btn ghost" data-i18n="btn_create_bespoke"></a>
     </div>
   </div>
 </header>
@@ -32,11 +32,11 @@
   <div class="container">
     <div class="section-head">
       <div>
-        <span class="eyebrow">Signature Collections</span>
-        <h2>Where every suite begins</h2>
-        <p class="lede">A selection of our most-loved designs — each one available to personalize, recolor, or open as a starting point for something bespoke.</p>
+        <span class="eyebrow" data-i18n="featured_eyebrow"></span>
+        <h2 data-i18n="featured_title"></h2>
+        <p class="lede" data-i18n="featured_lede"></p>
       </div>
-      <a href="collections.html" class="btn ghost">View All Collections</a>
+      <a href="collections.html" class="btn ghost" data-i18n="view_all_collections"></a>
     </div>
     <div id="featured-grid" class="grid cols-3"></div>
   </div>
@@ -50,10 +50,10 @@
         <img id="jacket-hero-img" class="lazy-img" loading="lazy" src="" alt="Dear Daria invitation jacket">
       </div>
       <div class="copy">
-        <span class="eyebrow rosewood">The Dear Daria Signature</span>
-        <h2>Invitation Jackets &amp; Sleeves</h2>
-        <p>Our invitations open like the day itself — layered, considered, a little theatrical. Every jacket and sleeve design can be personalized with your wording and, where available, adapted to a different color palette.</p>
-        <a href="invitation-jackets.html" class="btn primary">Explore Jackets &amp; Sleeves</a>
+        <span class="eyebrow rosewood" data-i18n="signature_eyebrow"></span>
+        <h2 data-i18n="jackets_title" data-i18n-html></h2>
+        <p data-i18n="jackets_text"></p>
+        <a href="invitation-jackets.html" class="btn primary" data-i18n="btn_explore_jackets" data-i18n-html></a>
       </div>
     </div>
   </div>
@@ -67,39 +67,51 @@
         <img id="suite-hero-img" class="lazy-img" loading="lazy" src="" alt="Dear Daria wedding suite">
       </div>
       <div class="copy">
-        <span class="eyebrow">Complete &amp; Coordinated</span>
-        <h2>Wedding Suites</h2>
-        <p>From the invitation to the place card, a coordinated suite carries one story through every piece of the day — save the date, RSVP, menu, and the details in between.</p>
-        <a href="wedding-suites.html" class="btn primary">Explore Wedding Suites</a>
+        <span class="eyebrow" data-i18n="suites_eyebrow" data-i18n-html></span>
+        <h2 data-i18n="suites_title"></h2>
+        <p data-i18n="suites_text"></p>
+        <a href="wedding-suites.html" class="btn primary" data-i18n="btn_explore_suites"></a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CUSTOMIZATION -->
+<!-- MAKE IT YOURS -->
 <section class="section border-top">
   <div class="container">
     <div class="section-head">
       <div>
-        <span class="eyebrow brass">Three Ways to Begin</span>
-        <h2>Make it yours</h2>
+        <span class="eyebrow brass" data-i18n="myo_eyebrow"></span>
+        <h2 data-i18n="myo_title"></h2>
       </div>
     </div>
-    <div class="custom-grid">
-      <div class="custom-card">
-        <span class="eyebrow">01 — Personalize</span>
-        <h3>An Existing Design</h3>
-        <p>Names, wording, dates, language and event details, personalized on any collection in the studio.</p>
+    <div class="myo-grid">
+      <div class="custom-card myo-card">
+        <span class="eyebrow" data-i18n="myo1_eyebrow"></span>
+        <h3 data-i18n="myo1_title"></h3>
+        <p data-i18n="myo1_text"></p>
       </div>
-      <div class="custom-card">
-        <span class="eyebrow">02 — Recolor</span>
-        <h3>Choose Your Palette</h3>
-        <p>Selected collections can be adapted to a different cardstock and artwork color, to match your day.</p>
+      <div class="custom-card myo-card">
+        <span class="eyebrow myo2-eyebrow" data-i18n="myo2_eyebrow"></span>
+        <h3 data-i18n="myo2_title"></h3>
+        <p data-i18n="myo2_text"></p>
       </div>
-      <div class="custom-card">
-        <span class="eyebrow">03 — Commission</span>
-        <h3>A Bespoke Design</h3>
-        <p>A completely new design, created specifically for your event, from a first conversation to final production.</p>
+      <div class="myo-card myo-premium">
+        <span class="eyebrow brass" data-i18n="myo3_eyebrow"></span>
+        <h3 data-i18n="myo3_title"></h3>
+        <p class="myo-premium-text" data-i18n="myo3_text"></p>
+        <p class="myo-includes-label" data-i18n="myo3_includes_label"></p>
+        <ul class="myo-includes-list">
+          <li data-i18n="myo3_li1"></li>
+          <li data-i18n="myo3_li2"></li>
+          <li data-i18n="myo3_li3"></li>
+          <li data-i18n="myo3_li4"></li>
+          <li data-i18n="myo3_li5"></li>
+          <li data-i18n="myo3_li6"></li>
+          <li data-i18n="myo3_li7"></li>
+          <li data-i18n="myo3_li8"></li>
+        </ul>
+        <a href="bespoke.html" class="btn primary myo-cta" data-i18n="myo3_cta"></a>
       </div>
     </div>
   </div>
@@ -107,6 +119,7 @@
 
 <footer class="site-footer" id="site-footer"></footer>
 
+<script src="js/i18n.js"></script>
 <script src="js/shell.js"></script>
 <script src="js/data.js"></script>
 <script>
@@ -114,30 +127,31 @@
   const data = await DearDaria.loadData();
   const collections = data.collections;
 
-  // hero: strongest featured bundle/jacket image
-  const heroCollection = collections.find(c => c.id === 'calla_bloom') || collections[0];
-  document.getElementById('hero-image').src = DearDaria.imgUrl(heroCollection.hero);
-  document.getElementById('hero-image').alt = heroCollection.name + ' wedding invitation';
+  function render() {
+    const heroCollection = collections.find(c => c.id === 'calla_bloom') || collections[0];
+    document.getElementById('hero-image').src = DearDaria.imgUrl(heroCollection.hero);
+    document.getElementById('hero-image').alt = heroCollection.name + ' wedding invitation';
 
-  // featured grid — first 6 featured collections
-  const featured = collections.filter(c => c.featured).slice(0, 6);
-  DearDaria.renderGrid('featured-grid', featured.map(DearDaria.collectionCardHTML).join(''), 3);
+    const featured = collections.filter(c => c.featured).slice(0, 6);
+    DearDaria.renderGrid('featured-grid', featured.map(DearDaria.collectionCardHTML).join(''), 3);
 
-  // jacket/sleeve split image
-  const jacketSource = collections.find(c => c.products.some(p => p.type === 'sleeve'));
-  if (jacketSource) {
-    const sleeveProduct = jacketSource.products.find(p => p.type === 'sleeve');
-    document.getElementById('jacket-hero-img').src = DearDaria.imgUrl(sleeveProduct.images[0]);
+    const jacketSource = collections.find(c => c.products.some(p => p.type === 'sleeve'));
+    if (jacketSource) {
+      const sleeveProduct = jacketSource.products.find(p => p.type === 'sleeve');
+      document.getElementById('jacket-hero-img').src = DearDaria.imgUrl(sleeveProduct.images[0]);
+    }
+
+    const suiteSource = collections.find(c => c.products.some(p => p.type === 'bundle'));
+    if (suiteSource) {
+      const bundleProduct = suiteSource.products.find(p => p.type === 'bundle');
+      document.getElementById('suite-hero-img').src = DearDaria.imgUrl(bundleProduct.images[0]);
+    }
+
+    DearDaria.initLazyImages();
   }
 
-  // suite split image
-  const suiteSource = collections.find(c => c.products.some(p => p.type === 'bundle'));
-  if (suiteSource) {
-    const bundleProduct = suiteSource.products.find(p => p.type === 'bundle');
-    document.getElementById('suite-hero-img').src = DearDaria.imgUrl(bundleProduct.images[0]);
-  }
-
-  DearDaria.initLazyImages();
+  DearDaria.reRenderDynamic = render;
+  render();
 })();
 </script>
 </body>

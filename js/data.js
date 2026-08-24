@@ -18,20 +18,35 @@ DearDaria.formatPrice = function (price) {
   return `CHF ${Number(price).toFixed(2)}`;
 };
 
-DearDaria.PRODUCT_TYPE_LABELS = {
-  bundle: 'Wedding Suite',
-  sleeve: 'Invitation Sleeve',
-  place_card: 'Place Card',
-  rsvp: 'RSVP Card',
-  save_the_date: 'Save the Date',
-  menu: 'Menu',
-  glass_tag: 'Glass Tag',
-  other: 'Invitation',
+DearDaria.PRODUCT_TYPE_KEY = {
+  bundle: 'label_bundle',
+  sleeve: 'label_sleeve',
+  place_card: 'label_place_card',
+  rsvp: 'label_rsvp',
+  save_the_date: 'label_save_the_date',
+  menu: 'label_menu',
+  glass_tag: 'label_glass_tag',
+  other: 'label_other',
+};
+
+DearDaria.productTypeLabel = function (type) {
+  const key = DearDaria.PRODUCT_TYPE_KEY[type] || 'label_other';
+  return DearDaria.t(key);
+};
+
+DearDaria.collectionDescription = function (collection) {
+  const lang = DearDaria.getLang();
+  if (collection.description && typeof collection.description === 'object') {
+    return collection.description[lang] || collection.description.fr || collection.description.en || '';
+  }
+  return collection.description || '';
 };
 
 // Renders a collection card: clean image by default, hover reveal on desktop,
 // static caption below image on touch/mobile — per brief.
 DearDaria.collectionCardHTML = function (collection) {
+  const count = collection.products.length;
+  const pieceWord = DearDaria.t(count === 1 ? 'piece_available' : 'pieces_available');
   return `
     <a class="card" href="collection.html?slug=${collection.slug}">
       <div class="card-media">
@@ -39,18 +54,18 @@ DearDaria.collectionCardHTML = function (collection) {
         <div class="card-hover-caption">
           <div class="unfold-rule"></div>
           <div class="name">${collection.name}</div>
-          <div class="view">View Collection</div>
+          <div class="view">${DearDaria.t('view_collection')}</div>
         </div>
       </div>
       <div class="card-caption-static">
         <div class="name">${collection.name}</div>
-        <div class="meta">${collection.products.length} piece${collection.products.length === 1 ? '' : 's'} available</div>
+        <div class="meta">${count} ${pieceWord}</div>
       </div>
     </a>`;
 };
 
 DearDaria.productCardHTML = function (collection, product, image) {
-  const label = DearDaria.PRODUCT_TYPE_LABELS[product.type] || 'Stationery';
+  const label = DearDaria.productTypeLabel(product.type);
   const price = DearDaria.formatPrice(product.price);
   return `
     <a class="card" href="product.html?slug=${collection.slug}&type=${product.type}">

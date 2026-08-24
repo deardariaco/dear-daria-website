@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bespoke — Dear Daria</title>
-<meta name="description" content="Commission a completely bespoke wedding stationery design from Dear Daria, designed and crafted in Switzerland.">
+<title>Sur Mesure — Dear Daria</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,36 +15,36 @@
     <img id="hero-image" class="lazy-img" loading="lazy" src="" alt="Dear Daria bespoke wedding invitation">
   </div>
   <div class="hero-copy">
-    <span class="eyebrow brass">Made Specifically For You</span>
-    <h1 style="font-size:clamp(36px,4.6vw,64px);">Bespoke</h1>
-    <p class="lede">A completely new design, considered around your venue, your season, your names. Every bespoke commission begins with a conversation.</p>
-    <div class="btn-row"><a href="#inquire" class="btn primary">Start an Inquiry</a></div>
+    <span class="eyebrow brass" data-i18n="bespoke_eyebrow"></span>
+    <h1 style="font-size:clamp(36px,4.6vw,64px);" data-i18n="bespoke_title"></h1>
+    <p class="lede" data-i18n="bespoke_lede"></p>
+    <div class="btn-row"><a href="#inquire" class="btn primary" data-i18n="btn_start_inquiry"></a></div>
   </div>
 </header>
 
 <section class="section border-top">
   <div class="container">
-    <div class="section-head"><div><span class="eyebrow">The Process</span><h2>Four steps to your suite</h2></div></div>
+    <div class="section-head"><div><span class="eyebrow" data-i18n="process_eyebrow"></span><h2 data-i18n="process_title"></h2></div></div>
     <div class="process-list">
       <div class="process-step">
         <div class="num">01</div>
-        <h3>Tell me about your event</h3>
-        <p>Share your venue, season, colors, flowers, atmosphere and stationery requirements.</p>
+        <h3 data-i18n="step1_title"></h3>
+        <p data-i18n="step1_text"></p>
       </div>
       <div class="process-step">
         <div class="num">02</div>
-        <h3>Design</h3>
-        <p>A stationery concept is developed specifically around your event.</p>
+        <h3 data-i18n="step2_title"></h3>
+        <p data-i18n="step2_text"></p>
       </div>
       <div class="process-step">
         <div class="num">03</div>
-        <h3>Refinement</h3>
-        <p>Typography, colors, wording and details are refined together with you.</p>
+        <h3 data-i18n="step3_title"></h3>
+        <p data-i18n="step3_text"></p>
       </div>
       <div class="process-step">
         <div class="num">04</div>
-        <h3>Production</h3>
-        <p>The final stationery is carefully prepared, cut and produced by hand.</p>
+        <h3 data-i18n="step4_title"></h3>
+        <p data-i18n="step4_text"></p>
       </div>
     </div>
   </div>
@@ -53,16 +52,16 @@
 
 <section class="section border-top" id="inquire">
   <div class="container" style="max-width:760px;">
-    <div class="section-head"><div><span class="eyebrow">Start Here</span><h2>Tell me about your day</h2></div></div>
+    <div class="section-head"><div><span class="eyebrow" data-i18n="inquire_eyebrow"></span><h2 data-i18n="inquire_title"></h2></div></div>
     <form class="form-grid" onsubmit="event.preventDefault(); this.querySelector('.submit-note').style.display='block';">
-      <div class="field"><label for="name">Your Name(s)</label><input id="name" type="text" required></div>
-      <div class="field"><label for="email">Email</label><input id="email" type="email" required></div>
-      <div class="field"><label for="date">Event Date</label><input id="date" type="date"></div>
-      <div class="field"><label for="venue">Venue / Location</label><input id="venue" type="text"></div>
-      <div class="field full"><label for="details">Tell me about your event</label><textarea id="details" placeholder="Colors, flowers, atmosphere, inspirations, and which pieces you're looking for..."></textarea></div>
+      <div class="field"><label for="name" data-i18n="field_name"></label><input id="name" type="text" required></div>
+      <div class="field"><label for="email" data-i18n="field_email"></label><input id="email" type="email" required></div>
+      <div class="field"><label for="date" data-i18n="field_date"></label><input id="date" type="date"></div>
+      <div class="field"><label for="venue" data-i18n="field_venue"></label><input id="venue" type="text"></div>
+      <div class="field full"><label for="details" data-i18n="field_details"></label><textarea id="details" data-i18n="field_details_placeholder" data-i18n-placeholder></textarea></div>
       <div class="field full">
-        <button type="submit" class="btn primary">Send Inquiry</button>
-        <p class="submit-note" style="display:none; margin-top:16px; color:var(--sage-deep); font-size:14px;">Thank you — your inquiry has been noted. Dear Daria will be in touch shortly.</p>
+        <button type="submit" class="btn primary" data-i18n="btn_send_inquiry"></button>
+        <p class="submit-note" style="display:none; margin-top:16px; color:var(--sage-deep); font-size:14px;" data-i18n="submit_note_bespoke"></p>
       </div>
     </form>
   </div>
@@ -70,6 +69,7 @@
 
 <footer class="site-footer" id="site-footer"></footer>
 
+<script src="js/i18n.js"></script>
 <script src="js/shell.js"></script>
 <script src="js/data.js"></script>
 <script>
