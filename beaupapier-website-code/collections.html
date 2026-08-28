@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Collections — Beau Papier</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav" id="site-nav"></nav>
+
+<header class="section tight">
+  <div class="container">
+    <span class="eyebrow" data-i18n="collections_eyebrow"></span>
+    <h1 style="font-size:clamp(36px,5vw,64px); font-style:italic; margin-top:14px; max-width:16ch;" data-i18n="collections_title"></h1>
+    <p style="color:var(--ink-soft); max-width:52ch; margin-top:20px; font-size:16px; line-height:1.7;" data-i18n="collections_lede"></p>
+  </div>
+</header>
+
+<section class="section tight border-top">
+  <div class="container">
+    <div id="all-grid" class="grid cols-3"></div>
+  </div>
+</section>
+
+<footer class="site-footer" id="site-footer"></footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/shell.js"></script>
+<script src="js/data.js"></script>
+<script>
+(async function () {
+  const data = await DearDaria.loadData();
+  function render() {
+    DearDaria.renderGrid('all-grid', data.collections.map(DearDaria.collectionCardHTML).join(''), 3);
+  }
+  DearDaria.reRenderDynamic = render;
+  render();
+})();
+</script>
+</body>
+</html>
