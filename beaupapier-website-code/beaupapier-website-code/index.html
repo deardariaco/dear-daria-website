@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beau Papier — Papeterie de Mariage et d'Événement, Suisse</title>
+<meta name="description" content="Beau Papier — pochettes d'invitation, enveloppes et suites de papeterie de mariage, dessinées et façonnées à la main par Daria Wälchli en Suisse.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav" id="site-nav"></nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-media">
+    <img id="hero-image" src="" alt="Beau Papier wedding invitation">
+  </div>
+  <div class="hero-copy">
+    <span class="eyebrow" data-i18n="home_eyebrow"></span>
+    <h1 data-i18n="home_title"></h1>
+    <p class="lede" data-i18n="home_lede" data-i18n-html></p>
+    <div class="btn-row">
+      <a href="collections.html" class="btn primary" data-i18n="btn_explore_collections"></a>
+      <a href="bespoke.html" class="btn ghost" data-i18n="btn_create_bespoke"></a>
+    </div>
+  </div>
+</header>
+
+<!-- FEATURED COLLECTIONS -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow" data-i18n="featured_eyebrow"></span>
+        <h2 data-i18n="featured_title"></h2>
+        <p class="lede" data-i18n="featured_lede"></p>
+      </div>
+      <a href="collections.html" class="btn ghost" data-i18n="view_all_collections"></a>
+    </div>
+    <div id="featured-grid" class="grid cols-3"></div>
+  </div>
+</section>
+
+<!-- SIGNATURE: JACKETS & SLEEVES -->
+<section class="section border-top">
+  <div class="container">
+    <div class="split-row">
+      <div class="media">
+        <img id="jacket-hero-img" class="lazy-img" loading="lazy" src="" alt="Beau Papier invitation jacket">
+      </div>
+      <div class="copy">
+        <span class="eyebrow rosewood" data-i18n="signature_eyebrow"></span>
+        <h2 data-i18n="jackets_title" data-i18n-html></h2>
+        <p data-i18n="jackets_text"></p>
+        <a href="invitation-jackets.html" class="btn primary" data-i18n="btn_explore_jackets" data-i18n-html></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WEDDING SUITES -->
+<section class="section border-top">
+  <div class="container">
+    <div class="split-row reverse">
+      <div class="media">
+        <img id="suite-hero-img" class="lazy-img" loading="lazy" src="" alt="Beau Papier wedding suite">
+      </div>
+      <div class="copy">
+        <span class="eyebrow" data-i18n="suites_eyebrow" data-i18n-html></span>
+        <h2 data-i18n="suites_title"></h2>
+        <p data-i18n="suites_text"></p>
+        <a href="wedding-suites.html" class="btn primary" data-i18n="btn_explore_suites"></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAKE IT YOURS -->
+<section class="section border-top">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow brass" data-i18n="myo_eyebrow"></span>
+        <h2 data-i18n="myo_title"></h2>
+      </div>
+    </div>
+    <div class="myo-grid">
+      <div class="custom-card myo-card">
+        <span class="eyebrow" data-i18n="myo1_eyebrow"></span>
+        <h3 data-i18n="myo1_title"></h3>
+        <p data-i18n="myo1_text"></p>
+      </div>
+      <div class="custom-card myo-card">
+        <span class="eyebrow myo2-eyebrow" data-i18n="myo2_eyebrow"></span>
+        <h3 data-i18n="myo2_title"></h3>
+        <p data-i18n="myo2_text"></p>
+      </div>
+      <div class="myo-card myo-premium">
+        <span class="eyebrow brass" data-i18n="myo3_eyebrow"></span>
+        <h3 data-i18n="myo3_title"></h3>
+        <p class="myo-premium-text" data-i18n="myo3_text"></p>
+        <p class="myo-includes-label" data-i18n="myo3_includes_label"></p>
+        <ul class="myo-includes-list">
+          <li data-i18n="myo3_li1"></li>
+          <li data-i18n="myo3_li2"></li>
+          <li data-i18n="myo3_li3"></li>
+          <li data-i18n="myo3_li4"></li>
+          <li data-i18n="myo3_li5"></li>
+          <li data-i18n="myo3_li6"></li>
+          <li data-i18n="myo3_li7"></li>
+          <li data-i18n="myo3_li8"></li>
+        </ul>
+        <a href="bespoke.html" class="btn primary myo-cta" data-i18n="myo3_cta"></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer" id="site-footer"></footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/shell.js"></script>
+<script src="js/data.js"></script>
+<script>
+(async function () {
+  const data = await DearDaria.loadData();
+  const collections = data.collections;
+
+  function render() {
+    const heroCollection = collections.find(c => c.id === 'calla_bloom') || collections[0];
+    document.getElementById('hero-image').src = DearDaria.imgUrl(heroCollection.hero);
+    document.getElementById('hero-image').alt = heroCollection.name + ' wedding invitation';
+
+    const featured = collections.filter(c => c.featured).slice(0, 6);
+    DearDaria.renderGrid('featured-grid', featured.map(DearDaria.collectionCardHTML).join(''), 3);
+
+    const jacketSource = collections.find(c => c.products.some(p => p.type === 'sleeve'));
+    if (jacketSource) {
+      const sleeveProduct = jacketSource.products.find(p => p.type === 'sleeve');
+      document.getElementById('jacket-hero-img').src = DearDaria.imgUrl(sleeveProduct.images[0]);
+    }
+
+    const suiteSource = collections.find(c => c.products.some(p => p.type === 'bundle'));
+    if (suiteSource) {
+      const bundleProduct = suiteSource.products.find(p => p.type === 'bundle');
+      document.getElementById('suite-hero-img').src = DearDaria.imgUrl(bundleProduct.images[0]);
+    }
+
+    DearDaria.initLazyImages();
+  }
+
+  DearDaria.reRenderDynamic = render;
+  render();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Configurateur de Couleurs — Beau Papier</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/configurator.css">
+</head>
+<body>
+
+<nav class="site-nav" id="site-nav"></nav>
+
+<header class="section tight">
+  <div class="container">
+    <span class="eyebrow" data-i18n="config_eyebrow"></span>
+    <h1 style="font-size:clamp(32px,4.4vw,56px); font-style:italic; margin-top:14px;" data-i18n="config_title"></h1>
+    <p style="color:var(--ink-soft); max-width:60ch; margin-top:18px; font-size:15px; line-height:1.7;" data-i18n="config_lede"></p>
+  </div>
+</header>
+
+<section class="section tight border-top">
+  <div class="container">
+    <div class="configurator-layout">
+
+      <div class="configurator-stage-wrap">
+        <div class="invitation-stage" id="invitation-stage">
+          <div class="stage-inner" id="stage-inner"></div>
+        </div>
+        <div class="design-switcher" id="design-switcher"></div>
+      </div>
+
+      <div class="config-panel">
+        <div class="config-group">
+          <span class="config-group-label" data-i18n="config_cardstock"></span>
+          <div class="swatch-row" id="swatch-paper"></div>
+          <div class="custom-hex-row">
+            <input type="color" id="color-paper">
+            <input type="text" id="hex-paper" maxlength="7">
+          </div>
+        </div>
+
+        <div class="config-group">
+          <span class="config-group-label" data-i18n="config_insert"></span>
+          <div class="swatch-row" id="swatch-insert"></div>
+          <div class="custom-hex-row">
+            <input type="color" id="color-insert">
+            <input type="text" id="hex-insert" maxlength="7">
+          </div>
+        </div>
+
+        <div class="config-group">
+          <span class="config-group-label" data-i18n="config_artwork_ink"></span>
+          <div class="swatch-row" id="swatch-artwork"></div>
+          <div class="custom-hex-row">
+            <input type="color" id="color-artwork">
+            <input type="text" id="hex-artwork" maxlength="7">
+          </div>
+          <p class="validation-note" id="note-artwork" data-i18n="config_contrast_warning"></p>
+        </div>
+
+        <div class="config-group">
+          <span class="config-group-label" data-i18n="config_text_ink"></span>
+          <div class="swatch-row" id="swatch-text"></div>
+          <div class="custom-hex-row">
+            <input type="color" id="color-text">
+            <input type="text" id="hex-text" maxlength="7">
+          </div>
+          <p class="validation-note" id="note-text" data-i18n="config_contrast_warning"></p>
+        </div>
+
+        <div class="config-actions">
+          <button class="btn ghost" id="reset-design" data-i18n="config_reset"></button>
+          <a class="btn primary" id="shop-this-design" href="#" data-i18n="config_shop_design"></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer" id="site-footer"></footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/shell.js"></script>
+<script src="js/data.js"></script>
+<script src="js/configurator-data.js"></script>
+<script src="js/configurator.js"></script>
+</body>
+</html>

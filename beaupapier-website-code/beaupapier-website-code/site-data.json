@@ -1,0 +1,1608 @@
+{
+  "collections": [
+    {
+      "id": "boho_peony",
+      "slug": "boho-peony",
+      "name": "Boho Peony",
+      "colorway": "blush",
+      "description": {
+        "fr": "Pivoines généreuses et eucalyptus en blush chaud, pour une célébration libre et bohème.",
+        "en": "Loose peonies and eucalyptus in warm blush, for a free-spirited celebration.",
+        "de": "Lockere Pfingstrosen und Eukalyptus in warmem Blush, für eine freigeistige Feier."
+      },
+      "hero": "boho-peony-bundle-1.jpg",
+      "gallery": [
+        "boho-peony-bundle-1.jpg",
+        "boho-peony-menu-2.jpg",
+        "boho-peony-menu-3.jpg",
+        "boho-peony-menu-4.jpg",
+        "boho-peony-menu-5.jpg",
+        "boho-peony-menu-6.jpg",
+        "boho-peony-place-card-7.jpg",
+        "boho-peony-place-card-8.jpg",
+        "boho-peony-place-card-9.jpg",
+        "boho-peony-place-card-10.jpg",
+        "boho-peony-place-card-11.jpg",
+        "boho-peony-rsvp-12.jpg",
+        "boho-peony-rsvp-13.jpg",
+        "boho-peony-rsvp-14.jpg",
+        "boho-peony-rsvp-15.jpg",
+        "boho-peony-rsvp-16.jpg",
+        "boho-peony-rsvp-17.jpg",
+        "boho-peony-save-the-date-18.jpg",
+        "boho-peony-save-the-date-19.jpg",
+        "boho-peony-save-the-date-20.jpg",
+        "boho-peony-save-the-date-21.jpg",
+        "boho-peony-sleeve-22.jpg",
+        "boho-peony-sleeve-23.jpg",
+        "boho-peony-sleeve-24.jpg",
+        "boho-peony-sleeve-25.jpg"
+      ],
+      "products": [
+        {
+          "type": "bundle",
+          "title": "Boho Peony Wedding Suite SVG Bundle, Blush 7 Piece Template Set, Cricut Print Then Cut",
+          "price": 34.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4532889736/boho-peony-wedding-suite-svg-bundle",
+          "images": [
+            "boho-peony-bundle-1.jpg"
+          ]
+        },
+        {
+          "type": "menu",
+          "title": "Boho Peony Wedding Menu SVG, Blush Oval Card, Cricut Print Then Cut",
+          "price": 5.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4532483232/boho-peony-wedding-menu-svg-blush-oval",
+          "images": [
+            "boho-peony-menu-2.jpg",
+            "boho-peony-menu-3.jpg",
+            "boho-peony-menu-4.jpg",
+            "boho-peony-menu-5.jpg",
+            "boho-peony-menu-6.jpg"
+          ]
+        },
+        {
+          "type": "place_card",
+          "title": "Boho Peony Wedding Place Card SVG, Shaped Name Card, Cricut Print Then Cut",
+          "price": 5.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4532576453/boho-peony-wedding-place-card-svg-shaped",
+          "images": [
+            "boho-peony-place-card-7.jpg",
+            "boho-peony-place-card-8.jpg",
+            "boho-peony-place-card-9.jpg",
+            "boho-peony-place-card-10.jpg",
+            "boho-peony-place-card-11.jpg"
+          ]
+        },
+        {
+          "type": "rsvp",
+          "title": "Boho Peony Wedding RSVP Card SVG, Shaped QR Reply, Cricut Print Then Cut",
+          "price": 5.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4532426034/boho-peony-wedding-rsvp-card-svg-shaped",
+          "images": [
+            "boho-peony-rsvp-12.jpg",
+            "boho-peony-rsvp-13.jpg",
+            "boho-peony-rsvp-14.jpg",
+            "boho-peony-rsvp-15.jpg",
+            "boho-peony-rsvp-16.jpg",
+            "boho-peony-rsvp-17.jpg"
+          ]
+        },
+        {
+          "type": "save_the_date",
+          "title": "Boho Peony Save the Date SVG, Blush Arched Card, Cricut Print Then Cut",
+          "price": 5.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4532857023/boho-peony-save-the-date-svg-blush",
+          "images": [
+            "boho-peony-save-the-date-18.jpg",
+            "boho-peony-save-the-date-19.jpg",
+            "boho-peony-save-the-date-20.jpg",
+            "boho-peony-save-the-date-21.jpg"
+          ]
+        },
+        {
+          "type": "sleeve",
+          "title": "Boho Peony Wedding Invitation Sleeve SVG, Eucalyptus Wrap, Cricut Print Then Cut, 4 Sizes",
+          "price": 12.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4523880248/peony-wedding-invitation-sleeve-template",
+          "images": [
+            "boho-peony-sleeve-22.jpg",
+            "boho-peony-sleeve-23.jpg",
+            "boho-peony-sleeve-24.jpg",
+            "boho-peony-sleeve-25.jpg"
+          ]
+        }
+      ],
+      "featured": true
+    },
+    {
+      "id": "calla_bloom",
+      "slug": "calla-bloom",
+      "name": "Calla Bloom",
+      "colorway": "sage",
+      "description": {
+        "fr": "Une invitation interactive à volets, où les callas se déploient autour de vos noms.",
+        "en": "An interactive trifold gatefold invitation, calla lilies unfolding around your names.",
+        "de": "Eine interaktive Dreifach-Falteinladung, bei der sich Calla-Lilien um Ihre Namen entfalten."
+      },
+      "hero": "calla-bloom-bundle-1.jpg",
+      "gallery": [
+        "calla-bloom-bundle-1.jpg",
+        "calla-bloom-bundle-2.jpg",
+        "calla-bloom-bundle-3.jpg",
+        "calla-bloom-bundle-4.jpg",
+        "calla-bloom-bundle-5.jpg"
+      ],
+      "products": [
+        {
+          "type": "bundle",
+          "title": "Calla Lily Interactive Wedding Invitation, Sage Green Trifold Gatefold SVG, Cricut Print Then Cut",
+          "price": null,
+          "shopLink": "https://deardariaco.etsy.com/listing/4543756379/calla-lily-interactive-wedding",
+          "images": [
+            "calla-bloom-bundle-1.jpg",
+            "calla-bloom-bundle-2.jpg",
+            "calla-bloom-bundle-3.jpg",
+            "calla-bloom-bundle-4.jpg",
+            "calla-bloom-bundle-5.jpg"
+          ]
+        }
+      ],
+      "featured": true
+    },
+    {
+      "id": "calla_lily",
+      "slug": "calla-lily",
+      "name": "Calla Lily",
+      "colorway": "sage",
+      "description": {
+        "fr": "Callas épurés en vert sauge, pour un mariage moderne et botanique.",
+        "en": "Clean-lined calla lilies in sage green, for a modern, botanical wedding.",
+        "de": "Klar-linige Calla-Lilien in Salbeigrün, für eine moderne, botanische Hochzeit."
+      },
+      "hero": "calla-lily-bundle-1.jpg",
+      "gallery": [
+        "calla-lily-bundle-1.jpg",
+        "calla-lily-bundle-2.jpg",
+        "calla-lily-menu-3.jpg",
+        "calla-lily-menu-4.jpg",
+        "calla-lily-menu-5.jpg",
+        "calla-lily-menu-6.jpg",
+        "calla-lily-menu-7.jpg",
+        "calla-lily-menu-8.jpg",
+        "calla-lily-place-card-9.jpg",
+        "calla-lily-place-card-10.jpg",
+        "calla-lily-place-card-11.jpg",
+        "calla-lily-place-card-12.jpg",
+        "calla-lily-place-card-13.jpg",
+        "calla-lily-place-card-14.jpg",
+        "calla-lily-rsvp-15.jpg",
+        "calla-lily-rsvp-16.jpg",
+        "calla-lily-rsvp-17.jpg",
+        "calla-lily-rsvp-18.jpg",
+        "calla-lily-rsvp-19.jpg",
+        "calla-lily-rsvp-20.jpg",
+        "calla-lily-rsvp-21.jpg",
+        "calla-lily-rsvp-22.jpg",
+        "calla-lily-rsvp-23.jpg",
+        "calla-lily-save-the-date-24.jpg",
+        "calla-lily-save-the-date-25.jpg",
+        "calla-lily-save-the-date-26.jpg",
+        "calla-lily-save-the-date-27.jpg",
+        "calla-lily-save-the-date-28.jpg",
+        "calla-lily-save-the-date-29.jpg",
+        "calla-lily-save-the-date-30.jpg",
+        "calla-lily-save-the-date-31.jpg",
+        "calla-lily-save-the-date-32.jpg",
+        "calla-lily-save-the-date-33.jpg",
+        "calla-lily-save-the-date-34.jpg",
+        "calla-lily-sleeve-35.jpeg",
+        "calla-lily-sleeve-36.jpg",
+        "calla-lily-sleeve-37.jpg"
+      ],
+      "products": [
+        {
+          "type": "bundle",
+          "title": "Calla Lily Wedding Suite SVG Bundle, 7 Piece Template Set, Cricut Print Then Cut",
+          "price": 34.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4530990197/calla-lily-wedding-suite-svg-bundle-7",
+          "images": [
+            "calla-lily-bundle-1.jpg",
+            "calla-lily-bundle-2.jpg"
+          ]
+        },
+        {
+          "type": "menu",
+          "title": "Calla Lily Wedding Menu SVG, Sage Green Oval Card Template, Cricut Print Then Cut",
+          "price": 5.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4530938119/calla-lily-wedding-menu-svg-sage-green",
+          "images": [
+            "calla-lily-menu-3.jpg",
+            "calla-lily-menu-4.jpg",
+            "calla-lily-menu-5.jpg",
+            "calla-lily-menu-6.jpg",
+            "calla-lily-menu-7.jpg",
+            "calla-lily-menu-8.jpg"
+          ]
+        },
+        {
+          "type": "place_card",
+          "title": "Calla Lily Wedding Place Card SVG, Die-Cut Shaped Name Card, Cricut Print Then Cut",
+          "price": 5.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4530889425/calla-lily-wedding-place-card-svg-die",
+          "images": [
+            "calla-lily-place-card-9.jpg",
+            "calla-lily-place-card-10.jpg",
+            "calla-lily-place-card-11.jpg",
+            "calla-lily-place-card-12.jpg",
+            "calla-lily-place-card-13.jpg",
+            "calla-lily-place-card-14.jpg"
+          ]
+        },
+        {
+          "type": "rsvp",
+          "title": "Calla Lily Die-Cut RSVP Card Template for Cricut | Editable Wedding RSVP with QR Code | Print Then Cut Floral",
+          "price": 5.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4530788408/calla-lily-die-cut-rsvp-card-template",
+          "images": [
+            "calla-lily-rsvp-15.jpg",
+            "calla-lily-rsvp-16.jpg",
+            "calla-lily-rsvp-17.jpg",
+            "calla-lily-rsvp-18.jpg",
+            "calla-lily-rsvp-19.jpg",
+            "calla-lily-rsvp-20.jpg",
+            "calla-lily-rsvp-21.jpg",
+            "calla-lily-rsvp-22.jpg",
+            "calla-lily-rsvp-23.jpg"
+          ]
+        },
+        {
+          "type": "save_the_date",
+          "title": "Calla Lily Save the Date SVG, Arched Die-Cut Wedding Template, Cricut Print Then Cut",
+          "price": 5.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4530842191/calla-lily-save-the-date-svg-arched-die",
+          "images": [
+            "calla-lily-save-the-date-24.jpg",
+            "calla-lily-save-the-date-25.jpg",
+            "calla-lily-save-the-date-26.jpg",
+            "calla-lily-save-the-date-27.jpg",
+            "calla-lily-save-the-date-28.jpg",
+            "calla-lily-save-the-date-29.jpg",
+            "calla-lily-save-the-date-30.jpg",
+            "calla-lily-save-the-date-31.jpg",
+            "calla-lily-save-the-date-32.jpg",
+            "calla-lily-save-the-date-33.jpg",
+            "calla-lily-save-the-date-34.jpg"
+          ]
+        },
+        {
+          "type": "sleeve",
+          "title": "Calla Lily Wedding Invitation Pocket Sleeve SVG, Sage Green, Cricut Print Then Cut, 4 Sizes",
+          "price": 12.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4523967033/calla-lily-wedding-invitation-pocket",
+          "images": [
+            "calla-lily-sleeve-35.jpeg",
+            "calla-lily-sleeve-36.jpg",
+            "calla-lily-sleeve-37.jpg"
+          ]
+        }
+      ],
+      "featured": true
+    },
+    {
+      "id": "hummingbird",
+      "slug": "hummingbird-magnolia",
+      "name": "Hummingbird Magnolia",
+      "colorway": "blush",
+      "description": {
+        "fr": "Colibris et branches de magnolia, en pochette ou en enveloppe.",
+        "en": "Hummingbirds and magnolia branches, in sleeve and jacket silhouettes.",
+        "de": "Kolibris und Magnolienzweige, als Hülle oder Umschlag."
+      },
+      "hero": "hummingbird-bundle-1.jpg",
+      "gallery": [
+        "hummingbird-bundle-1.jpg",
+        "hummingbird-bundle-2.jpg",
+        "hummingbird-bundle-3.jpg",
+        "hummingbird-bundle-4.jpg",
+        "hummingbird-sleeve-5.jpg"
+      ],
+      "products": [
+        {
+          "type": "bundle",
+          "title": "Hummingbird Magnolia Bundle",
+          "price": null,
+          "shopLink": null,
+          "images": [
+            "hummingbird-bundle-1.jpg",
+            "hummingbird-bundle-2.jpg",
+            "hummingbird-bundle-3.jpg",
+            "hummingbird-bundle-4.jpg"
+          ]
+        },
+        {
+          "type": "sleeve",
+          "title": "Hummingbird Magnolia Sleeve",
+          "price": null,
+          "shopLink": null,
+          "images": [
+            "hummingbird-sleeve-5.jpg"
+          ]
+        }
+      ],
+      "featured": true
+    },
+    {
+      "id": "hydrangea",
+      "slug": "hydrangea",
+      "name": "Hydrangea",
+      "colorway": "dusty-blue",
+      "description": {
+        "fr": "Hortensias pleins et romantiques en bleu poudré, intemporels et inspirés du bord de mer.",
+        "en": "Full, romantic hydrangea blooms in dusty blue - coastal and timeless.",
+        "de": "Volle, romantische Hortensienblüten in Staubblau — küstennah und zeitlos."
+      },
+      "hero": "hydrangea-bundle-1.jpg",
+      "gallery": [
+        "hydrangea-bundle-1.jpg",
+        "hydrangea-save-the-date-2.jpg",
+        "hydrangea-save-the-date-3.jpg",
+        "hydrangea-save-the-date-4.jpg",
+        "hydrangea-save-the-date-5.jpg",
+        "hydrangea-place-card-6.jpg",
+        "hydrangea-place-card-7.jpg",
+        "hydrangea-place-card-8.jpg",
+        "hydrangea-place-card-9.jpg",
+        "hydrangea-rsvp-10.jpg",
+        "hydrangea-rsvp-11.jpg",
+        "hydrangea-rsvp-12.jpg",
+        "hydrangea-rsvp-13.jpg",
+        "hydrangea-menu-14.jpg",
+        "hydrangea-menu-15.jpg",
+        "hydrangea-menu-16.jpg",
+        "hydrangea-menu-17.jpg",
+        "hydrangea-menu-18.jpg",
+        "hydrangea-menu-19.jpg",
+        "hydrangea-sleeve-20.jpg",
+        "hydrangea-sleeve-21.jpg",
+        "hydrangea-sleeve-22.jpg",
+        "hydrangea-sleeve-23.jpg",
+        "hydrangea-sleeve-24.jpg",
+        "hydrangea-sleeve-25.jpg",
+        "hydrangea-sleeve-26.jpg",
+        "hydrangea-sleeve-27.jpg",
+        "hydrangea-sleeve-28.jpg",
+        "hydrangea-sleeve-29.jpg",
+        "hydrangea-sleeve-30.jpg",
+        "hydrangea-sleeve-31.jpg",
+        "hydrangea-sleeve-32.jpg"
+      ],
+      "products": [
+        {
+          "type": "bundle",
+          "title": "Hydrangea Wedding Suite SVG Bundle, Dusty Blue 7 Piece Template Set, Cricut Print Then Cut",
+          "price": 34.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4533949468/hydrangea-wedding-suite-svg-bundle-dusty",
+          "images": [
+            "hydrangea-bundle-1.jpg"
+          ]
+        },
+        {
+          "type": "save_the_date",
+          "title": "Hydrangea Save the Date SVG, Dusty Blue Card, Cricut Print Then Cut",
+          "price": 5.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4533836701/hydrangea-save-the-date-svg-dusty-blue",
+          "images": [
+            "hydrangea-save-the-date-2.jpg",
+            "hydrangea-save-the-date-3.jpg",
+            "hydrangea-save-the-date-4.jpg",
+            "hydrangea-save-the-date-5.jpg"
+          ]
+        },
+        {
+          "type": "place_card",
+          "title": "Hydrangea Wedding Place Card SVG, Dusty Blue Shaped Name Card, Cricut Print Then Cut",
+          "price": 5.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4533861707/hydrangea-wedding-place-card-svg-dusty",
+          "images": [
+            "hydrangea-place-card-6.jpg",
+            "hydrangea-place-card-7.jpg",
+            "hydrangea-place-card-8.jpg",
+            "hydrangea-place-card-9.jpg"
+          ]
+        },
+        {
+          "type": "rsvp",
+          "title": "Hydrangea Wedding RSVP Card SVG, Dusty Blue Shaped QR Reply, Cricut Print Then Cut",
+          "price": 5.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4533239885/hydrangea-wedding-rsvp-card-svg-dusty",
+          "images": [
+            "hydrangea-rsvp-10.jpg",
+            "hydrangea-rsvp-11.jpg",
+            "hydrangea-rsvp-12.jpg",
+            "hydrangea-rsvp-13.jpg"
+          ]
+        },
+        {
+          "type": "menu",
+          "title": "Hydrangea Wedding Menu SVG, Dusty Blue Card, Cricut Print Then Cut",
+          "price": 5.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4533400337/hydrangea-wedding-menu-svg-dusty-blue",
+          "images": [
+            "hydrangea-menu-14.jpg",
+            "hydrangea-menu-15.jpg",
+            "hydrangea-menu-16.jpg",
+            "hydrangea-menu-17.jpg",
+            "hydrangea-menu-18.jpg",
+            "hydrangea-menu-19.jpg"
+          ]
+        },
+        {
+          "type": "sleeve",
+          "title": "Hydrangea Rose Wedding Invitation Sleeve SVG, Mixed Floral Wrap, Cricut Print Then Cut, 4 Sizes",
+          "price": 12.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4529670738/hydrangea-rose-wedding-invitation-sleeve",
+          "images": [
+            "hydrangea-sleeve-20.jpg",
+            "hydrangea-sleeve-21.jpg",
+            "hydrangea-sleeve-22.jpg",
+            "hydrangea-sleeve-23.jpg",
+            "hydrangea-sleeve-24.jpg",
+            "hydrangea-sleeve-25.jpg",
+            "hydrangea-sleeve-26.jpg",
+            "hydrangea-sleeve-27.jpg",
+            "hydrangea-sleeve-28.jpg",
+            "hydrangea-sleeve-29.jpg",
+            "hydrangea-sleeve-30.jpg",
+            "hydrangea-sleeve-31.jpg",
+            "hydrangea-sleeve-32.jpg"
+          ]
+        }
+      ],
+      "featured": true
+    },
+    {
+      "id": "chapel",
+      "slug": "chapel-gatefold",
+      "name": "Chapel Gatefold",
+      "colorway": "ivory",
+      "description": {
+        "fr": "Une invitation à volets en forme de porte d'église, s'ouvrant sur la scène de la cérémonie.",
+        "en": "A church gatefold invitation, doors opening onto the ceremony scene.",
+        "de": "Eine Kirchen-Falteinladung, deren Türen sich zur Zeremonie öffnen."
+      },
+      "hero": "chapel-other-1.jpg",
+      "gallery": [
+        "chapel-other-1.jpg",
+        "chapel-other-2.jpg",
+        "chapel-other-3.jpg",
+        "chapel-other-4.jpg",
+        "chapel-other-5.jpg",
+        "chapel-other-6.jpg"
+      ],
+      "products": [
+        {
+          "type": "other",
+          "title": "Chapel Wedding Invitation Template SVG, Church Gatefold Cricut Print Then Cut, Door Opening Die Cut Card, 4 Sizes",
+          "price": 14.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4527793192/chapel-wedding-invitation-template-svg",
+          "images": [
+            "chapel-other-1.jpg",
+            "chapel-other-2.jpg",
+            "chapel-other-3.jpg",
+            "chapel-other-4.jpg",
+            "chapel-other-5.jpg",
+            "chapel-other-6.jpg"
+          ]
+        }
+      ],
+      "featured": false
+    },
+    {
+      "id": "cherry_blossom",
+      "slug": "cherry-blossom",
+      "name": "Cherry Blossom",
+      "colorway": "blush",
+      "description": {
+        "fr": "Branches de sakura en blush tendre — romantique et détail printanier.",
+        "en": "Sakura branches in soft blush - romantic, springtime detail.",
+        "de": "Sakura-Zweige in zartem Blush — romantisches Frühlingsdetail."
+      },
+      "hero": "cherry-blossom-bundle-1.jpg",
+      "gallery": [
+        "cherry-blossom-bundle-1.jpg",
+        "cherry-blossom-sleeve-2.jpg",
+        "cherry-blossom-sleeve-3.jpg",
+        "cherry-blossom-sleeve-4.jpg",
+        "cherry-blossom-sleeve-5.jpg",
+        "cherry-blossom-sleeve-6.jpg",
+        "cherry-blossom-sleeve-7.jpg",
+        "cherry-blossom-sleeve-8.jpg"
+      ],
+      "products": [
+        {
+          "type": "bundle",
+          "title": "Cherry Blossom Wedding Suite Bundle | Cricut Invitation Jacket & Envelope Liner | Editable Canva Invitation, RSVP, Save The Date, Menu",
+          "price": 31.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4524577162/cherry-blossom-wedding-suite-bundle",
+          "images": [
+            "cherry-blossom-bundle-1.jpg"
+          ]
+        },
+        {
+          "type": "sleeve",
+          "title": "Cherry Blossom Wedding Invitation Jacket SVG, Sakura Floral Wrap, Cricut Print Then Cut, Blush DIY, 4 sizes",
+          "price": 12.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4520881260/cherry-blossom-wedding-invitation-jacket",
+          "images": [
+            "cherry-blossom-sleeve-2.jpg",
+            "cherry-blossom-sleeve-3.jpg",
+            "cherry-blossom-sleeve-4.jpg",
+            "cherry-blossom-sleeve-5.jpg",
+            "cherry-blossom-sleeve-6.jpg",
+            "cherry-blossom-sleeve-7.jpg",
+            "cherry-blossom-sleeve-8.jpg"
+          ]
+        }
+      ],
+      "featured": false
+    },
+    {
+      "id": "coastal_villa",
+      "slug": "coastal-villa",
+      "name": "Coastal Villa",
+      "colorway": "dusty-blue",
+      "description": {
+        "fr": "Scènes de falaises et traits côtiers pour une célébration de destination.",
+        "en": "Cliffside scenes and coastal linework for a destination celebration.",
+        "de": "Kliffszenen und küstennahe Liniengrafik für eine Destination-Feier."
+      },
+      "hero": "coastal-villa-sleeve-23.jpg",
+      "gallery": [
+        "coastal-villa-rsvp-1.jpg",
+        "coastal-villa-rsvp-2.jpg",
+        "coastal-villa-rsvp-3.jpg",
+        "coastal-villa-rsvp-4.jpg",
+        "coastal-villa-rsvp-5.jpg",
+        "coastal-villa-rsvp-6.jpg",
+        "coastal-villa-rsvp-7.jpg",
+        "coastal-villa-rsvp-8.jpg",
+        "coastal-villa-save-the-date-9.jpg",
+        "coastal-villa-save-the-date-10.jpg",
+        "coastal-villa-save-the-date-11.jpg",
+        "coastal-villa-save-the-date-12.jpg",
+        "coastal-villa-save-the-date-13.jpg",
+        "coastal-villa-save-the-date-14.jpg",
+        "coastal-villa-save-the-date-15.jpg",
+        "coastal-villa-menu-16.jpg",
+        "coastal-villa-menu-17.jpg",
+        "coastal-villa-menu-18.jpg",
+        "coastal-villa-menu-19.jpg",
+        "coastal-villa-menu-20.jpg",
+        "coastal-villa-menu-21.jpg",
+        "coastal-villa-menu-22.jpg",
+        "coastal-villa-sleeve-23.jpg",
+        "coastal-villa-sleeve-24.jpg",
+        "coastal-villa-sleeve-25.jpg",
+        "coastal-villa-sleeve-26.jpg",
+        "coastal-villa-sleeve-27.jpg",
+        "coastal-villa-sleeve-28.jpg",
+        "coastal-villa-sleeve-29.jpg",
+        "coastal-villa-sleeve-30.jpg"
+      ],
+      "products": [
+        {
+          "type": "rsvp",
+          "title": "Coastal RSVP Message in a Bottle Wedding Card SVG, Slide Out, Cricut Print Then Cut",
+          "price": 6.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4535575006/coastal-rsvp-message-in-a-bottle-wedding",
+          "images": [
+            "coastal-villa-rsvp-1.jpg",
+            "coastal-villa-rsvp-2.jpg",
+            "coastal-villa-rsvp-3.jpg",
+            "coastal-villa-rsvp-4.jpg",
+            "coastal-villa-rsvp-5.jpg",
+            "coastal-villa-rsvp-6.jpg",
+            "coastal-villa-rsvp-7.jpg",
+            "coastal-villa-rsvp-8.jpg"
+          ]
+        },
+        {
+          "type": "save_the_date",
+          "title": "Coastal Villa Wedding Save the Date SVG, Cliffside Scene Card, Cricut Print Then Cut",
+          "price": 5.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4535075509/coastal-villa-wedding-save-the-date-svg",
+          "images": [
+            "coastal-villa-save-the-date-9.jpg",
+            "coastal-villa-save-the-date-10.jpg",
+            "coastal-villa-save-the-date-11.jpg",
+            "coastal-villa-save-the-date-12.jpg",
+            "coastal-villa-save-the-date-13.jpg",
+            "coastal-villa-save-the-date-14.jpg",
+            "coastal-villa-save-the-date-15.jpg"
+          ]
+        },
+        {
+          "type": "menu",
+          "title": "Coastal Wedding Menu SVG, Lighthouse Scene Card, Cricut Print Then Cut",
+          "price": 5.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4537633096/coastal-wedding-menu-svg-lighthouse",
+          "images": [
+            "coastal-villa-menu-16.jpg",
+            "coastal-villa-menu-17.jpg",
+            "coastal-villa-menu-18.jpg",
+            "coastal-villa-menu-19.jpg",
+            "coastal-villa-menu-20.jpg",
+            "coastal-villa-menu-21.jpg",
+            "coastal-villa-menu-22.jpg"
+          ]
+        },
+        {
+          "type": "sleeve",
+          "title": "Coastal Town Wedding Invitation Sleeve SVG, Seaside Skyline Wrap, Cricut Print Then Cut, 4 Sizes",
+          "price": 12.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4537087953/coastal-town-wedding-invitation-sleeve",
+          "images": [
+            "coastal-villa-sleeve-23.jpg",
+            "coastal-villa-sleeve-24.jpg",
+            "coastal-villa-sleeve-25.jpg",
+            "coastal-villa-sleeve-26.jpg",
+            "coastal-villa-sleeve-27.jpg",
+            "coastal-villa-sleeve-28.jpg",
+            "coastal-villa-sleeve-29.jpg",
+            "coastal-villa-sleeve-30.jpg"
+          ]
+        }
+      ],
+      "featured": false
+    },
+    {
+      "id": "floral_bouquet",
+      "slug": "floral-bouquet",
+      "name": "Floral Bouquet",
+      "colorway": "blush",
+      "description": {
+        "fr": "Un motif de bouquet floral classique en blush tendre.",
+        "en": "A classic floral bouquet motif in soft blush.",
+        "de": "Ein klassisches Blumenstraußmotiv in zartem Blush."
+      },
+      "hero": "floral-bouquet-sleeve-1.jpg",
+      "gallery": [
+        "floral-bouquet-sleeve-1.jpg",
+        "floral-bouquet-sleeve-2.jpg",
+        "floral-bouquet-sleeve-3.jpg",
+        "floral-bouquet-sleeve-4.jpg",
+        "floral-bouquet-sleeve-5.jpg",
+        "floral-bouquet-sleeve-6.jpg",
+        "floral-bouquet-sleeve-7.jpg"
+      ],
+      "products": [
+        {
+          "type": "sleeve",
+          "title": "Floral Bouquet Wedding Invitation Sleeve SVG, Blush Wrap, Cricut Print Then Cut, 4 Sizes",
+          "price": 12.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4521690452/floral-wedding-invitation-sleeve-wrap",
+          "images": [
+            "floral-bouquet-sleeve-1.jpg",
+            "floral-bouquet-sleeve-2.jpg",
+            "floral-bouquet-sleeve-3.jpg",
+            "floral-bouquet-sleeve-4.jpg",
+            "floral-bouquet-sleeve-5.jpg",
+            "floral-bouquet-sleeve-6.jpg",
+            "floral-bouquet-sleeve-7.jpg"
+          ]
+        }
+      ],
+      "featured": false
+    },
+    {
+      "id": "freesia",
+      "slug": "freesia",
+      "name": "Freesia",
+      "colorway": "sage",
+      "description": {
+        "fr": "Fines grappes de frésias en vert sauge, aériennes et fantaisistes.",
+        "en": "Delicate freesia sprays in sage, airy and whimsical.",
+        "de": "Zarte Fresienzweige in Salbei, luftig und verspielt."
+      },
+      "hero": "freesia-bundle-1.jpg",
+      "gallery": [
+        "freesia-bundle-1.jpg",
+        "freesia-place-card-2.jpg",
+        "freesia-place-card-3.jpg",
+        "freesia-place-card-4.jpg",
+        "freesia-place-card-5.jpg",
+        "freesia-place-card-6.jpg",
+        "freesia-place-card-7.jpg",
+        "freesia-rsvp-8.jpg",
+        "freesia-rsvp-9.jpg",
+        "freesia-rsvp-10.jpg",
+        "freesia-rsvp-11.jpg",
+        "freesia-rsvp-12.jpg",
+        "freesia-rsvp-13.jpg",
+        "freesia-rsvp-14.jpg",
+        "freesia-save-the-date-15.jpg",
+        "freesia-save-the-date-16.jpg",
+        "freesia-save-the-date-17.jpg",
+        "freesia-save-the-date-18.jpg",
+        "freesia-save-the-date-19.jpg",
+        "freesia-save-the-date-20.jpg",
+        "freesia-save-the-date-21.jpg",
+        "freesia-save-the-date-22.jpg",
+        "freesia-menu-23.jpg",
+        "freesia-menu-24.jpg",
+        "freesia-menu-25.jpg",
+        "freesia-menu-26.jpg",
+        "freesia-menu-27.jpg",
+        "freesia-sleeve-28.jpg",
+        "freesia-sleeve-29.jpg",
+        "freesia-sleeve-30.jpg",
+        "freesia-sleeve-31.jpg",
+        "freesia-sleeve-32.jpg",
+        "freesia-sleeve-33.jpg",
+        "freesia-sleeve-34.jpg",
+        "freesia-sleeve-35.jpg",
+        "freesia-sleeve-36.jpg",
+        "freesia-sleeve-37.jpg",
+        "freesia-sleeve-38.jpg",
+        "freesia-sleeve-39.jpg",
+        "freesia-sleeve-40.jpg",
+        "freesia-sleeve-41.jpg"
+      ],
+      "products": [
+        {
+          "type": "bundle",
+          "title": "Freesia Wedding Suite SVG Bundle, Sage Green 7 Piece Template Set, Cricut Print Then Cut",
+          "price": 34.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4532113223/freesia-wedding-suite-svg-bundle-sage",
+          "images": [
+            "freesia-bundle-1.jpg"
+          ]
+        },
+        {
+          "type": "place_card",
+          "title": "Freesia Wedding Place Card SVG, Die-Cut Shaped Name Card, Cricut Print Then Cut",
+          "price": 5.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4532042442/freesia-wedding-place-card-svg-die-cut",
+          "images": [
+            "freesia-place-card-2.jpg",
+            "freesia-place-card-3.jpg",
+            "freesia-place-card-4.jpg",
+            "freesia-place-card-5.jpg",
+            "freesia-place-card-6.jpg",
+            "freesia-place-card-7.jpg"
+          ]
+        },
+        {
+          "type": "rsvp",
+          "title": "Freesia Wedding RSVP Card SVG, Shaped QR Reply, Cricut Print Then Cut",
+          "price": 5.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4531982037/freesia-wedding-rsvp-card-svg-shaped-qr",
+          "images": [
+            "freesia-rsvp-8.jpg",
+            "freesia-rsvp-9.jpg",
+            "freesia-rsvp-10.jpg",
+            "freesia-rsvp-11.jpg",
+            "freesia-rsvp-12.jpg",
+            "freesia-rsvp-13.jpg",
+            "freesia-rsvp-14.jpg"
+          ]
+        },
+        {
+          "type": "save_the_date",
+          "title": "Freesia Save the Date SVG, Botanical Wedding Template, Cricut Print Then Cut",
+          "price": 5.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4532006781/freesia-save-the-date-svg-botanical",
+          "images": [
+            "freesia-save-the-date-15.jpg",
+            "freesia-save-the-date-16.jpg",
+            "freesia-save-the-date-17.jpg",
+            "freesia-save-the-date-18.jpg",
+            "freesia-save-the-date-19.jpg",
+            "freesia-save-the-date-20.jpg",
+            "freesia-save-the-date-21.jpg",
+            "freesia-save-the-date-22.jpg"
+          ]
+        },
+        {
+          "type": "menu",
+          "title": "Freesia Wedding Menu SVG, Sage Green Card Template, Cricut Print Then Cut",
+          "price": 5.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4532052991/freesia-wedding-menu-svg-sage-green-card",
+          "images": [
+            "freesia-menu-23.jpg",
+            "freesia-menu-24.jpg",
+            "freesia-menu-25.jpg",
+            "freesia-menu-26.jpg",
+            "freesia-menu-27.jpg"
+          ]
+        },
+        {
+          "type": "sleeve",
+          "title": "Freesia Wedding Invitation Sleeve SVG, Botanical Floral Wrap, Cricut Print Then Cut, 4 Sizes",
+          "price": 12.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4531935025/freesia-wedding-invitation-sleeve-svg",
+          "images": [
+            "freesia-sleeve-28.jpg",
+            "freesia-sleeve-29.jpg",
+            "freesia-sleeve-30.jpg",
+            "freesia-sleeve-31.jpg",
+            "freesia-sleeve-32.jpg",
+            "freesia-sleeve-33.jpg",
+            "freesia-sleeve-34.jpg",
+            "freesia-sleeve-35.jpg",
+            "freesia-sleeve-36.jpg",
+            "freesia-sleeve-37.jpg",
+            "freesia-sleeve-38.jpg",
+            "freesia-sleeve-39.jpg",
+            "freesia-sleeve-40.jpg",
+            "freesia-sleeve-41.jpg"
+          ]
+        }
+      ],
+      "featured": false
+    },
+    {
+      "id": "gatefold_garden",
+      "slug": "garden-gate",
+      "name": "Garden Gate",
+      "colorway": "sage",
+      "description": {
+        "fr": "Un motif de portail de jardin s'ouvrant sur une scène de château.",
+        "en": "A garden gate motif opening onto a chateau venue scene.",
+        "de": "Ein Gartentor-Motiv, das sich zu einer Schlossszene öffnet."
+      },
+      "hero": "gatefold-garden-other-1.jpg",
+      "gallery": [
+        "gatefold-garden-other-1.jpg",
+        "gatefold-garden-other-2.jpg",
+        "gatefold-garden-other-3.jpg",
+        "gatefold-garden-other-4.jpg",
+        "gatefold-garden-other-5.jpg",
+        "gatefold-garden-other-6.jpg"
+      ],
+      "products": [
+        {
+          "type": "other",
+          "title": "Gatefold Wedding Invitation Template SVG, Garden Gate Cricut Print Then Cut, Château Venue Die Cut Card, 4 Sizes",
+          "price": 14.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4527278934/gatefold-wedding-invitation-template-svg",
+          "images": [
+            "gatefold-garden-other-1.jpg",
+            "gatefold-garden-other-2.jpg",
+            "gatefold-garden-other-3.jpg",
+            "gatefold-garden-other-4.jpg",
+            "gatefold-garden-other-5.jpg",
+            "gatefold-garden-other-6.jpg"
+          ]
+        }
+      ],
+      "featured": false
+    },
+    {
+      "id": "iris",
+      "slug": "iris",
+      "name": "Iris",
+      "colorway": "dusty-blue",
+      "description": {
+        "fr": "Iris botaniques en bleu poudré, élégants et inspirés du jardin.",
+        "en": "Dusty blue iris botanicals, elegant and garden-inspired.",
+        "de": "Staubblaue Iris-Motive, elegant und garteninspiriert."
+      },
+      "hero": "iris-sleeve-1.jpg",
+      "gallery": [
+        "iris-sleeve-1.jpg",
+        "iris-sleeve-2.jpg",
+        "iris-sleeve-3.jpg"
+      ],
+      "products": [
+        {
+          "type": "sleeve",
+          "title": "Iris Wedding Invitation Sleeve SVG, Dusty Blue Floral Wrap, Cricut Print Then Cut, Canva Template",
+          "price": 12.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4526682922/iris-wedding-invitation-sleeve-svg-dusty",
+          "images": [
+            "iris-sleeve-1.jpg",
+            "iris-sleeve-2.jpg",
+            "iris-sleeve-3.jpg"
+          ]
+        }
+      ],
+      "featured": false
+    },
+    {
+      "id": "lily",
+      "slug": "lily",
+      "name": "Lily",
+      "colorway": "dusty-blue",
+      "description": {
+        "fr": "Lys gracieux en bleu poudré, inspirés du jardin et intemporels.",
+        "en": "Graceful lilies in dusty blue, garden-inspired and classic.",
+        "de": "Anmutige Lilien in Staubblau, garteninspiriert und klassisch."
+      },
+      "hero": "lily-bundle-1.jpg",
+      "gallery": [
+        "lily-bundle-1.jpg",
+        "lily-bundle-2.jpg",
+        "lily-menu-3.jpg",
+        "lily-menu-4.jpg",
+        "lily-menu-5.jpg",
+        "lily-menu-6.jpg",
+        "lily-menu-7.jpg",
+        "lily-menu-8.jpg",
+        "lily-place-card-9.jpg",
+        "lily-place-card-10.jpg",
+        "lily-place-card-11.jpg",
+        "lily-place-card-12.jpg",
+        "lily-place-card-13.jpg",
+        "lily-place-card-14.jpg",
+        "lily-place-card-15.jpg",
+        "lily-rsvp-16.jpg",
+        "lily-rsvp-17.jpg",
+        "lily-rsvp-18.jpg",
+        "lily-rsvp-19.jpg",
+        "lily-rsvp-20.jpg",
+        "lily-save-the-date-21.jpg",
+        "lily-save-the-date-22.jpg",
+        "lily-save-the-date-23.jpg",
+        "lily-save-the-date-24.jpg",
+        "lily-save-the-date-25.jpg",
+        "lily-save-the-date-26.jpg",
+        "lily-save-the-date-27.jpg",
+        "lily-sleeve-28.jpg",
+        "lily-sleeve-29.jpg",
+        "lily-sleeve-30.jpg",
+        "lily-sleeve-31.jpg",
+        "lily-sleeve-32.jpg",
+        "lily-sleeve-33.jpg",
+        "lily-sleeve-34.jpg",
+        "lily-sleeve-35.jpg",
+        "lily-sleeve-36.jpg",
+        "lily-sleeve-37.jpg",
+        "lily-sleeve-38.jpg",
+        "lily-sleeve-39.jpg",
+        "lily-sleeve-40.jpg",
+        "lily-sleeve-41.jpg",
+        "lily-sleeve-42.jpg",
+        "lily-sleeve-43.jpg"
+      ],
+      "products": [
+        {
+          "type": "bundle",
+          "title": "Lily Wedding Suite SVG Bundle, Dusty Blue 7 Piece Template Set, Cricut Print Then Cut",
+          "price": 34.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4531485753/lily-wedding-suite-svg-bundle-dusty-blue",
+          "images": [
+            "lily-bundle-1.jpg",
+            "lily-bundle-2.jpg"
+          ]
+        },
+        {
+          "type": "menu",
+          "title": "Lily Wedding Menu SVG, Dusty Blue Arched Card, Cricut Print Then Cut",
+          "price": 5.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4531426797/lily-wedding-menu-svg-dusty-blue-arched",
+          "images": [
+            "lily-menu-3.jpg",
+            "lily-menu-4.jpg",
+            "lily-menu-5.jpg",
+            "lily-menu-6.jpg",
+            "lily-menu-7.jpg",
+            "lily-menu-8.jpg"
+          ]
+        },
+        {
+          "type": "place_card",
+          "title": "Lily Wedding Place Card SVG, Dusty Blue Shaped Name Card, Cricut Print Then Cut",
+          "price": 5.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4531385405/lily-wedding-place-card-svg-dusty-blue",
+          "images": [
+            "lily-place-card-9.jpg",
+            "lily-place-card-10.jpg",
+            "lily-place-card-11.jpg",
+            "lily-place-card-12.jpg",
+            "lily-place-card-13.jpg",
+            "lily-place-card-14.jpg",
+            "lily-place-card-15.jpg"
+          ]
+        },
+        {
+          "type": "rsvp",
+          "title": "Lily Wedding RSVP Card SVG, Dusty Blue Shaped Reply, Cricut Print Then Cut, Die-Cut",
+          "price": 5.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4531352586/lily-wedding-rsvp-card-svg-dusty-blue",
+          "images": [
+            "lily-rsvp-16.jpg",
+            "lily-rsvp-17.jpg",
+            "lily-rsvp-18.jpg",
+            "lily-rsvp-19.jpg",
+            "lily-rsvp-20.jpg"
+          ]
+        },
+        {
+          "type": "save_the_date",
+          "title": "Lily Save the Date SVG, Dusty Blue Wedding Template, Cricut Print Then Cut",
+          "price": 5.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4531470922/lily-save-the-date-svg-dusty-blue",
+          "images": [
+            "lily-save-the-date-21.jpg",
+            "lily-save-the-date-22.jpg",
+            "lily-save-the-date-23.jpg",
+            "lily-save-the-date-24.jpg",
+            "lily-save-the-date-25.jpg",
+            "lily-save-the-date-26.jpg",
+            "lily-save-the-date-27.jpg"
+          ]
+        },
+        {
+          "type": "sleeve",
+          "title": "Lily Wedding Invitation Jacket SVG, Dusty Blue Wrap, Cricut Print Then Cut, 4 Sizes",
+          "price": 12.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4523429680/lily-wedding-invitation-jacket-template",
+          "images": [
+            "lily-sleeve-28.jpg",
+            "lily-sleeve-29.jpg",
+            "lily-sleeve-30.jpg",
+            "lily-sleeve-31.jpg",
+            "lily-sleeve-32.jpg",
+            "lily-sleeve-33.jpg",
+            "lily-sleeve-34.jpg",
+            "lily-sleeve-35.jpg",
+            "lily-sleeve-36.jpg",
+            "lily-sleeve-37.jpg",
+            "lily-sleeve-38.jpg",
+            "lily-sleeve-39.jpg",
+            "lily-sleeve-40.jpg",
+            "lily-sleeve-41.jpg",
+            "lily-sleeve-42.jpg",
+            "lily-sleeve-43.jpg"
+          ]
+        }
+      ],
+      "featured": false
+    },
+    {
+      "id": "mixed_floral",
+      "slug": "mixed-floral",
+      "name": "Mixed Floral",
+      "colorway": "blush",
+      "description": {
+        "fr": "Un bouquet de jardin mélangé en blush, romantique et généreux.",
+        "en": "A mixed garden bouquet in blush, romantic and abundant.",
+        "de": "Ein gemischter Gartenstrauß in Blush, romantisch und üppig."
+      },
+      "hero": "mixed-floral-sleeve-1.jpg",
+      "gallery": [
+        "mixed-floral-sleeve-1.jpg",
+        "mixed-floral-sleeve-2.jpg",
+        "mixed-floral-sleeve-3.jpg",
+        "mixed-floral-sleeve-4.jpg",
+        "mixed-floral-sleeve-5.jpg",
+        "mixed-floral-sleeve-6.jpg"
+      ],
+      "products": [
+        {
+          "type": "sleeve",
+          "title": "Mixed Floral Wedding Invitation Sleeve SVG, Blush Floral Wrap, Cricut Print Then Cut, 4 Sizes",
+          "price": 12.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4529209980/mixed-floral-wedding-invitation-sleeve",
+          "images": [
+            "mixed-floral-sleeve-1.jpg",
+            "mixed-floral-sleeve-2.jpg",
+            "mixed-floral-sleeve-3.jpg",
+            "mixed-floral-sleeve-4.jpg",
+            "mixed-floral-sleeve-5.jpg",
+            "mixed-floral-sleeve-6.jpg"
+          ]
+        }
+      ],
+      "featured": false
+    },
+    {
+      "id": "olive_branch",
+      "slug": "olive-branch",
+      "name": "Olive Branch",
+      "colorway": "sage",
+      "description": {
+        "fr": "Rameaux d'olivier méditerranéens, minimalistes et prêts pour une destination.",
+        "en": "Mediterranean olive branches, minimal and destination-ready.",
+        "de": "Mediterrane Olivenzweige, minimalistisch und reisebereit."
+      },
+      "hero": "olive-branch-sleeve-1.jpg",
+      "gallery": [
+        "olive-branch-sleeve-1.jpg",
+        "olive-branch-sleeve-2.jpg",
+        "olive-branch-sleeve-3.jpg",
+        "olive-branch-sleeve-4.jpg",
+        "olive-branch-sleeve-5.jpg",
+        "olive-branch-sleeve-6.jpg"
+      ],
+      "products": [
+        {
+          "type": "sleeve",
+          "title": "Olive Branch Wedding Invitation Pocket Sleeve SVG, Cricut Print Then Cut Template, 4 Sizes",
+          "price": 12.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4530288878/olive-branch-wedding-invitation-pocket",
+          "images": [
+            "olive-branch-sleeve-1.jpg",
+            "olive-branch-sleeve-2.jpg",
+            "olive-branch-sleeve-3.jpg",
+            "olive-branch-sleeve-4.jpg",
+            "olive-branch-sleeve-5.jpg",
+            "olive-branch-sleeve-6.jpg"
+          ]
+        }
+      ],
+      "featured": false
+    },
+    {
+      "id": "orange_blossom",
+      "slug": "orange-blossom",
+      "name": "Orange Blossom",
+      "colorway": "terracotta",
+      "description": {
+        "fr": "Fleurs d'agrumes en terracotta chaud, pour un mariage d'été italien.",
+        "en": "Citrus blossoms in warm terracotta for an Italian summer wedding.",
+        "de": "Zitrusblüten in warmem Terrakotta für eine italienische Sommerhochzeit."
+      },
+      "hero": "orange-blossom-sleeve-1.jpg",
+      "gallery": [
+        "orange-blossom-sleeve-1.jpg",
+        "orange-blossom-sleeve-2.jpg",
+        "orange-blossom-sleeve-3.jpg",
+        "orange-blossom-sleeve-4.jpg",
+        "orange-blossom-sleeve-5.jpg",
+        "orange-blossom-sleeve-6.jpg"
+      ],
+      "products": [
+        {
+          "type": "sleeve",
+          "title": "Orange Blossom Wedding Invitation Sleeve SVG, Citrus Floral Wrap, Cricut Print Then Cut, 4 Sizes",
+          "price": 12.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4530338574/orange-blossom-wedding-invitation-sleeve",
+          "images": [
+            "orange-blossom-sleeve-1.jpg",
+            "orange-blossom-sleeve-2.jpg",
+            "orange-blossom-sleeve-3.jpg",
+            "orange-blossom-sleeve-4.jpg",
+            "orange-blossom-sleeve-5.jpg",
+            "orange-blossom-sleeve-6.jpg"
+          ]
+        }
+      ],
+      "featured": false
+    },
+    {
+      "id": "peony",
+      "slug": "peony",
+      "name": "Peony",
+      "colorway": "blush",
+      "description": {
+        "fr": "Pivoines blush généreuses, romantiques et pleines.",
+        "en": "Full blush peonies, romantic and lush.",
+        "de": "Volle Blush-Pfingstrosen, romantisch und üppig."
+      },
+      "hero": "peony-sleeve-1.jpg",
+      "gallery": [
+        "peony-sleeve-1.jpg",
+        "peony-sleeve-2.jpg",
+        "peony-sleeve-3.jpg",
+        "peony-sleeve-4.jpg",
+        "peony-sleeve-5.jpg",
+        "peony-sleeve-6.jpg",
+        "peony-sleeve-7.jpg",
+        "peony-sleeve-8.jpg",
+        "peony-sleeve-9.jpg",
+        "peony-sleeve-10.jpg",
+        "peony-sleeve-11.jpg",
+        "peony-sleeve-12.jpg",
+        "peony-sleeve-13.jpg",
+        "peony-sleeve-14.jpg",
+        "peony-sleeve-15.jpg",
+        "peony-sleeve-16.jpg"
+      ],
+      "products": [
+        {
+          "type": "sleeve",
+          "title": "Peony Wedding Invitation Jacket SVG, Blush Floral Wrap, Cricut Print Then Cut, 4 Sizes",
+          "price": 12.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4521188252/peony-wedding-invitation-jacket-svg",
+          "images": [
+            "peony-sleeve-1.jpg",
+            "peony-sleeve-2.jpg",
+            "peony-sleeve-3.jpg",
+            "peony-sleeve-4.jpg",
+            "peony-sleeve-5.jpg",
+            "peony-sleeve-6.jpg",
+            "peony-sleeve-7.jpg",
+            "peony-sleeve-8.jpg",
+            "peony-sleeve-9.jpg",
+            "peony-sleeve-10.jpg",
+            "peony-sleeve-11.jpg",
+            "peony-sleeve-12.jpg",
+            "peony-sleeve-13.jpg",
+            "peony-sleeve-14.jpg",
+            "peony-sleeve-15.jpg",
+            "peony-sleeve-16.jpg"
+          ]
+        }
+      ],
+      "featured": false
+    },
+    {
+      "id": "lavender",
+      "slug": "provence-lavender",
+      "name": "Provence Lavender",
+      "colorway": "lavender",
+      "description": {
+        "fr": "Champs de lavande de Provence, dessinés en fins traits violets.",
+        "en": "Provence lavender fields rendered in soft violet linework.",
+        "de": "Provenzalische Lavendelfelder in zarter violetter Liniengrafik."
+      },
+      "hero": "lavender-sleeve-1.jpg",
+      "gallery": [
+        "lavender-sleeve-1.jpg",
+        "lavender-sleeve-2.jpg",
+        "lavender-sleeve-3.jpg",
+        "lavender-sleeve-4.jpg",
+        "lavender-sleeve-5.jpg",
+        "lavender-sleeve-6.jpg",
+        "lavender-sleeve-7.jpg",
+        "lavender-sleeve-8.jpg"
+      ],
+      "products": [
+        {
+          "type": "sleeve",
+          "title": "Provence Lavender Wedding Invitation Sleeve SVG, Floral Wrap, Cricut Print Then Cut, 4 Sizes",
+          "price": 12.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4522121514/provence-lavender-wedding-invitation",
+          "images": [
+            "lavender-sleeve-1.jpg",
+            "lavender-sleeve-2.jpg",
+            "lavender-sleeve-3.jpg",
+            "lavender-sleeve-4.jpg",
+            "lavender-sleeve-5.jpg",
+            "lavender-sleeve-6.jpg",
+            "lavender-sleeve-7.jpg",
+            "lavender-sleeve-8.jpg"
+          ]
+        }
+      ],
+      "featured": false
+    },
+    {
+      "id": "seashell",
+      "slug": "seashell",
+      "name": "Seashell",
+      "colorway": "dusty-blue",
+      "description": {
+        "fr": "Coquillages et étoiles de mer pour un mariage au bord de l'océan.",
+        "en": "Nautical shell and starfish motifs for a seaside wedding.",
+        "de": "Maritime Muschel- und Seesternmotive für eine Hochzeit am Meer."
+      },
+      "hero": "seashell-bundle-1.jpg",
+      "gallery": [
+        "seashell-bundle-1.jpg",
+        "seashell-bundle-2.jpg",
+        "seashell-rsvp-3.jpg",
+        "seashell-rsvp-4.jpg",
+        "seashell-rsvp-5.jpg",
+        "seashell-rsvp-6.jpg",
+        "seashell-glass-tag-7.jpg",
+        "seashell-glass-tag-8.jpg",
+        "seashell-glass-tag-9.jpg",
+        "seashell-glass-tag-10.jpg",
+        "seashell-glass-tag-11.jpg",
+        "seashell-place-card-12.jpg",
+        "seashell-place-card-13.jpg",
+        "seashell-place-card-14.jpg",
+        "seashell-place-card-15.jpg",
+        "seashell-place-card-24.jpg",
+        "seashell-place-card-25.jpg",
+        "seashell-place-card-26.jpg",
+        "seashell-place-card-27.jpg",
+        "seashell-place-card-28.jpg",
+        "seashell-place-card-29.jpg",
+        "seashell-menu-16.jpg",
+        "seashell-menu-17.jpg",
+        "seashell-menu-18.jpg",
+        "seashell-menu-19.jpg",
+        "seashell-menu-20.jpg",
+        "seashell-menu-21.jpg",
+        "seashell-menu-22.jpg",
+        "seashell-menu-23.jpg",
+        "seashell-save-the-date-30.jpg",
+        "seashell-save-the-date-31.jpg",
+        "seashell-save-the-date-32.jpg",
+        "seashell-save-the-date-33.jpg",
+        "seashell-save-the-date-34.jpg",
+        "seashell-sleeve-35.jpg",
+        "seashell-sleeve-36.jpg",
+        "seashell-sleeve-37.jpg",
+        "seashell-sleeve-38.jpg",
+        "seashell-sleeve-39.jpg",
+        "seashell-sleeve-40.jpg",
+        "seashell-sleeve-41.jpg",
+        "seashell-sleeve-42.jpg",
+        "seashell-sleeve-43.jpg",
+        "seashell-sleeve-44.jpg"
+      ],
+      "products": [
+        {
+          "type": "bundle",
+          "title": "Seashell Wedding Suite SVG Bundle, Dusty Blue 7 Piece Template Set, Cricut Print Then Cut",
+          "price": 34.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4535749235/seashell-wedding-suite-svg-bundle-dusty",
+          "images": [
+            "seashell-bundle-1.jpg",
+            "seashell-bundle-2.jpg"
+          ]
+        },
+        {
+          "type": "rsvp",
+          "title": "Coral Wedding RSVP Card SVG, Shaped QR Reply, Cricut Print Then Cut",
+          "price": 5.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4536949376/coral-wedding-rsvp-card-svg-shaped-qr",
+          "images": [
+            "seashell-rsvp-3.jpg",
+            "seashell-rsvp-4.jpg",
+            "seashell-rsvp-5.jpg",
+            "seashell-rsvp-6.jpg"
+          ]
+        },
+        {
+          "type": "glass_tag",
+          "title": "Lifebuoy Wedding Glass Tag SVG, Nautical Wine Charm, Cricut Print Then Cut",
+          "price": 5.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4537561538/lifebuoy-wedding-glass-tag-svg-nautical",
+          "images": [
+            "seashell-glass-tag-7.jpg",
+            "seashell-glass-tag-8.jpg",
+            "seashell-glass-tag-9.jpg",
+            "seashell-glass-tag-10.jpg",
+            "seashell-glass-tag-11.jpg"
+          ]
+        },
+        {
+          "type": "place_card",
+          "title": "Seashell Wedding Place Card SVG, Shaped Name Card, Cricut Print Then Cut",
+          "price": 5.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4535110602/seashell-wedding-place-card-svg-shaped",
+          "images": [
+            "seashell-place-card-12.jpg",
+            "seashell-place-card-13.jpg",
+            "seashell-place-card-14.jpg",
+            "seashell-place-card-15.jpg",
+            "seashell-place-card-24.jpg",
+            "seashell-place-card-25.jpg",
+            "seashell-place-card-26.jpg",
+            "seashell-place-card-27.jpg",
+            "seashell-place-card-28.jpg",
+            "seashell-place-card-29.jpg"
+          ]
+        },
+        {
+          "type": "menu",
+          "title": "Seashell Wedding Menu SVG, Coastal Beach Card, Cricut Print Then Cut",
+          "price": 5.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4535071336/seashell-wedding-menu-svg-coastal-beach",
+          "images": [
+            "seashell-menu-16.jpg",
+            "seashell-menu-17.jpg",
+            "seashell-menu-18.jpg",
+            "seashell-menu-19.jpg",
+            "seashell-menu-20.jpg",
+            "seashell-menu-21.jpg",
+            "seashell-menu-22.jpg",
+            "seashell-menu-23.jpg"
+          ]
+        },
+        {
+          "type": "save_the_date",
+          "title": "Seashell Wedding Save the Date SVG, Coastal Arched Card, Cricut Print Then Cut",
+          "price": 5.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4536958556/seashell-wedding-save-the-date-svg",
+          "images": [
+            "seashell-save-the-date-30.jpg",
+            "seashell-save-the-date-31.jpg",
+            "seashell-save-the-date-32.jpg",
+            "seashell-save-the-date-33.jpg",
+            "seashell-save-the-date-34.jpg"
+          ]
+        },
+        {
+          "type": "sleeve",
+          "title": "Seashell Wedding Invitation Sleeve SVG, Coastal Starfish Wrap, Cricut Print Then Cut, 4 Sizes",
+          "price": 12.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4534345926/seashell-wedding-invitation-sleeve-svg",
+          "images": [
+            "seashell-sleeve-35.jpg",
+            "seashell-sleeve-36.jpg",
+            "seashell-sleeve-37.jpg",
+            "seashell-sleeve-38.jpg",
+            "seashell-sleeve-39.jpg",
+            "seashell-sleeve-40.jpg",
+            "seashell-sleeve-41.jpg",
+            "seashell-sleeve-42.jpg",
+            "seashell-sleeve-43.jpg",
+            "seashell-sleeve-44.jpg"
+          ]
+        }
+      ],
+      "featured": false
+    },
+    {
+      "id": "tulip",
+      "slug": "tulip",
+      "name": "Tulip",
+      "colorway": "sage",
+      "description": {
+        "fr": "Tulipes de jardin pour une célébration printanière fraîche et joyeuse.",
+        "en": "Garden tulips for a fresh, cheerful springtime celebration.",
+        "de": "Gartentulpen für eine frische, fröhliche Frühlingsfeier."
+      },
+      "hero": "tulip-bundle-1.jpg",
+      "gallery": [
+        "tulip-bundle-1.jpg",
+        "tulip-glass-tag-2.jpg",
+        "tulip-glass-tag-3.jpg",
+        "tulip-rsvp-4.jpg",
+        "tulip-rsvp-5.jpg",
+        "tulip-rsvp-6.jpg",
+        "tulip-rsvp-7.jpg",
+        "tulip-rsvp-8.jpg",
+        "tulip-rsvp-9.jpg",
+        "tulip-save-the-date-10.jpg",
+        "tulip-save-the-date-11.jpg",
+        "tulip-save-the-date-12.jpg",
+        "tulip-save-the-date-13.jpg",
+        "tulip-sleeve-14.jpg",
+        "tulip-sleeve-15.jpg",
+        "tulip-sleeve-16.jpg",
+        "tulip-sleeve-17.jpg",
+        "tulip-sleeve-18.jpg",
+        "tulip-sleeve-19.jpg",
+        "tulip-sleeve-20.jpg",
+        "tulip-sleeve-21.jpg"
+      ],
+      "products": [
+        {
+          "type": "bundle",
+          "title": "Tulip Wedding Stationery Suite Bundle | Editable Cricut SVG & Canva Templates Collection",
+          "price": null,
+          "shopLink": "https://deardariaco.etsy.com/listing/4526617458/tulip-wedding-stationery-suite-bundle",
+          "images": [
+            "tulip-bundle-1.jpg"
+          ]
+        },
+        {
+          "type": "glass_tag",
+          "title": "Tulip Glass Tag",
+          "price": null,
+          "shopLink": null,
+          "images": [
+            "tulip-glass-tag-2.jpg",
+            "tulip-glass-tag-3.jpg"
+          ]
+        },
+        {
+          "type": "rsvp",
+          "title": "Tulip Die-Cut RSVP Card Template for Cricut | Editable Wedding RSVP with QR Code | Print Then Cut Floral",
+          "price": 5.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4525956854/tulip-die-cut-rsvp-card-template-for",
+          "images": [
+            "tulip-rsvp-4.jpg",
+            "tulip-rsvp-5.jpg",
+            "tulip-rsvp-6.jpg",
+            "tulip-rsvp-7.jpg",
+            "tulip-rsvp-8.jpg",
+            "tulip-rsvp-9.jpg"
+          ]
+        },
+        {
+          "type": "save_the_date",
+          "title": "Tulip Save the Date Template | Editable Canva Save the Date Card & Floral Jacket SVG | Cricut Print Then Cut Wedding Invitation",
+          "price": 5.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4526557623/tulip-save-the-date-template-editable",
+          "images": [
+            "tulip-save-the-date-10.jpg",
+            "tulip-save-the-date-11.jpg",
+            "tulip-save-the-date-12.jpg",
+            "tulip-save-the-date-13.jpg"
+          ]
+        },
+        {
+          "type": "sleeve",
+          "title": "Tulip Wedding Invitation Sleeve SVG, Floral Wrap, Cricut Print Then Cut, 4 Sizes",
+          "price": 12.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4523386423/tulip-invitation-pocket-sleeve-template",
+          "images": [
+            "tulip-sleeve-14.jpg",
+            "tulip-sleeve-15.jpg",
+            "tulip-sleeve-16.jpg",
+            "tulip-sleeve-17.jpg",
+            "tulip-sleeve-18.jpg",
+            "tulip-sleeve-19.jpg",
+            "tulip-sleeve-20.jpg",
+            "tulip-sleeve-21.jpg"
+          ]
+        }
+      ],
+      "featured": false
+    },
+    {
+      "id": "vintage_floral",
+      "slug": "vintage-floral",
+      "name": "Vintage Floral",
+      "colorway": "dusty-blue",
+      "description": {
+        "fr": "Motifs floraux toile bleue, esprit grandmillennial et patrimoine familial.",
+        "en": "Blue toile florals with a grandmillennial, heirloom feel.",
+        "de": "Blaue Toile-Blumenmuster mit grandmillennial-Erbstück-Gefühl."
+      },
+      "hero": "vintage-floral-sleeve-1.jpg",
+      "gallery": [
+        "vintage-floral-sleeve-1.jpg",
+        "vintage-floral-sleeve-2.jpg",
+        "vintage-floral-sleeve-3.jpg",
+        "vintage-floral-sleeve-4.jpg",
+        "vintage-floral-sleeve-5.jpg",
+        "vintage-floral-sleeve-6.jpg"
+      ],
+      "products": [
+        {
+          "type": "sleeve",
+          "title": "Vintage Floral Wedding Invitation Jacket SVG, Blue Toile Wrap, Cricut Print Then Cut, 4 Sizes",
+          "price": 12.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4529391073/custom-wedding-invitation-jacket-design",
+          "images": [
+            "vintage-floral-sleeve-1.jpg",
+            "vintage-floral-sleeve-2.jpg",
+            "vintage-floral-sleeve-3.jpg",
+            "vintage-floral-sleeve-4.jpg",
+            "vintage-floral-sleeve-5.jpg",
+            "vintage-floral-sleeve-6.jpg"
+          ]
+        }
+      ],
+      "featured": false
+    },
+    {
+      "id": "watercolor_floral",
+      "slug": "watercolor-floral",
+      "name": "Watercolor Floral",
+      "colorway": "sage",
+      "description": {
+        "fr": "Motifs botaniques doux et peints à l'aquarelle, pour une suite aérienne et romantique.",
+        "en": "Soft painterly botanicals for an airy, romantic suite.",
+        "de": "Weiche, gemalte botanische Motive für ein luftiges, romantisches Set."
+      },
+      "hero": "watercolor-floral-sleeve-1.jpg",
+      "gallery": [
+        "watercolor-floral-sleeve-1.jpg",
+        "watercolor-floral-sleeve-2.jpg",
+        "watercolor-floral-sleeve-3.jpg",
+        "watercolor-floral-sleeve-4.jpg",
+        "watercolor-floral-sleeve-5.jpg",
+        "watercolor-floral-sleeve-6.jpg"
+      ],
+      "products": [
+        {
+          "type": "sleeve",
+          "title": "Watercolor Floral Wedding Invitation Pocket Sleeve SVG, Botanical Wrap, Cricut Print Then Cut, 4 Sizes",
+          "price": 12.99,
+          "shopLink": "https://deardariaco.etsy.com/listing/4523602950/watercolor-floral-wedding-invitation",
+          "images": [
+            "watercolor-floral-sleeve-1.jpg",
+            "watercolor-floral-sleeve-2.jpg",
+            "watercolor-floral-sleeve-3.jpg",
+            "watercolor-floral-sleeve-4.jpg",
+            "watercolor-floral-sleeve-5.jpg",
+            "watercolor-floral-sleeve-6.jpg"
+          ]
+        }
+      ],
+      "featured": false
+    }
+  ]
+}
