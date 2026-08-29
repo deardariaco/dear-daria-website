@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title id="page-title">Collection — Dear Daria</title>
+<title id="page-title">Collection — Beau Papier</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -30,7 +30,7 @@
       return;
     }
 
-    document.getElementById('page-title').textContent = `${collection.name} — Dear Daria`;
+    document.getElementById('page-title').textContent = `${collection.name} — Beau Papier`;
 
     const piecesHTML = collection.products.map(p => {
       const label = DearDaria.productTypeLabel(p.type);

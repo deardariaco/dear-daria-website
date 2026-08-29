@@ -1,4 +1,4 @@
-// Dear Daria — data loading + reusable render helpers
+// Beau Papier — data loading + reusable render helpers
 window.DearDaria = window.DearDaria || {};
 
 DearDaria.loadData = async function () {

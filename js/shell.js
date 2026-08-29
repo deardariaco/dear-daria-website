@@ -1,4 +1,4 @@
-// Dear Daria — shared shell: nav, footer, mobile toggle, lazy images
+// Beau Papier — shared shell: nav, footer, mobile toggle, lazy images
 window.DearDaria = window.DearDaria || {};
 
 (function () {
@@ -7,6 +7,7 @@ window.DearDaria = window.DearDaria || {};
     { href: 'wedding-suites.html', key: 'nav_suites' },
     { href: 'invitation-jackets.html', key: 'nav_jackets' },
     { href: 'collections.html', key: 'nav_collections' },
+    { href: 'configurator.html', key: 'nav_configurator' },
     { href: 'shop.html', key: 'nav_shop' },
     { href: 'bespoke.html', key: 'nav_bespoke' },
     { href: 'info.html', key: 'nav_info' },
@@ -27,7 +28,7 @@ window.DearDaria = window.DearDaria || {};
 
     mount.innerHTML = `
       <div class="container">
-        <a href="index.html" class="nav-logo">Dear Daria</a>
+        <a href="index.html" class="nav-logo">Beau Papier</a>
         <ul class="nav-links" id="nav-links">${items}</ul>
         <div class="nav-lang" id="nav-lang-desktop"></div>
         <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
@@ -52,7 +53,7 @@ window.DearDaria = window.DearDaria || {};
       <div class="container">
         <div class="footer-grid">
           <div class="footer-brand">
-            <span class="nav-logo">Dear Daria</span>
+            <span class="nav-logo">Beau Papier</span>
             <p data-i18n-html="footer_tagline"></p>
           </div>
           <div class="footer-col">
@@ -77,12 +78,12 @@ window.DearDaria = window.DearDaria || {};
             <h4 data-i18n="footer_contact"></h4>
             <ul>
               <li><a href="info.html#contact" data-i18n="contact_eyebrow"></a></li>
-              <li><a href="mailto:hello@deardaria.com">hello@deardaria.com</a></li>
+              <li><a href="mailto:hello@beaupapier.ch">hello@beaupapier.ch</a></li>
             </ul>
           </div>
         </div>
         <div class="footer-bottom">
-          <span>&copy; ${new Date().getFullYear()} Dear Daria. <span data-i18n="footer_rights"></span></span>
+          <span>&copy; ${new Date().getFullYear()} Beau Papier. <span data-i18n="footer_rights"></span></span>
           <span data-i18n="footer_note"></span>
         </div>
       </div>`;
