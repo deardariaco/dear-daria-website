@@ -27,22 +27,7 @@
   </div>
 </header>
 
-<!-- FEATURED COLLECTIONS -->
-<section class="section">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <span class="eyebrow" data-i18n="featured_eyebrow"></span>
-        <h2 data-i18n="featured_title"></h2>
-        <p class="lede" data-i18n="featured_lede"></p>
-      </div>
-      <a href="collections.html" class="btn ghost" data-i18n="view_all_collections"></a>
-    </div>
-    <div id="featured-grid" class="grid cols-3"></div>
-  </div>
-</section>
-
-<!-- SIGNATURE: JACKETS & SLEEVES -->
+<!-- SIGNATURE: JACKETS & SLEEVES (moved up, ahead of the shop grid) -->
 <section class="section border-top">
   <div class="container">
     <div class="split-row">
@@ -55,6 +40,24 @@
         <p data-i18n="jackets_text"></p>
         <a href="invitation-jackets.html" class="btn primary" data-i18n="btn_explore_jackets" data-i18n-html></a>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- SHOP-STYLE PRODUCT GRID -->
+<section class="section border-top">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow" data-i18n="featured_eyebrow"></span>
+        <h2 data-i18n="featured_title"></h2>
+        <p class="lede" data-i18n="featured_lede"></p>
+      </div>
+      <a href="collections.html" class="btn ghost" data-i18n="view_all_collections"></a>
+    </div>
+    <div id="featured-grid" class="grid cols-4"></div>
+    <div style="text-align:center; margin-top:40px;">
+      <a href="collections.html" class="btn primary" data-i18n="view_all_collections"></a>
     </div>
   </div>
 </section>
@@ -122,18 +125,33 @@
 <script src="js/i18n.js"></script>
 <script src="js/shell.js"></script>
 <script src="js/data.js"></script>
+<script src="js/pricing.js"></script>
 <script>
 (async function () {
   const data = await DearDaria.loadData();
   const collections = data.collections;
+
+  function pickShopProducts(limit) {
+    const ordered = collections.slice().sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
+    const picks = [];
+    for (const c of ordered) {
+      if (picks.length >= limit) break;
+      const product = c.products.find(p => p.type === 'bundle') || c.products.find(p => p.type === 'sleeve') || c.products[0];
+      if (product) picks.push({ collection: c, product });
+    }
+    return picks.slice(0, limit);
+  }
 
   function render() {
     const heroCollection = collections.find(c => c.id === 'calla_bloom') || collections[0];
     document.getElementById('hero-image').src = DearDaria.imgUrl(heroCollection.hero);
     document.getElementById('hero-image').alt = heroCollection.name + ' wedding invitation';
 
-    const featured = collections.filter(c => c.featured).slice(0, 6);
-    DearDaria.renderGrid('featured-grid', featured.map(DearDaria.collectionCardHTML).join(''), 3);
+    const shopPicks = pickShopProducts(12);
+    const cardsHTML = shopPicks.map(({ collection, product }) =>
+      DearDaria.productCardHTML(collection, product, product.images[0])
+    ).join('');
+    DearDaria.renderGrid('featured-grid', cardsHTML, 4);
 
     const jacketSource = collections.find(c => c.products.some(p => p.type === 'sleeve'));
     if (jacketSource) {

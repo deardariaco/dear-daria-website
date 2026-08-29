@@ -28,6 +28,14 @@ DearDaria.TRANSLATIONS = {
     config_shop_design: 'Acheter ce Design',
     config_contrast_warning: 'Cette couleur est trop proche du fond pour rester lisible \u2014 choisissez une teinte plus fonc\u00e9e.',
 
+    from_price: 'D\u00e8s',
+    volume_pricing: 'Tarifs Par Quantit\u00e9',
+    quantity: 'Quantit\u00e9',
+    per_piece: 'pi\u00e8ce',
+    min_order_note: 'Commande minimum : {min} pi\u00e8ces.',
+    total: 'Total',
+    request_this_order: 'Demander Cette Commande',
+
     // Common / product labels
     label_bundle: 'Suite de Mariage',
     label_sleeve: 'Pochette d\u2019Invitation',
@@ -237,6 +245,14 @@ DearDaria.TRANSLATIONS = {
     config_shop_design: 'Shop This Design',
     config_contrast_warning: 'This color is too close to the background to stay legible \u2014 pick a darker shade.',
 
+    from_price: 'From',
+    volume_pricing: 'Volume Pricing',
+    quantity: 'Quantity',
+    per_piece: 'piece',
+    min_order_note: 'Minimum order: {min} pieces.',
+    total: 'Total',
+    request_this_order: 'Request This Order',
+
     label_bundle: 'Wedding Suite', label_sleeve: 'Invitation Sleeve', label_place_card: 'Place Card',
     label_rsvp: 'RSVP Card', label_save_the_date: 'Save the Date', label_menu: 'Menu',
     label_glass_tag: 'Glass Tag', label_other: 'Invitation',
@@ -357,6 +373,14 @@ DearDaria.TRANSLATIONS = {
     config_reset: 'Zur\u00fccksetzen',
     config_shop_design: 'Dieses Design Kaufen',
     config_contrast_warning: 'Diese Farbe ist dem Hintergrund zu \u00e4hnlich, um lesbar zu bleiben \u2014 w\u00e4hlen Sie einen dunkleren Ton.',
+
+    from_price: 'Ab',
+    volume_pricing: 'Mengenpreise',
+    quantity: 'Menge',
+    per_piece: 'St\u00fcck',
+    min_order_note: 'Mindestbestellung: {min} St\u00fcck.',
+    total: 'Gesamt',
+    request_this_order: 'Diese Bestellung Anfragen',
 
     label_bundle: 'Hochzeits-Set', label_sleeve: 'Einladungsh\u00fclle', label_place_card: 'Platzkarte',
     label_rsvp: 'RSVP-Karte', label_save_the_date: 'Save the Date', label_menu: 'Men\u00fckarte',

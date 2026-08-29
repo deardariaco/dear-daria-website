@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title id="page-title">Produit — Beau Papier</title>
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/configurator.css">
 </head>
 <body>
 
@@ -17,6 +18,7 @@
 <script src="js/i18n.js"></script>
 <script src="js/shell.js"></script>
 <script src="js/data.js"></script>
+<script src="js/pricing.js"></script>
 <script>
 (async function () {
   const slug = DearDaria.getQueryParam('slug');
@@ -24,6 +26,7 @@
   const data = await DearDaria.loadData();
   const collection = data.collections.find(c => c.slug === slug);
   const content = document.getElementById('content');
+  let qty = Pricing.MIN_QTY;
 
   function render() {
     if (!collection) {
@@ -35,7 +38,7 @@
     document.getElementById('page-title').textContent = `${product.title} — Beau Papier`;
 
     const label = DearDaria.productTypeLabel(product.type);
-    const price = DearDaria.formatPrice(product.price);
+    const tiers = Pricing.tiersFor(product.type);
 
     const galleryImgs = product.images.slice(0, 8).map(img =>
       `<img class="lazy-img" loading="lazy" src="${DearDaria.imgUrl(img)}" alt="${product.title}">`
@@ -45,6 +48,11 @@
       .filter(p => p.type !== product.type)
       .map(p => `<a class="tag" href="product.html?slug=${collection.slug}&type=${p.type}">${DearDaria.productTypeLabel(p.type)}</a>`)
       .join('');
+
+    const tierRows = tiers.map((t, i) => {
+      const rangeLabel = t.max === Infinity ? `${t.min}+` : `${t.min}\u2013${t.max}`;
+      return `<div class="tier-row" data-tier-index="${i}"><span>${rangeLabel}</span><span>${Pricing.formatCHF(t.price)} / ${DearDaria.t('per_piece')}</span></div>`;
+    }).join('');
 
     content.innerHTML = `
       <section class="section tight">
@@ -57,14 +65,32 @@
               <img src="${DearDaria.imgUrl(product.images[0])}" alt="${product.title}">
             </div>
             <div class="copy">
-              <span class="eyebrow">${collection.name} — ${label}</span>
+              <span class="eyebrow">${collection.name} \u2014 ${label}</span>
               <h1>${product.title}</h1>
-              ${price ? `<div class="price-tag">${price}</div>` : ''}
-              <p class="desc">${DearDaria.collectionDescription(collection)} ${DearDaria.t('every_piece_personalized')}</p>
-              <div class="btn-row">
-                ${product.shopLink ? `<a href="${product.shopLink}" target="_blank" rel="noopener" class="btn primary">${DearDaria.t('shop_on_etsy')}</a>` : `<a href="info.html#contact" class="btn primary">${DearDaria.t('inquire_to_order')}</a>`}
-                <a href="bespoke.html" class="btn ghost">${DearDaria.t('request_custom_color')}</a>
+              <p class="desc">${DearDaria.collectionDescription(collection)}</p>
+
+              <div class="order-box">
+                <span class="config-group-label">${DearDaria.t('volume_pricing')}</span>
+                <div class="tier-table">${tierRows}</div>
+
+                <div class="qty-row">
+                  <label for="qty-input">${DearDaria.t('quantity')}</label>
+                  <div class="qty-stepper">
+                    <button type="button" id="qty-minus" aria-label="-">\u2212</button>
+                    <input type="number" id="qty-input" min="${Pricing.MIN_QTY}" step="1" value="${qty}">
+                    <button type="button" id="qty-plus" aria-label="+">+</button>
+                  </div>
+                </div>
+                <p class="min-order-note">${DearDaria.t('min_order_note').replace('{min}', Pricing.MIN_QTY)}</p>
+
+                <div class="total-row">
+                  <span>${DearDaria.t('total')}</span>
+                  <span id="total-price" class="total-price"></span>
+                </div>
+
+                <a href="#" id="request-order" class="btn primary" style="width:100%; justify-content:center; margin-top:20px;">${DearDaria.t('request_this_order')}</a>
               </div>
+
               ${otherPieces ? `<div style="margin-top:32px;"><span class="eyebrow">${DearDaria.t('also_in_collection')}</span><div class="tag-row">${otherPieces}</div></div>` : ''}
             </div>
           </div>
@@ -79,7 +105,43 @@
       </section>
     `;
 
+    wireOrderBox(product);
     DearDaria.initLazyImages();
+  }
+
+  function wireOrderBox(product) {
+    const input = document.getElementById('qty-input');
+    const totalEl = document.getElementById('total-price');
+    const minus = document.getElementById('qty-minus');
+    const plus = document.getElementById('qty-plus');
+    const requestBtn = document.getElementById('request-order');
+
+    function updateTotal() {
+      let q = parseInt(input.value, 10);
+      if (isNaN(q) || q < Pricing.MIN_QTY) q = Pricing.MIN_QTY;
+      input.value = q;
+      qty = q;
+      const unitPrice = Pricing.priceForQty(product.type, q);
+      const total = unitPrice * q;
+
+      document.querySelectorAll('.tier-row').forEach((row, i) => {
+        const tiers = Pricing.tiersFor(product.type);
+        row.classList.toggle('active', q >= tiers[i].min && q <= tiers[i].max);
+      });
+
+      totalEl.textContent = `${Pricing.formatCHF(total)} (${Pricing.formatCHF(unitPrice)} / ${DearDaria.t('per_piece')})`;
+
+      const subject = encodeURIComponent(`Order request: ${product.title}`);
+      const body = encodeURIComponent(
+        `Bonjour Daria,\n\nJe souhaite commander :\n\n${product.title}\nQuantit\u00e9 : ${q}\nPrix unitaire : ${Pricing.formatCHF(unitPrice)}\nTotal : ${Pricing.formatCHF(total)}\n\nMerci !`
+      );
+      requestBtn.href = `mailto:hello@beaupapier.ch?subject=${subject}&body=${body}`;
+    }
+
+    minus.addEventListener('click', () => { input.value = Math.max(Pricing.MIN_QTY, (parseInt(input.value, 10) || Pricing.MIN_QTY) - 1); updateTotal(); });
+    plus.addEventListener('click', () => { input.value = (parseInt(input.value, 10) || Pricing.MIN_QTY) + 1; updateTotal(); });
+    input.addEventListener('input', updateTotal);
+    updateTotal();
   }
 
   DearDaria.reRenderDynamic = render;

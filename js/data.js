@@ -66,7 +66,7 @@ DearDaria.collectionCardHTML = function (collection) {
 
 DearDaria.productCardHTML = function (collection, product, image) {
   const label = DearDaria.productTypeLabel(product.type);
-  const price = DearDaria.formatPrice(product.price);
+  const from = Pricing.formatCHF(Pricing.lowestPrice(product.type));
   return `
     <a class="card" href="product.html?slug=${collection.slug}&type=${product.type}">
       <div class="card-media">
@@ -74,12 +74,12 @@ DearDaria.productCardHTML = function (collection, product, image) {
         <div class="card-hover-caption">
           <div class="unfold-rule"></div>
           <div class="name">${collection.name}</div>
-          <div class="view">${label}${price ? ' — ' + price : ''}</div>
+          <div class="view">${label} \u2014 ${DearDaria.t('from_price')} ${from}</div>
         </div>
       </div>
       <div class="card-caption-static">
         <div class="name">${collection.name}</div>
-        <div class="meta">${label}${price ? ' · ' + price : ''}</div>
+        <div class="meta">${label} \u00b7 ${DearDaria.t('from_price')} ${from}</div>
       </div>
     </a>`;
 };

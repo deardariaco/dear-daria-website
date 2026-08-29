@@ -17,6 +17,7 @@
 <script src="js/i18n.js"></script>
 <script src="js/shell.js"></script>
 <script src="js/data.js"></script>
+<script src="js/pricing.js"></script>
 <script>
 (async function () {
   const slug = DearDaria.getQueryParam('slug');
@@ -34,11 +35,11 @@
 
     const piecesHTML = collection.products.map(p => {
       const label = DearDaria.productTypeLabel(p.type);
-      const price = DearDaria.formatPrice(p.price);
+      const price = `${DearDaria.t('from_price')} ${Pricing.formatCHF(Pricing.lowestPrice(p.type))}`;
       return `
         <a class="piece-row" href="product.html?slug=${collection.slug}&type=${p.type}" style="color:inherit;">
           <span class="piece-name">${label}</span>
-          <span class="piece-price">${price || DearDaria.t('inquire')}</span>
+          <span class="piece-price">${price}</span>
         </a>`;
     }).join('');
 
