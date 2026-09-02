@@ -4,13 +4,11 @@ window.DearDaria = window.DearDaria || {};
 (function () {
   const NAV_LINKS = [
     { href: 'index.html', key: 'nav_home' },
-    { href: 'wedding-suites.html', key: 'nav_suites' },
-    { href: 'invitation-jackets.html', key: 'nav_jackets' },
-    { href: 'collections.html', key: 'nav_collections' },
-    { href: 'configurator.html', key: 'nav_configurator' },
-    { href: 'shop.html', key: 'nav_shop' },
-    { href: 'bespoke.html', key: 'nav_bespoke' },
-    { href: 'info.html', key: 'nav_info' },
+    { href: 'invitation-jackets.html', key: 'nav_pochettes' },
+    { href: 'wedding-suites.html', key: 'nav_suites_mariage' },
+    { href: 'bespoke.html', key: 'nav_sur_mesure_top' },
+    { href: 'info.html#about', key: 'nav_a_propos' },
+    { href: 'faq.html', key: 'nav_faq' },
   ];
 
   function currentPage() {
@@ -29,7 +27,8 @@ window.DearDaria = window.DearDaria || {};
     mount.innerHTML = `
       <div class="container">
         <a href="index.html" class="nav-logo">Beau Papier</a>
-        <ul class="nav-links" id="nav-links">${items}</ul>
+        <ul class="nav-links" id="nav-links">${items}<li class="nav-mobile-cta"><a href="consultation.html" class="btn primary" data-i18n="nav_request_consultation"></a></li></ul>
+        <a href="consultation.html" class="btn primary nav-consult-cta" data-i18n="nav_request_consultation"></a>
         <div class="nav-lang" id="nav-lang-desktop"></div>
         <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
@@ -59,25 +58,23 @@ window.DearDaria = window.DearDaria || {};
           <div class="footer-col">
             <h4 data-i18n="footer_explore"></h4>
             <ul>
-              <li><a href="collections.html" data-i18n="nav_collections"></a></li>
-              <li><a href="invitation-jackets.html" data-i18n="nav_jackets"></a></li>
-              <li><a href="wedding-suites.html" data-i18n="nav_suites"></a></li>
-              <li><a href="shop.html" data-i18n="nav_shop"></a></li>
+              <li><a href="invitation-jackets.html" data-i18n="nav_pochettes"></a></li>
+              <li><a href="wedding-suites.html" data-i18n="nav_suites_mariage"></a></li>
+              <li><a href="bespoke.html" data-i18n="nav_sur_mesure_top"></a></li>
             </ul>
           </div>
           <div class="footer-col">
             <h4 data-i18n="footer_studio"></h4>
             <ul>
-              <li><a href="bespoke.html" data-i18n="nav_bespoke"></a></li>
-              <li><a href="info.html#about" data-i18n="footer_about"></a></li>
+              <li><a href="info.html#about" data-i18n="nav_a_propos"></a></li>
               <li><a href="info.html#professionals" data-i18n="footer_professionals"></a></li>
-              <li><a href="info.html#faq" data-i18n="footer_faq"></a></li>
+              <li><a href="faq.html" data-i18n="nav_faq"></a></li>
             </ul>
           </div>
           <div class="footer-col">
             <h4 data-i18n="footer_contact"></h4>
             <ul>
-              <li><a href="info.html#contact" data-i18n="contact_eyebrow"></a></li>
+              <li><a href="consultation.html" data-i18n="nav_request_consultation"></a></li>
               <li><a href="mailto:hello@beaupapier.ch">hello@beaupapier.ch</a></li>
             </ul>
           </div>

@@ -31,7 +31,8 @@ Pricing.CATEGORY_FOR_TYPE = {
   save_the_date: "small",
   menu: "small",
   glass_tag: "small",
-  other: "small",
+  other: "sleeve", // standalone gatefold invitations (Chapel, Garden Gate) - structurally
+                    // equivalent to a sleeve/jacket, not a small accessory card
 };
 
 Pricing.tiersFor = function (productType) {

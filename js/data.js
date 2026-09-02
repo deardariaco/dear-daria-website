@@ -34,6 +34,8 @@ DearDaria.productTypeLabel = function (type) {
   return DearDaria.t(key);
 };
 
+DearDaria.PERSONALISABLE_TYPES = ['sleeve', 'bundle', 'other'];
+
 DearDaria.collectionDescription = function (collection) {
   const lang = DearDaria.getLang();
   if (collection.description && typeof collection.description === 'object') {
@@ -42,11 +44,10 @@ DearDaria.collectionDescription = function (collection) {
   return collection.description || '';
 };
 
-// Renders a collection card: clean image by default, hover reveal on desktop,
-// static caption below image on touch/mobile — per brief.
+// Renders a collection card: clean image, no prices, "Découvrir ce modèle" CTA language.
 DearDaria.collectionCardHTML = function (collection) {
-  const count = collection.products.length;
-  const pieceWord = DearDaria.t(count === 1 ? 'piece_available' : 'pieces_available');
+  const anyPersonalisable = collection.products.some(p => DearDaria.PERSONALISABLE_TYPES.includes(p.type));
+  const badge = anyPersonalisable ? `<span class="badge-personalisable">${DearDaria.t('personalisable_badge')}</span>` : '';
   return `
     <a class="card" href="collection.html?slug=${collection.slug}">
       <div class="card-media">
@@ -54,19 +55,19 @@ DearDaria.collectionCardHTML = function (collection) {
         <div class="card-hover-caption">
           <div class="unfold-rule"></div>
           <div class="name">${collection.name}</div>
-          <div class="view">${DearDaria.t('view_collection')}</div>
+          <div class="view">${DearDaria.t('discover_model')}</div>
         </div>
       </div>
-      <div class="card-caption-static">
+      <div class="card-caption-static design-card-meta">
         <div class="name">${collection.name}</div>
-        <div class="meta">${count} ${pieceWord}</div>
+        <div class="type-row">${badge}</div>
       </div>
     </a>`;
 };
 
 DearDaria.productCardHTML = function (collection, product, image) {
   const label = DearDaria.productTypeLabel(product.type);
-  const from = Pricing.formatCHF(Pricing.lowestPrice(product.type));
+  const badge = DearDaria.PERSONALISABLE_TYPES.includes(product.type) ? `<span class="badge-personalisable">${DearDaria.t('personalisable_badge')}</span>` : '';
   return `
     <a class="card" href="product.html?slug=${collection.slug}&type=${product.type}">
       <div class="card-media">
@@ -74,12 +75,12 @@ DearDaria.productCardHTML = function (collection, product, image) {
         <div class="card-hover-caption">
           <div class="unfold-rule"></div>
           <div class="name">${collection.name}</div>
-          <div class="view">${label} \u2014 ${DearDaria.t('from_price')} ${from}</div>
+          <div class="view">${DearDaria.t('discover_model')}</div>
         </div>
       </div>
-      <div class="card-caption-static">
+      <div class="card-caption-static design-card-meta">
         <div class="name">${collection.name}</div>
-        <div class="meta">${label} \u00b7 ${DearDaria.t('from_price')} ${from}</div>
+        <div class="type-row"><span class="type">${label}</span>${badge}</div>
       </div>
     </a>`;
 };
