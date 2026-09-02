@@ -164,6 +164,7 @@ p { margin: 0; }
 .lang-btn.active { font-weight: 800; }
 
 @media (max-width: 860px) {
+  .site-nav .nav-consult-cta { display: none; }
   .nav-lang { margin-left: 0; order: 3; }
 }
 
@@ -171,6 +172,7 @@ p { margin: 0; }
   .nav-links {
     position: fixed;
     inset: 84px 0 0 0;
+    height: calc(100vh - 84px);
     background: var(--ivory);
     flex-direction: column;
     padding: 32px var(--gutter);
@@ -509,3 +511,85 @@ p { margin: 0; }
 .breadcrumb a:hover { color: var(--sage-deep); }
 .lazy-img { opacity: 0; transition: opacity 0.5s var(--ease); }
 .lazy-img.loaded { opacity: 1; }
+
+/* ============ CONSULTATION FORM ============ */
+.consult-form { max-width: 780px; }
+.cf-design-banner {
+  background: var(--ivory-deep); border: 1px solid var(--mist);
+  padding: 14px 18px; margin-bottom: 24px; font-size: 14px;
+}
+.piece-check-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 8px; }
+.piece-check { display: flex; align-items: center; gap: 8px; font-size: 13.5px; color: var(--ink-soft); }
+.piece-check input { width: 16px; height: 16px; }
+.consent-row { display: flex; align-items: flex-start; gap: 10px; font-size: 13px; color: var(--ink-soft); }
+.consent-row input { margin-top: 3px; }
+.cf-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px; }
+.cf-validation-note, .cf-success-note { font-size: 13px; margin-top: 12px; }
+.cf-validation-note { color: var(--rosewood); }
+.cf-success-note { color: var(--sage-deep); }
+
+/* ============ DESIGN-PRESENTATION GALLERY CARD (no prices) ============ */
+.design-card-meta { padding-top: 14px; }
+.design-card-meta .name { font-family: var(--font-display); font-size: 18px; font-style: italic; }
+.design-card-meta .type-row { display: flex; align-items: center; gap: 8px; margin-top: 4px; }
+.design-card-meta .type { font-size: 12px; color: var(--ink-soft); }
+.badge-personalisable {
+  font-size: 10px; letter-spacing: 0.04em; text-transform: uppercase;
+  color: var(--sage-deep); border: 1px solid var(--sage-deep); padding: 2px 8px;
+}
+.photos-example-note {
+  font-size: 12px; color: var(--ink-soft); font-style: italic;
+  border-top: 1px solid var(--mist); padding-top: 14px; margin-top: 20px; max-width: 60ch;
+}
+
+/* ============ COMPACT 5-STEP PROCESS ============ */
+.process5-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; }
+.process5-grid .step { padding: 20px 16px; background: var(--white); border: 1px solid var(--mist); }
+.process5-grid .step .num { font-family: var(--font-display); font-style: italic; font-size: 20px; color: var(--brass); margin-bottom: 10px; }
+.process5-grid .step h4 { font-size: 14.5px; margin-bottom: 8px; }
+.process5-grid .step p { font-size: 12.5px; color: var(--ink-soft); line-height: 1.6; }
+@media (max-width: 980px) { .process5-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 620px) { .process5-grid { grid-template-columns: 1fr; } }
+
+/* ============ CONTROLLED CONTENT WIDTH ============ */
+.container-narrow { max-width: 1260px; margin: 0 auto; padding: 0 var(--gutter); }
+
+/* ============ REDIRECT NOTICE ============ */
+.redirect-notice { text-align: center; padding: 100px 20px; }
+
+/* ============ CONTROLLED SINGLE-IMAGE HERO (600-680px) ============ */
+.hero-controlled {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  height: clamp(560px, 62vw, 680px);
+  min-height: 560px;
+}
+.hero-controlled .hc-media { overflow: hidden; background: var(--ivory-deep); height: 100%; }
+.hero-controlled .hc-media img { width: 100%; height: 100%; object-fit: cover; }
+.hero-controlled .hc-copy {
+  display: flex; flex-direction: column; justify-content: center; gap: 22px;
+  padding: 40px clamp(24px, 4vw, 64px);
+}
+.hero-controlled .hc-copy h1 { font-size: clamp(30px, 3.2vw, 44px); font-style: italic; line-height: 1.12; max-width: 15ch; }
+.hero-controlled .hc-copy .lede { font-size: 15.5px; color: var(--ink-soft); max-width: 40ch; line-height: 1.7; }
+@media (max-width: 900px) {
+  .hero-controlled { grid-template-columns: 1fr; height: auto; }
+  .hero-controlled .hc-media { height: 46vh; min-height: 320px; }
+}
+
+/* ============ FINAL CONTACT BANNER (before footer) ============ */
+.contact-banner {
+  background: var(--ivory-deep);
+  text-align: center;
+  padding: 56px 20px;
+}
+.contact-banner h2 { font-size: clamp(24px, 2.6vw, 32px); font-style: italic; margin-bottom: 14px; }
+.contact-banner p { color: var(--ink-soft); font-size: 14.5px; margin-bottom: 22px; max-width: 52ch; margin-left: auto; margin-right: auto; }
+
+.nav-mobile-cta { display: none; }
+@media (max-width: 860px) {
+  .nav-mobile-cta { display: block; margin-top: 8px; }
+  .nav-mobile-cta .btn { width: 100%; justify-content: center; }
+}
+
+.nav-consult-cta { white-space: nowrap; font-size: 11.5px !important; padding: 11px 18px !important; }

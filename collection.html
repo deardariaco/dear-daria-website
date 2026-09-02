@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title id="page-title">Collection — Beau Papier</title>
+<title id="page-title">Modèle — Beau Papier</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,7 +17,6 @@
 <script src="js/i18n.js"></script>
 <script src="js/shell.js"></script>
 <script src="js/data.js"></script>
-<script src="js/pricing.js"></script>
 <script>
 (async function () {
   const slug = DearDaria.getQueryParam('slug');
@@ -27,19 +26,20 @@
 
   function render() {
     if (!collection) {
-      content.innerHTML = `<div class="section container"><div class="empty-state"><h3>${DearDaria.t('collection_not_found')}</h3><p><a href="collections.html">${DearDaria.t('return_collections')}</a></p></div></div>`;
+      content.innerHTML = `<div class="section container"><div class="empty-state"><h3>${DearDaria.t('collection_not_found')}</h3><p><a href="invitation-jackets.html">${DearDaria.t('return_shop')}</a></p></div></div>`;
       return;
     }
 
     document.getElementById('page-title').textContent = `${collection.name} — Beau Papier`;
+    const consultUrl = `consultation.html?design=${encodeURIComponent(collection.name)}&slug=${collection.slug}`;
 
     const piecesHTML = collection.products.map(p => {
       const label = DearDaria.productTypeLabel(p.type);
-      const price = `${DearDaria.t('from_price')} ${Pricing.formatCHF(Pricing.lowestPrice(p.type))}`;
+      const isPersonalisable = DearDaria.PERSONALISABLE_TYPES.includes(p.type);
       return `
         <a class="piece-row" href="product.html?slug=${collection.slug}&type=${p.type}" style="color:inherit;">
           <span class="piece-name">${label}</span>
-          <span class="piece-price">${price}</span>
+          <span>${isPersonalisable ? `<span class="badge-personalisable">${DearDaria.t('personalisable_badge')}</span>` : ''}</span>
         </a>`;
     }).join('');
 
@@ -50,19 +50,19 @@
     content.innerHTML = `
       <section class="section tight">
         <div class="container">
-          <div class="breadcrumb"><a href="collections.html">${DearDaria.t('nav_collections')}</a> &nbsp;/&nbsp; ${collection.name}</div>
+          <div class="breadcrumb"><a href="invitation-jackets.html">${DearDaria.t('nav_pochettes')}</a> &nbsp;/&nbsp; ${collection.name}</div>
           <div class="detail-hero">
             <div class="media">
               <img src="${DearDaria.imgUrl(collection.hero)}" alt="${collection.name} wedding stationery">
             </div>
             <div class="copy">
-              <span class="eyebrow">${DearDaria.t('nav_collections').replace(/s$/, '')}</span>
               <h1>${collection.name}</h1>
               <p class="desc">${DearDaria.collectionDescription(collection)}</p>
               <div class="btn-row">
-                <a href="bespoke.html" class="btn primary">${DearDaria.t('personalize_collection')}</a>
+                <a href="${consultUrl}" class="btn primary">${DearDaria.t('request_consultation_for')}</a>
                 <a href="#pieces" class="btn ghost">${DearDaria.t('view_available_pieces')}</a>
               </div>
+              <p class="photos-example-note">${DearDaria.t('photos_examples_note')}</p>
             </div>
           </div>
         </div>

@@ -10,27 +10,22 @@
 
 <nav class="site-nav" id="site-nav"></nav>
 
-<header class="hero" style="min-height:70vh;">
-  <div class="hero-media">
+<header class="hero-controlled">
+  <div class="hc-media">
     <img id="hero-image" src="" alt="Beau Papier invitation jacket">
   </div>
-  <div class="hero-copy">
-    <span class="eyebrow rosewood" data-i18n="ij_eyebrow"></span>
-    <h1 style="font-size:clamp(36px,4.6vw,64px);" data-i18n="ij_title" data-i18n-html></h1>
-    <p class="lede" data-i18n="ij_lede"></p>
-    <div class="btn-row"><a href="configurator.html" class="btn primary" data-i18n="nav_configurator"></a></div>
+  <div class="hc-copy">
+    <span class="eyebrow rosewood" data-i18n="signature_eyebrow"></span>
+    <h1 data-i18n="pochettes_heading"></h1>
+    <p class="lede" data-i18n="pochettes_sub"></p>
   </div>
 </header>
 
 <section class="section tight border-top">
   <div class="container">
-    <div class="section-head">
-      <div>
-        <span class="eyebrow" data-i18n="browse_designs"></span>
-        <h2 data-i18n="every_jacket_sleeve" data-i18n-html></h2>
-      </div>
-    </div>
+    <div class="section-head"><div><h2 data-i18n="pochettes_heading"></h2></div></div>
     <div id="products-grid" class="grid cols-3"></div>
+    <p class="photos-example-note" data-i18n="photos_examples_note"></p>
   </div>
 </section>
 
@@ -39,19 +34,18 @@
 <script src="js/i18n.js"></script>
 <script src="js/shell.js"></script>
 <script src="js/data.js"></script>
-<script src="js/pricing.js"></script>
 <script>
 (async function () {
   const data = await DearDaria.loadData();
-  const withSleeves = data.collections.filter(c => c.products.some(p => p.type === 'sleeve'));
+  const withSleeves = data.collections.filter(c => c.products.some(p => p.type === 'sleeve' || p.type === 'other'));
 
   function render() {
     const heroCollection = withSleeves.find(c => c.id === 'hummingbird') || withSleeves[0];
-    const heroProduct = heroCollection.products.find(p => p.type === 'sleeve');
+    const heroProduct = heroCollection.products.find(p => p.type === 'sleeve') || heroCollection.products.find(p => p.type === 'other');
     document.getElementById('hero-image').src = DearDaria.imgUrl(heroProduct.images[0]);
 
     const cards = withSleeves.map(c => {
-      const product = c.products.find(p => p.type === 'sleeve');
+      const product = c.products.find(p => p.type === 'sleeve') || c.products.find(p => p.type === 'other');
       return DearDaria.productCardHTML(c, product, product.images[0]);
     }).join('');
     DearDaria.renderGrid('products-grid', cards, 3);
