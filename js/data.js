@@ -26,6 +26,7 @@ DearDaria.PRODUCT_TYPE_KEY = {
   save_the_date: 'label_save_the_date',
   menu: 'label_menu',
   glass_tag: 'label_glass_tag',
+  envelope_liner: 'label_envelope_liner',
   other: 'label_other',
 };
 
@@ -35,6 +36,30 @@ DearDaria.productTypeLabel = function (type) {
 };
 
 DearDaria.PERSONALISABLE_TYPES = ['sleeve', 'bundle', 'other'];
+
+// collection.name is still the internal working label (e.g. "Calla Lily",
+// "Boho Peony") - never touched by the French naming pass. Derive a clean
+// French family name from whichever real product title we have, by
+// stripping the known type-prefix ("Suite ", "Faire-part ", etc.).
+const TYPE_PREFIXES = [
+  'Suite de Mariage ', 'Suite ', 'Faire-part ', 'Menu ', 'Marque-place ',
+  'Carte-r\u00e9ponse ', 'Carte d\u2019annonce ', 'Doublure d\u2019enveloppe ',
+  'Pi\u00e8ce coordonn\u00e9e ', '\u00c9tiquette \u00e0 Verre ',
+];
+DearDaria.collectionDisplayName = function (collection) {
+  const preferred = collection.products.find(p => p.type === 'bundle')
+    || collection.products.find(p => p.type === 'sleeve' || p.type === 'other')
+    || collection.products[0];
+  if (!preferred || !preferred.title) return collection.name;
+  let name = preferred.title;
+  for (const prefix of TYPE_PREFIXES) {
+    if (name.startsWith(prefix)) {
+      name = name.slice(prefix.length);
+      break;
+    }
+  }
+  return name || collection.name;
+};
 
 DearDaria.collectionDescription = function (collection) {
   const lang = DearDaria.getLang();
@@ -74,12 +99,12 @@ DearDaria.productCardHTML = function (collection, product, image) {
         <img class="lazy-img" loading="lazy" src="${DearDaria.imgUrl(image)}" alt="${product.title}">
         <div class="card-hover-caption">
           <div class="unfold-rule"></div>
-          <div class="name">${collection.name}</div>
+          <div class="name">${product.title}</div>
           <div class="view">${DearDaria.t('discover_model')}</div>
         </div>
       </div>
       <div class="card-caption-static design-card-meta">
-        <div class="name">${collection.name}</div>
+        <div class="name">${product.title}</div>
         <div class="type-row"><span class="type">${label}</span>${badge}</div>
       </div>
     </a>`;
