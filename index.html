@@ -3,34 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Beau Papier — Papeterie Découpée pour Mariages, Suisse</title>
-<meta name="description" content="Beau Papier — pochettes d'invitation découpées, enveloppes et suites de mariage coordonnées, dessinées et façonnées à la main par Daria Wälchli en Suisse.">
+<title>Beau Papier — Papeterie de Mariage et d'Événement, Suisse</title>
+<meta name="description" content="Beau Papier — pochettes d'invitation, enveloppes et suites de papeterie de mariage, dessinées et façonnées à la main par Daria Wälchli en Suisse.">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <nav class="site-nav" id="site-nav"></nav>
 
-<!-- 2. MULTI-IMAGE HERO -->
-<header>
-  <div class="hero-gallery" id="hero-gallery">
-    <a class="hg-main" id="hg-main" href="#"><img src="" alt=""></a>
-    <div class="hg-small-col">
-      <div class="hg-small-row">
-        <a class="hg-small" id="hg-small-1" href="#"><img src="" alt=""></a>
-        <a class="hg-small" id="hg-small-2" href="#"><img src="" alt=""></a>
-      </div>
-      <div class="hg-small-row">
-        <a class="hg-small" id="hg-small-3" href="#"><img src="" alt=""></a>
-        <a class="hg-small" id="hg-small-4" href="#"><img src="" alt=""></a>
-      </div>
-    </div>
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-media">
+    <img id="hero-image" src="" alt="Beau Papier wedding invitation">
   </div>
-  <div class="hero-intro">
-    <div>
-      <h1 class="accent-italic" data-i18n="home_intro_title"></h1>
-      <p class="lede" data-i18n="home_intro_lede"></p>
-    </div>
+  <div class="hero-copy">
+    <span class="eyebrow" data-i18n="home_eyebrow"></span>
+    <h1 data-i18n="home_title"></h1>
+    <p class="lede" data-i18n="home_lede" data-i18n-html></p>
     <div class="btn-row">
       <a href="collections.html" class="btn primary" data-i18n="btn_explore_collections"></a>
       <a href="bespoke.html" class="btn ghost" data-i18n="btn_create_bespoke"></a>
@@ -38,110 +27,96 @@
   </div>
 </header>
 
-<!-- 3. INVITATION JACKETS AND SLEEVES (first catalogue section) -->
+<!-- SIGNATURE: JACKETS & SLEEVES -->
+<section class="section border-top">
+  <div class="container">
+    <div class="split-row">
+      <div class="media">
+        <img id="jacket-hero-img" class="lazy-img" loading="lazy" src="" alt="Beau Papier invitation jacket">
+      </div>
+      <div class="copy">
+        <span class="eyebrow rosewood" data-i18n="signature_eyebrow"></span>
+        <h2 data-i18n="jackets_title" data-i18n-html></h2>
+        <p data-i18n="jackets_text"></p>
+        <a href="invitation-jackets.html" class="btn primary" data-i18n="btn_explore_jackets" data-i18n-html></a>
+      </div>
+    </div>
+    <div id="jackets-grid" class="grid cols-4" style="margin-top:56px;"></div>
+  </div>
+</section>
+
+<!-- SHOP-STYLE PRODUCT GRID -->
 <section class="section border-top">
   <div class="container">
     <div class="section-head">
       <div>
-        <h2 data-i18n="jackets_section_title"></h2>
-        <p class="lede" data-i18n="jackets_section_lede"></p>
+        <span class="eyebrow" data-i18n="featured_eyebrow"></span>
+        <h2 data-i18n="featured_title"></h2>
+        <p class="lede" data-i18n="featured_lede"></p>
       </div>
-      <a href="invitation-jackets.html" class="btn ghost" data-i18n="see_all_sleeves"></a>
+      <a href="collections.html" class="btn ghost" data-i18n="view_all_collections"></a>
     </div>
-    <div id="jackets-grid" class="grid cols-3"></div>
+    <div id="featured-grid" class="grid cols-4"></div>
+    <div style="text-align:center; margin-top:40px;">
+      <a href="collections.html" class="btn primary" data-i18n="view_all_collections"></a>
+    </div>
   </div>
 </section>
 
-<!-- 4. COMPLETE WEDDING SUITES -->
+<!-- WEDDING SUITES -->
+<section class="section border-top">
+  <div class="container">
+    <div class="split-row reverse">
+      <div class="media">
+        <img id="suite-hero-img" class="lazy-img" loading="lazy" src="" alt="Beau Papier wedding suite">
+      </div>
+      <div class="copy">
+        <span class="eyebrow" data-i18n="suites_eyebrow" data-i18n-html></span>
+        <h2 data-i18n="suites_title"></h2>
+        <p data-i18n="suites_text"></p>
+        <a href="wedding-suites.html" class="btn primary" data-i18n="btn_explore_suites"></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAKE IT YOURS -->
 <section class="section border-top">
   <div class="container">
     <div class="section-head">
       <div>
-        <h2 data-i18n="suites_section_title"></h2>
-      </div>
-      <a href="wedding-suites.html" class="btn ghost" data-i18n="view_all_collections"></a>
-    </div>
-    <div id="suites-grid" class="grid cols-3"></div>
-  </div>
-</section>
-
-<!-- 5. TWO WAYS TO BEGIN -->
-<section class="section border-top">
-  <div class="container">
-    <div class="section-head"><div><span class="eyebrow" data-i18n="two_paths_eyebrow"></span><h2 data-i18n="two_paths_title"></h2></div></div>
-    <div class="two-paths-grid">
-      <div class="path-card">
-        <span class="eyebrow">01</span>
-        <h3 data-i18n="path1_title"></h3>
-        <p data-i18n="path1_text"></p>
-        <a href="collections.html" class="btn primary" data-i18n="path1_cta"></a>
-      </div>
-      <div class="path-card">
-        <span class="eyebrow">02</span>
-        <h3 data-i18n="path2_title"></h3>
-        <p data-i18n="path2_text"></p>
-        <a href="bespoke.html" class="btn primary" data-i18n="path2_cta"></a>
+        <span class="eyebrow brass" data-i18n="myo_eyebrow"></span>
+        <h2 data-i18n="myo_title"></h2>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- 6. CUSTOM DESIGN (dark section) -->
-<section class="section custom-dark-section">
-  <div class="container">
-    <div class="custom-dark-grid">
-      <div class="media">
-        <img id="custom-dark-img" class="lazy-img" loading="lazy" src="" alt="Beau Papier bespoke design">
+    <div class="myo-grid">
+      <div class="custom-card myo-card">
+        <span class="eyebrow" data-i18n="myo1_eyebrow"></span>
+        <h3 data-i18n="myo1_title"></h3>
+        <p data-i18n="myo1_text"></p>
       </div>
-      <div class="copy">
-        <span class="eyebrow" data-i18n="custom_dark_eyebrow"></span>
-        <h2 data-i18n="custom_dark_title"></h2>
-        <p data-i18n="custom_dark_text"></p>
-        <a href="bespoke.html" class="btn primary" data-i18n="custom_dark_cta"></a>
+      <div class="custom-card myo-card">
+        <span class="eyebrow myo2-eyebrow" data-i18n="myo2_eyebrow"></span>
+        <h3 data-i18n="myo2_title"></h3>
+        <p data-i18n="myo2_text"></p>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- 7. PROCESS -->
-<section class="section border-top">
-  <div class="container">
-    <div class="section-head"><div><span class="eyebrow" data-i18n="process_home_eyebrow"></span><h2 data-i18n="process_home_title"></h2></div></div>
-    <div class="process-compact">
-      <div class="step"><span class="num">01</span><h4 data-i18n="process_home1_title"></h4><p data-i18n="process_home1_text"></p></div>
-      <div class="step"><span class="num">02</span><h4 data-i18n="process_home2_title"></h4><p data-i18n="process_home2_text"></p></div>
-      <div class="step"><span class="num">03</span><h4 data-i18n="process_home3_title"></h4><p data-i18n="process_home3_text"></p></div>
-    </div>
-  </div>
-</section>
-
-<!-- 8. ABOUT STRIP -->
-<section class="section tight border-top">
-  <div class="container">
-    <div class="about-strip">
-      <div class="media">
-        <img id="about-strip-img" class="lazy-img" loading="lazy" src="" alt="Daria Wälchli, Beau Papier">
+      <div class="myo-card myo-premium">
+        <span class="eyebrow brass" data-i18n="myo3_eyebrow"></span>
+        <h3 data-i18n="myo3_title"></h3>
+        <p class="myo-premium-text" data-i18n="myo3_text"></p>
+        <p class="myo-includes-label" data-i18n="myo3_includes_label"></p>
+        <ul class="myo-includes-list">
+          <li data-i18n="myo3_li1"></li>
+          <li data-i18n="myo3_li2"></li>
+          <li data-i18n="myo3_li3"></li>
+          <li data-i18n="myo3_li4"></li>
+          <li data-i18n="myo3_li5"></li>
+          <li data-i18n="myo3_li6"></li>
+          <li data-i18n="myo3_li7"></li>
+          <li data-i18n="myo3_li8"></li>
+        </ul>
+        <a href="bespoke.html" class="btn primary myo-cta" data-i18n="myo3_cta"></a>
       </div>
-      <div class="copy">
-        <span class="eyebrow" data-i18n="about_strip_eyebrow"></span>
-        <h2 data-i18n="about_strip_title"></h2>
-        <p data-i18n="about_strip_text"></p>
-        <div class="placeholder-note">[Placeholder photo — please send a photo of you, your workspace, or paper samples]</div>
-        <br>
-        <a href="info.html#about" class="btn ghost" data-i18n="about_strip_cta"></a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 9. TESTIMONIALS (placeholder) -->
-<section class="section tight border-top">
-  <div class="container">
-    <div class="section-head"><div><span class="eyebrow" data-i18n="testimonials_eyebrow"></span><h2 data-i18n="testimonials_title"></h2></div></div>
-    <div class="testimonial-strip">
-      <div class="testimonial-card"><p data-i18n="testimonials_placeholder"></p><div class="who">—</div></div>
-      <div class="testimonial-card"><p data-i18n="testimonials_placeholder"></p><div class="who">—</div></div>
-      <div class="testimonial-card"><p data-i18n="testimonials_placeholder"></p><div class="who">—</div></div>
     </div>
   </div>
 </section>
@@ -157,64 +132,48 @@
   const data = await DearDaria.loadData();
   const collections = data.collections;
 
-  function pickDiverse(products, limit) {
+  function pickShopProducts(limit) {
     const ordered = collections.slice().sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
     const picks = [];
     for (const c of ordered) {
       if (picks.length >= limit) break;
-      const product = c.products.find(p => p.type === 'sleeve') || c.products.find(p => p.type === 'bundle');
+      const product = c.products.find(p => p.type === 'bundle') || c.products.find(p => p.type === 'sleeve') || c.products[0];
       if (product) picks.push({ collection: c, product });
     }
     return picks.slice(0, limit);
   }
 
   function render() {
-    // hero gallery: 5 distinct images across different collections/silhouettes
-    const heroSources = collections.filter(c => c.featured).slice(0, 5);
-    const fallback = collections[0];
-    const imgs = [
-      heroSources[0] || fallback,
-      heroSources[1] || fallback,
-      heroSources[2] || fallback,
-      heroSources[3] || fallback,
-      heroSources[4] || fallback,
-    ];
-    const heroSlots = ['hg-main', 'hg-small-1', 'hg-small-2', 'hg-small-3', 'hg-small-4'];
-    heroSlots.forEach((id, i) => {
-      const c = imgs[i];
-      const el = document.getElementById(id);
-      el.href = `collection.html?slug=${c.slug}`;
-      el.querySelector('img').src = DearDaria.imgUrl(c.hero);
-      el.querySelector('img').alt = c.name;
-    });
+    const heroCollection = collections.find(c => c.id === 'calla_bloom') || collections[0];
+    document.getElementById('hero-image').src = DearDaria.imgUrl(heroCollection.hero);
+    document.getElementById('hero-image').alt = heroCollection.name + ' wedding invitation';
 
-    // Jackets & sleeves: 6 curated, large cards
+    const shopPicks = pickShopProducts(12);
+    const cardsHTML = shopPicks.map(({ collection, product }) =>
+      DearDaria.productCardHTML(collection, product, product.images[0])
+    ).join('');
+    DearDaria.renderGrid('featured-grid', cardsHTML, 4);
+
+    const jacketSource = collections.find(c => c.products.some(p => p.type === 'sleeve'));
+    if (jacketSource) {
+      const sleeveProduct = jacketSource.products.find(p => p.type === 'sleeve');
+      document.getElementById('jacket-hero-img').src = DearDaria.imgUrl(sleeveProduct.images[0]);
+    }
+
     const sleeveCollections = collections
       .filter(c => c.products.some(p => p.type === 'sleeve'))
       .sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
-    const jacketCards = sleeveCollections.slice(0, 6).map(c => {
+    const jacketCards = sleeveCollections.slice(0, 8).map(c => {
       const product = c.products.find(p => p.type === 'sleeve');
       return DearDaria.productCardHTML(c, product, product.images[0]);
     }).join('');
-    DearDaria.renderGrid('jackets-grid', jacketCards, 3);
+    DearDaria.renderGrid('jackets-grid', jacketCards, 4);
 
-    // Wedding suites: 3-4 curated
-    const suiteCollections = collections
-      .filter(c => c.products.some(p => p.type === 'bundle'))
-      .sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
-    const suiteCards = suiteCollections.slice(0, 3).map(c => {
-      const product = c.products.find(p => p.type === 'bundle');
-      return DearDaria.productCardHTML(c, product, product.images[0]);
-    }).join('');
-    DearDaria.renderGrid('suites-grid', suiteCards, 3);
-
-    // Custom design section image
-    const customSource = collections.find(c => c.id === 'calla_bloom') || collections[0];
-    document.getElementById('custom-dark-img').src = DearDaria.imgUrl(customSource.hero);
-
-    // About strip placeholder image (uses an existing product photo until a real one is provided)
-    const aboutSource = collections.find(c => c.id === 'hydrangea') || collections[0];
-    document.getElementById('about-strip-img').src = DearDaria.imgUrl(aboutSource.hero);
+    const suiteSource = collections.find(c => c.products.some(p => p.type === 'bundle'));
+    if (suiteSource) {
+      const bundleProduct = suiteSource.products.find(p => p.type === 'bundle');
+      document.getElementById('suite-hero-img').src = DearDaria.imgUrl(bundleProduct.images[0]);
+    }
 
     DearDaria.initLazyImages();
   }
