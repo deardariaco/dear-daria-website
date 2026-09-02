@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Beau Papier — Papeterie Découpée pour Mariages, Suisse</title>
-<meta name="description" content="Beau Papier — pochettes d'invitation découpées et suites de mariage coordonnées, personnalisées lors d'un accompagnement individuel avec Daria Wälchli, en Suisse.">
+<title>Beau Papier | Papeterie Découpée pour Mariages, Suisse</title>
+<meta name="description" content="Beau Papier : faire-part de mariage découpés et suites coordonnées, personnalisées lors d'un accompagnement individuel avec Daria Wälchli, en Suisse.">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -90,9 +90,10 @@
 <section class="section tight border-top">
   <div class="container" style="max-width:760px;">
     <span class="eyebrow" data-i18n="behind_heading"></span>
-    <h2 style="font-size:clamp(26px,2.8vw,36px); margin-top:14px; margin-bottom:18px; font-style:italic;" data-i18n="about_title"></h2>
+    <h2 style="font-size:clamp(26px,2.8vw,36px); margin-top:14px; margin-bottom:18px;" data-i18n="about_title"></h2>
     <p style="color:var(--ink-soft); font-size:15px; line-height:1.8; margin-bottom:14px;" data-i18n="about_text1"></p>
-    <p style="color:var(--ink-soft); font-size:15px; line-height:1.8;" data-i18n="about_text2"></p>
+    <p style="color:var(--ink-soft); font-size:15px; line-height:1.8; margin-bottom:14px;" data-i18n="about_text2"></p>
+    <p style="color:var(--ink-soft); font-size:15px; line-height:1.8;" data-i18n="about_text3"></p>
   </div>
 </section>
 
@@ -133,22 +134,32 @@
     document.getElementById('hero-image').src = DearDaria.imgUrl(heroCollection.hero);
     document.getElementById('hero-image').alt = heroCollection.name;
 
-    const sleeveCollections = collections
-      .filter(c => c.products.some(p => p.type === 'sleeve' || p.type === 'other'))
-      .sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
-    const pochettesCards = sleeveCollections.slice(0, 6).map(c => {
-      const product = c.products.find(p => p.type === 'sleeve') || c.products.find(p => p.type === 'other');
-      return DearDaria.productCardHTML(c, product, product.images[0]);
-    }).join('');
+    // Faire-part homepage selection: explicit order from the approved catalogue,
+    // not auto-picked. Falls back to nothing if a product lacks an order (so an
+    // incomplete edit never silently shows the wrong item).
+    const pochetteEntries = [];
+    collections.forEach(c => {
+      c.products.forEach(p => {
+        if (p.homepage_order_pochette) pochetteEntries.push({ collection: c, product: p, order: p.homepage_order_pochette });
+      });
+    });
+    pochetteEntries.sort((a, b) => a.order - b.order);
+    const pochettesCards = pochetteEntries.map(({ collection, product }) =>
+      DearDaria.productCardHTML(collection, product, product.images[0])
+    ).join('');
     DearDaria.renderGrid('pochettes-grid', pochettesCards, 3);
 
-    const suiteCollections = collections
-      .filter(c => c.products.some(p => p.type === 'bundle'))
-      .sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
-    const suiteCards = suiteCollections.slice(0, 4).map(c => {
-      const product = c.products.find(p => p.type === 'bundle');
-      return DearDaria.productCardHTML(c, product, product.images[0]);
-    }).join('');
+    // Suites homepage selection: same explicit-order approach.
+    const suiteEntries = [];
+    collections.forEach(c => {
+      c.products.forEach(p => {
+        if (p.homepage_order_suite) suiteEntries.push({ collection: c, product: p, order: p.homepage_order_suite });
+      });
+    });
+    suiteEntries.sort((a, b) => a.order - b.order);
+    const suiteCards = suiteEntries.map(({ collection, product }) =>
+      DearDaria.productCardHTML(collection, product, product.images[0])
+    ).join('');
     DearDaria.renderGrid('suites-grid', suiteCards, 3);
 
     const customSource = collections.find(c => c.id === 'calla_bloom') || collections[0];

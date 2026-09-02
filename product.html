@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title id="page-title">Modèle — Beau Papier</title>
+<title id="page-title">Modèle | Beau Papier</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -32,7 +32,7 @@
     }
     const product = collection.products.find(p => p.type === type) || collection.products[0];
 
-    document.getElementById('page-title').textContent = `${product.title} — Beau Papier`;
+    document.getElementById('page-title').textContent = `${product.title} | Beau Papier`;
 
     const label = DearDaria.productTypeLabel(product.type);
     const isPersonalisable = DearDaria.PERSONALISABLE_TYPES.includes(product.type);
@@ -53,14 +53,14 @@
       <section class="section tight">
         <div class="container">
           <div class="breadcrumb">
-            <a href="invitation-jackets.html">${DearDaria.t('nav_pochettes')}</a> &nbsp;/&nbsp; <a href="collection.html?slug=${collection.slug}">${collection.name}</a> &nbsp;/&nbsp; ${label}
+            <a href="invitation-jackets.html">${DearDaria.t('nav_pochettes')}</a> &nbsp;/&nbsp; <a href="collection.html?slug=${collection.slug}">${DearDaria.collectionDisplayName(collection)}</a> &nbsp;/&nbsp; ${label}
           </div>
           <div class="detail-hero">
             <div class="media">
               <img src="${DearDaria.imgUrl(product.images[0])}" alt="${product.title}">
             </div>
             <div class="copy">
-              <span class="eyebrow">${collection.name} \u2014 ${label}</span>
+              <span class="eyebrow">${DearDaria.collectionDisplayName(collection)}, ${label}</span>
               <h1>${product.title}</h1>
               <div class="type-row" style="margin-bottom:18px;">${badge}</div>
               <p class="desc">${DearDaria.collectionDescription(collection)}</p>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title id="page-title">Modèle — Beau Papier</title>
+<title id="page-title">Modèle | Beau Papier</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -30,8 +30,8 @@
       return;
     }
 
-    document.getElementById('page-title').textContent = `${collection.name} — Beau Papier`;
-    const consultUrl = `consultation.html?design=${encodeURIComponent(collection.name)}&slug=${collection.slug}`;
+    document.getElementById('page-title').textContent = `${DearDaria.collectionDisplayName(collection)} | Beau Papier`;
+    const consultUrl = `consultation.html?design=${encodeURIComponent(DearDaria.collectionDisplayName(collection))}&slug=${collection.slug}`;
 
     const piecesHTML = collection.products.map(p => {
       const label = DearDaria.productTypeLabel(p.type);
@@ -44,19 +44,19 @@
     }).join('');
 
     const galleryImgs = collection.gallery.slice(0, 12).map(img =>
-      `<img class="lazy-img" loading="lazy" src="${DearDaria.imgUrl(img)}" alt="${collection.name} detail">`
+      `<img class="lazy-img" loading="lazy" src="${DearDaria.imgUrl(img)}" alt="${DearDaria.collectionDisplayName(collection)} detail">`
     ).join('');
 
     content.innerHTML = `
       <section class="section tight">
         <div class="container">
-          <div class="breadcrumb"><a href="invitation-jackets.html">${DearDaria.t('nav_pochettes')}</a> &nbsp;/&nbsp; ${collection.name}</div>
+          <div class="breadcrumb"><a href="invitation-jackets.html">${DearDaria.t('nav_pochettes')}</a> &nbsp;/&nbsp; ${DearDaria.collectionDisplayName(collection)}</div>
           <div class="detail-hero">
             <div class="media">
-              <img src="${DearDaria.imgUrl(collection.hero)}" alt="${collection.name} wedding stationery">
+              <img src="${DearDaria.imgUrl(collection.hero)}" alt="${DearDaria.collectionDisplayName(collection)} wedding stationery">
             </div>
             <div class="copy">
-              <h1>${collection.name}</h1>
+              <h1>${DearDaria.collectionDisplayName(collection)}</h1>
               <p class="desc">${DearDaria.collectionDescription(collection)}</p>
               <div class="btn-row">
                 <a href="${consultUrl}" class="btn primary">${DearDaria.t('request_consultation_for')}</a>
