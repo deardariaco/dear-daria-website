@@ -59,7 +59,7 @@ DearDaria.collectionCardHTML = function (collection) {
       </div>
       <div class="card-caption-static">
         <div class="name">${collection.name}</div>
-        <div class="meta">${count} ${pieceWord}</div>
+        <div class="meta">${DearDaria.t('collection_of')} ${count} ${pieceWord}</div>
       </div>
     </a>`;
 };

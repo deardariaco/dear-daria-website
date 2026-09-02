@@ -41,36 +41,39 @@
       "products": [
         {
           "type": "bundle",
-          "title": "Boho Peony Wedding Suite Bundle, Blush 7 Piece Set",
+          "title": "Suite Boho Peony",
           "images": [
             "boho-peony-bundle-1.jpg"
-          ]
+          ],
+          "seo_title": "Boho Peony Wedding Suite Bundle, Blush 7 Piece Set"
         },
         {
           "type": "menu",
-          "title": "Boho Peony Wedding Menu, Blush Oval Card",
+          "title": "Menu Boho Peony",
           "images": [
             "boho-peony-menu-2.jpg",
             "boho-peony-menu-3.jpg",
             "boho-peony-menu-4.jpg",
             "boho-peony-menu-5.jpg",
             "boho-peony-menu-6.jpg"
-          ]
+          ],
+          "seo_title": "Boho Peony Wedding Menu, Blush Oval Card"
         },
         {
           "type": "place_card",
-          "title": "Boho Peony Wedding Place Card, Shaped Name Card",
+          "title": "Marque-place Boho Peony",
           "images": [
             "boho-peony-place-card-7.jpg",
             "boho-peony-place-card-8.jpg",
             "boho-peony-place-card-9.jpg",
             "boho-peony-place-card-10.jpg",
             "boho-peony-place-card-11.jpg"
-          ]
+          ],
+          "seo_title": "Boho Peony Wedding Place Card, Shaped Name Card"
         },
         {
           "type": "rsvp",
-          "title": "Boho Peony Wedding RSVP Card, Shaped QR Reply",
+          "title": "Carte RSVP Boho Peony",
           "images": [
             "boho-peony-rsvp-12.jpg",
             "boho-peony-rsvp-13.jpg",
@@ -78,27 +81,30 @@
             "boho-peony-rsvp-15.jpg",
             "boho-peony-rsvp-16.jpg",
             "boho-peony-rsvp-17.jpg"
-          ]
+          ],
+          "seo_title": "Boho Peony Wedding RSVP Card, Shaped QR Reply"
         },
         {
           "type": "save_the_date",
-          "title": "Boho Peony Save the Date, Blush Arched Card",
+          "title": "Save the Date Boho Peony",
           "images": [
             "boho-peony-save-the-date-18.jpg",
             "boho-peony-save-the-date-19.jpg",
             "boho-peony-save-the-date-20.jpg",
             "boho-peony-save-the-date-21.jpg"
-          ]
+          ],
+          "seo_title": "Boho Peony Save the Date, Blush Arched Card"
         },
         {
           "type": "sleeve",
-          "title": "Boho Peony Wedding Invitation Sleeve, Eucalyptus Wrap, 4 Sizes",
+          "title": "Pochette Boho Peony",
           "images": [
             "boho-peony-sleeve-22.jpg",
             "boho-peony-sleeve-23.jpg",
             "boho-peony-sleeve-24.jpg",
             "boho-peony-sleeve-25.jpg"
-          ]
+          ],
+          "seo_title": "Boho Peony Wedding Invitation Sleeve, Eucalyptus Wrap, 4 Sizes"
         }
       ],
       "featured": true
@@ -124,14 +130,15 @@
       "products": [
         {
           "type": "bundle",
-          "title": "Calla Lily Interactive Wedding Invitation, Sage Green Trifold Gatefold",
+          "title": "Suite Calla Bloom",
           "images": [
             "calla-bloom-bundle-1.jpg",
             "calla-bloom-bundle-2.jpg",
             "calla-bloom-bundle-3.jpg",
             "calla-bloom-bundle-4.jpg",
             "calla-bloom-bundle-5.jpg"
-          ]
+          ],
+          "seo_title": "Calla Lily Interactive Wedding Invitation, Sage Green Trifold Gatefold"
         }
       ],
       "featured": true
@@ -189,15 +196,16 @@
       "products": [
         {
           "type": "bundle",
-          "title": "Calla Lily Wedding Suite Bundle, 7 Piece Set",
+          "title": "Suite Calla Lily",
           "images": [
             "calla-lily-bundle-1.jpg",
             "calla-lily-bundle-2.jpg"
-          ]
+          ],
+          "seo_title": "Calla Lily Wedding Suite Bundle, 7 Piece Set"
         },
         {
           "type": "menu",
-          "title": "Calla Lily Wedding Menu, Sage Green Oval Card",
+          "title": "Menu Calla Lily",
           "images": [
             "calla-lily-menu-3.jpg",
             "calla-lily-menu-4.jpg",
@@ -205,11 +213,12 @@
             "calla-lily-menu-6.jpg",
             "calla-lily-menu-7.jpg",
             "calla-lily-menu-8.jpg"
-          ]
+          ],
+          "seo_title": "Calla Lily Wedding Menu, Sage Green Oval Card"
         },
         {
           "type": "place_card",
-          "title": "Calla Lily Wedding Place Card, Die-Cut Shaped Name Card",
+          "title": "Marque-place Calla Lily",
           "images": [
             "calla-lily-place-card-9.jpg",
             "calla-lily-place-card-10.jpg",
@@ -217,11 +226,12 @@
             "calla-lily-place-card-12.jpg",
             "calla-lily-place-card-13.jpg",
             "calla-lily-place-card-14.jpg"
-          ]
+          ],
+          "seo_title": "Calla Lily Wedding Place Card, Die-Cut Shaped Name Card"
         },
         {
           "type": "rsvp",
-          "title": "Calla Lily Die-Cut RSVP Card, Wedding RSVP with QR Code, Floral",
+          "title": "Carte RSVP Calla Lily",
           "images": [
             "calla-lily-rsvp-15.jpg",
             "calla-lily-rsvp-16.jpg",
@@ -232,11 +242,12 @@
             "calla-lily-rsvp-21.jpg",
             "calla-lily-rsvp-22.jpg",
             "calla-lily-rsvp-23.jpg"
-          ]
+          ],
+          "seo_title": "Calla Lily Die-Cut RSVP Card, Wedding RSVP with QR Code, Floral"
         },
         {
           "type": "save_the_date",
-          "title": "Calla Lily Save the Date, Arched Die-Cut Wedding",
+          "title": "Save the Date Calla Lily",
           "images": [
             "calla-lily-save-the-date-24.jpg",
             "calla-lily-save-the-date-25.jpg",
@@ -249,16 +260,18 @@
             "calla-lily-save-the-date-32.jpg",
             "calla-lily-save-the-date-33.jpg",
             "calla-lily-save-the-date-34.jpg"
-          ]
+          ],
+          "seo_title": "Calla Lily Save the Date, Arched Die-Cut Wedding"
         },
         {
           "type": "sleeve",
-          "title": "Calla Lily Wedding Invitation Pocket Sleeve, Sage Green, 4 Sizes",
+          "title": "Pochette Calla Lily",
           "images": [
             "calla-lily-sleeve-35.jpeg",
             "calla-lily-sleeve-36.jpg",
             "calla-lily-sleeve-37.jpg"
-          ]
+          ],
+          "seo_title": "Calla Lily Wedding Invitation Pocket Sleeve, Sage Green, 4 Sizes"
         }
       ],
       "featured": true
@@ -284,20 +297,22 @@
       "products": [
         {
           "type": "bundle",
-          "title": "Hummingbird Magnolia Bundle",
+          "title": "Suite Hummingbird Magnolia",
           "images": [
             "hummingbird-bundle-1.jpg",
             "hummingbird-bundle-2.jpg",
             "hummingbird-bundle-3.jpg",
             "hummingbird-bundle-4.jpg"
-          ]
+          ],
+          "seo_title": "Hummingbird Magnolia Bundle"
         },
         {
           "type": "sleeve",
-          "title": "Hummingbird Magnolia Sleeve",
+          "title": "Pochette Hummingbird Magnolia",
           "images": [
             "hummingbird-sleeve-5.jpg"
-          ]
+          ],
+          "seo_title": "Hummingbird Magnolia Sleeve"
         }
       ],
       "featured": true
@@ -350,44 +365,48 @@
       "products": [
         {
           "type": "bundle",
-          "title": "Hydrangea Wedding Suite Bundle, Dusty Blue 7 Piece Set",
+          "title": "Suite Hydrangea",
           "images": [
             "hydrangea-bundle-1.jpg"
-          ]
+          ],
+          "seo_title": "Hydrangea Wedding Suite Bundle, Dusty Blue 7 Piece Set"
         },
         {
           "type": "save_the_date",
-          "title": "Hydrangea Save the Date, Dusty Blue Card",
+          "title": "Save the Date Hydrangea",
           "images": [
             "hydrangea-save-the-date-2.jpg",
             "hydrangea-save-the-date-3.jpg",
             "hydrangea-save-the-date-4.jpg",
             "hydrangea-save-the-date-5.jpg"
-          ]
+          ],
+          "seo_title": "Hydrangea Save the Date, Dusty Blue Card"
         },
         {
           "type": "place_card",
-          "title": "Hydrangea Wedding Place Card, Dusty Blue Shaped Name Card",
+          "title": "Marque-place Hydrangea",
           "images": [
             "hydrangea-place-card-6.jpg",
             "hydrangea-place-card-7.jpg",
             "hydrangea-place-card-8.jpg",
             "hydrangea-place-card-9.jpg"
-          ]
+          ],
+          "seo_title": "Hydrangea Wedding Place Card, Dusty Blue Shaped Name Card"
         },
         {
           "type": "rsvp",
-          "title": "Hydrangea Wedding RSVP Card, Dusty Blue Shaped QR Reply",
+          "title": "Carte RSVP Hydrangea",
           "images": [
             "hydrangea-rsvp-10.jpg",
             "hydrangea-rsvp-11.jpg",
             "hydrangea-rsvp-12.jpg",
             "hydrangea-rsvp-13.jpg"
-          ]
+          ],
+          "seo_title": "Hydrangea Wedding RSVP Card, Dusty Blue Shaped QR Reply"
         },
         {
           "type": "menu",
-          "title": "Hydrangea Wedding Menu, Dusty Blue Card",
+          "title": "Menu Hydrangea",
           "images": [
             "hydrangea-menu-14.jpg",
             "hydrangea-menu-15.jpg",
@@ -395,11 +414,12 @@
             "hydrangea-menu-17.jpg",
             "hydrangea-menu-18.jpg",
             "hydrangea-menu-19.jpg"
-          ]
+          ],
+          "seo_title": "Hydrangea Wedding Menu, Dusty Blue Card"
         },
         {
           "type": "sleeve",
-          "title": "Hydrangea Rose Wedding Invitation Sleeve, Mixed Floral Wrap, 4 Sizes",
+          "title": "Pochette Hydrangea",
           "images": [
             "hydrangea-sleeve-20.jpg",
             "hydrangea-sleeve-21.jpg",
@@ -414,7 +434,8 @@
             "hydrangea-sleeve-30.jpg",
             "hydrangea-sleeve-31.jpg",
             "hydrangea-sleeve-32.jpg"
-          ]
+          ],
+          "seo_title": "Hydrangea Rose Wedding Invitation Sleeve, Mixed Floral Wrap, 4 Sizes"
         }
       ],
       "featured": true
@@ -441,7 +462,7 @@
       "products": [
         {
           "type": "other",
-          "title": "Chapel Wedding Invitation, Church Gatefold, Door Opening Die Cut Card, 4 Sizes",
+          "title": "Invitation Chapel Gatefold",
           "images": [
             "chapel-other-1.jpg",
             "chapel-other-2.jpg",
@@ -449,7 +470,8 @@
             "chapel-other-4.jpg",
             "chapel-other-5.jpg",
             "chapel-other-6.jpg"
-          ]
+          ],
+          "seo_title": "Chapel Wedding Invitation, Church Gatefold, Door Opening Die Cut Card, 4 Sizes"
         }
       ],
       "featured": false
@@ -478,14 +500,15 @@
       "products": [
         {
           "type": "bundle",
-          "title": "Cherry Blossom Wedding Suite Bundle, Invitation Jacket & Envelope Liner, Invitation, RSVP, Save The Date, Menu",
+          "title": "Suite Cherry Blossom",
           "images": [
             "cherry-blossom-bundle-1.jpg"
-          ]
+          ],
+          "seo_title": "Cherry Blossom Wedding Suite Bundle, Invitation Jacket & Envelope Liner, Invitation, RSVP, Save The Date, Menu"
         },
         {
           "type": "sleeve",
-          "title": "Cherry Blossom Wedding Invitation Jacket, Sakura Floral Wrap, Blush DIY, 4 sizes",
+          "title": "Pochette Cherry Blossom",
           "images": [
             "cherry-blossom-sleeve-2.jpg",
             "cherry-blossom-sleeve-3.jpg",
@@ -494,7 +517,8 @@
             "cherry-blossom-sleeve-6.jpg",
             "cherry-blossom-sleeve-7.jpg",
             "cherry-blossom-sleeve-8.jpg"
-          ]
+          ],
+          "seo_title": "Cherry Blossom Wedding Invitation Jacket, Sakura Floral Wrap, Blush DIY, 4 sizes"
         }
       ],
       "featured": false
@@ -545,7 +569,7 @@
       "products": [
         {
           "type": "rsvp",
-          "title": "Coastal RSVP Message in a Bottle Wedding Card, Slide Out",
+          "title": "Carte RSVP Coastal Villa",
           "images": [
             "coastal-villa-rsvp-1.jpg",
             "coastal-villa-rsvp-2.jpg",
@@ -555,11 +579,12 @@
             "coastal-villa-rsvp-6.jpg",
             "coastal-villa-rsvp-7.jpg",
             "coastal-villa-rsvp-8.jpg"
-          ]
+          ],
+          "seo_title": "Coastal RSVP Message in a Bottle Wedding Card, Slide Out"
         },
         {
           "type": "save_the_date",
-          "title": "Coastal Villa Wedding Save the Date, Cliffside Scene Card",
+          "title": "Save the Date Coastal Villa",
           "images": [
             "coastal-villa-save-the-date-9.jpg",
             "coastal-villa-save-the-date-10.jpg",
@@ -568,11 +593,12 @@
             "coastal-villa-save-the-date-13.jpg",
             "coastal-villa-save-the-date-14.jpg",
             "coastal-villa-save-the-date-15.jpg"
-          ]
+          ],
+          "seo_title": "Coastal Villa Wedding Save the Date, Cliffside Scene Card"
         },
         {
           "type": "menu",
-          "title": "Coastal Wedding Menu, Lighthouse Scene Card",
+          "title": "Menu Coastal Villa",
           "images": [
             "coastal-villa-menu-16.jpg",
             "coastal-villa-menu-17.jpg",
@@ -581,11 +607,12 @@
             "coastal-villa-menu-20.jpg",
             "coastal-villa-menu-21.jpg",
             "coastal-villa-menu-22.jpg"
-          ]
+          ],
+          "seo_title": "Coastal Wedding Menu, Lighthouse Scene Card"
         },
         {
           "type": "sleeve",
-          "title": "Coastal Town Wedding Invitation Sleeve, Seaside Skyline Wrap, 4 Sizes",
+          "title": "Pochette Coastal Villa",
           "images": [
             "coastal-villa-sleeve-23.jpg",
             "coastal-villa-sleeve-24.jpg",
@@ -595,7 +622,8 @@
             "coastal-villa-sleeve-28.jpg",
             "coastal-villa-sleeve-29.jpg",
             "coastal-villa-sleeve-30.jpg"
-          ]
+          ],
+          "seo_title": "Coastal Town Wedding Invitation Sleeve, Seaside Skyline Wrap, 4 Sizes"
         }
       ],
       "featured": false
@@ -623,7 +651,7 @@
       "products": [
         {
           "type": "sleeve",
-          "title": "Floral Bouquet Wedding Invitation Sleeve, Blush Wrap, 4 Sizes",
+          "title": "Pochette Floral Bouquet",
           "images": [
             "floral-bouquet-sleeve-1.jpg",
             "floral-bouquet-sleeve-2.jpg",
@@ -632,7 +660,8 @@
             "floral-bouquet-sleeve-5.jpg",
             "floral-bouquet-sleeve-6.jpg",
             "floral-bouquet-sleeve-7.jpg"
-          ]
+          ],
+          "seo_title": "Floral Bouquet Wedding Invitation Sleeve, Blush Wrap, 4 Sizes"
         }
       ],
       "featured": false
@@ -694,14 +723,15 @@
       "products": [
         {
           "type": "bundle",
-          "title": "Freesia Wedding Suite Bundle, Sage Green 7 Piece Set",
+          "title": "Suite Freesia",
           "images": [
             "freesia-bundle-1.jpg"
-          ]
+          ],
+          "seo_title": "Freesia Wedding Suite Bundle, Sage Green 7 Piece Set"
         },
         {
           "type": "place_card",
-          "title": "Freesia Wedding Place Card, Die-Cut Shaped Name Card",
+          "title": "Marque-place Freesia",
           "images": [
             "freesia-place-card-2.jpg",
             "freesia-place-card-3.jpg",
@@ -709,11 +739,12 @@
             "freesia-place-card-5.jpg",
             "freesia-place-card-6.jpg",
             "freesia-place-card-7.jpg"
-          ]
+          ],
+          "seo_title": "Freesia Wedding Place Card, Die-Cut Shaped Name Card"
         },
         {
           "type": "rsvp",
-          "title": "Freesia Wedding RSVP Card, Shaped QR Reply",
+          "title": "Carte RSVP Freesia",
           "images": [
             "freesia-rsvp-8.jpg",
             "freesia-rsvp-9.jpg",
@@ -722,11 +753,12 @@
             "freesia-rsvp-12.jpg",
             "freesia-rsvp-13.jpg",
             "freesia-rsvp-14.jpg"
-          ]
+          ],
+          "seo_title": "Freesia Wedding RSVP Card, Shaped QR Reply"
         },
         {
           "type": "save_the_date",
-          "title": "Freesia Save the Date, Botanical Wedding",
+          "title": "Save the Date Freesia",
           "images": [
             "freesia-save-the-date-15.jpg",
             "freesia-save-the-date-16.jpg",
@@ -736,22 +768,24 @@
             "freesia-save-the-date-20.jpg",
             "freesia-save-the-date-21.jpg",
             "freesia-save-the-date-22.jpg"
-          ]
+          ],
+          "seo_title": "Freesia Save the Date, Botanical Wedding"
         },
         {
           "type": "menu",
-          "title": "Freesia Wedding Menu, Sage Green Card",
+          "title": "Menu Freesia",
           "images": [
             "freesia-menu-23.jpg",
             "freesia-menu-24.jpg",
             "freesia-menu-25.jpg",
             "freesia-menu-26.jpg",
             "freesia-menu-27.jpg"
-          ]
+          ],
+          "seo_title": "Freesia Wedding Menu, Sage Green Card"
         },
         {
           "type": "sleeve",
-          "title": "Freesia Wedding Invitation Sleeve, Botanical Floral Wrap, 4 Sizes",
+          "title": "Pochette Freesia",
           "images": [
             "freesia-sleeve-28.jpg",
             "freesia-sleeve-29.jpg",
@@ -767,7 +801,8 @@
             "freesia-sleeve-39.jpg",
             "freesia-sleeve-40.jpg",
             "freesia-sleeve-41.jpg"
-          ]
+          ],
+          "seo_title": "Freesia Wedding Invitation Sleeve, Botanical Floral Wrap, 4 Sizes"
         }
       ],
       "featured": false
@@ -794,7 +829,7 @@
       "products": [
         {
           "type": "other",
-          "title": "Gatefold Wedding Invitation, Garden Gate, Château Venue Die Cut Card, 4 Sizes",
+          "title": "Invitation Garden Gate",
           "images": [
             "gatefold-garden-other-1.jpg",
             "gatefold-garden-other-2.jpg",
@@ -802,7 +837,8 @@
             "gatefold-garden-other-4.jpg",
             "gatefold-garden-other-5.jpg",
             "gatefold-garden-other-6.jpg"
-          ]
+          ],
+          "seo_title": "Gatefold Wedding Invitation, Garden Gate, Château Venue Die Cut Card, 4 Sizes"
         }
       ],
       "featured": false
@@ -826,12 +862,13 @@
       "products": [
         {
           "type": "sleeve",
-          "title": "Iris Wedding Invitation Sleeve, Dusty Blue Floral Wrap",
+          "title": "Pochette Iris",
           "images": [
             "iris-sleeve-1.jpg",
             "iris-sleeve-2.jpg",
             "iris-sleeve-3.jpg"
-          ]
+          ],
+          "seo_title": "Iris Wedding Invitation Sleeve, Dusty Blue Floral Wrap"
         }
       ],
       "featured": false
@@ -895,15 +932,16 @@
       "products": [
         {
           "type": "bundle",
-          "title": "Lily Wedding Suite Bundle, Dusty Blue 7 Piece Set",
+          "title": "Suite Lily",
           "images": [
             "lily-bundle-1.jpg",
             "lily-bundle-2.jpg"
-          ]
+          ],
+          "seo_title": "Lily Wedding Suite Bundle, Dusty Blue 7 Piece Set"
         },
         {
           "type": "menu",
-          "title": "Lily Wedding Menu, Dusty Blue Arched Card",
+          "title": "Menu Lily",
           "images": [
             "lily-menu-3.jpg",
             "lily-menu-4.jpg",
@@ -911,11 +949,12 @@
             "lily-menu-6.jpg",
             "lily-menu-7.jpg",
             "lily-menu-8.jpg"
-          ]
+          ],
+          "seo_title": "Lily Wedding Menu, Dusty Blue Arched Card"
         },
         {
           "type": "place_card",
-          "title": "Lily Wedding Place Card, Dusty Blue Shaped Name Card",
+          "title": "Marque-place Lily",
           "images": [
             "lily-place-card-9.jpg",
             "lily-place-card-10.jpg",
@@ -924,22 +963,24 @@
             "lily-place-card-13.jpg",
             "lily-place-card-14.jpg",
             "lily-place-card-15.jpg"
-          ]
+          ],
+          "seo_title": "Lily Wedding Place Card, Dusty Blue Shaped Name Card"
         },
         {
           "type": "rsvp",
-          "title": "Lily Wedding RSVP Card, Dusty Blue Shaped Reply, Die-Cut",
+          "title": "Carte RSVP Lily",
           "images": [
             "lily-rsvp-16.jpg",
             "lily-rsvp-17.jpg",
             "lily-rsvp-18.jpg",
             "lily-rsvp-19.jpg",
             "lily-rsvp-20.jpg"
-          ]
+          ],
+          "seo_title": "Lily Wedding RSVP Card, Dusty Blue Shaped Reply, Die-Cut"
         },
         {
           "type": "save_the_date",
-          "title": "Lily Save the Date, Dusty Blue Wedding",
+          "title": "Save the Date Lily",
           "images": [
             "lily-save-the-date-21.jpg",
             "lily-save-the-date-22.jpg",
@@ -948,11 +989,12 @@
             "lily-save-the-date-25.jpg",
             "lily-save-the-date-26.jpg",
             "lily-save-the-date-27.jpg"
-          ]
+          ],
+          "seo_title": "Lily Save the Date, Dusty Blue Wedding"
         },
         {
           "type": "sleeve",
-          "title": "Lily Wedding Invitation Jacket, Dusty Blue Wrap, 4 Sizes",
+          "title": "Pochette Lily",
           "images": [
             "lily-sleeve-28.jpg",
             "lily-sleeve-29.jpg",
@@ -970,7 +1012,8 @@
             "lily-sleeve-41.jpg",
             "lily-sleeve-42.jpg",
             "lily-sleeve-43.jpg"
-          ]
+          ],
+          "seo_title": "Lily Wedding Invitation Jacket, Dusty Blue Wrap, 4 Sizes"
         }
       ],
       "featured": false
@@ -997,7 +1040,7 @@
       "products": [
         {
           "type": "sleeve",
-          "title": "Mixed Floral Wedding Invitation Sleeve, Blush Floral Wrap, 4 Sizes",
+          "title": "Pochette Mixed Floral",
           "images": [
             "mixed-floral-sleeve-1.jpg",
             "mixed-floral-sleeve-2.jpg",
@@ -1005,7 +1048,8 @@
             "mixed-floral-sleeve-4.jpg",
             "mixed-floral-sleeve-5.jpg",
             "mixed-floral-sleeve-6.jpg"
-          ]
+          ],
+          "seo_title": "Mixed Floral Wedding Invitation Sleeve, Blush Floral Wrap, 4 Sizes"
         }
       ],
       "featured": false
@@ -1032,7 +1076,7 @@
       "products": [
         {
           "type": "sleeve",
-          "title": "Olive Branch Wedding Invitation Pocket Sleeve, 4 Sizes",
+          "title": "Pochette Olive Branch",
           "images": [
             "olive-branch-sleeve-1.jpg",
             "olive-branch-sleeve-2.jpg",
@@ -1040,7 +1084,8 @@
             "olive-branch-sleeve-4.jpg",
             "olive-branch-sleeve-5.jpg",
             "olive-branch-sleeve-6.jpg"
-          ]
+          ],
+          "seo_title": "Olive Branch Wedding Invitation Pocket Sleeve, 4 Sizes"
         }
       ],
       "featured": false
@@ -1067,7 +1112,7 @@
       "products": [
         {
           "type": "sleeve",
-          "title": "Orange Blossom Wedding Invitation Sleeve, Citrus Floral Wrap, 4 Sizes",
+          "title": "Pochette Orange Blossom",
           "images": [
             "orange-blossom-sleeve-1.jpg",
             "orange-blossom-sleeve-2.jpg",
@@ -1075,7 +1120,8 @@
             "orange-blossom-sleeve-4.jpg",
             "orange-blossom-sleeve-5.jpg",
             "orange-blossom-sleeve-6.jpg"
-          ]
+          ],
+          "seo_title": "Orange Blossom Wedding Invitation Sleeve, Citrus Floral Wrap, 4 Sizes"
         }
       ],
       "featured": false
@@ -1112,7 +1158,7 @@
       "products": [
         {
           "type": "sleeve",
-          "title": "Peony Wedding Invitation Jacket, Blush Floral Wrap, 4 Sizes",
+          "title": "Pochette Peony",
           "images": [
             "peony-sleeve-1.jpg",
             "peony-sleeve-2.jpg",
@@ -1130,7 +1176,8 @@
             "peony-sleeve-14.jpg",
             "peony-sleeve-15.jpg",
             "peony-sleeve-16.jpg"
-          ]
+          ],
+          "seo_title": "Peony Wedding Invitation Jacket, Blush Floral Wrap, 4 Sizes"
         }
       ],
       "featured": false
@@ -1159,7 +1206,7 @@
       "products": [
         {
           "type": "sleeve",
-          "title": "Provence Lavender Wedding Invitation Sleeve, Floral Wrap, 4 Sizes",
+          "title": "Pochette Provence Lavender",
           "images": [
             "lavender-sleeve-1.jpg",
             "lavender-sleeve-2.jpg",
@@ -1169,7 +1216,8 @@
             "lavender-sleeve-6.jpg",
             "lavender-sleeve-7.jpg",
             "lavender-sleeve-8.jpg"
-          ]
+          ],
+          "seo_title": "Provence Lavender Wedding Invitation Sleeve, Floral Wrap, 4 Sizes"
         }
       ],
       "featured": false
@@ -1234,36 +1282,39 @@
       "products": [
         {
           "type": "bundle",
-          "title": "Seashell Wedding Suite Bundle, Dusty Blue 7 Piece Set",
+          "title": "Suite Seashell",
           "images": [
             "seashell-bundle-1.jpg",
             "seashell-bundle-2.jpg"
-          ]
+          ],
+          "seo_title": "Seashell Wedding Suite Bundle, Dusty Blue 7 Piece Set"
         },
         {
           "type": "rsvp",
-          "title": "Coral Wedding RSVP Card, Shaped QR Reply",
+          "title": "Carte RSVP Seashell",
           "images": [
             "seashell-rsvp-3.jpg",
             "seashell-rsvp-4.jpg",
             "seashell-rsvp-5.jpg",
             "seashell-rsvp-6.jpg"
-          ]
+          ],
+          "seo_title": "Coral Wedding RSVP Card, Shaped QR Reply"
         },
         {
           "type": "glass_tag",
-          "title": "Lifebuoy Wedding Glass Tag, Nautical Wine Charm",
+          "title": "Étiquette à Verre Seashell",
           "images": [
             "seashell-glass-tag-7.jpg",
             "seashell-glass-tag-8.jpg",
             "seashell-glass-tag-9.jpg",
             "seashell-glass-tag-10.jpg",
             "seashell-glass-tag-11.jpg"
-          ]
+          ],
+          "seo_title": "Lifebuoy Wedding Glass Tag, Nautical Wine Charm"
         },
         {
           "type": "place_card",
-          "title": "Seashell Wedding Place Card, Shaped Name Card",
+          "title": "Marque-place Seashell",
           "images": [
             "seashell-place-card-12.jpg",
             "seashell-place-card-13.jpg",
@@ -1275,11 +1326,12 @@
             "seashell-place-card-27.jpg",
             "seashell-place-card-28.jpg",
             "seashell-place-card-29.jpg"
-          ]
+          ],
+          "seo_title": "Seashell Wedding Place Card, Shaped Name Card"
         },
         {
           "type": "menu",
-          "title": "Seashell Wedding Menu, Coastal Beach Card",
+          "title": "Menu Seashell",
           "images": [
             "seashell-menu-16.jpg",
             "seashell-menu-17.jpg",
@@ -1289,22 +1341,24 @@
             "seashell-menu-21.jpg",
             "seashell-menu-22.jpg",
             "seashell-menu-23.jpg"
-          ]
+          ],
+          "seo_title": "Seashell Wedding Menu, Coastal Beach Card"
         },
         {
           "type": "save_the_date",
-          "title": "Seashell Wedding Save the Date, Coastal Arched Card",
+          "title": "Save the Date Seashell",
           "images": [
             "seashell-save-the-date-30.jpg",
             "seashell-save-the-date-31.jpg",
             "seashell-save-the-date-32.jpg",
             "seashell-save-the-date-33.jpg",
             "seashell-save-the-date-34.jpg"
-          ]
+          ],
+          "seo_title": "Seashell Wedding Save the Date, Coastal Arched Card"
         },
         {
           "type": "sleeve",
-          "title": "Seashell Wedding Invitation Sleeve, Coastal Starfish Wrap, 4 Sizes",
+          "title": "Pochette Seashell",
           "images": [
             "seashell-sleeve-35.jpg",
             "seashell-sleeve-36.jpg",
@@ -1316,7 +1370,8 @@
             "seashell-sleeve-42.jpg",
             "seashell-sleeve-43.jpg",
             "seashell-sleeve-44.jpg"
-          ]
+          ],
+          "seo_title": "Seashell Wedding Invitation Sleeve, Coastal Starfish Wrap, 4 Sizes"
         }
       ],
       "featured": false
@@ -1358,22 +1413,24 @@
       "products": [
         {
           "type": "bundle",
-          "title": "Tulip Wedding Stationery Suite Bundle",
+          "title": "Suite Tulip",
           "images": [
             "tulip-bundle-1.jpg"
-          ]
+          ],
+          "seo_title": "Tulip Wedding Stationery Suite Bundle"
         },
         {
           "type": "glass_tag",
-          "title": "Tulip Glass Tag",
+          "title": "Étiquette à Verre Tulip",
           "images": [
             "tulip-glass-tag-2.jpg",
             "tulip-glass-tag-3.jpg"
-          ]
+          ],
+          "seo_title": "Tulip Glass Tag"
         },
         {
           "type": "rsvp",
-          "title": "Tulip Die-Cut RSVP Card, Wedding RSVP with QR Code, Floral",
+          "title": "Carte RSVP Tulip",
           "images": [
             "tulip-rsvp-4.jpg",
             "tulip-rsvp-5.jpg",
@@ -1381,21 +1438,23 @@
             "tulip-rsvp-7.jpg",
             "tulip-rsvp-8.jpg",
             "tulip-rsvp-9.jpg"
-          ]
+          ],
+          "seo_title": "Tulip Die-Cut RSVP Card, Wedding RSVP with QR Code, Floral"
         },
         {
           "type": "save_the_date",
-          "title": "Tulip Save the Date, Save the Date Card & Floral Jacket, Wedding Invitation",
+          "title": "Save the Date Tulip",
           "images": [
             "tulip-save-the-date-10.jpg",
             "tulip-save-the-date-11.jpg",
             "tulip-save-the-date-12.jpg",
             "tulip-save-the-date-13.jpg"
-          ]
+          ],
+          "seo_title": "Tulip Save the Date, Save the Date Card & Floral Jacket, Wedding Invitation"
         },
         {
           "type": "sleeve",
-          "title": "Tulip Wedding Invitation Sleeve, Floral Wrap, 4 Sizes",
+          "title": "Pochette Tulip",
           "images": [
             "tulip-sleeve-14.jpg",
             "tulip-sleeve-15.jpg",
@@ -1405,7 +1464,8 @@
             "tulip-sleeve-19.jpg",
             "tulip-sleeve-20.jpg",
             "tulip-sleeve-21.jpg"
-          ]
+          ],
+          "seo_title": "Tulip Wedding Invitation Sleeve, Floral Wrap, 4 Sizes"
         }
       ],
       "featured": false
@@ -1432,7 +1492,7 @@
       "products": [
         {
           "type": "sleeve",
-          "title": "Vintage Floral Wedding Invitation Jacket, Blue Toile Wrap, 4 Sizes",
+          "title": "Pochette Vintage Floral",
           "images": [
             "vintage-floral-sleeve-1.jpg",
             "vintage-floral-sleeve-2.jpg",
@@ -1440,7 +1500,8 @@
             "vintage-floral-sleeve-4.jpg",
             "vintage-floral-sleeve-5.jpg",
             "vintage-floral-sleeve-6.jpg"
-          ]
+          ],
+          "seo_title": "Vintage Floral Wedding Invitation Jacket, Blue Toile Wrap, 4 Sizes"
         }
       ],
       "featured": false
@@ -1467,7 +1528,7 @@
       "products": [
         {
           "type": "sleeve",
-          "title": "Watercolor Floral Wedding Invitation Pocket Sleeve, Botanical Wrap, 4 Sizes",
+          "title": "Pochette Watercolor Floral",
           "images": [
             "watercolor-floral-sleeve-1.jpg",
             "watercolor-floral-sleeve-2.jpg",
@@ -1475,7 +1536,8 @@
             "watercolor-floral-sleeve-4.jpg",
             "watercolor-floral-sleeve-5.jpg",
             "watercolor-floral-sleeve-6.jpg"
-          ]
+          ],
+          "seo_title": "Watercolor Floral Wedding Invitation Pocket Sleeve, Botanical Wrap, 4 Sizes"
         }
       ],
       "featured": false

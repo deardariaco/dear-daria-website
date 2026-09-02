@@ -3,14 +3,11 @@ window.DearDaria = window.DearDaria || {};
 
 (function () {
   const NAV_LINKS = [
-    { href: 'index.html', key: 'nav_home' },
-    { href: 'wedding-suites.html', key: 'nav_suites' },
-    { href: 'invitation-jackets.html', key: 'nav_jackets' },
     { href: 'collections.html', key: 'nav_collections' },
-    { href: 'configurator.html', key: 'nav_configurator' },
-    { href: 'shop.html', key: 'nav_shop' },
     { href: 'bespoke.html', key: 'nav_bespoke' },
-    { href: 'info.html', key: 'nav_info' },
+    { href: 'info.html#how-it-works', key: 'nav_how_it_works' },
+    { href: 'info.html#about', key: 'nav_about' },
+    { href: 'shop.html', key: 'nav_shop' },
   ];
 
   function currentPage() {

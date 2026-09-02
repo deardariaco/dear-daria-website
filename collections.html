@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Collections — Beau Papier</title>
+<meta name="description" content="Toutes les collections Beau Papier — pochettes d'invitation découpées, suites de mariage coordonnées et papeterie assortie.">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,14 +13,14 @@
 
 <header class="section tight">
   <div class="container">
-    <span class="eyebrow" data-i18n="collections_eyebrow"></span>
-    <h1 style="font-size:clamp(36px,5vw,64px); font-style:italic; margin-top:14px; max-width:16ch;" data-i18n="collections_title"></h1>
-    <p style="color:var(--ink-soft); max-width:52ch; margin-top:20px; font-size:16px; line-height:1.7;" data-i18n="collections_lede"></p>
+    <h1 style="font-size:clamp(32px,4.4vw,52px); max-width:16ch;" data-i18n="collections_title"></h1>
+    <p style="color:var(--ink-soft); max-width:56ch; margin-top:16px; font-size:15px; line-height:1.7;" data-i18n="collections_lede"></p>
   </div>
 </header>
 
 <section class="section tight border-top">
   <div class="container">
+    <div class="filter-bar" id="filter-bar"></div>
     <div id="all-grid" class="grid cols-3"></div>
   </div>
 </section>
@@ -33,8 +34,37 @@
 <script>
 (async function () {
   const data = await DearDaria.loadData();
+  const collections = data.collections;
+  let activeFilter = 'all';
+
+  const allTypes = Array.from(new Set(collections.flatMap(c => c.products.map(p => p.type))));
+  const categories = ['all', ...allTypes];
+
+  function renderFilters() {
+    const bar = document.getElementById('filter-bar');
+    bar.innerHTML = categories.map(cat => {
+      const label = cat === 'all' ? DearDaria.t('all_filter') : DearDaria.productTypeLabel(cat);
+      return `<button class="filter-pill ${cat === activeFilter ? 'active' : ''}" data-cat="${cat}">${label}</button>`;
+    }).join('');
+    bar.querySelectorAll('.filter-pill').forEach(btn => {
+      btn.addEventListener('click', () => {
+        activeFilter = btn.dataset.cat;
+        renderFilters();
+        renderGrid();
+      });
+    });
+  }
+
+  function renderGrid() {
+    const filtered = activeFilter === 'all'
+      ? collections
+      : collections.filter(c => c.products.some(p => p.type === activeFilter));
+    DearDaria.renderGrid('all-grid', filtered.map(DearDaria.collectionCardHTML).join(''), 3);
+  }
+
   function render() {
-    DearDaria.renderGrid('all-grid', data.collections.map(DearDaria.collectionCardHTML).join(''), 3);
+    renderFilters();
+    renderGrid();
   }
   DearDaria.reRenderDynamic = render;
   render();
