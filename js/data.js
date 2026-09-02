@@ -27,6 +27,7 @@ DearDaria.PRODUCT_TYPE_KEY = {
   menu: 'label_menu',
   glass_tag: 'label_glass_tag',
   envelope_liner: 'label_envelope_liner',
+  details_card: 'label_details_card',
   other: 'label_other',
 };
 
