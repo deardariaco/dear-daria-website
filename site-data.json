@@ -47,7 +47,7 @@
           ],
           "seo_title": "Boho Peony Wedding Suite Bundle, Blush 7 Piece Set",
           "description_fr": "Une suite coordonnée autour de l’univers Pivoine Bohème, pensée pour créer une harmonie du faire-part aux détails du jour J.",
-          "homepage_order_suite": 2
+          "catalogue_order_suite": 9
         },
         {
           "type": "menu",
@@ -111,7 +111,8 @@
             "boho-peony-sleeve-25.jpg"
           ],
           "seo_title": "Boho Peony Wedding Invitation Sleeve, Eucalyptus Wrap, 4 Sizes",
-          "description_fr": "Des pivoines généreuses et des feuillages délicats composent un univers romantique, libre et raffiné."
+          "description_fr": "Des pivoines généreuses et des feuillages délicats composent un univers romantique, libre et raffiné.",
+          "catalogue_order_pochette": 7
         }
       ],
       "featured": true
@@ -147,7 +148,8 @@
           ],
           "seo_title": "Calla Lily Interactive Wedding Invitation, Sage Green Trifold Gatefold",
           "description_fr": "Un faire-part à trois volets dont les callas se déploient progressivement pour révéler l’invitation.",
-          "homepage_order_pochette": 2
+          "homepage_order_pochette": 2,
+          "catalogue_order_pochette": 8
         }
       ],
       "featured": true
@@ -212,7 +214,8 @@
           ],
           "seo_title": "Calla Lily Wedding Suite Bundle, 7 Piece Set",
           "description_fr": "Une suite coordonnée autour de l’univers Calla, pensée pour créer une harmonie du faire-part aux détails du jour J.",
-          "homepage_order_suite": 1
+          "homepage_order_suite": 2,
+          "catalogue_order_suite": 2
         },
         {
           "type": "menu",
@@ -288,7 +291,8 @@
           ],
           "seo_title": "Calla Lily Wedding Invitation Pocket Sleeve, Sage Green, 4 Sizes",
           "description_fr": "Des callas élancés et un feuillage délicat dessinent une composition botanique sobre et contemporaine.",
-          "homepage_order_pochette": 1
+          "homepage_order_pochette": 1,
+          "catalogue_order_pochette": 9
         }
       ],
       "featured": true
@@ -356,7 +360,8 @@
           ],
           "seo_title": "Hummingbird Magnolia Bundle",
           "description_fr": "Une suite coordonnée autour de l’univers Magnolia et Colibri, pensée pour créer une harmonie du faire-part aux détails du jour J.",
-          "homepage_order_suite": 3
+          "homepage_order_suite": 3,
+          "catalogue_order_suite": 3
         },
         {
           "type": "sleeve",
@@ -382,7 +387,8 @@
           ],
           "seo_title": "Hummingbird Magnolia Sleeve",
           "description_fr": "Des magnolias en fleurs et de fins colibris créent une composition légère, délicate et pleine de mouvement.",
-          "homepage_order_pochette": 3
+          "homepage_order_pochette": 3,
+          "catalogue_order_pochette": 10
         },
         {
           "type": "menu",
@@ -482,7 +488,8 @@
           ],
           "seo_title": "Hydrangea Wedding Suite Bundle, Dusty Blue 7 Piece Set",
           "description_fr": "Une suite coordonnée autour de l’univers Hortensia, pensée pour créer une harmonie du faire-part aux détails du jour J.",
-          "homepage_order_suite": 4
+          "homepage_order_suite": 9,
+          "catalogue_order_suite": 8
         },
         {
           "type": "save_the_date",
@@ -554,7 +561,7 @@
           ],
           "seo_title": "Hydrangea Rose Wedding Invitation Sleeve, Mixed Floral Wrap, 4 Sizes",
           "description_fr": "De généreux hortensias aux nuances poudrées créent une composition douce, romantique et intemporelle.",
-          "homepage_order_pochette": 6
+          "catalogue_order_pochette": 21
         }
       ],
       "featured": true
@@ -592,7 +599,7 @@
           ],
           "seo_title": "Chapel Wedding Invitation, Church Gatefold, Door Opening Die Cut Card, 4 Sizes",
           "description_fr": "Un faire-part à volets inspiré d’une chapelle, dont les portes s’ouvrent pour révéler l’invitation.",
-          "homepage_order_pochette": 4
+          "catalogue_order_pochette": 16
         }
       ],
       "featured": false
@@ -627,7 +634,7 @@
           ],
           "seo_title": "Cherry Blossom Wedding Suite Bundle, Invitation Jacket & Envelope Liner, Invitation, RSVP, Save The Date, Menu",
           "description_fr": "Une suite coordonnée autour de l’univers Fleurs de Cerisier, pensée pour créer une harmonie du faire-part aux détails du jour J.",
-          "homepage_order_suite": 6
+          "catalogue_order_suite": 13
         },
         {
           "type": "sleeve",
@@ -642,7 +649,8 @@
             "cherry-blossom-sleeve-8.jpg"
           ],
           "seo_title": "Cherry Blossom Wedding Invitation Jacket, Sakura Floral Wrap, Blush DIY, 4 sizes",
-          "description_fr": "De délicates branches de cerisier dessinent une composition printanière douce et élégante."
+          "description_fr": "De délicates branches de cerisier dessinent une composition printanière douce et élégante.",
+          "catalogue_order_pochette": 11
         }
       ],
       "featured": false
@@ -751,7 +759,8 @@
             "coastal-villa-sleeve-30.jpg"
           ],
           "seo_title": "Coastal Town Wedding Invitation Sleeve, Seaside Skyline Wrap, 4 Sizes",
-          "description_fr": "Une scène côtière dessinée avec finesse évoque une célébration lumineuse au bord de la Méditerranée."
+          "description_fr": "Une scène côtière dessinée avec finesse évoque une célébration lumineuse au bord de la Méditerranée.",
+          "catalogue_order_pochette": 17
         }
       ],
       "featured": false
@@ -790,7 +799,8 @@
             "floral-bouquet-sleeve-7.jpg"
           ],
           "seo_title": "Floral Bouquet Wedding Invitation Sleeve, Blush Wrap, 4 Sizes",
-          "description_fr": "Un bouquet de fleurs de jardin compose un décor généreux, romantique et délicatement intemporel."
+          "description_fr": "Un bouquet de fleurs de jardin compose un décor généreux, romantique et délicatement intemporel.",
+          "catalogue_order_pochette": 22
         }
       ],
       "featured": false
@@ -857,7 +867,9 @@
             "freesia-bundle-1.jpg"
           ],
           "seo_title": "Freesia Wedding Suite Bundle, Sage Green 7 Piece Set",
-          "description_fr": "Une suite coordonnée autour de l’univers Frésia, pensée pour créer une harmonie du faire-part aux détails du jour J."
+          "description_fr": "Une suite coordonnée autour de l’univers Frésia, pensée pour créer une harmonie du faire-part aux détails du jour J.",
+          "catalogue_order_suite": 10,
+          "homepage_order_suite": 7
         },
         {
           "type": "place_card",
@@ -937,7 +949,8 @@
             "freesia-sleeve-41.jpg"
           ],
           "seo_title": "Freesia Wedding Invitation Sleeve, Botanical Floral Wrap, 4 Sizes",
-          "description_fr": "De fines tiges de frésia créent une composition botanique aérienne, élégante et pleine de douceur."
+          "description_fr": "De fines tiges de frésia créent une composition botanique aérienne, élégante et pleine de douceur.",
+          "catalogue_order_pochette": 23
         }
       ],
       "featured": false
@@ -975,7 +988,7 @@
           ],
           "seo_title": "Gatefold Wedding Invitation, Garden Gate, Château Venue Die Cut Card, 4 Sizes",
           "description_fr": "Un portail de jardin ajouré s’ouvre sur une scène de château, comme une invitation à entrer dans le décor.",
-          "homepage_order_pochette": 5
+          "catalogue_order_pochette": 18
         }
       ],
       "featured": false
@@ -1006,7 +1019,8 @@
             "iris-sleeve-3.jpg"
           ],
           "seo_title": "Iris Wedding Invitation Sleeve, Dusty Blue Floral Wrap",
-          "description_fr": "Des iris finement dessinés composent un faire-part botanique élégant aux nuances douces."
+          "description_fr": "Des iris finement dessinés composent un faire-part botanique élégant aux nuances douces.",
+          "catalogue_order_pochette": 24
         }
       ],
       "featured": false
@@ -1076,7 +1090,8 @@
             "lily-bundle-2.jpg"
           ],
           "seo_title": "Lily Wedding Suite Bundle, Dusty Blue 7 Piece Set",
-          "description_fr": "Une suite coordonnée autour de l’univers Lys, pensée pour créer une harmonie du faire-part aux détails du jour J."
+          "description_fr": "Une suite coordonnée autour de l’univers Lys, pensée pour créer une harmonie du faire-part aux détails du jour J.",
+          "catalogue_order_suite": 11
         },
         {
           "type": "menu",
@@ -1157,7 +1172,8 @@
             "lily-sleeve-43.jpg"
           ],
           "seo_title": "Lily Wedding Invitation Jacket, Dusty Blue Wrap, 4 Sizes",
-          "description_fr": "Des lys gracieux et élancés dessinent une composition florale raffinée et intemporelle."
+          "description_fr": "Des lys gracieux et élancés dessinent une composition florale raffinée et intemporelle.",
+          "catalogue_order_pochette": 12
         }
       ],
       "featured": false
@@ -1194,7 +1210,8 @@
             "mixed-floral-sleeve-6.jpg"
           ],
           "seo_title": "Mixed Floral Wedding Invitation Sleeve, Blush Floral Wrap, 4 Sizes",
-          "description_fr": "Une composition de fleurs de jardin s’entrelace dans un esprit romantique, naturel et généreux."
+          "description_fr": "Une composition de fleurs de jardin s’entrelace dans un esprit romantique, naturel et généreux.",
+          "catalogue_order_pochette": 25
         }
       ],
       "featured": false
@@ -1231,7 +1248,8 @@
             "olive-branch-sleeve-6.jpg"
           ],
           "seo_title": "Olive Branch Wedding Invitation Pocket Sleeve, 4 Sizes",
-          "description_fr": "Des rameaux d’olivier aux lignes épurées apportent une élégance méditerranéenne sobre et naturelle."
+          "description_fr": "Des rameaux d’olivier aux lignes épurées apportent une élégance méditerranéenne sobre et naturelle.",
+          "catalogue_order_pochette": 13
         }
       ],
       "featured": false
@@ -1268,7 +1286,8 @@
             "orange-blossom-sleeve-6.jpg"
           ],
           "seo_title": "Orange Blossom Wedding Invitation Sleeve, Citrus Floral Wrap, 4 Sizes",
-          "description_fr": "Des fleurs d’oranger et leur feuillage composent un décor solaire, délicat et méditerranéen."
+          "description_fr": "Des fleurs d’oranger et leur feuillage composent un décor solaire, délicat et méditerranéen.",
+          "catalogue_order_pochette": 19
         }
       ],
       "featured": false
@@ -1325,7 +1344,8 @@
             "peony-sleeve-16.jpg"
           ],
           "seo_title": "Peony Wedding Invitation Jacket, Blush Floral Wrap, 4 Sizes",
-          "description_fr": "De grandes pivoines finement dessinées créent un faire-part romantique à la présence généreuse."
+          "description_fr": "De grandes pivoines finement dessinées créent un faire-part romantique à la présence généreuse.",
+          "catalogue_order_pochette": 26
         }
       ],
       "featured": false
@@ -1366,7 +1386,8 @@
             "lavender-sleeve-8.jpg"
           ],
           "seo_title": "Provence Lavender Wedding Invitation Sleeve, Floral Wrap, 4 Sizes",
-          "description_fr": "De fins brins de lavande évoquent la Provence dans une composition délicate et naturellement élégante."
+          "description_fr": "De fins brins de lavande évoquent la Provence dans une composition délicate et naturellement élégante.",
+          "catalogue_order_pochette": 14
         }
       ],
       "featured": false
@@ -1438,7 +1459,8 @@
           ],
           "seo_title": "Seashell Wedding Suite Bundle, Dusty Blue 7 Piece Set",
           "description_fr": "Une suite coordonnée autour de l’univers Rivage, pensée pour créer une harmonie du faire-part aux détails du jour J.",
-          "homepage_order_suite": 5
+          "homepage_order_suite": 5,
+          "catalogue_order_suite": 5
         },
         {
           "type": "rsvp",
@@ -1528,7 +1550,8 @@
             "seashell-sleeve-44.jpg"
           ],
           "seo_title": "Seashell Wedding Invitation Sleeve, Coastal Starfish Wrap, 4 Sizes",
-          "description_fr": "Coquillages, coraux et détails marins composent une papeterie raffinée inspirée du rivage."
+          "description_fr": "Coquillages, coraux et détails marins composent une papeterie raffinée inspirée du rivage.",
+          "catalogue_order_pochette": 15
         }
       ],
       "featured": false
@@ -1575,7 +1598,8 @@
             "tulip-bundle-1.jpg"
           ],
           "seo_title": "Tulip Wedding Stationery Suite Bundle",
-          "description_fr": "Une suite coordonnée autour de l’univers Tulipe, pensée pour créer une harmonie du faire-part aux détails du jour J."
+          "description_fr": "Une suite coordonnée autour de l’univers Tulipe, pensée pour créer une harmonie du faire-part aux détails du jour J.",
+          "catalogue_order_suite": 12
         },
         {
           "type": "glass_tag",
@@ -1627,7 +1651,8 @@
             "tulip-sleeve-21.jpg"
           ],
           "seo_title": "Tulip Wedding Invitation Sleeve, Floral Wrap, 4 Sizes",
-          "description_fr": "Des tulipes de jardin dessinent une composition fraîche, élégante et résolument printanière."
+          "description_fr": "Des tulipes de jardin dessinent une composition fraîche, élégante et résolument printanière.",
+          "catalogue_order_pochette": 20
         }
       ],
       "featured": false
@@ -1680,7 +1705,9 @@
             "vintage-floral-sleeve-6.jpg"
           ],
           "seo_title": "Vintage Floral Wedding Invitation Jacket, Blue Toile Wrap, 4 Sizes",
-          "description_fr": "Une composition florale inspirée des toiles anciennes apporte au faire-part un charme délicat et patrimonial."
+          "description_fr": "Une composition florale inspirée des toiles anciennes apporte au faire-part un charme délicat et patrimonial.",
+          "homepage_order_pochette": 6,
+          "catalogue_order_pochette": 6
         },
         {
           "type": "bundle",
@@ -1688,7 +1715,8 @@
           "images": [
             "vintage_new-bundle-1.jpg"
           ],
-          "homepage_order_suite": 7
+          "homepage_order_suite": 6,
+          "catalogue_order_suite": 6
         },
         {
           "type": "menu",
@@ -1720,8 +1748,8 @@
           ]
         },
         {
-          "type": "other",
-          "title": "Pièce coordonnée Toile Botanique (à identifier)",
+          "type": "details_card",
+          "title": "Carte de Déroulement Toile Botanique",
           "images": [
             "vintage_new-other-1.jpg",
             "vintage_new-other-2.jpg",
@@ -1764,7 +1792,8 @@
             "watercolor-floral-sleeve-6.jpg"
           ],
           "seo_title": "Watercolor Floral Wedding Invitation Pocket Sleeve, Botanical Wrap, 4 Sizes",
-          "description_fr": "Des fleurs et feuillages peints à l’aquarelle créent une composition douce, lumineuse et aérienne."
+          "description_fr": "Des fleurs et feuillages peints à l’aquarelle créent une composition douce, lumineuse et aérienne.",
+          "catalogue_order_pochette": 27
         }
       ],
       "featured": false
@@ -1790,7 +1819,8 @@
           "title": "Faire-part Anémone & Symphorine",
           "images": [
             "anemone-sleeve-1.jpg"
-          ]
+          ],
+          "catalogue_order_pochette": 4
         }
       ]
     },
@@ -1843,7 +1873,8 @@
             "autumn-bundle-1.jpg",
             "autumn-bundle-2.jpg"
           ],
-          "homepage_order_suite": 8
+          "homepage_order_suite": 4,
+          "catalogue_order_suite": 4
         },
         {
           "type": "menu",
@@ -1898,7 +1929,8 @@
             "autumn-sleeve-6.jpg",
             "autumn-sleeve-7.jpg",
             "autumn-sleeve-8.jpg"
-          ]
+          ],
+          "catalogue_order_pochette": 5
         }
       ]
     },
@@ -1951,7 +1983,8 @@
           "images": [
             "constellation-bundle-1.jpg"
           ],
-          "homepage_order_suite": 9
+          "homepage_order_suite": 8,
+          "catalogue_order_suite": 7
         },
         {
           "type": "envelope_liner",
@@ -2014,7 +2047,8 @@
             "constellation-sleeve-4.jpg",
             "constellation-sleeve-5.jpg",
             "constellation-sleeve-6.jpg"
-          ]
+          ],
+          "catalogue_order_pochette": 3
         }
       ]
     },
@@ -2078,7 +2112,8 @@
             "koi-bundle-3.jpg",
             "koi-bundle-4.jpg"
           ],
-          "homepage_order_suite": 10
+          "homepage_order_suite": 1,
+          "catalogue_order_suite": 1
         },
         {
           "type": "envelope_liner",
@@ -2104,7 +2139,9 @@
             "koi-sleeve-7.jpg",
             "koi-sleeve-8.jpg",
             "koi-sleeve-9.jpg"
-          ]
+          ],
+          "homepage_order_pochette": 4,
+          "catalogue_order_pochette": 2
         },
         {
           "type": "menu",
@@ -2177,7 +2214,9 @@
             "orchid_winter-sleeve-2.jpg",
             "orchid_winter-sleeve-3.jpg",
             "orchid_winter-sleeve-4.jpg"
-          ]
+          ],
+          "homepage_order_pochette": 5,
+          "catalogue_order_pochette": 1
         }
       ]
     }
