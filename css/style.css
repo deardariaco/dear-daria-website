@@ -3,7 +3,7 @@
    Swiss-crafted wedding stationery. Editorial, image-led, calm.
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Manrope:wght@400;500;600;700&display=swap');
 
 :root {
   /* Color — botanical, Swiss, muted. No cream+terracotta cliche. */
@@ -19,10 +19,10 @@
   --white: #FFFEFB;
 
   /* Type */
-  --font-display: 'Fraunces', Georgia, serif;
+  --font-display: 'Libre Caslon Display', Georgia, 'Times New Roman', serif;
   --font-body: 'Manrope', -apple-system, sans-serif;
 
-  --tracking-wide: 0.14em;
+  --tracking-wide: 0.07em;
 
   /* Layout — wider usable width, tighter gutters than before */
   --gutter: clamp(20px, 4vw, 72px);
@@ -119,7 +119,7 @@ p { margin: 0; }
 .nav-logo {
   font-family: var(--font-display);
   font-size: 22px;
-  font-style: italic;
+ 
   font-weight: 500;
   letter-spacing: 0.01em;
 }
@@ -243,7 +243,7 @@ p { margin: 0; }
 }
 .hero-copy h1 {
   font-size: clamp(40px, 5.4vw, 76px);
-  font-style: italic;
+ 
   line-height: 1.05;
 }
 .hero-copy .lede {
@@ -268,8 +268,9 @@ p { margin: 0; }
   margin-bottom: clamp(32px, 5vw, 64px);
 }
 .section-head h2 {
-  font-size: clamp(30px, 3.4vw, 48px);
-  font-style: italic;
+  font-size: clamp(26px, 2.8vw, 38px);
+  line-height: 1.2;
+ 
 }
 .section-head .lede { max-width: 46ch; color: var(--ink-soft); font-size: 15px; margin-top: 12px; }
 
@@ -314,11 +315,11 @@ p { margin: 0; }
   transition: width 0.5s var(--ease) 0.05s;
 }
 .card:hover .card-hover-caption .unfold-rule { width: 32px; }
-.card-hover-caption .name { font-family: var(--font-display); font-style: italic; font-size: 19px; }
+.card-hover-caption .name { font-family: var(--font-display); font-size: 19px; }
 .card-hover-caption .view { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.85; margin-top: 4px; }
 
 .card-caption-static { padding-top: 14px; }
-.card-caption-static .name { font-family: var(--font-display); font-size: 18px; font-style: italic; }
+.card-caption-static .name { font-family: var(--font-display); font-size: 18px; }
 .card-caption-static .meta { font-size: 12px; color: var(--ink-soft); margin-top: 3px; letter-spacing: 0.03em; }
 
 @media (hover: hover) and (pointer: fine) { .card-caption-static { display: none; } }
@@ -332,7 +333,7 @@ p { margin: 0; }
 .split-row.reverse > * { direction: ltr; }
 .split-row .media img { width: 100%; aspect-ratio: 4/5; object-fit: cover; }
 .split-row .copy .eyebrow { margin-bottom: 14px; display: block; }
-.split-row .copy h2 { font-size: clamp(28px, 3.2vw, 42px); font-style: italic; margin-bottom: 20px; }
+.split-row .copy h2 { font-size: clamp(28px, 3.2vw, 42px); margin-bottom: 20px; }
 .split-row .copy p { color: var(--ink-soft); margin-bottom: 28px; max-width: 46ch; }
 
 @media (max-width: 860px) {
@@ -342,8 +343,8 @@ p { margin: 0; }
 
 /* ============ PROCESS STEPS ============ */
 .process-list { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; }
-.process-step .num { font-family: var(--font-display); font-style: italic; font-size: 15px; color: var(--brass); margin-bottom: 14px; }
-.process-step h3 { font-size: 19px; margin-bottom: 10px; font-style: italic; }
+.process-step .num { font-family: var(--font-display); font-size: 15px; color: var(--brass); margin-bottom: 14px; }
+.process-step h3 { font-size: 19px; margin-bottom: 10px; }
 .process-step p { color: var(--ink-soft); font-size: 14px; }
 @media (max-width: 860px) { .process-list { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 560px) { .process-list { grid-template-columns: 1fr; } }
@@ -377,12 +378,12 @@ p { margin: 0; }
 .detail-hero { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(24px,4vw,64px); align-items: center; }
 .detail-hero .media img { width: 100%; aspect-ratio: 4/5; object-fit: cover; }
 .detail-hero .copy .eyebrow { margin-bottom: 16px; display: block; }
-.detail-hero .copy h1 { font-size: clamp(32px, 4vw, 56px); font-style: italic; margin-bottom: 20px; }
+.detail-hero .copy h1 { font-size: clamp(28px, 3.2vw, 42px); line-height: 1.15; margin-bottom: 20px; font-weight: 500; }
 .detail-hero .copy p.desc { color: var(--ink-soft); max-width: 46ch; margin-bottom: 28px; line-height: 1.75; }
 .price-tag { font-family: var(--font-display); font-size: 22px; margin-bottom: 20px; color: var(--ink); }
 @media (max-width: 860px) { .detail-hero { grid-template-columns: 1fr; } }
 
-.gallery-strip { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+.gallery-strip { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; }
 .gallery-strip img { width: 100%; aspect-ratio: 4/5; object-fit: cover; cursor: zoom-in; transition: opacity 0.3s var(--ease); }
 .gallery-strip img:hover { opacity: 0.88; }
 
@@ -421,7 +422,6 @@ p { margin: 0; }
 .myo-premium .eyebrow.brass { color: #C9AD74; margin-bottom: 18px; display: block; }
 .myo-premium h3 {
   font-size: clamp(28px, 3vw, 40px);
-  font-style: italic;
   color: var(--ivory);
   margin-bottom: 18px;
   grid-column: 1 / -1;
@@ -473,14 +473,14 @@ p { margin: 0; }
 .custom-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
 .custom-card { padding: 40px 32px; background: var(--white); border: 1px solid var(--mist); }
 .custom-card .eyebrow { margin-bottom: 16px; display: block; }
-.custom-card h3 { font-size: 22px; font-style: italic; margin-bottom: 14px; }
+.custom-card h3 { font-size: 22px; margin-bottom: 14px; }
 .custom-card p { color: var(--ink-soft); font-size: 14px; }
 @media (max-width: 860px) { .custom-grid { grid-template-columns: 1fr; } }
 
 /* ============ FAQ ============ */
 .faq-item { border-bottom: 1px solid var(--mist); padding: 24px 0; }
 .faq-item summary {
-  cursor: pointer; font-family: var(--font-display); font-size: 18px; font-style: italic;
+  cursor: pointer; font-family: var(--font-display); font-size: 18px;
   list-style: none; display: flex; justify-content: space-between; align-items: center;
 }
 .faq-item summary::-webkit-details-marker { display: none; }
@@ -505,7 +505,7 @@ p { margin: 0; }
 .tag { font-size: 11px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-soft); border: 1px solid var(--mist); padding: 5px 12px; }
 .divider { height: 1px; background: var(--mist); border: none; margin: 0; }
 .empty-state { text-align: center; padding: 80px 20px; color: var(--ink-soft); }
-.empty-state h3 { font-style: italic; margin-bottom: 10px; color: var(--ink); }
+.empty-state h3 { margin-bottom: 10px; color: var(--ink); }
 .breadcrumb { font-size: 12px; color: var(--ink-soft); margin-bottom: 24px; letter-spacing: 0.02em; }
 .breadcrumb a { color: var(--ink-soft); }
 .breadcrumb a:hover { color: var(--sage-deep); }
@@ -530,7 +530,7 @@ p { margin: 0; }
 
 /* ============ DESIGN-PRESENTATION GALLERY CARD (no prices) ============ */
 .design-card-meta { padding-top: 14px; }
-.design-card-meta .name { font-family: var(--font-display); font-size: 18px; font-style: italic; }
+.design-card-meta .name { font-family: var(--font-display); font-size: 18px; }
 .design-card-meta .type-row { display: flex; align-items: center; gap: 8px; margin-top: 4px; }
 .design-card-meta .type { font-size: 12px; color: var(--ink-soft); }
 .badge-personalisable {
@@ -545,7 +545,7 @@ p { margin: 0; }
 /* ============ COMPACT 5-STEP PROCESS ============ */
 .process5-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; }
 .process5-grid .step { padding: 20px 16px; background: var(--white); border: 1px solid var(--mist); }
-.process5-grid .step .num { font-family: var(--font-display); font-style: italic; font-size: 20px; color: var(--brass); margin-bottom: 10px; }
+.process5-grid .step .num { font-family: var(--font-display); font-size: 20px; color: var(--brass); margin-bottom: 10px; }
 .process5-grid .step h4 { font-size: 14.5px; margin-bottom: 8px; }
 .process5-grid .step p { font-size: 12.5px; color: var(--ink-soft); line-height: 1.6; }
 @media (max-width: 980px) { .process5-grid { grid-template-columns: repeat(2, 1fr); } }
@@ -570,7 +570,7 @@ p { margin: 0; }
   display: flex; flex-direction: column; justify-content: center; gap: 22px;
   padding: 40px clamp(24px, 4vw, 64px);
 }
-.hero-controlled .hc-copy h1 { font-size: clamp(30px, 3.2vw, 44px); font-style: italic; line-height: 1.12; max-width: 15ch; }
+.hero-controlled .hc-copy h1 { font-size: clamp(28px, 2.9vw, 40px); line-height: 1.15; max-width: 21ch; font-weight: 500; }
 .hero-controlled .hc-copy .lede { font-size: 15.5px; color: var(--ink-soft); max-width: 40ch; line-height: 1.7; }
 @media (max-width: 900px) {
   .hero-controlled { grid-template-columns: 1fr; height: auto; }
@@ -583,7 +583,7 @@ p { margin: 0; }
   text-align: center;
   padding: 56px 20px;
 }
-.contact-banner h2 { font-size: clamp(24px, 2.6vw, 32px); font-style: italic; margin-bottom: 14px; }
+.contact-banner h2 { font-size: clamp(24px, 2.6vw, 32px); margin-bottom: 14px; }
 .contact-banner p { color: var(--ink-soft); font-size: 14.5px; margin-bottom: 22px; max-width: 52ch; margin-left: auto; margin-right: auto; }
 
 .nav-mobile-cta { display: none; }
@@ -712,4 +712,25 @@ p { margin: 0; }
 .gallery-strip img.gallery-thumb:focus-visible {
   outline: 2px solid var(--sage-deep);
   outline-offset: 2px;
+}
+
+/* ============ GALLERY CAPTION ============ */
+.gallery-caption {
+  font-size: 12.5px;
+  color: var(--ink-soft);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Mobile: thumbnails scroll horizontally instead of wrapping into empty rows */
+@media (max-width: 700px) {
+  .gallery-strip {
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(110px, 1fr);
+    overflow-x: auto;
+    grid-template-columns: none;
+    padding-bottom: 8px;
+  }
 }
