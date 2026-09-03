@@ -17,6 +17,7 @@
 <script src="js/i18n.js"></script>
 <script src="js/shell.js"></script>
 <script src="js/data.js"></script>
+<script src="js/gallery.js"></script>
 <script>
 (async function () {
   const slug = DearDaria.getQueryParam('slug');
@@ -38,7 +39,7 @@
     const isPersonalisable = DearDaria.PERSONALISABLE_TYPES.includes(product.type);
     const badge = isPersonalisable ? `<span class="badge-personalisable">${DearDaria.t('personalisable_badge')}</span>` : '';
 
-    const galleryImgs = product.images.slice(0, 8).map(img =>
+    const galleryImgs = product.images.map(img =>
       `<img class="lazy-img" loading="lazy" src="${DearDaria.imgUrl(img)}" alt="${product.title}">`
     ).join('');
 
@@ -57,7 +58,8 @@
           </div>
           <div class="detail-hero">
             <div class="media">
-              <img src="${DearDaria.imgUrl(product.images[0])}" alt="${product.title}">
+              <img id="gallery-main-img" src="${DearDaria.imgUrl(product.images[0])}" alt="${product.title}">
+              ${DearDaria.galleryArrowsHTML(DearDaria.getLang())}
             </div>
             <div class="copy">
               <span class="eyebrow">${DearDaria.collectionDisplayName(collection)}, ${label}</span>
@@ -77,12 +79,21 @@
       <section class="section tight border-top">
         <div class="container">
           <div class="section-head"><div><span class="eyebrow">${DearDaria.t('gallery_label')}</span><h2>${DearDaria.t('closer_look')}</h2></div></div>
-          <div class="gallery-strip">${galleryImgs}</div>
+          <div class="gallery-strip" id="gallery-thumbs">${galleryImgs}</div>
         </div>
       </section>
     `;
 
     DearDaria.initLazyImages();
+
+    DearDaria.initProductGallery({
+      images: product.images,
+      mainImgEl: document.getElementById('gallery-main-img'),
+      prevBtnEl: document.getElementById('gallery-prev'),
+      nextBtnEl: document.getElementById('gallery-next'),
+      thumbContainer: document.getElementById('gallery-thumbs'),
+      altText: product.title,
+    });
   }
 
   DearDaria.reRenderDynamic = render;

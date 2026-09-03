@@ -17,6 +17,7 @@
 <script src="js/i18n.js"></script>
 <script src="js/shell.js"></script>
 <script src="js/data.js"></script>
+<script src="js/gallery.js"></script>
 <script>
 (async function () {
   const slug = DearDaria.getQueryParam('slug');
@@ -43,7 +44,14 @@
         </a>`;
     }).join('');
 
-    const galleryImgs = collection.gallery.slice(0, 12).map(img =>
+    const collectionGalleryImgs = collection.gallery.slice(0, 12);
+    // keep hero as the first image shown, even if it isn't first in the raw gallery array
+    if (collectionGalleryImgs[0] !== collection.hero) {
+      const heroIdx = collectionGalleryImgs.indexOf(collection.hero);
+      if (heroIdx > -1) collectionGalleryImgs.splice(heroIdx, 1);
+      collectionGalleryImgs.unshift(collection.hero);
+    }
+    const galleryImgs = collectionGalleryImgs.map(img =>
       `<img class="lazy-img" loading="lazy" src="${DearDaria.imgUrl(img)}" alt="${DearDaria.collectionDisplayName(collection)} detail">`
     ).join('');
 
@@ -53,7 +61,8 @@
           <div class="breadcrumb"><a href="invitation-jackets.html">${DearDaria.t('nav_pochettes')}</a> &nbsp;/&nbsp; ${DearDaria.collectionDisplayName(collection)}</div>
           <div class="detail-hero">
             <div class="media">
-              <img src="${DearDaria.imgUrl(collection.hero)}" alt="${DearDaria.collectionDisplayName(collection)} wedding stationery">
+              <img id="gallery-main-img" src="${DearDaria.imgUrl(collection.hero)}" alt="${DearDaria.collectionDisplayName(collection)} wedding stationery">
+              ${DearDaria.galleryArrowsHTML(DearDaria.getLang())}
             </div>
             <div class="copy">
               <h1>${DearDaria.collectionDisplayName(collection)}</h1>
@@ -78,12 +87,21 @@
       <section class="section tight border-top">
         <div class="container">
           <div class="section-head"><div><span class="eyebrow">${DearDaria.t('gallery_label')}</span><h2>${DearDaria.t('full_collection')}</h2></div></div>
-          <div class="gallery-strip">${galleryImgs}</div>
+          <div class="gallery-strip" id="gallery-thumbs">${galleryImgs}</div>
         </div>
       </section>
     `;
 
     DearDaria.initLazyImages();
+
+    DearDaria.initProductGallery({
+      images: collectionGalleryImgs,
+      mainImgEl: document.getElementById('gallery-main-img'),
+      prevBtnEl: document.getElementById('gallery-prev'),
+      nextBtnEl: document.getElementById('gallery-next'),
+      thumbContainer: document.getElementById('gallery-thumbs'),
+      altText: DearDaria.collectionDisplayName(collection) + ' wedding stationery',
+    });
   }
 
   DearDaria.reRenderDynamic = render;
