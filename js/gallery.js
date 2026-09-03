@@ -3,14 +3,65 @@
 // reusing the same image list for both (no duplicated data).
 window.DearDaria = window.DearDaria || {};
 
+// Recommended suite-gallery order and French captions per product type.
+// This is the "maintainable gallery data structure": adding a new photo to
+// any product type in site-data.json automatically flows into every suite
+// gallery in the right position, with the right caption, with no HTML edits.
+DearDaria.GALLERY_TYPE_ORDER = [
+  'bundle', 'sleeve', 'other', 'save_the_date', 'rsvp',
+  'envelope_liner', 'menu', 'place_card', 'details_card', 'glass_tag',
+];
+DearDaria.GALLERY_CAPTIONS = {
+  bundle: 'Vue d\u2019ensemble',
+  sleeve: 'Faire-part',
+  other: 'Faire-part',
+  save_the_date: 'Carte d\u2019annonce',
+  rsvp: 'Carte-r\u00e9ponse',
+  envelope_liner: 'Doublure d\u2019enveloppe',
+  menu: 'Menu',
+  place_card: 'Marque-place',
+  details_card: 'Carte de d\u00e9roulement',
+  glass_tag: '\u00c9tiquette \u00e0 verre',
+};
+
+// Builds the complete gallery for a suite: every image from every coordinated
+// piece in the collection, in the recommended order, each tagged with its
+// French caption. Used on bundle (suite) product pages so a suite is never
+// reduced to just its own overview photos.
+DearDaria.buildSuiteGallery = function (collection) {
+  const entries = [];
+  const byType = {};
+  collection.products.forEach(p => { byType[p.type] = p; });
+
+  DearDaria.GALLERY_TYPE_ORDER.forEach(type => {
+    const p = byType[type];
+    if (!p || !p.images) return;
+    p.images.forEach(img => {
+      entries.push({ image: img, caption: DearDaria.GALLERY_CAPTIONS[type] || p.title, type });
+    });
+  });
+  // include any product type not in the known order list, appended at the end
+  collection.products.forEach(p => {
+    if (!DearDaria.GALLERY_TYPE_ORDER.includes(p.type) && p.images) {
+      p.images.forEach(img => entries.push({ image: img, caption: p.title, type: p.type }));
+    }
+  });
+  return entries;
+};
+
 DearDaria.initProductGallery = function (opts) {
-  const { images, mainImgEl, prevBtnEl, nextBtnEl, thumbContainer, altText } = opts;
+  const { images, captions, mainImgEl, prevBtnEl, nextBtnEl, thumbContainer, altText, captionEl } = opts;
   if (!images || !mainImgEl) return;
+
+  function setCaption(i) {
+    if (captionEl && captions && captions[i]) captionEl.textContent = captions[i];
+  }
 
   // Single image: no arrows, no navigation - per spec.
   if (images.length <= 1) {
     if (prevBtnEl) prevBtnEl.style.display = 'none';
     if (nextBtnEl) nextBtnEl.style.display = 'none';
+    setCaption(0);
     return;
   }
 
@@ -42,8 +93,9 @@ DearDaria.initProductGallery = function (opts) {
     mainImgEl.classList.add('gallery-fading');
     window.setTimeout(() => {
       mainImgEl.src = DearDaria.imgUrl(images[idx]);
-      mainImgEl.alt = altText;
+      mainImgEl.alt = (captions && captions[idx]) ? `${altText}, ${captions[idx]}` : altText;
       mainImgEl.classList.remove('gallery-fading');
+      setCaption(idx);
     }, 120);
     updateArrowStates();
     updateThumbActive();
@@ -94,6 +146,7 @@ DearDaria.initProductGallery = function (opts) {
 
   updateArrowStates();
   updateThumbActive();
+  setCaption(0);
   preload(1);
 };
 

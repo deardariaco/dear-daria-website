@@ -14,9 +14,9 @@ DearDaria.TRANSLATIONS = {
     nav_faq: 'FAQ',
     nav_request_consultation: 'Demander une Consultation',
 
-    hero_heading: 'Papeterie d\u00e9coup\u00e9e pour mariages et \u00e9v\u00e9nements',
+    hero_heading: 'Faire-part d\u00e9coup\u00e9s et papeterie coordonn\u00e9e',
     hero_sub: 'Des mod\u00e8les signature et des cr\u00e9ations sur mesure, accompagn\u00e9s d\u2019un service personnel du premier \u00e9change \u00e0 la production.',
-    hero_cta_pochettes: 'D\u00e9couvrir les pochettes',
+    hero_cta_pochettes: 'D\u00e9couvrir les faire-part',
     hero_cta_suites: 'D\u00e9couvrir les suites',
 
     pochettes_heading: 'Faire-part de Mariage',
@@ -88,8 +88,8 @@ DearDaria.TRANSLATIONS = {
 
     piece_opt_sleeve: 'Faire-part, pochette ou \u00e9tui d\u00e9coup\u00e9',
     piece_opt_invitation: 'Invitation',
-    piece_opt_save_the_date: 'Save the date',
-    piece_opt_rsvp: 'RSVP',
+    piece_opt_save_the_date: 'Carte d\u2019annonce',
+    piece_opt_rsvp: 'Carte-r\u00e9ponse',
     piece_opt_menu: 'Menu',
     piece_opt_place_card: 'Marque-place',
     piece_opt_envelope_liner: 'Doublure d\u2019enveloppe',
@@ -142,10 +142,10 @@ DearDaria.TRANSLATIONS = {
 
     // Common / product labels
     label_bundle: 'Suite de Mariage',
-    label_sleeve: 'Pochette d\u2019Invitation',
+    label_sleeve: 'Faire-part avec Habillage',
     label_place_card: 'Marque-Place',
-    label_rsvp: 'Carte RSVP',
-    label_save_the_date: 'Save the Date',
+    label_rsvp: 'Carte-R\u00e9ponse',
+    label_save_the_date: 'Carte d\u2019Annonce',
     label_menu: 'Menu',
     label_glass_tag: '\u00c9tiquette \u00e0 Verre',
     label_envelope_liner: 'Doublure d\u2019Enveloppe',
@@ -375,9 +375,9 @@ DearDaria.TRANSLATIONS = {
     // === CONSULTATION-LED SERVICE (draft - pending approval) ===
     nav_pochettes: 'Wedding Invitations', nav_suites_mariage: 'Stationery Suites', nav_sur_mesure_top: 'Bespoke',
     nav_a_propos: 'About', nav_faq: 'FAQ', nav_request_consultation: 'Request a Consultation',
-    hero_heading: 'Die-cut stationery for weddings and events',
+    hero_heading: 'Die-cut invitations and coordinated stationery',
     hero_sub: 'Signature designs and bespoke creations, with personal support from first contact through to production.',
-    hero_cta_pochettes: 'Discover the Jackets', hero_cta_suites: 'Discover the Suites',
+    hero_cta_pochettes: 'Discover the Invitations', hero_cta_suites: 'Discover the Suites',
     pochettes_heading: 'Wedding Invitations', pochettes_sub: 'Discover a selection of die-cut invitations, sleeves and gatefold creations, personalized to your event.',
     see_all_pochettes: 'View All Invitations', discover_model: 'Discover This Design', personalisable_badge: 'Personalizable',
     suites_heading: 'Stationery Suites', suites_sub: 'Coordinated stationery, designed as one story.',
