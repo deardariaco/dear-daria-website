@@ -3,7 +3,7 @@
    Swiss-crafted wedding stationery. Editorial, image-led, calm.
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Manrope:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Archivo:wght@400;500;600;700&display=swap');
 
 :root {
   /* Color — botanical, Swiss, muted. No cream+terracotta cliche. */
@@ -20,7 +20,7 @@
 
   /* Type */
   --font-display: 'Libre Caslon Display', Georgia, 'Times New Roman', serif;
-  --font-body: 'Manrope', -apple-system, sans-serif;
+  --font-body: 'Archivo', -apple-system, 'Helvetica Neue', sans-serif;
 
   --tracking-wide: 0.07em;
 
@@ -733,4 +733,18 @@ p { margin: 0; }
     grid-template-columns: none;
     padding-bottom: 8px;
   }
+}
+
+/* ============ HEADER LOGO IMAGE ============ */
+.nav-logo-img {
+  display: flex;
+  align-items: center;
+}
+.nav-logo-img img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+@media (max-width: 700px) {
+  .nav-logo-img img { height: 32px; }
 }
