@@ -37,16 +37,23 @@
 <script>
 (async function () {
   const data = await DearDaria.loadData();
-  const withSleeves = data.collections.filter(c => c.products.some(p => p.type === 'sleeve' || p.type === 'other'));
+  const FAIRE_PART_TYPES = ['sleeve', 'jacket', 'other'];
+  const allFairePartProducts = [];
+  data.collections.forEach(c => {
+    c.products.forEach(p => {
+      if (FAIRE_PART_TYPES.includes(p.type) && p.catalogue_order_pochette) {
+        allFairePartProducts.push({ collection: c, product: p });
+      }
+    });
+  });
 
   function render() {
-    const heroCollection = withSleeves.find(c => c.id === 'hummingbird') || withSleeves[0];
-    const heroProduct = heroCollection.products.find(p => p.type === 'sleeve') || heroCollection.products.find(p => p.type === 'other');
-    document.getElementById('hero-image').src = DearDaria.imgUrl(heroProduct.images[0]);
+    const heroEntry = allFairePartProducts.find(e => e.collection.id === 'hummingbird') || allFairePartProducts[0];
+    document.getElementById('hero-image').src = DearDaria.imgUrl(heroEntry.product.images[0]);
 
-    const cards = withSleeves
-      .map(c => ({ collection: c, product: c.products.find(p => p.type === 'sleeve') || c.products.find(p => p.type === 'other') }))
-      .sort((a, b) => (a.product.catalogue_order_pochette || 999) - (b.product.catalogue_order_pochette || 999))
+    const cards = allFairePartProducts
+      .slice()
+      .sort((a, b) => a.product.catalogue_order_pochette - b.product.catalogue_order_pochette)
       .map(({ collection, product }) => DearDaria.productCardHTML(collection, product, product.images[0]))
       .join('');
     DearDaria.renderGrid('products-grid', cards, 3);

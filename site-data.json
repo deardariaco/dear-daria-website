@@ -363,24 +363,13 @@
         },
         {
           "type": "sleeve",
-          "title": "Faire-part Magnolia et Colibri",
+          "title": "Faire-part Magnolia et Colibri (Pochette)",
           "images": [
-            "hummingbird-sleeve-5.jpg",
-            "hummingbird-sleeve-1.jpg",
-            "hummingbird-sleeve-10.jpg",
-            "hummingbird-sleeve-11.jpg",
-            "hummingbird-sleeve-12.jpg",
-            "hummingbird-sleeve-13.jpg",
-            "hummingbird-sleeve-14.jpg",
-            "hummingbird-sleeve-15.jpg",
-            "hummingbird-sleeve-16.jpg",
-            "hummingbird-sleeve-2.jpg",
             "hummingbird-sleeve-3.jpg",
             "hummingbird-sleeve-4.jpg",
-            "hummingbird-sleeve-6.jpg",
-            "hummingbird-sleeve-7.jpg",
-            "hummingbird-sleeve-8.jpg",
-            "hummingbird-sleeve-9.jpg"
+            "hummingbird-sleeve-14.jpg",
+            "hummingbird-sleeve-15.jpg",
+            "hummingbird-sleeve-16.jpg"
           ],
           "seo_title": "Hummingbird Magnolia Sleeve",
           "description_fr": "Des magnolias en fleurs et de fins colibris créent une composition légère, délicate et pleine de mouvement.",
@@ -427,6 +416,24 @@
             "hummingbird-rsvp-4.jpg",
             "hummingbird-rsvp-5.jpg"
           ]
+        },
+        {
+          "type": "jacket",
+          "title": "Faire-part Magnolia et Colibri (Habillage)",
+          "images": [
+            "hummingbird-sleeve-1.jpg",
+            "hummingbird-sleeve-2.jpg",
+            "hummingbird-sleeve-5.jpg",
+            "hummingbird-sleeve-6.jpg",
+            "hummingbird-sleeve-7.jpg",
+            "hummingbird-sleeve-8.jpg",
+            "hummingbird-sleeve-9.jpg",
+            "hummingbird-sleeve-10.jpg",
+            "hummingbird-sleeve-11.jpg",
+            "hummingbird-sleeve-12.jpg",
+            "hummingbird-sleeve-13.jpg"
+          ],
+          "catalogue_order_pochette": 10.5
         }
       ],
       "featured": true
@@ -542,14 +549,6 @@
           "type": "sleeve",
           "title": "Faire-part Hortensia",
           "images": [
-            "hydrangea-sleeve-20.jpg",
-            "hydrangea-sleeve-21.jpg",
-            "hydrangea-sleeve-22.jpg",
-            "hydrangea-sleeve-23.jpg",
-            "hydrangea-sleeve-24.jpg",
-            "hydrangea-sleeve-25.jpg",
-            "hydrangea-sleeve-26.jpg",
-            "hydrangea-sleeve-27.jpg",
             "hydrangea-sleeve-28.jpg",
             "hydrangea-sleeve-29.jpg",
             "hydrangea-sleeve-30.jpg",
@@ -936,14 +935,7 @@
             "freesia-sleeve-31.jpg",
             "freesia-sleeve-32.jpg",
             "freesia-sleeve-33.jpg",
-            "freesia-sleeve-34.jpg",
-            "freesia-sleeve-35.jpg",
-            "freesia-sleeve-36.jpg",
-            "freesia-sleeve-37.jpg",
-            "freesia-sleeve-38.jpg",
-            "freesia-sleeve-39.jpg",
-            "freesia-sleeve-40.jpg",
-            "freesia-sleeve-41.jpg"
+            "freesia-sleeve-34.jpg"
           ],
           "seo_title": "Freesia Wedding Invitation Sleeve, Botanical Floral Wrap, 4 Sizes",
           "description_fr": "De fines tiges de frésia créent une composition botanique aérienne, élégante et pleine de douceur.",
@@ -1000,7 +992,7 @@
         "en": "Dusty blue iris botanicals, elegant and garden-inspired.",
         "de": "Staubblaue Iris-Motive, elegant und garteninspiriert."
       },
-      "hero": "iris-sleeve-1.jpg",
+      "hero": "iris-sleeve-3.jpg",
       "gallery": [
         "iris-sleeve-1.jpg",
         "iris-sleeve-2.jpg",
@@ -1011,9 +1003,9 @@
           "type": "sleeve",
           "title": "Faire-part Iris",
           "images": [
+            "iris-sleeve-3.jpg",
             "iris-sleeve-1.jpg",
-            "iris-sleeve-2.jpg",
-            "iris-sleeve-3.jpg"
+            "iris-sleeve-2.jpg"
           ],
           "seo_title": "Iris Wedding Invitation Sleeve, Dusty Blue Floral Wrap",
           "description_fr": "Des iris finement dessinés composent un faire-part botanique élégant aux nuances douces.",
@@ -1223,7 +1215,7 @@
         "en": "Mediterranean olive branches, minimal and destination-ready.",
         "de": "Mediterrane Olivenzweige, minimalistisch und reisebereit."
       },
-      "hero": "olive-branch-sleeve-1.jpg",
+      "hero": "olive-branch-sleeve-2.jpg",
       "gallery": [
         "olive-branch-sleeve-1.jpg",
         "olive-branch-sleeve-2.jpg",
@@ -1237,8 +1229,8 @@
           "type": "sleeve",
           "title": "Faire-part Rameau d’Olivier",
           "images": [
-            "olive-branch-sleeve-1.jpg",
             "olive-branch-sleeve-2.jpg",
+            "olive-branch-sleeve-1.jpg",
             "olive-branch-sleeve-3.jpg",
             "olive-branch-sleeve-4.jpg",
             "olive-branch-sleeve-5.jpg",
@@ -1328,21 +1320,23 @@
             "peony-sleeve-3.jpg",
             "peony-sleeve-4.jpg",
             "peony-sleeve-5.jpg",
-            "peony-sleeve-6.jpg",
-            "peony-sleeve-7.jpg",
-            "peony-sleeve-8.jpg",
-            "peony-sleeve-9.jpg",
-            "peony-sleeve-10.jpg",
-            "peony-sleeve-11.jpg",
-            "peony-sleeve-12.jpg",
-            "peony-sleeve-13.jpg",
-            "peony-sleeve-14.jpg",
-            "peony-sleeve-15.jpg",
-            "peony-sleeve-16.jpg"
+            "peony-sleeve-6.jpg"
           ],
           "seo_title": "Peony Wedding Invitation Jacket, Blush Floral Wrap, 4 Sizes",
           "description_fr": "De grandes pivoines finement dessinées créent un faire-part romantique à la présence généreuse.",
           "catalogue_order_pochette": 26
+        },
+        {
+          "type": "jacket",
+          "title": "Faire-part Pivoine (Jacket)",
+          "images": [
+            "peony-sleeve-7.jpg",
+            "peony-sleeve-8.jpg",
+            "peony-sleeve-9.jpg",
+            "peony-sleeve-10.jpg",
+            "peony-sleeve-11.jpg"
+          ],
+          "catalogue_order_pochette": 26.5
         }
       ],
       "featured": false
@@ -1357,7 +1351,7 @@
         "en": "Provence lavender fields rendered in soft violet linework.",
         "de": "Provenzalische Lavendelfelder in zarter violetter Liniengrafik."
       },
-      "hero": "lavender-sleeve-1.jpg",
+      "hero": "lavender-sleeve-7.jpg",
       "gallery": [
         "lavender-sleeve-1.jpg",
         "lavender-sleeve-2.jpg",
@@ -1373,13 +1367,13 @@
           "type": "sleeve",
           "title": "Faire-part Lavande de Provence",
           "images": [
+            "lavender-sleeve-7.jpg",
             "lavender-sleeve-1.jpg",
             "lavender-sleeve-2.jpg",
             "lavender-sleeve-3.jpg",
             "lavender-sleeve-4.jpg",
             "lavender-sleeve-5.jpg",
             "lavender-sleeve-6.jpg",
-            "lavender-sleeve-7.jpg",
             "lavender-sleeve-8.jpg"
           ],
           "seo_title": "Provence Lavender Wedding Invitation Sleeve, Floral Wrap, 4 Sizes",
@@ -1918,10 +1912,6 @@
           "type": "sleeve",
           "title": "Faire-part Bouquet d’Automne",
           "images": [
-            "autumn-sleeve-1.jpg",
-            "autumn-sleeve-2.jpg",
-            "autumn-sleeve-3.jpg",
-            "autumn-sleeve-4.jpg",
             "autumn-sleeve-5.jpg",
             "autumn-sleeve-6.jpg",
             "autumn-sleeve-7.jpg",
@@ -2214,6 +2204,116 @@
           ],
           "homepage_order_pochette": 5,
           "catalogue_order_pochette": 1
+        }
+      ]
+    },
+    {
+      "id": "autumn_leaf",
+      "slug": "feuille-automne",
+      "name": "Feuille d’Automne",
+      "colorway": "terracotta",
+      "description": {
+        "fr": "Un faire-part découpé en forme de feuille d’automne, pour un mariage chaleureux en saison.",
+        "en": "An invitation die-cut in an autumn leaf silhouette, for a warm seasonal wedding.",
+        "de": "Eine Einladung im gestanzten Herbstblatt-Design, für eine warme Hochzeit zur Jahreszeit."
+      },
+      "hero": "autumn-sleeve-1.jpg",
+      "gallery": [
+        "autumn-sleeve-1.jpg",
+        "autumn-sleeve-2.jpg",
+        "autumn-sleeve-3.jpg",
+        "autumn-sleeve-4.jpg"
+      ],
+      "featured": false,
+      "products": [
+        {
+          "type": "sleeve",
+          "title": "Faire-part Feuille d’Automne",
+          "images": [
+            "autumn-sleeve-1.jpg",
+            "autumn-sleeve-2.jpg",
+            "autumn-sleeve-3.jpg",
+            "autumn-sleeve-4.jpg"
+          ],
+          "catalogue_order_pochette": 5.5
+        }
+      ]
+    },
+    {
+      "id": "hydrangea_bouquet",
+      "slug": "hortensia-bouquet",
+      "name": "Hortensia Bouquet",
+      "colorway": "dusty-blue",
+      "description": {
+        "fr": "Un bouquet dense d’hortensias et de roses, pour un faire-part romantique et généreux.",
+        "en": "A dense bouquet of hydrangeas and roses, for a romantic and generous invitation.",
+        "de": "Ein dichter Strauß aus Hortensien und Rosen, für eine romantische Einladung."
+      },
+      "hero": "hydrangea-sleeve-20.jpg",
+      "gallery": [
+        "hydrangea-sleeve-20.jpg",
+        "hydrangea-sleeve-21.jpg",
+        "hydrangea-sleeve-22.jpg",
+        "hydrangea-sleeve-23.jpg",
+        "hydrangea-sleeve-24.jpg",
+        "hydrangea-sleeve-25.jpg",
+        "hydrangea-sleeve-26.jpg",
+        "hydrangea-sleeve-27.jpg"
+      ],
+      "featured": false,
+      "products": [
+        {
+          "type": "sleeve",
+          "title": "Faire-part Hortensia Bouquet",
+          "images": [
+            "hydrangea-sleeve-20.jpg",
+            "hydrangea-sleeve-21.jpg",
+            "hydrangea-sleeve-22.jpg",
+            "hydrangea-sleeve-23.jpg",
+            "hydrangea-sleeve-24.jpg",
+            "hydrangea-sleeve-25.jpg",
+            "hydrangea-sleeve-26.jpg",
+            "hydrangea-sleeve-27.jpg"
+          ],
+          "catalogue_order_pochette": 21.5
+        }
+      ]
+    },
+    {
+      "id": "freesia_b",
+      "slug": "freesia-design-2",
+      "name": "Frésia (Modèle 2 - nom à confirmer)",
+      "colorway": "sage",
+      "description": {
+        "fr": "Un second modèle de faire-part Frésia. Le nom public définitif reste à confirmer.",
+        "en": "A second Freesia invitation design. The final public name is still to be confirmed.",
+        "de": "Ein zweites Frésien-Design. Der endgültige öffentliche Name muss noch bestätigt werden."
+      },
+      "hero": "freesia-sleeve-35.jpg",
+      "gallery": [
+        "freesia-sleeve-35.jpg",
+        "freesia-sleeve-36.jpg",
+        "freesia-sleeve-37.jpg",
+        "freesia-sleeve-38.jpg",
+        "freesia-sleeve-39.jpg",
+        "freesia-sleeve-40.jpg",
+        "freesia-sleeve-41.jpg"
+      ],
+      "featured": false,
+      "products": [
+        {
+          "type": "sleeve",
+          "title": "Faire-part Frésia (modèle 2 - nom à confirmer)",
+          "images": [
+            "freesia-sleeve-35.jpg",
+            "freesia-sleeve-36.jpg",
+            "freesia-sleeve-37.jpg",
+            "freesia-sleeve-38.jpg",
+            "freesia-sleeve-39.jpg",
+            "freesia-sleeve-40.jpg",
+            "freesia-sleeve-41.jpg"
+          ],
+          "catalogue_order_pochette": 23.5
         }
       ]
     }
