@@ -365,8 +365,6 @@
           "type": "sleeve",
           "title": "Faire-part Magnolia et Colibri (Pochette)",
           "images": [
-            "hummingbird-sleeve-3.jpg",
-            "hummingbird-sleeve-4.jpg",
             "hummingbird-sleeve-14.jpg",
             "hummingbird-sleeve-15.jpg",
             "hummingbird-sleeve-16.jpg"
@@ -421,17 +419,13 @@
           "type": "jacket",
           "title": "Faire-part Magnolia et Colibri (Habillage)",
           "images": [
-            "hummingbird-sleeve-1.jpg",
-            "hummingbird-sleeve-2.jpg",
             "hummingbird-sleeve-5.jpg",
             "hummingbird-sleeve-6.jpg",
             "hummingbird-sleeve-7.jpg",
             "hummingbird-sleeve-8.jpg",
             "hummingbird-sleeve-9.jpg",
             "hummingbird-sleeve-10.jpg",
-            "hummingbird-sleeve-11.jpg",
-            "hummingbird-sleeve-12.jpg",
-            "hummingbird-sleeve-13.jpg"
+            "hummingbird-sleeve-11.jpg"
           ],
           "catalogue_order_pochette": 10.5
         }
@@ -1141,15 +1135,8 @@
         },
         {
           "type": "sleeve",
-          "title": "Faire-part Lys",
+          "title": "Faire-part Lys (Pochette)",
           "images": [
-            "lily-sleeve-28.jpg",
-            "lily-sleeve-29.jpg",
-            "lily-sleeve-30.jpg",
-            "lily-sleeve-31.jpg",
-            "lily-sleeve-32.jpg",
-            "lily-sleeve-33.jpg",
-            "lily-sleeve-34.jpg",
             "lily-sleeve-35.jpg",
             "lily-sleeve-36.jpg",
             "lily-sleeve-37.jpg",
@@ -1163,6 +1150,20 @@
           "seo_title": "Lily Wedding Invitation Jacket, Dusty Blue Wrap, 4 Sizes",
           "description_fr": "Des lys gracieux et élancés dessinent une composition florale raffinée et intemporelle.",
           "catalogue_order_pochette": 12
+        },
+        {
+          "type": "jacket",
+          "title": "Faire-part Lys (Jacket)",
+          "images": [
+            "lily-sleeve-28.jpg",
+            "lily-sleeve-29.jpg",
+            "lily-sleeve-30.jpg",
+            "lily-sleeve-31.jpg",
+            "lily-sleeve-32.jpg",
+            "lily-sleeve-33.jpg",
+            "lily-sleeve-34.jpg"
+          ],
+          "catalogue_order_pochette": 12.5
         }
       ],
       "featured": false
@@ -1630,10 +1631,8 @@
         },
         {
           "type": "sleeve",
-          "title": "Faire-part Tulipe",
+          "title": "Faire-part Tulipe (Pochette)",
           "images": [
-            "tulip-sleeve-14.jpg",
-            "tulip-sleeve-15.jpg",
             "tulip-sleeve-16.jpg",
             "tulip-sleeve-17.jpg",
             "tulip-sleeve-18.jpg",
@@ -1644,6 +1643,15 @@
           "seo_title": "Tulip Wedding Invitation Sleeve, Floral Wrap, 4 Sizes",
           "description_fr": "Des tulipes de jardin dessinent une composition fraîche, élégante et résolument printanière.",
           "catalogue_order_pochette": 20
+        },
+        {
+          "type": "jacket",
+          "title": "Faire-part Tulipe (Jacket)",
+          "images": [
+            "tulip-sleeve-14.jpg",
+            "tulip-sleeve-15.jpg"
+          ],
+          "catalogue_order_pochette": 20.5
         }
       ],
       "featured": false
@@ -1825,7 +1833,7 @@
         "en": "A warm bouquet of autumn flowers and foliage, for a seasonally-colored wedding.",
         "de": "Ein warmer Strauß aus Herbstblumen und -blättern, für eine Hochzeit in Saisonfarben."
       },
-      "hero": "autumn-bundle-1.jpg",
+      "hero": "autumn-sleeve-6.jpg",
       "gallery": [
         "autumn-bundle-1.jpg",
         "autumn-bundle-2.jpg",
@@ -1855,65 +1863,14 @@
         "autumn-sleeve-7.jpg",
         "autumn-sleeve-8.jpg"
       ],
-      "featured": true,
+      "featured": false,
       "products": [
-        {
-          "type": "bundle",
-          "title": "Suite Bouquet d’Automne",
-          "images": [
-            "autumn-bundle-1.jpg",
-            "autumn-bundle-2.jpg"
-          ],
-          "homepage_order_suite": 4,
-          "catalogue_order_suite": 4
-        },
-        {
-          "type": "menu",
-          "title": "Menu Bouquet d’Automne",
-          "images": [
-            "autumn-menu-1.jpg",
-            "autumn-menu-2.jpg",
-            "autumn-menu-3.jpg",
-            "autumn-menu-4.jpg",
-            "autumn-menu-5.jpg"
-          ]
-        },
-        {
-          "type": "place_card",
-          "title": "Marque-place Bouquet d’Automne",
-          "images": [
-            "autumn-place_card-1.jpg",
-            "autumn-place_card-2.jpg",
-            "autumn-place_card-3.jpg"
-          ]
-        },
-        {
-          "type": "rsvp",
-          "title": "Carte-réponse Bouquet d’Automne",
-          "images": [
-            "autumn-rsvp-1.jpg",
-            "autumn-rsvp-2.jpg",
-            "autumn-rsvp-3.jpg",
-            "autumn-rsvp-4.jpg"
-          ]
-        },
-        {
-          "type": "save_the_date",
-          "title": "Carte d’annonce Bouquet d’Automne",
-          "images": [
-            "autumn-save_the_date-1.jpg",
-            "autumn-save_the_date-2.jpg",
-            "autumn-save_the_date-3.jpg",
-            "autumn-save_the_date-4.jpg",
-            "autumn-save_the_date-5.jpg"
-          ]
-        },
         {
           "type": "sleeve",
           "title": "Faire-part Bouquet d’Automne",
           "images": [
-            "autumn-sleeve-5.jpg",
             "autumn-sleeve-6.jpg",
+            "autumn-sleeve-5.jpg",
             "autumn-sleeve-7.jpg",
             "autumn-sleeve-8.jpg"
           ],
@@ -2210,7 +2167,7 @@
     {
       "id": "autumn_leaf",
       "slug": "feuille-automne",
-      "name": "Feuille d’Automne",
+      "name": "Feuilles d’Automne",
       "colorway": "terracotta",
       "description": {
         "fr": "Un faire-part découpé en forme de feuille d’automne, pour un mariage chaleureux en saison.",
@@ -2222,9 +2179,28 @@
         "autumn-sleeve-1.jpg",
         "autumn-sleeve-2.jpg",
         "autumn-sleeve-3.jpg",
-        "autumn-sleeve-4.jpg"
+        "autumn-sleeve-4.jpg",
+        "autumn-bundle-1.jpg",
+        "autumn-bundle-2.jpg",
+        "autumn-menu-1.jpg",
+        "autumn-menu-2.jpg",
+        "autumn-menu-3.jpg",
+        "autumn-menu-4.jpg",
+        "autumn-menu-5.jpg",
+        "autumn-place_card-1.jpg",
+        "autumn-place_card-2.jpg",
+        "autumn-place_card-3.jpg",
+        "autumn-rsvp-1.jpg",
+        "autumn-rsvp-2.jpg",
+        "autumn-rsvp-3.jpg",
+        "autumn-rsvp-4.jpg",
+        "autumn-save_the_date-1.jpg",
+        "autumn-save_the_date-2.jpg",
+        "autumn-save_the_date-3.jpg",
+        "autumn-save_the_date-4.jpg",
+        "autumn-save_the_date-5.jpg"
       ],
-      "featured": false,
+      "featured": true,
       "products": [
         {
           "type": "sleeve",
@@ -2236,6 +2212,57 @@
             "autumn-sleeve-4.jpg"
           ],
           "catalogue_order_pochette": 5.5
+        },
+        {
+          "type": "bundle",
+          "title": "Suite Feuilles d’Automne",
+          "images": [
+            "autumn-bundle-1.jpg",
+            "autumn-bundle-2.jpg"
+          ],
+          "homepage_order_suite": 4,
+          "catalogue_order_suite": 4
+        },
+        {
+          "type": "menu",
+          "title": "Menu Feuilles d’Automne",
+          "images": [
+            "autumn-menu-1.jpg",
+            "autumn-menu-2.jpg",
+            "autumn-menu-3.jpg",
+            "autumn-menu-4.jpg",
+            "autumn-menu-5.jpg"
+          ]
+        },
+        {
+          "type": "place_card",
+          "title": "Marque-place Feuilles d’Automne",
+          "images": [
+            "autumn-place_card-1.jpg",
+            "autumn-place_card-2.jpg",
+            "autumn-place_card-3.jpg"
+          ]
+        },
+        {
+          "type": "rsvp",
+          "title": "Carte-réponse Feuilles d’Automne",
+          "images": [
+            "autumn-rsvp-1.jpg",
+            "autumn-rsvp-2.jpg",
+            "autumn-rsvp-3.jpg",
+            "autumn-rsvp-4.jpg"
+          ]
+        },
+        {
+          "type": "save_the_date",
+          "title": "Carte d’annonce Feuilles d’Automne",
+          "images": [
+            "autumn-save_the_date-1.jpg",
+            "autumn-save_the_date-2.jpg",
+            "autumn-save_the_date-3.jpg",
+            "autumn-save_the_date-4.jpg",
+            "autumn-save_the_date-5.jpg"
+          ]
         }
       ]
     },
