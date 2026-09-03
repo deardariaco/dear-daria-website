@@ -136,7 +136,7 @@
   const collections = data.collections;
 
   function render() {
-    const heroCollection = collections.find(c => c.id === 'calla_lily') || collections[0];
+    const heroCollection = collections.find(c => c.id === 'hummingbird') || collections[0];
     document.getElementById('hero-image').src = DearDaria.imgUrl(heroCollection.hero);
     document.getElementById('hero-image').alt = heroCollection.name;
 

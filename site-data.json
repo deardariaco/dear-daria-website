@@ -307,7 +307,7 @@
         "en": "Hummingbirds and magnolia branches, in sleeve and jacket silhouettes.",
         "de": "Kolibris und Magnolienzweige, als Hülle oder Umschlag."
       },
-      "hero": "hummingbird-bundle-1.jpg",
+      "hero": "hummingbird-bundle-2.jpg",
       "gallery": [
         "hummingbird-bundle-1.jpg",
         "hummingbird-bundle-2.jpg",
@@ -353,8 +353,8 @@
           "type": "bundle",
           "title": "Suite Magnolia et Colibri",
           "images": [
-            "hummingbird-bundle-1.jpg",
             "hummingbird-bundle-2.jpg",
+            "hummingbird-bundle-1.jpg",
             "hummingbird-bundle-3.jpg",
             "hummingbird-bundle-4.jpg"
           ],

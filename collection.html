@@ -44,15 +44,11 @@
         </a>`;
     }).join('');
 
-    const collectionGalleryImgs = collection.gallery.slice(0, 12);
-    // keep hero as the first image shown, even if it isn't first in the raw gallery array
-    if (collectionGalleryImgs[0] !== collection.hero) {
-      const heroIdx = collectionGalleryImgs.indexOf(collection.hero);
-      if (heroIdx > -1) collectionGalleryImgs.splice(heroIdx, 1);
-      collectionGalleryImgs.unshift(collection.hero);
-    }
-    const galleryImgs = collectionGalleryImgs.map(img =>
-      `<img class="lazy-img" loading="lazy" src="${DearDaria.imgUrl(img)}" alt="${DearDaria.collectionDisplayName(collection)} detail">`
+    const galleryEntries = DearDaria.buildSuiteGallery(collection);
+    const galleryImageList = galleryEntries.map(e => e.image);
+    const galleryCaptionList = galleryEntries.map(e => e.caption);
+    const galleryImgs = galleryEntries.map(e =>
+      `<img class="lazy-img" loading="lazy" src="${DearDaria.imgUrl(e.image)}" alt="${DearDaria.collectionDisplayName(collection)}, ${e.caption}">`
     ).join('');
 
     content.innerHTML = `
@@ -61,7 +57,7 @@
           <div class="breadcrumb"><a href="invitation-jackets.html">${DearDaria.t('nav_pochettes')}</a> &nbsp;/&nbsp; ${DearDaria.collectionDisplayName(collection)}</div>
           <div class="detail-hero">
             <div class="media">
-              <img id="gallery-main-img" src="${DearDaria.imgUrl(collection.hero)}" alt="${DearDaria.collectionDisplayName(collection)} wedding stationery">
+              <img id="gallery-main-img" src="${DearDaria.imgUrl(galleryImageList[0])}" alt="${DearDaria.collectionDisplayName(collection)}, ${galleryCaptionList[0]}">
               ${DearDaria.galleryArrowsHTML(DearDaria.getLang())}
             </div>
             <div class="copy">
@@ -74,6 +70,7 @@
               <p class="photos-example-note">${DearDaria.t('photos_examples_note')}</p>
             </div>
           </div>
+          <p class="gallery-caption" id="gallery-caption-main">${galleryCaptionList[0]}</p>
         </div>
       </section>
 
@@ -95,12 +92,14 @@
     DearDaria.initLazyImages();
 
     DearDaria.initProductGallery({
-      images: collectionGalleryImgs,
+      images: galleryImageList,
+      captions: galleryCaptionList,
       mainImgEl: document.getElementById('gallery-main-img'),
       prevBtnEl: document.getElementById('gallery-prev'),
       nextBtnEl: document.getElementById('gallery-next'),
       thumbContainer: document.getElementById('gallery-thumbs'),
-      altText: DearDaria.collectionDisplayName(collection) + ' wedding stationery',
+      altText: DearDaria.collectionDisplayName(collection),
+      captionEl: document.getElementById('gallery-caption-main'),
     });
   }
 
