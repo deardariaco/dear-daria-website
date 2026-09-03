@@ -28,7 +28,62 @@ DearDaria.GALLERY_CAPTIONS = {
 // piece in the collection, in the recommended order, each tagged with its
 // French caption. Used on bundle (suite) product pages so a suite is never
 // reduced to just its own overview photos.
+// Manually curated colorway-grouped orders for suites where multiple
+// colorways exist and the strict type-order would create long repetitive
+// runs (all overviews together, all jackets together, etc). Every image was
+// individually inspected before being placed here. Collections not listed
+// here fall back to the type-ordered algorithm below, which already
+// satisfies "group by colorway first" for the (common) single-colorway case.
+DearDaria.SUITE_GALLERY_OVERRIDES = {
+  hummingbird: [
+    // --- Rose colorway ---
+    { image: 'hummingbird-bundle-1.jpg', caption: 'Vue d\u2019ensemble' },
+    { image: 'hummingbird-sleeve-5.jpg', caption: 'Faire-part avec habillage' },
+    { image: 'hummingbird-save_the_date-3.jpg', caption: 'Carte d\u2019annonce' },
+    { image: 'hummingbird-rsvp-2.jpg', caption: 'Carte-r\u00e9ponse' },
+    { image: 'hummingbird-menu-4.jpg', caption: 'Menu' },
+    { image: 'hummingbird-sleeve-1.jpg', caption: 'D\u00e9tail' },
+    { image: 'hummingbird-sleeve-10.jpg', caption: 'D\u00e9tail' },
+    { image: 'hummingbird-sleeve-15.jpg', caption: 'D\u00e9tail' },
+    { image: 'hummingbird-rsvp-3.jpg', caption: 'D\u00e9tail' },
+    { image: 'hummingbird-place_card-3.jpg', caption: 'D\u00e9tail' },
+    // --- Sauge (sage green) colorway ---
+    { image: 'hummingbird-bundle-2.jpg', caption: 'Vue d\u2019ensemble, autre coloris' },
+    { image: 'hummingbird-sleeve-9.jpg', caption: 'Faire-part avec habillage' },
+    { image: 'hummingbird-save_the_date-4.jpg', caption: 'Carte d\u2019annonce' },
+    { image: 'hummingbird-menu-3.jpg', caption: 'Menu' },
+    { image: 'hummingbird-place_card-4.jpg', caption: 'Marque-place' },
+    { image: 'hummingbird-sleeve-2.jpg', caption: 'D\u00e9tail' },
+    { image: 'hummingbird-sleeve-12.jpg', caption: 'D\u00e9tail' },
+    { image: 'hummingbird-sleeve-14.jpg', caption: 'D\u00e9tail' },
+    // --- Bleu (blue) colorway ---
+    { image: 'hummingbird-bundle-3.jpg', caption: 'Vue d\u2019ensemble, autre coloris' },
+    { image: 'hummingbird-sleeve-7.jpg', caption: 'Faire-part avec habillage' },
+    { image: 'hummingbird-save_the_date-2.jpg', caption: 'Carte d\u2019annonce' },
+    { image: 'hummingbird-rsvp-1.jpg', caption: 'Carte-r\u00e9ponse' },
+    { image: 'hummingbird-menu-2.jpg', caption: 'Menu' },
+    { image: 'hummingbird-sleeve-3.jpg', caption: 'D\u00e9tail' },
+    { image: 'hummingbird-sleeve-13.jpg', caption: 'D\u00e9tail' },
+    { image: 'hummingbird-sleeve-16.jpg', caption: 'D\u00e9tail' },
+    // --- Ivoire (cream, no suite overview available for this colorway) ---
+    { image: 'hummingbird-sleeve-11.jpg', caption: 'Faire-part avec habillage, autre coloris' },
+    { image: 'hummingbird-menu-1.jpg', caption: 'Menu' },
+    { image: 'hummingbird-rsvp-4.jpg', caption: 'Carte-r\u00e9ponse' },
+    { image: 'hummingbird-save_the_date-1.jpg', caption: 'Carte d\u2019annonce' },
+    // --- Remaining detail and multi-colorway group shots ---
+    { image: 'hummingbird-sleeve-4.jpg', caption: 'D\u00e9tail' },
+    { image: 'hummingbird-sleeve-6.jpg', caption: 'D\u00e9tail' },
+    { image: 'hummingbird-sleeve-8.jpg', caption: 'D\u00e9tail' },
+    { image: 'hummingbird-place_card-1.jpg', caption: 'D\u00e9tail' },
+    { image: 'hummingbird-place_card-2.jpg', caption: 'D\u00e9tail' },
+    { image: 'hummingbird-rsvp-5.jpg', caption: 'D\u00e9tail' },
+  ],
+};
+
 DearDaria.buildSuiteGallery = function (collection) {
+  if (DearDaria.SUITE_GALLERY_OVERRIDES[collection.id]) {
+    return DearDaria.SUITE_GALLERY_OVERRIDES[collection.id].map(e => ({ ...e, type: null }));
+  }
   const entries = [];
   const byType = {};
   collection.products.forEach(p => { byType[p.type] = p; });
@@ -66,7 +121,7 @@ DearDaria.initProductGallery = function (opts) {
   }
 
   let idx = 0;
-  const mediaWrap = mainImgEl.closest('.media');
+  const mediaWrap = mainImgEl.closest('.media-frame') || mainImgEl.closest('.media');
 
   function preload(i) {
     if (i < 0 || i >= images.length) return;
