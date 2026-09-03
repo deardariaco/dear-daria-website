@@ -2197,11 +2197,11 @@
         "en": "Orchids and winter branches for an elegant cold-season wedding.",
         "de": "Orchideen und Winterzweige für eine elegante Hochzeit in der kalten Jahreszeit."
       },
-      "hero": "orchid_winter-sleeve-1.jpg",
+      "hero": "orchid_winter-sleeve-3.jpg",
       "gallery": [
+        "orchid_winter-sleeve-3.jpg",
         "orchid_winter-sleeve-1.jpg",
         "orchid_winter-sleeve-2.jpg",
-        "orchid_winter-sleeve-3.jpg",
         "orchid_winter-sleeve-4.jpg"
       ],
       "featured": false,
@@ -2210,9 +2210,9 @@
           "type": "sleeve",
           "title": "Faire-part Orchidée d’Hiver",
           "images": [
+            "orchid_winter-sleeve-3.jpg",
             "orchid_winter-sleeve-1.jpg",
             "orchid_winter-sleeve-2.jpg",
-            "orchid_winter-sleeve-3.jpg",
             "orchid_winter-sleeve-4.jpg"
           ],
           "homepage_order_pochette": 5,

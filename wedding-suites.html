@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Suites de Mariage | Beau Papier</title>
+<title>Suites de Papeterie | Beau Papier</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -43,10 +43,11 @@
     const heroProduct = heroCollection.products.find(p => p.type === 'bundle');
     document.getElementById('hero-image').src = DearDaria.imgUrl(heroProduct.images[0]);
 
-    const cards = withSuites.map(c => {
-      const product = c.products.find(p => p.type === 'bundle');
-      return DearDaria.productCardHTML(c, product, product.images[0]);
-    }).join('');
+    const cards = withSuites
+      .map(c => ({ collection: c, product: c.products.find(p => p.type === 'bundle') }))
+      .sort((a, b) => (a.product.catalogue_order_suite || 999) - (b.product.catalogue_order_suite || 999))
+      .map(({ collection, product }) => DearDaria.productCardHTML(collection, product, product.images[0]))
+      .join('');
     DearDaria.renderGrid('products-grid', cards, 3);
   }
   DearDaria.reRenderDynamic = render;

@@ -44,10 +44,11 @@
     const heroProduct = heroCollection.products.find(p => p.type === 'sleeve') || heroCollection.products.find(p => p.type === 'other');
     document.getElementById('hero-image').src = DearDaria.imgUrl(heroProduct.images[0]);
 
-    const cards = withSleeves.map(c => {
-      const product = c.products.find(p => p.type === 'sleeve') || c.products.find(p => p.type === 'other');
-      return DearDaria.productCardHTML(c, product, product.images[0]);
-    }).join('');
+    const cards = withSleeves
+      .map(c => ({ collection: c, product: c.products.find(p => p.type === 'sleeve') || c.products.find(p => p.type === 'other') }))
+      .sort((a, b) => (a.product.catalogue_order_pochette || 999) - (b.product.catalogue_order_pochette || 999))
+      .map(({ collection, product }) => DearDaria.productCardHTML(collection, product, product.images[0]))
+      .join('');
     DearDaria.renderGrid('products-grid', cards, 3);
   }
   DearDaria.reRenderDynamic = render;

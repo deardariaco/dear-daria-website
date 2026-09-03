@@ -38,6 +38,9 @@
       <a href="invitation-jackets.html" class="btn ghost" data-i18n="see_all_pochettes"></a>
     </div>
     <div id="pochettes-grid" class="grid cols-3"></div>
+    <div style="text-align:center; margin-top:40px;">
+      <a href="invitation-jackets.html" class="btn primary" data-i18n="see_all_pochettes"></a>
+    </div>
   </div>
 </section>
 
@@ -49,6 +52,9 @@
       <a href="wedding-suites.html" class="btn ghost" data-i18n="see_all_suites"></a>
     </div>
     <div id="suites-grid" class="grid cols-3"></div>
+    <div style="text-align:center; margin-top:40px;">
+      <a href="wedding-suites.html" class="btn primary" data-i18n="see_all_suites"></a>
+    </div>
   </div>
 </section>
 
@@ -130,7 +136,7 @@
   const collections = data.collections;
 
   function render() {
-    const heroCollection = collections.find(c => c.id === 'calla_bloom') || collections[0];
+    const heroCollection = collections.find(c => c.id === 'calla_lily') || collections[0];
     document.getElementById('hero-image').src = DearDaria.imgUrl(heroCollection.hero);
     document.getElementById('hero-image').alt = heroCollection.name;
 

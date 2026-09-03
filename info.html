@@ -67,7 +67,7 @@
 <script>
 (async function () {
   const data = await DearDaria.loadData();
-  const c2 = data.collections.find(c => c.id === 'boho_peony') || data.collections[0];
+  const c2 = data.collections.find(c => c.id === 'hummingbird') || data.collections[0];
   document.getElementById('pro-img').src = DearDaria.imgUrl(c2.hero);
   DearDaria.initLazyImages();
 })();
