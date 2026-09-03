@@ -202,7 +202,13 @@
         "calla-lily-save-the-date-34.jpg",
         "calla-lily-sleeve-35.jpeg",
         "calla-lily-sleeve-36.jpg",
-        "calla-lily-sleeve-37.jpg"
+        "calla-lily-sleeve-37.jpg",
+        "calla-lily-jacket-1.jpg",
+        "calla-lily-jacket-2.jpg",
+        "calla-lily-jacket-3.jpg",
+        "calla-lily-jacket-4.jpg",
+        "calla-lily-jacket-5.jpg",
+        "calla-lily-jacket-6.jpg"
       ],
       "products": [
         {
@@ -293,6 +299,19 @@
           "description_fr": "Des callas élancés et un feuillage délicat dessinent une composition botanique sobre et contemporaine.",
           "homepage_order_pochette": 1,
           "catalogue_order_pochette": 9
+        },
+        {
+          "type": "jacket",
+          "title": "Faire-part Calla (Habillage)",
+          "images": [
+            "calla-lily-jacket-1.jpg",
+            "calla-lily-jacket-2.jpg",
+            "calla-lily-jacket-3.jpg",
+            "calla-lily-jacket-4.jpg",
+            "calla-lily-jacket-5.jpg",
+            "calla-lily-jacket-6.jpg"
+          ],
+          "catalogue_order_pochette": 9.5
         }
       ],
       "featured": true
@@ -345,7 +364,8 @@
         "hummingbird-sleeve-6.jpg",
         "hummingbird-sleeve-7.jpg",
         "hummingbird-sleeve-8.jpg",
-        "hummingbird-sleeve-9.jpg"
+        "hummingbird-sleeve-9.jpg",
+        "hummingbird-sleeve-beige.jpg"
       ],
       "products": [
         {
@@ -365,9 +385,10 @@
           "type": "sleeve",
           "title": "Faire-part Magnolia et Colibri (Pochette)",
           "images": [
+            "hummingbird-sleeve-16.jpg",
             "hummingbird-sleeve-14.jpg",
             "hummingbird-sleeve-15.jpg",
-            "hummingbird-sleeve-16.jpg"
+            "hummingbird-sleeve-beige.jpg"
           ],
           "seo_title": "Hummingbird Magnolia Sleeve",
           "description_fr": "Des magnolias en fleurs et de fins colibris créent une composition légère, délicate et pleine de mouvement.",
@@ -2341,6 +2362,34 @@
             "freesia-sleeve-41.jpg"
           ],
           "catalogue_order_pochette": 23.5
+        }
+      ]
+    },
+    {
+      "id": "peony_bouquet",
+      "slug": "pivoine-bouquet",
+      "name": "Pivoine Bouquet",
+      "colorway": "sage",
+      "description": {
+        "fr": "Un bouquet de pivoines dessiné en fines lignes, pour un faire-part épuré et romantique.",
+        "en": "A peony bouquet drawn in fine lines, for a refined and romantic invitation.",
+        "de": "Ein Pfingstrosenstrauss in feinen Linien gezeichnet, für eine raffinierte Einladung."
+      },
+      "hero": "peony-bouquet-sleeve-1.jpg",
+      "gallery": [
+        "peony-bouquet-sleeve-1.jpg",
+        "peony-bouquet-sleeve-2.jpg"
+      ],
+      "featured": false,
+      "products": [
+        {
+          "type": "sleeve",
+          "title": "Faire-part Pivoine Bouquet",
+          "images": [
+            "peony-bouquet-sleeve-1.jpg",
+            "peony-bouquet-sleeve-2.jpg"
+          ],
+          "catalogue_order_pochette": 26.7
         }
       ]
     }
