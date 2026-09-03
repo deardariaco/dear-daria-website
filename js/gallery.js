@@ -11,18 +11,22 @@ DearDaria.GALLERY_TYPE_ORDER = [
   'bundle', 'sleeve', 'jacket', 'other', 'save_the_date', 'rsvp',
   'envelope_liner', 'menu', 'place_card', 'details_card', 'glass_tag',
 ];
-DearDaria.GALLERY_CAPTIONS = {
-  bundle: 'Vue d’ensemble',
-  sleeve: 'Faire-part avec pochette',
-  jacket: 'Faire-part avec habillage',
-  other: 'Faire-part',
-  save_the_date: 'Carte d’annonce',
-  rsvp: 'Carte-réponse',
-  envelope_liner: 'Doublure d’enveloppe',
-  menu: 'Menu',
-  place_card: 'Marque-place',
-  details_card: 'Carte de déroulement',
-  glass_tag: '\u00c9tiquette à verre',
+DearDaria.CAPTION_KEY_FOR_TYPE = {
+  bundle: 'caption_bundle',
+  sleeve: 'caption_sleeve',
+  jacket: 'caption_jacket',
+  other: 'caption_other',
+  save_the_date: 'caption_save_the_date',
+  rsvp: 'caption_rsvp',
+  envelope_liner: 'caption_envelope_liner',
+  menu: 'caption_menu',
+  place_card: 'caption_place_card',
+  details_card: 'caption_details_card',
+  glass_tag: 'caption_glass_tag',
+};
+DearDaria.captionForType = function (type) {
+  const key = DearDaria.CAPTION_KEY_FOR_TYPE[type];
+  return key ? DearDaria.t(key) : '';
 };
 
 // Builds the complete gallery for a suite: every image from every coordinated
@@ -65,7 +69,7 @@ DearDaria.buildSuiteGallery = function (collection) {
       if (queue && queue.length) {
         const img = queue.shift();
         const product = collection.products.find(p => p.type === type);
-        entries.push({ image: img, caption: DearDaria.GALLERY_CAPTIONS[type] || (product && product.title) || '', type });
+        entries.push({ image: img, caption: DearDaria.captionForType(type) || (product && DearDaria.productTitle(product)) || '', type });
         remaining = true;
       }
     }

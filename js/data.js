@@ -49,18 +49,20 @@ const TYPE_PREFIXES = [
   'Pi\u00e8ce coordonn\u00e9e ', '\u00c9tiquette \u00e0 Verre ',
 ];
 DearDaria.collectionDisplayName = function (collection) {
+  const lang = DearDaria.getLang();
+  if (collection.display_name) {
+    return collection.display_name[lang] || collection.display_name.fr || collection.name;
+  }
+  // fallback for any collection missing the field (shouldn't happen, but never break)
   const preferred = collection.products.find(p => p.type === 'bundle')
     || collection.products.find(p => p.type === 'sleeve' || p.type === 'other')
     || collection.products[0];
-  if (!preferred || !preferred.title) return collection.name;
-  let name = preferred.title;
-  for (const prefix of TYPE_PREFIXES) {
-    if (name.startsWith(prefix)) {
-      name = name.slice(prefix.length);
-      break;
-    }
-  }
-  return name || collection.name;
+  return (preferred && (preferred.title_fr || preferred.title)) || collection.name;
+};
+
+DearDaria.productTitle = function (product) {
+  const lang = DearDaria.getLang();
+  return product['title_' + lang] || product.title_fr || product.title || '';
 };
 
 DearDaria.collectionDescription = function (collection) {
@@ -94,19 +96,20 @@ DearDaria.collectionCardHTML = function (collection) {
 
 DearDaria.productCardHTML = function (collection, product, image) {
   const label = DearDaria.productTypeLabel(product.type);
+  const title = DearDaria.productTitle(product);
   const badge = DearDaria.PERSONALISABLE_TYPES.includes(product.type) ? `<span class="badge-personalisable">${DearDaria.t('personalisable_badge')}</span>` : '';
   return `
     <a class="card" href="product.html?slug=${collection.slug}&type=${product.type}">
       <div class="card-media">
-        <img class="lazy-img" loading="lazy" src="${DearDaria.imgUrl(image)}" alt="${product.title}">
+        <img class="lazy-img" loading="lazy" src="${DearDaria.imgUrl(image)}" alt="${title}">
         <div class="card-hover-caption">
           <div class="unfold-rule"></div>
-          <div class="name">${product.title}</div>
+          <div class="name">${title}</div>
           <div class="view">${DearDaria.t('discover_model')}</div>
         </div>
       </div>
       <div class="card-caption-static design-card-meta">
-        <div class="name">${product.title}</div>
+        <div class="name">${title}</div>
         <div class="type-row"><span class="type">${label}</span>${badge}</div>
       </div>
     </a>`;
