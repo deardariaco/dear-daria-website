@@ -47,7 +47,10 @@
           ],
           "seo_title": "Boho Peony Wedding Suite Bundle, Blush 7 Piece Set",
           "description_fr": "Une suite coordonnée autour de l’univers Pivoine Bohème, pensée pour créer une harmonie du faire-part aux détails du jour J.",
-          "catalogue_order_suite": 9
+          "catalogue_order_suite": 9,
+          "title_fr": "Suite Pivoine Bohème",
+          "title_en": "Boho Peony Suite",
+          "title_de": "Papeterie-Set Boho-Pfingstrose"
         },
         {
           "type": "menu",
@@ -60,7 +63,10 @@
             "boho-peony-menu-6.jpg"
           ],
           "seo_title": "Boho Peony Wedding Menu, Blush Oval Card",
-          "description_fr": "Un menu assorti à l’univers Pivoine Bohème, conçu pour prolonger la papeterie jusque sur la table."
+          "description_fr": "Un menu assorti à l’univers Pivoine Bohème, conçu pour prolonger la papeterie jusque sur la table.",
+          "title_fr": "Menu Pivoine Bohème",
+          "title_en": "Boho Peony Menu",
+          "title_de": "Menükarte Boho-Pfingstrose"
         },
         {
           "type": "place_card",
@@ -73,7 +79,10 @@
             "boho-peony-place-card-11.jpg"
           ],
           "seo_title": "Boho Peony Wedding Place Card, Shaped Name Card",
-          "description_fr": "Un marque-place découpé inspiré de l’univers Pivoine Bohème, pour apporter une touche délicate à chaque couvert."
+          "description_fr": "Un marque-place découpé inspiré de l’univers Pivoine Bohème, pour apporter une touche délicate à chaque couvert.",
+          "title_fr": "Marque-place Pivoine Bohème",
+          "title_en": "Boho Peony Place Card",
+          "title_de": "Platzkarte Boho-Pfingstrose"
         },
         {
           "type": "rsvp",
@@ -87,7 +96,10 @@
             "boho-peony-rsvp-17.jpg"
           ],
           "seo_title": "Boho Peony Wedding RSVP Card, Shaped QR Reply",
-          "description_fr": "Une carte-réponse assortie à l’univers Pivoine Bohème, conçue pour s’intégrer naturellement au faire-part."
+          "description_fr": "Une carte-réponse assortie à l’univers Pivoine Bohème, conçue pour s’intégrer naturellement au faire-part.",
+          "title_fr": "Carte-réponse Pivoine Bohème",
+          "title_en": "Boho Peony RSVP Card",
+          "title_de": "Antwortkarte Boho-Pfingstrose"
         },
         {
           "type": "save_the_date",
@@ -99,7 +111,10 @@
             "boho-peony-save-the-date-21.jpg"
           ],
           "seo_title": "Boho Peony Save the Date, Blush Arched Card",
-          "description_fr": "Une carte d’annonce assortie à l’univers Pivoine Bohème, pour dévoiler la date dans le même langage graphique."
+          "description_fr": "Une carte d’annonce assortie à l’univers Pivoine Bohème, pour dévoiler la date dans le même langage graphique.",
+          "title_fr": "Carte d’annonce Pivoine Bohème",
+          "title_en": "Boho Peony Save the Date",
+          "title_de": "Save-the-Date-Karte Boho-Pfingstrose"
         },
         {
           "type": "sleeve",
@@ -112,10 +127,18 @@
           ],
           "seo_title": "Boho Peony Wedding Invitation Sleeve, Eucalyptus Wrap, 4 Sizes",
           "description_fr": "Des pivoines généreuses et des feuillages délicats composent un univers romantique, libre et raffiné.",
-          "catalogue_order_pochette": 7
+          "catalogue_order_pochette": 7,
+          "title_fr": "Faire-part Pivoine Bohème",
+          "title_en": "Boho Peony Invitation Sleeve",
+          "title_de": "Einladung Boho-Pfingstrose (Einsteckhülle)"
         }
       ],
-      "featured": true
+      "featured": true,
+      "display_name": {
+        "fr": "Pivoine Bohème",
+        "en": "Boho Peony",
+        "de": "Boho-Pfingstrose"
+      }
     },
     {
       "id": "calla_bloom",
@@ -149,10 +172,18 @@
           "seo_title": "Calla Lily Interactive Wedding Invitation, Sage Green Trifold Gatefold",
           "description_fr": "Un faire-part à trois volets dont les callas se déploient progressivement pour révéler l’invitation.",
           "homepage_order_pochette": 2,
-          "catalogue_order_pochette": 8
+          "catalogue_order_pochette": 8,
+          "title_fr": "Faire-part Éclosion de Callas",
+          "title_en": "Calla Blossom Invitation",
+          "title_de": "Einladung Calla-Blüte"
         }
       ],
-      "featured": true
+      "featured": true,
+      "display_name": {
+        "fr": "Éclosion de Callas",
+        "en": "Calla Blossom",
+        "de": "Calla-Blüte"
+      }
     },
     {
       "id": "calla_lily",
@@ -221,7 +252,10 @@
           "seo_title": "Calla Lily Wedding Suite Bundle, 7 Piece Set",
           "description_fr": "Une suite coordonnée autour de l’univers Calla, pensée pour créer une harmonie du faire-part aux détails du jour J.",
           "homepage_order_suite": 2,
-          "catalogue_order_suite": 2
+          "catalogue_order_suite": 2,
+          "title_fr": "Suite Calla",
+          "title_en": "Calla Suite",
+          "title_de": "Papeterie-Set Calla"
         },
         {
           "type": "menu",
@@ -235,7 +269,10 @@
             "calla-lily-menu-8.jpg"
           ],
           "seo_title": "Calla Lily Wedding Menu, Sage Green Oval Card",
-          "description_fr": "Un menu assorti à l’univers Calla, conçu pour prolonger la papeterie jusque sur la table."
+          "description_fr": "Un menu assorti à l’univers Calla, conçu pour prolonger la papeterie jusque sur la table.",
+          "title_fr": "Menu Calla",
+          "title_en": "Calla Menu",
+          "title_de": "Menükarte Calla"
         },
         {
           "type": "place_card",
@@ -249,7 +286,10 @@
             "calla-lily-place-card-14.jpg"
           ],
           "seo_title": "Calla Lily Wedding Place Card, Die-Cut Shaped Name Card",
-          "description_fr": "Un marque-place découpé inspiré de l’univers Calla, pour apporter une touche délicate à chaque couvert."
+          "description_fr": "Un marque-place découpé inspiré de l’univers Calla, pour apporter une touche délicate à chaque couvert.",
+          "title_fr": "Marque-place Calla",
+          "title_en": "Calla Place Card",
+          "title_de": "Platzkarte Calla"
         },
         {
           "type": "rsvp",
@@ -266,7 +306,10 @@
             "calla-lily-rsvp-23.jpg"
           ],
           "seo_title": "Calla Lily Die-Cut RSVP Card, Wedding RSVP with QR Code, Floral",
-          "description_fr": "Une carte-réponse assortie à l’univers Calla, conçue pour s’intégrer naturellement au faire-part."
+          "description_fr": "Une carte-réponse assortie à l’univers Calla, conçue pour s’intégrer naturellement au faire-part.",
+          "title_fr": "Carte-réponse Calla",
+          "title_en": "Calla RSVP Card",
+          "title_de": "Antwortkarte Calla"
         },
         {
           "type": "save_the_date",
@@ -285,7 +328,10 @@
             "calla-lily-save-the-date-34.jpg"
           ],
           "seo_title": "Calla Lily Save the Date, Arched Die-Cut Wedding",
-          "description_fr": "Une carte d’annonce assortie à l’univers Calla, pour dévoiler la date dans le même langage graphique."
+          "description_fr": "Une carte d’annonce assortie à l’univers Calla, pour dévoiler la date dans le même langage graphique.",
+          "title_fr": "Carte d’annonce Calla",
+          "title_en": "Calla Save the Date",
+          "title_de": "Save-the-Date-Karte Calla"
         },
         {
           "type": "sleeve",
@@ -298,7 +344,10 @@
           "seo_title": "Calla Lily Wedding Invitation Pocket Sleeve, Sage Green, 4 Sizes",
           "description_fr": "Des callas élancés et un feuillage délicat dessinent une composition botanique sobre et contemporaine.",
           "homepage_order_pochette": 1,
-          "catalogue_order_pochette": 9
+          "catalogue_order_pochette": 9,
+          "title_fr": "Faire-part Calla",
+          "title_en": "Calla Invitation Sleeve",
+          "title_de": "Einladung Calla (Einsteckhülle)"
         },
         {
           "type": "jacket",
@@ -311,10 +360,18 @@
             "calla-lily-jacket-5.jpg",
             "calla-lily-jacket-6.jpg"
           ],
-          "catalogue_order_pochette": 9.5
+          "catalogue_order_pochette": 9.5,
+          "title_fr": "Faire-part Calla (Habillage)",
+          "title_en": "Calla Invitation with Sleeve",
+          "title_de": "Einladung Calla (Umschlag)"
         }
       ],
-      "featured": true
+      "featured": true,
+      "display_name": {
+        "fr": "Calla",
+        "en": "Calla",
+        "de": "Calla"
+      }
     },
     {
       "id": "hummingbird",
@@ -379,7 +436,10 @@
           "seo_title": "Hummingbird Magnolia Bundle",
           "description_fr": "Une suite coordonnée autour de l’univers Magnolia et Colibri, pensée pour créer une harmonie du faire-part aux détails du jour J.",
           "homepage_order_suite": 3,
-          "catalogue_order_suite": 3
+          "catalogue_order_suite": 3,
+          "title_fr": "Suite Magnolia et Colibri",
+          "title_en": "Magnolia and Hummingbird Suite",
+          "title_de": "Papeterie-Set Magnolie und Kolibri"
         },
         {
           "type": "sleeve",
@@ -393,7 +453,10 @@
           "seo_title": "Hummingbird Magnolia Sleeve",
           "description_fr": "Des magnolias en fleurs et de fins colibris créent une composition légère, délicate et pleine de mouvement.",
           "homepage_order_pochette": 3,
-          "catalogue_order_pochette": 10
+          "catalogue_order_pochette": 10,
+          "title_fr": "Faire-part Magnolia et Colibri (Pochette)",
+          "title_en": "Magnolia and Hummingbird Invitation Sleeve",
+          "title_de": "Einladung Magnolie und Kolibri (Einsteckhülle)"
         },
         {
           "type": "menu",
@@ -403,7 +466,10 @@
             "hummingbird-menu-2.jpg",
             "hummingbird-menu-3.jpg",
             "hummingbird-menu-4.jpg"
-          ]
+          ],
+          "title_fr": "Menu Magnolia et Colibri",
+          "title_en": "Magnolia and Hummingbird Menu",
+          "title_de": "Menükarte Magnolie und Kolibri"
         },
         {
           "type": "place_card",
@@ -413,7 +479,10 @@
             "hummingbird-place_card-2.jpg",
             "hummingbird-place_card-3.jpg",
             "hummingbird-place_card-4.jpg"
-          ]
+          ],
+          "title_fr": "Marque-place Magnolia et Colibri",
+          "title_en": "Magnolia and Hummingbird Place Card",
+          "title_de": "Platzkarte Magnolie und Kolibri"
         },
         {
           "type": "save_the_date",
@@ -423,7 +492,10 @@
             "hummingbird-save_the_date-2.jpg",
             "hummingbird-save_the_date-3.jpg",
             "hummingbird-save_the_date-4.jpg"
-          ]
+          ],
+          "title_fr": "Carte d’annonce Magnolia et Colibri",
+          "title_en": "Magnolia and Hummingbird Save the Date",
+          "title_de": "Save-the-Date-Karte Magnolie und Kolibri"
         },
         {
           "type": "rsvp",
@@ -434,7 +506,10 @@
             "hummingbird-rsvp-3.jpg",
             "hummingbird-rsvp-4.jpg",
             "hummingbird-rsvp-5.jpg"
-          ]
+          ],
+          "title_fr": "Carte-réponse Magnolia et Colibri",
+          "title_en": "Magnolia and Hummingbird RSVP Card",
+          "title_de": "Antwortkarte Magnolie und Kolibri"
         },
         {
           "type": "jacket",
@@ -448,10 +523,18 @@
             "hummingbird-sleeve-10.jpg",
             "hummingbird-sleeve-11.jpg"
           ],
-          "catalogue_order_pochette": 10.5
+          "catalogue_order_pochette": 10.5,
+          "title_fr": "Faire-part Magnolia et Colibri (Habillage)",
+          "title_en": "Magnolia and Hummingbird Invitation with Sleeve",
+          "title_de": "Einladung Magnolie und Kolibri (Umschlag)"
         }
       ],
-      "featured": true
+      "featured": true,
+      "display_name": {
+        "fr": "Magnolia et Colibri",
+        "en": "Magnolia and Hummingbird",
+        "de": "Magnolie und Kolibri"
+      }
     },
     {
       "id": "hydrangea",
@@ -508,7 +591,10 @@
           "seo_title": "Hydrangea Wedding Suite Bundle, Dusty Blue 7 Piece Set",
           "description_fr": "Une suite coordonnée autour de l’univers Hortensia, pensée pour créer une harmonie du faire-part aux détails du jour J.",
           "homepage_order_suite": 9,
-          "catalogue_order_suite": 8
+          "catalogue_order_suite": 8,
+          "title_fr": "Suite Hortensia",
+          "title_en": "Hydrangea Suite",
+          "title_de": "Papeterie-Set Hortensie"
         },
         {
           "type": "save_the_date",
@@ -520,7 +606,10 @@
             "hydrangea-save-the-date-5.jpg"
           ],
           "seo_title": "Hydrangea Save the Date, Dusty Blue Card",
-          "description_fr": "Une carte d’annonce assortie à l’univers Hortensia, pour dévoiler la date dans le même langage graphique."
+          "description_fr": "Une carte d’annonce assortie à l’univers Hortensia, pour dévoiler la date dans le même langage graphique.",
+          "title_fr": "Carte d’annonce Hortensia",
+          "title_en": "Hydrangea Save the Date",
+          "title_de": "Save-the-Date-Karte Hortensie"
         },
         {
           "type": "place_card",
@@ -532,7 +621,10 @@
             "hydrangea-place-card-9.jpg"
           ],
           "seo_title": "Hydrangea Wedding Place Card, Dusty Blue Shaped Name Card",
-          "description_fr": "Un marque-place découpé inspiré de l’univers Hortensia, pour apporter une touche délicate à chaque couvert."
+          "description_fr": "Un marque-place découpé inspiré de l’univers Hortensia, pour apporter une touche délicate à chaque couvert.",
+          "title_fr": "Marque-place Hortensia",
+          "title_en": "Hydrangea Place Card",
+          "title_de": "Platzkarte Hortensie"
         },
         {
           "type": "rsvp",
@@ -544,7 +636,10 @@
             "hydrangea-rsvp-13.jpg"
           ],
           "seo_title": "Hydrangea Wedding RSVP Card, Dusty Blue Shaped QR Reply",
-          "description_fr": "Une carte-réponse assortie à l’univers Hortensia, conçue pour s’intégrer naturellement au faire-part."
+          "description_fr": "Une carte-réponse assortie à l’univers Hortensia, conçue pour s’intégrer naturellement au faire-part.",
+          "title_fr": "Carte-réponse Hortensia",
+          "title_en": "Hydrangea RSVP Card",
+          "title_de": "Antwortkarte Hortensie"
         },
         {
           "type": "menu",
@@ -558,7 +653,10 @@
             "hydrangea-menu-19.jpg"
           ],
           "seo_title": "Hydrangea Wedding Menu, Dusty Blue Card",
-          "description_fr": "Un menu assorti à l’univers Hortensia, conçu pour prolonger la papeterie jusque sur la table."
+          "description_fr": "Un menu assorti à l’univers Hortensia, conçu pour prolonger la papeterie jusque sur la table.",
+          "title_fr": "Menu Hortensia",
+          "title_en": "Hydrangea Menu",
+          "title_de": "Menükarte Hortensie"
         },
         {
           "type": "sleeve",
@@ -572,10 +670,18 @@
           ],
           "seo_title": "Hydrangea Rose Wedding Invitation Sleeve, Mixed Floral Wrap, 4 Sizes",
           "description_fr": "De généreux hortensias aux nuances poudrées créent une composition douce, romantique et intemporelle.",
-          "catalogue_order_pochette": 21
+          "catalogue_order_pochette": 21,
+          "title_fr": "Faire-part Hortensia",
+          "title_en": "Hydrangea Invitation Sleeve",
+          "title_de": "Einladung Hortensie (Einsteckhülle)"
         }
       ],
-      "featured": true
+      "featured": true,
+      "display_name": {
+        "fr": "Hortensia",
+        "en": "Hydrangea",
+        "de": "Hortensie"
+      }
     },
     {
       "id": "chapel",
@@ -610,10 +716,18 @@
           ],
           "seo_title": "Chapel Wedding Invitation, Church Gatefold, Door Opening Die Cut Card, 4 Sizes",
           "description_fr": "Un faire-part à volets inspiré d’une chapelle, dont les portes s’ouvrent pour révéler l’invitation.",
-          "catalogue_order_pochette": 16
+          "catalogue_order_pochette": 16,
+          "title_fr": "Faire-part Chapelle",
+          "title_en": "Chapel Invitation",
+          "title_de": "Einladung Kapelle"
         }
       ],
-      "featured": false
+      "featured": false,
+      "display_name": {
+        "fr": "Chapelle",
+        "en": "Chapel",
+        "de": "Kapelle"
+      }
     },
     {
       "id": "cherry_blossom",
@@ -645,7 +759,10 @@
           ],
           "seo_title": "Cherry Blossom Wedding Suite Bundle, Invitation Jacket & Envelope Liner, Invitation, RSVP, Save The Date, Menu",
           "description_fr": "Une suite coordonnée autour de l’univers Fleurs de Cerisier, pensée pour créer une harmonie du faire-part aux détails du jour J.",
-          "catalogue_order_suite": 13
+          "catalogue_order_suite": 13,
+          "title_fr": "Suite Fleurs de Cerisier",
+          "title_en": "Cherry Blossom Suite",
+          "title_de": "Papeterie-Set Kirschblüte"
         },
         {
           "type": "sleeve",
@@ -661,10 +778,18 @@
           ],
           "seo_title": "Cherry Blossom Wedding Invitation Jacket, Sakura Floral Wrap, Blush DIY, 4 sizes",
           "description_fr": "De délicates branches de cerisier dessinent une composition printanière douce et élégante.",
-          "catalogue_order_pochette": 11
+          "catalogue_order_pochette": 11,
+          "title_fr": "Faire-part Fleurs de Cerisier",
+          "title_en": "Cherry Blossom Invitation Sleeve",
+          "title_de": "Einladung Kirschblüte (Einsteckhülle)"
         }
       ],
-      "featured": false
+      "featured": false,
+      "display_name": {
+        "fr": "Fleurs de Cerisier",
+        "en": "Cherry Blossom",
+        "de": "Kirschblüte"
+      }
     },
     {
       "id": "coastal_villa",
@@ -724,7 +849,10 @@
             "coastal-villa-rsvp-8.jpg"
           ],
           "seo_title": "Coastal RSVP Message in a Bottle Wedding Card, Slide Out",
-          "description_fr": "Une carte-réponse assortie à l’univers Riviera, conçue pour s’intégrer naturellement au faire-part."
+          "description_fr": "Une carte-réponse assortie à l’univers Riviera, conçue pour s’intégrer naturellement au faire-part.",
+          "title_fr": "Carte-réponse Riviera",
+          "title_en": "Riviera RSVP Card",
+          "title_de": "Antwortkarte Riviera"
         },
         {
           "type": "save_the_date",
@@ -739,7 +867,10 @@
             "coastal-villa-save-the-date-15.jpg"
           ],
           "seo_title": "Coastal Villa Wedding Save the Date, Cliffside Scene Card",
-          "description_fr": "Une carte d’annonce assortie à l’univers Riviera, pour dévoiler la date dans le même langage graphique."
+          "description_fr": "Une carte d’annonce assortie à l’univers Riviera, pour dévoiler la date dans le même langage graphique.",
+          "title_fr": "Carte d’annonce Riviera",
+          "title_en": "Riviera Save the Date",
+          "title_de": "Save-the-Date-Karte Riviera"
         },
         {
           "type": "menu",
@@ -754,7 +885,10 @@
             "coastal-villa-menu-22.jpg"
           ],
           "seo_title": "Coastal Wedding Menu, Lighthouse Scene Card",
-          "description_fr": "Un menu assorti à l’univers Riviera, conçu pour prolonger la papeterie jusque sur la table."
+          "description_fr": "Un menu assorti à l’univers Riviera, conçu pour prolonger la papeterie jusque sur la table.",
+          "title_fr": "Menu Riviera",
+          "title_en": "Riviera Menu",
+          "title_de": "Menükarte Riviera"
         },
         {
           "type": "sleeve",
@@ -771,10 +905,18 @@
           ],
           "seo_title": "Coastal Town Wedding Invitation Sleeve, Seaside Skyline Wrap, 4 Sizes",
           "description_fr": "Une scène côtière dessinée avec finesse évoque une célébration lumineuse au bord de la Méditerranée.",
-          "catalogue_order_pochette": 17
+          "catalogue_order_pochette": 17,
+          "title_fr": "Faire-part Riviera",
+          "title_en": "Riviera Invitation Sleeve",
+          "title_de": "Einladung Riviera (Einsteckhülle)"
         }
       ],
-      "featured": false
+      "featured": false,
+      "display_name": {
+        "fr": "Riviera",
+        "en": "Riviera",
+        "de": "Riviera"
+      }
     },
     {
       "id": "floral_bouquet",
@@ -811,10 +953,18 @@
           ],
           "seo_title": "Floral Bouquet Wedding Invitation Sleeve, Blush Wrap, 4 Sizes",
           "description_fr": "Un bouquet de fleurs de jardin compose un décor généreux, romantique et délicatement intemporel.",
-          "catalogue_order_pochette": 22
+          "catalogue_order_pochette": 22,
+          "title_fr": "Faire-part Bouquet de Jardin",
+          "title_en": "Garden Bouquet Invitation Sleeve",
+          "title_de": "Einladung Gartenstrauß (Einsteckhülle)"
         }
       ],
-      "featured": false
+      "featured": false,
+      "display_name": {
+        "fr": "Bouquet de Jardin",
+        "en": "Garden Bouquet",
+        "de": "Gartenstrauß"
+      }
     },
     {
       "id": "freesia",
@@ -880,7 +1030,10 @@
           "seo_title": "Freesia Wedding Suite Bundle, Sage Green 7 Piece Set",
           "description_fr": "Une suite coordonnée autour de l’univers Frésia, pensée pour créer une harmonie du faire-part aux détails du jour J.",
           "catalogue_order_suite": 10,
-          "homepage_order_suite": 7
+          "homepage_order_suite": 7,
+          "title_fr": "Suite Frésia",
+          "title_en": "Freesia Suite",
+          "title_de": "Papeterie-Set Freesie"
         },
         {
           "type": "place_card",
@@ -894,7 +1047,10 @@
             "freesia-place-card-7.jpg"
           ],
           "seo_title": "Freesia Wedding Place Card, Die-Cut Shaped Name Card",
-          "description_fr": "Un marque-place découpé inspiré de l’univers Frésia, pour apporter une touche délicate à chaque couvert."
+          "description_fr": "Un marque-place découpé inspiré de l’univers Frésia, pour apporter une touche délicate à chaque couvert.",
+          "title_fr": "Marque-place Frésia",
+          "title_en": "Freesia Place Card",
+          "title_de": "Platzkarte Freesie"
         },
         {
           "type": "rsvp",
@@ -909,7 +1065,10 @@
             "freesia-rsvp-14.jpg"
           ],
           "seo_title": "Freesia Wedding RSVP Card, Shaped QR Reply",
-          "description_fr": "Une carte-réponse assortie à l’univers Frésia, conçue pour s’intégrer naturellement au faire-part."
+          "description_fr": "Une carte-réponse assortie à l’univers Frésia, conçue pour s’intégrer naturellement au faire-part.",
+          "title_fr": "Carte-réponse Frésia",
+          "title_en": "Freesia RSVP Card",
+          "title_de": "Antwortkarte Freesie"
         },
         {
           "type": "save_the_date",
@@ -925,7 +1084,10 @@
             "freesia-save-the-date-22.jpg"
           ],
           "seo_title": "Freesia Save the Date, Botanical Wedding",
-          "description_fr": "Une carte d’annonce assortie à l’univers Frésia, pour dévoiler la date dans le même langage graphique."
+          "description_fr": "Une carte d’annonce assortie à l’univers Frésia, pour dévoiler la date dans le même langage graphique.",
+          "title_fr": "Carte d’annonce Frésia",
+          "title_en": "Freesia Save the Date",
+          "title_de": "Save-the-Date-Karte Freesie"
         },
         {
           "type": "menu",
@@ -938,7 +1100,10 @@
             "freesia-menu-27.jpg"
           ],
           "seo_title": "Freesia Wedding Menu, Sage Green Card",
-          "description_fr": "Un menu assorti à l’univers Frésia, conçu pour prolonger la papeterie jusque sur la table."
+          "description_fr": "Un menu assorti à l’univers Frésia, conçu pour prolonger la papeterie jusque sur la table.",
+          "title_fr": "Menu Frésia",
+          "title_en": "Freesia Menu",
+          "title_de": "Menükarte Freesie"
         },
         {
           "type": "sleeve",
@@ -954,10 +1119,18 @@
           ],
           "seo_title": "Freesia Wedding Invitation Sleeve, Botanical Floral Wrap, 4 Sizes",
           "description_fr": "De fines tiges de frésia créent une composition botanique aérienne, élégante et pleine de douceur.",
-          "catalogue_order_pochette": 23
+          "catalogue_order_pochette": 23,
+          "title_fr": "Faire-part Frésia",
+          "title_en": "Freesia Invitation Sleeve",
+          "title_de": "Einladung Freesie (Einsteckhülle)"
         }
       ],
-      "featured": false
+      "featured": false,
+      "display_name": {
+        "fr": "Frésia",
+        "en": "Freesia",
+        "de": "Freesie"
+      }
     },
     {
       "id": "gatefold_garden",
@@ -992,10 +1165,18 @@
           ],
           "seo_title": "Gatefold Wedding Invitation, Garden Gate, Château Venue Die Cut Card, 4 Sizes",
           "description_fr": "Un portail de jardin ajouré s’ouvre sur une scène de château, comme une invitation à entrer dans le décor.",
-          "catalogue_order_pochette": 18
+          "catalogue_order_pochette": 18,
+          "title_fr": "Faire-part Jardin du Château",
+          "title_en": "Château Garden Invitation",
+          "title_de": "Einladung Schlossgarten"
         }
       ],
-      "featured": false
+      "featured": false,
+      "display_name": {
+        "fr": "Jardin du Château",
+        "en": "Château Garden",
+        "de": "Schlossgarten"
+      }
     },
     {
       "id": "iris",
@@ -1024,10 +1205,18 @@
           ],
           "seo_title": "Iris Wedding Invitation Sleeve, Dusty Blue Floral Wrap",
           "description_fr": "Des iris finement dessinés composent un faire-part botanique élégant aux nuances douces.",
-          "catalogue_order_pochette": 24
+          "catalogue_order_pochette": 24,
+          "title_fr": "Faire-part Iris",
+          "title_en": "Iris Invitation Sleeve",
+          "title_de": "Einladung Iris (Einsteckhülle)"
         }
       ],
-      "featured": false
+      "featured": false,
+      "display_name": {
+        "fr": "Iris",
+        "en": "Iris",
+        "de": "Iris"
+      }
     },
     {
       "id": "lily",
@@ -1095,7 +1284,10 @@
           ],
           "seo_title": "Lily Wedding Suite Bundle, Dusty Blue 7 Piece Set",
           "description_fr": "Une suite coordonnée autour de l’univers Lys, pensée pour créer une harmonie du faire-part aux détails du jour J.",
-          "catalogue_order_suite": 11
+          "catalogue_order_suite": 11,
+          "title_fr": "Suite Lys",
+          "title_en": "Lily Suite",
+          "title_de": "Papeterie-Set Lilie"
         },
         {
           "type": "menu",
@@ -1109,7 +1301,10 @@
             "lily-menu-8.jpg"
           ],
           "seo_title": "Lily Wedding Menu, Dusty Blue Arched Card",
-          "description_fr": "Un menu assorti à l’univers Lys, conçu pour prolonger la papeterie jusque sur la table."
+          "description_fr": "Un menu assorti à l’univers Lys, conçu pour prolonger la papeterie jusque sur la table.",
+          "title_fr": "Menu Lys",
+          "title_en": "Lily Menu",
+          "title_de": "Menükarte Lilie"
         },
         {
           "type": "place_card",
@@ -1124,7 +1319,10 @@
             "lily-place-card-15.jpg"
           ],
           "seo_title": "Lily Wedding Place Card, Dusty Blue Shaped Name Card",
-          "description_fr": "Un marque-place découpé inspiré de l’univers Lys, pour apporter une touche délicate à chaque couvert."
+          "description_fr": "Un marque-place découpé inspiré de l’univers Lys, pour apporter une touche délicate à chaque couvert.",
+          "title_fr": "Marque-place Lys",
+          "title_en": "Lily Place Card",
+          "title_de": "Platzkarte Lilie"
         },
         {
           "type": "rsvp",
@@ -1137,7 +1335,10 @@
             "lily-rsvp-20.jpg"
           ],
           "seo_title": "Lily Wedding RSVP Card, Dusty Blue Shaped Reply, Die-Cut",
-          "description_fr": "Une carte-réponse assortie à l’univers Lys, conçue pour s’intégrer naturellement au faire-part."
+          "description_fr": "Une carte-réponse assortie à l’univers Lys, conçue pour s’intégrer naturellement au faire-part.",
+          "title_fr": "Carte-réponse Lys",
+          "title_en": "Lily RSVP Card",
+          "title_de": "Antwortkarte Lilie"
         },
         {
           "type": "save_the_date",
@@ -1152,7 +1353,10 @@
             "lily-save-the-date-27.jpg"
           ],
           "seo_title": "Lily Save the Date, Dusty Blue Wedding",
-          "description_fr": "Une carte d’annonce assortie à l’univers Lys, pour dévoiler la date dans le même langage graphique."
+          "description_fr": "Une carte d’annonce assortie à l’univers Lys, pour dévoiler la date dans le même langage graphique.",
+          "title_fr": "Carte d’annonce Lys",
+          "title_en": "Lily Save the Date",
+          "title_de": "Save-the-Date-Karte Lilie"
         },
         {
           "type": "sleeve",
@@ -1170,7 +1374,10 @@
           ],
           "seo_title": "Lily Wedding Invitation Jacket, Dusty Blue Wrap, 4 Sizes",
           "description_fr": "Des lys gracieux et élancés dessinent une composition florale raffinée et intemporelle.",
-          "catalogue_order_pochette": 12
+          "catalogue_order_pochette": 12,
+          "title_fr": "Faire-part Lys (Pochette)",
+          "title_en": "Lily Invitation Sleeve",
+          "title_de": "Einladung Lilie (Einsteckhülle)"
         },
         {
           "type": "jacket",
@@ -1184,10 +1391,18 @@
             "lily-sleeve-33.jpg",
             "lily-sleeve-34.jpg"
           ],
-          "catalogue_order_pochette": 12.5
+          "catalogue_order_pochette": 12.5,
+          "title_fr": "Faire-part Lys (Jacket)",
+          "title_en": "Lily Invitation with Sleeve",
+          "title_de": "Einladung Lilie (Umschlag)"
         }
       ],
-      "featured": false
+      "featured": false,
+      "display_name": {
+        "fr": "Lys",
+        "en": "Lily",
+        "de": "Lilie"
+      }
     },
     {
       "id": "mixed_floral",
@@ -1222,10 +1437,18 @@
           ],
           "seo_title": "Mixed Floral Wedding Invitation Sleeve, Blush Floral Wrap, 4 Sizes",
           "description_fr": "Une composition de fleurs de jardin s’entrelace dans un esprit romantique, naturel et généreux.",
-          "catalogue_order_pochette": 25
+          "catalogue_order_pochette": 25,
+          "title_fr": "Faire-part Jardin Romantique",
+          "title_en": "Romantic Garden Invitation Sleeve",
+          "title_de": "Einladung Romantischer Garten (Einsteckhülle)"
         }
       ],
-      "featured": false
+      "featured": false,
+      "display_name": {
+        "fr": "Jardin Romantique",
+        "en": "Romantic Garden",
+        "de": "Romantischer Garten"
+      }
     },
     {
       "id": "olive_branch",
@@ -1260,10 +1483,18 @@
           ],
           "seo_title": "Olive Branch Wedding Invitation Pocket Sleeve, 4 Sizes",
           "description_fr": "Des rameaux d’olivier aux lignes épurées apportent une élégance méditerranéenne sobre et naturelle.",
-          "catalogue_order_pochette": 13
+          "catalogue_order_pochette": 13,
+          "title_fr": "Faire-part Rameau d’Olivier",
+          "title_en": "Olive Branch Invitation Sleeve",
+          "title_de": "Einladung Olivenzweig (Einsteckhülle)"
         }
       ],
-      "featured": false
+      "featured": false,
+      "display_name": {
+        "fr": "Rameau d’Olivier",
+        "en": "Olive Branch",
+        "de": "Olivenzweig"
+      }
     },
     {
       "id": "orange_blossom",
@@ -1298,10 +1529,18 @@
           ],
           "seo_title": "Orange Blossom Wedding Invitation Sleeve, Citrus Floral Wrap, 4 Sizes",
           "description_fr": "Des fleurs d’oranger et leur feuillage composent un décor solaire, délicat et méditerranéen.",
-          "catalogue_order_pochette": 19
+          "catalogue_order_pochette": 19,
+          "title_fr": "Faire-part Fleur d’Oranger",
+          "title_en": "Orange Blossom Invitation Sleeve",
+          "title_de": "Einladung Orangenblüte (Einsteckhülle)"
         }
       ],
-      "featured": false
+      "featured": false,
+      "display_name": {
+        "fr": "Fleur d’Oranger",
+        "en": "Orange Blossom",
+        "de": "Orangenblüte"
+      }
     },
     {
       "id": "peony",
@@ -1346,7 +1585,10 @@
           ],
           "seo_title": "Peony Wedding Invitation Jacket, Blush Floral Wrap, 4 Sizes",
           "description_fr": "De grandes pivoines finement dessinées créent un faire-part romantique à la présence généreuse.",
-          "catalogue_order_pochette": 26
+          "catalogue_order_pochette": 26,
+          "title_fr": "Faire-part Pivoine",
+          "title_en": "Peony Invitation Sleeve",
+          "title_de": "Einladung Pfingstrose (Einsteckhülle)"
         },
         {
           "type": "jacket",
@@ -1358,10 +1600,18 @@
             "peony-sleeve-10.jpg",
             "peony-sleeve-11.jpg"
           ],
-          "catalogue_order_pochette": 26.5
+          "catalogue_order_pochette": 26.5,
+          "title_fr": "Faire-part Pivoine (Jacket)",
+          "title_en": "Peony Invitation with Sleeve",
+          "title_de": "Einladung Pfingstrose (Umschlag)"
         }
       ],
-      "featured": false
+      "featured": false,
+      "display_name": {
+        "fr": "Pivoine",
+        "en": "Peony",
+        "de": "Pfingstrose"
+      }
     },
     {
       "id": "lavender",
@@ -1400,10 +1650,18 @@
           ],
           "seo_title": "Provence Lavender Wedding Invitation Sleeve, Floral Wrap, 4 Sizes",
           "description_fr": "De fins brins de lavande évoquent la Provence dans une composition délicate et naturellement élégante.",
-          "catalogue_order_pochette": 14
+          "catalogue_order_pochette": 14,
+          "title_fr": "Faire-part Lavande de Provence",
+          "title_en": "Provence Lavender Invitation Sleeve",
+          "title_de": "Einladung Provence-Lavendel (Einsteckhülle)"
         }
       ],
-      "featured": false
+      "featured": false,
+      "display_name": {
+        "fr": "Lavande de Provence",
+        "en": "Provence Lavender",
+        "de": "Provence-Lavendel"
+      }
     },
     {
       "id": "seashell",
@@ -1473,7 +1731,10 @@
           "seo_title": "Seashell Wedding Suite Bundle, Dusty Blue 7 Piece Set",
           "description_fr": "Une suite coordonnée autour de l’univers Rivage, pensée pour créer une harmonie du faire-part aux détails du jour J.",
           "homepage_order_suite": 5,
-          "catalogue_order_suite": 5
+          "catalogue_order_suite": 5,
+          "title_fr": "Suite Rivage",
+          "title_en": "Shoreline Suite",
+          "title_de": "Papeterie-Set Ufer"
         },
         {
           "type": "rsvp",
@@ -1485,7 +1746,10 @@
             "seashell-rsvp-6.jpg"
           ],
           "seo_title": "Coral Wedding RSVP Card, Shaped QR Reply",
-          "description_fr": "Une carte-réponse assortie à l’univers Rivage, conçue pour s’intégrer naturellement au faire-part."
+          "description_fr": "Une carte-réponse assortie à l’univers Rivage, conçue pour s’intégrer naturellement au faire-part.",
+          "title_fr": "Carte-réponse Rivage",
+          "title_en": "Shoreline RSVP Card",
+          "title_de": "Antwortkarte Ufer"
         },
         {
           "type": "glass_tag",
@@ -1498,7 +1762,10 @@
             "seashell-glass-tag-11.jpg"
           ],
           "seo_title": "Lifebuoy Wedding Glass Tag, Nautical Wine Charm",
-          "description_fr": "Un marque-verre découpé assorti à l’univers Rivage, à la fois décoratif et pratique."
+          "description_fr": "Un marque-verre découpé assorti à l’univers Rivage, à la fois décoratif et pratique.",
+          "title_fr": "Marque-verre Rivage",
+          "title_en": "Shoreline Glass Tag",
+          "title_de": "Glasanhänger Ufer"
         },
         {
           "type": "place_card",
@@ -1516,7 +1783,10 @@
             "seashell-place-card-29.jpg"
           ],
           "seo_title": "Seashell Wedding Place Card, Shaped Name Card",
-          "description_fr": "Un marque-place découpé inspiré de l’univers Rivage, pour apporter une touche délicate à chaque couvert."
+          "description_fr": "Un marque-place découpé inspiré de l’univers Rivage, pour apporter une touche délicate à chaque couvert.",
+          "title_fr": "Marque-place Rivage",
+          "title_en": "Shoreline Place Card",
+          "title_de": "Platzkarte Ufer"
         },
         {
           "type": "menu",
@@ -1532,7 +1802,10 @@
             "seashell-menu-23.jpg"
           ],
           "seo_title": "Seashell Wedding Menu, Coastal Beach Card",
-          "description_fr": "Un menu assorti à l’univers Rivage, conçu pour prolonger la papeterie jusque sur la table."
+          "description_fr": "Un menu assorti à l’univers Rivage, conçu pour prolonger la papeterie jusque sur la table.",
+          "title_fr": "Menu Rivage",
+          "title_en": "Shoreline Menu",
+          "title_de": "Menükarte Ufer"
         },
         {
           "type": "save_the_date",
@@ -1545,7 +1818,10 @@
             "seashell-save-the-date-34.jpg"
           ],
           "seo_title": "Seashell Wedding Save the Date, Coastal Arched Card",
-          "description_fr": "Une carte d’annonce assortie à l’univers Rivage, pour dévoiler la date dans le même langage graphique."
+          "description_fr": "Une carte d’annonce assortie à l’univers Rivage, pour dévoiler la date dans le même langage graphique.",
+          "title_fr": "Carte d’annonce Rivage",
+          "title_en": "Shoreline Save the Date",
+          "title_de": "Save-the-Date-Karte Ufer"
         },
         {
           "type": "sleeve",
@@ -1564,10 +1840,18 @@
           ],
           "seo_title": "Seashell Wedding Invitation Sleeve, Coastal Starfish Wrap, 4 Sizes",
           "description_fr": "Coquillages, coraux et détails marins composent une papeterie raffinée inspirée du rivage.",
-          "catalogue_order_pochette": 15
+          "catalogue_order_pochette": 15,
+          "title_fr": "Faire-part Rivage",
+          "title_en": "Shoreline Invitation Sleeve",
+          "title_de": "Einladung Ufer (Einsteckhülle)"
         }
       ],
-      "featured": false
+      "featured": false,
+      "display_name": {
+        "fr": "Rivage",
+        "en": "Shoreline",
+        "de": "Ufer"
+      }
     },
     {
       "id": "tulip",
@@ -1612,7 +1896,10 @@
           ],
           "seo_title": "Tulip Wedding Stationery Suite Bundle",
           "description_fr": "Une suite coordonnée autour de l’univers Tulipe, pensée pour créer une harmonie du faire-part aux détails du jour J.",
-          "catalogue_order_suite": 12
+          "catalogue_order_suite": 12,
+          "title_fr": "Suite Tulipe",
+          "title_en": "Tulip Suite",
+          "title_de": "Papeterie-Set Tulpe"
         },
         {
           "type": "glass_tag",
@@ -1622,7 +1909,10 @@
             "tulip-glass-tag-3.jpg"
           ],
           "seo_title": "Tulip Glass Tag",
-          "description_fr": "Un marque-verre découpé assorti à l’univers Tulipe, à la fois décoratif et pratique."
+          "description_fr": "Un marque-verre découpé assorti à l’univers Tulipe, à la fois décoratif et pratique.",
+          "title_fr": "Marque-verre Tulipe",
+          "title_en": "Tulip Glass Tag",
+          "title_de": "Glasanhänger Tulpe"
         },
         {
           "type": "rsvp",
@@ -1636,7 +1926,10 @@
             "tulip-rsvp-9.jpg"
           ],
           "seo_title": "Tulip Die-Cut RSVP Card, Wedding RSVP with QR Code, Floral",
-          "description_fr": "Une carte-réponse assortie à l’univers Tulipe, conçue pour s’intégrer naturellement au faire-part."
+          "description_fr": "Une carte-réponse assortie à l’univers Tulipe, conçue pour s’intégrer naturellement au faire-part.",
+          "title_fr": "Carte-réponse Tulipe",
+          "title_en": "Tulip RSVP Card",
+          "title_de": "Antwortkarte Tulpe"
         },
         {
           "type": "save_the_date",
@@ -1648,7 +1941,10 @@
             "tulip-save-the-date-13.jpg"
           ],
           "seo_title": "Tulip Save the Date, Save the Date Card & Floral Jacket, Wedding Invitation",
-          "description_fr": "Une carte d’annonce assortie à l’univers Tulipe, pour dévoiler la date dans le même langage graphique."
+          "description_fr": "Une carte d’annonce assortie à l’univers Tulipe, pour dévoiler la date dans le même langage graphique.",
+          "title_fr": "Carte d’annonce Tulipe",
+          "title_en": "Tulip Save the Date",
+          "title_de": "Save-the-Date-Karte Tulpe"
         },
         {
           "type": "sleeve",
@@ -1663,7 +1959,10 @@
           ],
           "seo_title": "Tulip Wedding Invitation Sleeve, Floral Wrap, 4 Sizes",
           "description_fr": "Des tulipes de jardin dessinent une composition fraîche, élégante et résolument printanière.",
-          "catalogue_order_pochette": 20
+          "catalogue_order_pochette": 20,
+          "title_fr": "Faire-part Tulipe (Pochette)",
+          "title_en": "Tulip Invitation Sleeve",
+          "title_de": "Einladung Tulpe (Einsteckhülle)"
         },
         {
           "type": "jacket",
@@ -1672,10 +1971,18 @@
             "tulip-sleeve-14.jpg",
             "tulip-sleeve-15.jpg"
           ],
-          "catalogue_order_pochette": 20.5
+          "catalogue_order_pochette": 20.5,
+          "title_fr": "Faire-part Tulipe (Jacket)",
+          "title_en": "Tulip Invitation with Sleeve",
+          "title_de": "Einladung Tulpe (Umschlag)"
         }
       ],
-      "featured": false
+      "featured": false,
+      "display_name": {
+        "fr": "Tulipe",
+        "en": "Tulip",
+        "de": "Tulpe"
+      }
     },
     {
       "id": "vintage_floral",
@@ -1727,7 +2034,10 @@
           "seo_title": "Vintage Floral Wedding Invitation Jacket, Blue Toile Wrap, 4 Sizes",
           "description_fr": "Une composition florale inspirée des toiles anciennes apporte au faire-part un charme délicat et patrimonial.",
           "homepage_order_pochette": 6,
-          "catalogue_order_pochette": 6
+          "catalogue_order_pochette": 6,
+          "title_fr": "Faire-part Toile Botanique",
+          "title_en": "Botanical Toile Invitation Sleeve",
+          "title_de": "Einladung Botanisches Toile (Einsteckhülle)"
         },
         {
           "type": "bundle",
@@ -1736,7 +2046,10 @@
             "vintage_new-bundle-1.jpg"
           ],
           "homepage_order_suite": 6,
-          "catalogue_order_suite": 6
+          "catalogue_order_suite": 6,
+          "title_fr": "Suite Toile Botanique",
+          "title_en": "Botanical Toile Suite",
+          "title_de": "Papeterie-Set Botanisches Toile"
         },
         {
           "type": "menu",
@@ -1747,7 +2060,10 @@
             "vintage_new-menu-3.jpg",
             "vintage_new-menu-4.jpg",
             "vintage_new-menu-5.jpg"
-          ]
+          ],
+          "title_fr": "Menu Toile Botanique",
+          "title_en": "Botanical Toile Menu",
+          "title_de": "Menükarte Botanisches Toile"
         },
         {
           "type": "place_card",
@@ -1756,7 +2072,10 @@
             "vintage_new-place_card-1.jpg",
             "vintage_new-place_card-2.jpg",
             "vintage_new-place_card-3.jpg"
-          ]
+          ],
+          "title_fr": "Marque-place Toile Botanique",
+          "title_en": "Botanical Toile Place Card",
+          "title_de": "Platzkarte Botanisches Toile"
         },
         {
           "type": "save_the_date",
@@ -1765,7 +2084,10 @@
             "vintage_new-save_the_date-1.jpg",
             "vintage_new-save_the_date-2.jpg",
             "vintage_new-save_the_date-3.jpg"
-          ]
+          ],
+          "title_fr": "Carte d’annonce Toile Botanique",
+          "title_en": "Botanical Toile Save the Date",
+          "title_de": "Save-the-Date-Karte Botanisches Toile"
         },
         {
           "type": "details_card",
@@ -1775,10 +2097,18 @@
             "vintage_new-other-2.jpg",
             "vintage_new-other-3.jpg",
             "vintage_new-other-4.jpg"
-          ]
+          ],
+          "title_fr": "Carte de Déroulement Toile Botanique",
+          "title_en": "Botanical Toile Details Card",
+          "title_de": "Ablaufkarte Botanisches Toile"
         }
       ],
-      "featured": false
+      "featured": false,
+      "display_name": {
+        "fr": "Toile Botanique",
+        "en": "Botanical Toile",
+        "de": "Botanisches Toile"
+      }
     },
     {
       "id": "watercolor_floral",
@@ -1813,10 +2143,18 @@
           ],
           "seo_title": "Watercolor Floral Wedding Invitation Pocket Sleeve, Botanical Wrap, 4 Sizes",
           "description_fr": "Des fleurs et feuillages peints à l’aquarelle créent une composition douce, lumineuse et aérienne.",
-          "catalogue_order_pochette": 27
+          "catalogue_order_pochette": 27,
+          "title_fr": "Faire-part Jardin Aquarelle",
+          "title_en": "Watercolor Garden Invitation Sleeve",
+          "title_de": "Einladung Aquarell-Garten (Einsteckhülle)"
         }
       ],
-      "featured": false
+      "featured": false,
+      "display_name": {
+        "fr": "Jardin Aquarelle",
+        "en": "Watercolor Garden",
+        "de": "Aquarell-Garten"
+      }
     },
     {
       "id": "anemone",
@@ -1840,9 +2178,17 @@
           "images": [
             "anemone-sleeve-1.jpg"
           ],
-          "catalogue_order_pochette": 4
+          "catalogue_order_pochette": 4,
+          "title_fr": "Faire-part Anémone & Symphorine",
+          "title_en": "Anemone & Snowberry Invitation Sleeve",
+          "title_de": "Einladung Anemone & Schneebeere (Einsteckhülle)"
         }
-      ]
+      ],
+      "display_name": {
+        "fr": "Anémone & Symphorine",
+        "en": "Anemone & Snowberry",
+        "de": "Anemone & Schneebeere"
+      }
     },
     {
       "id": "autumn",
@@ -1895,9 +2241,17 @@
             "autumn-sleeve-7.jpg",
             "autumn-sleeve-8.jpg"
           ],
-          "catalogue_order_pochette": 5
+          "catalogue_order_pochette": 5,
+          "title_fr": "Faire-part Bouquet d’Automne",
+          "title_en": "Autumn Bouquet Invitation Sleeve",
+          "title_de": "Einladung Herbststrauß (Einsteckhülle)"
         }
-      ]
+      ],
+      "display_name": {
+        "fr": "Bouquet d’Automne",
+        "en": "Autumn Bouquet",
+        "de": "Herbststrauß"
+      }
     },
     {
       "id": "constellation",
@@ -1949,7 +2303,10 @@
             "constellation-bundle-1.jpg"
           ],
           "homepage_order_suite": 8,
-          "catalogue_order_suite": 7
+          "catalogue_order_suite": 7,
+          "title_fr": "Suite Constellation",
+          "title_en": "Constellation Suite",
+          "title_de": "Papeterie-Set Sternbilder"
         },
         {
           "type": "envelope_liner",
@@ -1957,7 +2314,10 @@
           "images": [
             "constellation-envelope_liner-1.jpg",
             "constellation-envelope_liner-2.jpg"
-          ]
+          ],
+          "title_fr": "Doublure d’enveloppe Constellation",
+          "title_en": "Constellation Envelope Liner",
+          "title_de": "Umschlagfutter Sternbilder"
         },
         {
           "type": "menu",
@@ -1968,7 +2328,10 @@
             "constellation-menu-3.jpg",
             "constellation-menu-4.jpg",
             "constellation-menu-5.jpg"
-          ]
+          ],
+          "title_fr": "Menu Constellation",
+          "title_en": "Constellation Menu",
+          "title_de": "Menükarte Sternbilder"
         },
         {
           "type": "place_card",
@@ -1978,7 +2341,10 @@
             "constellation-place_card-2.jpg",
             "constellation-place_card-3.jpg",
             "constellation-place_card-4.jpg"
-          ]
+          ],
+          "title_fr": "Marque-place Constellation",
+          "title_en": "Constellation Place Card",
+          "title_de": "Platzkarte Sternbilder"
         },
         {
           "type": "rsvp",
@@ -1989,7 +2355,10 @@
             "constellation-rsvp-3.jpg",
             "constellation-rsvp-4.jpg",
             "constellation-rsvp-5.jpg"
-          ]
+          ],
+          "title_fr": "Carte-réponse Constellation",
+          "title_en": "Constellation RSVP Card",
+          "title_de": "Antwortkarte Sternbilder"
         },
         {
           "type": "save_the_date",
@@ -2000,22 +2369,33 @@
             "constellation-save_the_date-3.jpg",
             "constellation-save_the_date-4.jpg",
             "constellation-save_the_date-5.jpg"
-          ]
+          ],
+          "title_fr": "Carte d’annonce Constellation",
+          "title_en": "Constellation Save the Date",
+          "title_de": "Save-the-Date-Karte Sternbilder"
         },
         {
           "type": "sleeve",
           "title": "Faire-part Constellation",
           "images": [
-            "constellation-sleeve-1.jpg",
             "constellation-sleeve-2.jpg",
+            "constellation-sleeve-1.jpg",
             "constellation-sleeve-3.jpg",
             "constellation-sleeve-4.jpg",
             "constellation-sleeve-5.jpg",
             "constellation-sleeve-6.jpg"
           ],
-          "catalogue_order_pochette": 3
+          "catalogue_order_pochette": 3,
+          "title_fr": "Faire-part Constellation",
+          "title_en": "Constellation Invitation Sleeve",
+          "title_de": "Einladung Sternbilder (Einsteckhülle)"
         }
-      ]
+      ],
+      "display_name": {
+        "fr": "Constellation",
+        "en": "Constellation",
+        "de": "Sternbilder"
+      }
     },
     {
       "id": "koi_garden",
@@ -2078,7 +2458,10 @@
             "koi-bundle-4.jpg"
           ],
           "homepage_order_suite": 1,
-          "catalogue_order_suite": 1
+          "catalogue_order_suite": 1,
+          "title_fr": "Suite Jardin aux Koïs",
+          "title_en": "Koi Garden Suite",
+          "title_de": "Papeterie-Set Koi-Garten"
         },
         {
           "type": "envelope_liner",
@@ -2086,7 +2469,10 @@
           "images": [
             "koi-envelope_liner-1.jpg",
             "koi-envelope_liner-2.jpg"
-          ]
+          ],
+          "title_fr": "Doublure d’enveloppe Jardin aux Koïs",
+          "title_en": "Koi Garden Envelope Liner",
+          "title_de": "Umschlagfutter Koi-Garten"
         },
         {
           "type": "sleeve",
@@ -2106,7 +2492,10 @@
             "koi-sleeve-9.jpg"
           ],
           "homepage_order_pochette": 4,
-          "catalogue_order_pochette": 2
+          "catalogue_order_pochette": 2,
+          "title_fr": "Faire-part Jardin aux Koïs",
+          "title_en": "Koi Garden Invitation Sleeve",
+          "title_de": "Einladung Koi-Garten (Einsteckhülle)"
         },
         {
           "type": "menu",
@@ -2117,7 +2506,10 @@
             "water_lily-menu-3.jpg",
             "water_lily-menu-4.jpg",
             "water_lily-menu-5.jpg"
-          ]
+          ],
+          "title_fr": "Menu Jardin aux Koïs",
+          "title_en": "Koi Garden Menu",
+          "title_de": "Menükarte Koi-Garten"
         },
         {
           "type": "place_card",
@@ -2128,7 +2520,10 @@
             "water_lily-place_card-3.jpg",
             "water_lily-place_card-4.jpg",
             "water_lily-place_card-5.jpg"
-          ]
+          ],
+          "title_fr": "Marque-place Jardin aux Koïs",
+          "title_en": "Koi Garden Place Card",
+          "title_de": "Platzkarte Koi-Garten"
         },
         {
           "type": "rsvp",
@@ -2138,7 +2533,10 @@
             "water_lily-rsvp-2.jpg",
             "water_lily-rsvp-3.jpg",
             "water_lily-rsvp-4.jpg"
-          ]
+          ],
+          "title_fr": "Carte-réponse Jardin aux Koïs",
+          "title_en": "Koi Garden RSVP Card",
+          "title_de": "Antwortkarte Koi-Garten"
         },
         {
           "type": "save_the_date",
@@ -2148,9 +2546,17 @@
             "water_lily-save_the_date-2.jpg",
             "water_lily-save_the_date-3.jpg",
             "water_lily-save_the_date-4.jpg"
-          ]
+          ],
+          "title_fr": "Carte d’annonce Jardin aux Koïs",
+          "title_en": "Koi Garden Save the Date",
+          "title_de": "Save-the-Date-Karte Koi-Garten"
         }
-      ]
+      ],
+      "display_name": {
+        "fr": "Jardin aux Koïs",
+        "en": "Koi Garden",
+        "de": "Koi-Garten"
+      }
     },
     {
       "id": "orchid_winter",
@@ -2181,9 +2587,17 @@
             "orchid_winter-sleeve-4.jpg"
           ],
           "homepage_order_pochette": 5,
-          "catalogue_order_pochette": 1
+          "catalogue_order_pochette": 1,
+          "title_fr": "Faire-part Orchidée d’Hiver",
+          "title_en": "Winter Orchid Invitation Sleeve",
+          "title_de": "Einladung Winterorchidee (Einsteckhülle)"
         }
-      ]
+      ],
+      "display_name": {
+        "fr": "Orchidée d’Hiver",
+        "en": "Winter Orchid",
+        "de": "Winterorchidee"
+      }
     },
     {
       "id": "autumn_leaf",
@@ -2232,7 +2646,10 @@
             "autumn-sleeve-3.jpg",
             "autumn-sleeve-4.jpg"
           ],
-          "catalogue_order_pochette": 5.5
+          "catalogue_order_pochette": 5.5,
+          "title_fr": "Faire-part Feuille d’Automne",
+          "title_en": "Autumn Leaves Invitation Sleeve",
+          "title_de": "Einladung Herbstblätter (Einsteckhülle)"
         },
         {
           "type": "bundle",
@@ -2242,7 +2659,10 @@
             "autumn-bundle-2.jpg"
           ],
           "homepage_order_suite": 4,
-          "catalogue_order_suite": 4
+          "catalogue_order_suite": 4,
+          "title_fr": "Suite Feuilles d’Automne",
+          "title_en": "Autumn Leaves Suite",
+          "title_de": "Papeterie-Set Herbstblätter"
         },
         {
           "type": "menu",
@@ -2253,7 +2673,10 @@
             "autumn-menu-3.jpg",
             "autumn-menu-4.jpg",
             "autumn-menu-5.jpg"
-          ]
+          ],
+          "title_fr": "Menu Feuilles d’Automne",
+          "title_en": "Autumn Leaves Menu",
+          "title_de": "Menükarte Herbstblätter"
         },
         {
           "type": "place_card",
@@ -2262,7 +2685,10 @@
             "autumn-place_card-1.jpg",
             "autumn-place_card-2.jpg",
             "autumn-place_card-3.jpg"
-          ]
+          ],
+          "title_fr": "Marque-place Feuilles d’Automne",
+          "title_en": "Autumn Leaves Place Card",
+          "title_de": "Platzkarte Herbstblätter"
         },
         {
           "type": "rsvp",
@@ -2272,7 +2698,10 @@
             "autumn-rsvp-2.jpg",
             "autumn-rsvp-3.jpg",
             "autumn-rsvp-4.jpg"
-          ]
+          ],
+          "title_fr": "Carte-réponse Feuilles d’Automne",
+          "title_en": "Autumn Leaves RSVP Card",
+          "title_de": "Antwortkarte Herbstblätter"
         },
         {
           "type": "save_the_date",
@@ -2283,9 +2712,17 @@
             "autumn-save_the_date-3.jpg",
             "autumn-save_the_date-4.jpg",
             "autumn-save_the_date-5.jpg"
-          ]
+          ],
+          "title_fr": "Carte d’annonce Feuilles d’Automne",
+          "title_en": "Autumn Leaves Save the Date",
+          "title_de": "Save-the-Date-Karte Herbstblätter"
         }
-      ]
+      ],
+      "display_name": {
+        "fr": "Feuilles d’Automne",
+        "en": "Autumn Leaves",
+        "de": "Herbstblätter"
+      }
     },
     {
       "id": "hydrangea_bouquet",
@@ -2323,9 +2760,17 @@
             "hydrangea-sleeve-26.jpg",
             "hydrangea-sleeve-27.jpg"
           ],
-          "catalogue_order_pochette": 21.5
+          "catalogue_order_pochette": 21.5,
+          "title_fr": "Faire-part Hortensia Bouquet",
+          "title_en": "Hydrangea Bouquet Invitation Sleeve",
+          "title_de": "Einladung Hortensienstrauß (Einsteckhülle)"
         }
-      ]
+      ],
+      "display_name": {
+        "fr": "Hortensia Bouquet",
+        "en": "Hydrangea Bouquet",
+        "de": "Hortensienstrauß"
+      }
     },
     {
       "id": "freesia_b",
@@ -2361,9 +2806,17 @@
             "freesia-sleeve-40.jpg",
             "freesia-sleeve-41.jpg"
           ],
-          "catalogue_order_pochette": 23.5
+          "catalogue_order_pochette": 23.5,
+          "title_fr": "Faire-part Frésia (modèle 2 - nom à confirmer)",
+          "title_en": "Freesia (Design 2 - name pending) Invitation Sleeve",
+          "title_de": "Einladung Freesie (Design 2 - Name ausstehend) (Einsteckhülle)"
         }
-      ]
+      ],
+      "display_name": {
+        "fr": "Frésia",
+        "en": "Freesia",
+        "de": "Freesie"
+      }
     },
     {
       "id": "peony_bouquet",
@@ -2389,9 +2842,17 @@
             "peony-bouquet-sleeve-1.jpg",
             "peony-bouquet-sleeve-2.jpg"
           ],
-          "catalogue_order_pochette": 26.7
+          "catalogue_order_pochette": 26.7,
+          "title_fr": "Faire-part Pivoine Bouquet",
+          "title_en": "Peony Bouquet Invitation Sleeve",
+          "title_de": "Einladung Pfingstrosenstrauß (Einsteckhülle)"
         }
-      ]
+      ],
+      "display_name": {
+        "fr": "Pivoine Bouquet",
+        "en": "Peony Bouquet",
+        "de": "Pfingstrosenstrauß"
+      }
     }
   ]
 }

@@ -32,8 +32,9 @@
       return;
     }
     const product = collection.products.find(p => p.type === type) || collection.products[0];
+    const title = DearDaria.productTitle(product);
 
-    document.getElementById('page-title').textContent = `${product.title} | Beau Papier`;
+    document.getElementById('page-title').textContent = `${title} | Beau Papier`;
 
     const label = DearDaria.productTypeLabel(product.type);
     const isPersonalisable = DearDaria.PERSONALISABLE_TYPES.includes(product.type);
@@ -58,7 +59,7 @@
       .map(p => `<a class="tag" href="product.html?slug=${collection.slug}&type=${p.type}">${DearDaria.productTypeLabel(p.type)}</a>`)
       .join('');
 
-    const consultUrl = `consultation.html?design=${encodeURIComponent(product.title)}&slug=${collection.slug}`;
+    const consultUrl = `consultation.html?design=${encodeURIComponent(title)}&slug=${collection.slug}`;
 
     content.innerHTML = `
       <section class="section tight">
@@ -76,7 +77,7 @@
             </div>
             <div class="copy">
               <span class="eyebrow">${DearDaria.collectionDisplayName(collection)}, ${label}</span>
-              <h1>${product.title}</h1>
+              <h1>${title}</h1>
               <div class="type-row" style="margin-bottom:18px;">${badge}</div>
               <p class="desc">${DearDaria.collectionDescription(collection)}</p>
               <div class="btn-row">
