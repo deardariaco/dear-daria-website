@@ -26,7 +26,7 @@ window.DearDaria = window.DearDaria || {};
 
     mount.innerHTML = `
       <div class="container">
-        <a href="index.html" class="nav-logo nav-logo-img"><img src="clean_images/logo_gold.png" alt="Beau Papier"></a>
+        <a href="index.html" class="nav-logo nav-logo-img"><img src="clean_images/logo_gold.png" alt="Beau Papier"><span class="nav-logo-text">Beau Papier</span></a>
         <ul class="nav-links" id="nav-links">${items}<li class="nav-mobile-cta"><a href="consultation.html" class="btn primary" data-i18n="nav_request_consultation"></a></li></ul>
         <a href="consultation.html" class="btn primary nav-consult-cta" data-i18n="nav_request_consultation"></a>
         <div class="nav-lang" id="nav-lang-desktop"></div>
