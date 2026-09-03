@@ -142,7 +142,8 @@ DearDaria.TRANSLATIONS = {
 
     // Common / product labels
     label_bundle: 'Suite de Mariage',
-    label_sleeve: 'Faire-part avec Habillage',
+    label_sleeve: 'Faire-part avec Pochette',
+    label_jacket: 'Faire-part avec Habillage',
     label_place_card: 'Marque-Place',
     label_rsvp: 'Carte-R\u00e9ponse',
     label_save_the_date: 'Carte d\u2019Annonce',
@@ -485,7 +486,7 @@ DearDaria.TRANSLATIONS = {
     testimonials_title: 'Testimonials',
     testimonials_placeholder: 'Placeholder: real customer reviews coming soon.',
 
-    label_bundle: 'Wedding Suite', label_sleeve: 'Invitation Sleeve', label_place_card: 'Place Card',
+    label_bundle: 'Wedding Suite', label_sleeve: 'Invitation Sleeve', label_jacket: 'Invitation Jacket', label_place_card: 'Place Card',
     label_rsvp: 'RSVP Card', label_save_the_date: 'Save the Date', label_menu: 'Menu',
     label_glass_tag: 'Glass Tag', label_envelope_liner: 'Envelope Liner', label_details_card: 'Details Card', label_other: 'Invitation',
     view_collection: 'View Collection', pieces_available: 'pieces', piece_available: 'piece', collection_of: 'Collection of',
@@ -705,7 +706,7 @@ DearDaria.TRANSLATIONS = {
     testimonials_title: 'Erfahrungen',
     testimonials_placeholder: 'Platzhalter: echte Kundenbewertungen folgen in K\u00fcrze.',
 
-    label_bundle: 'Hochzeits-Set', label_sleeve: 'Einladungsh\u00fclle', label_place_card: 'Platzkarte',
+    label_bundle: 'Hochzeits-Set', label_sleeve: 'Einladungsh\u00fclle', label_jacket: 'Einladungsjacke', label_place_card: 'Platzkarte',
     label_rsvp: 'RSVP-Karte', label_save_the_date: 'Save the Date', label_menu: 'Men\u00fckarte',
     label_glass_tag: 'Glasanh\u00e4nger', label_envelope_liner: 'Umschlageinlage', label_details_card: 'Ablaufkarte', label_other: 'Einladung',
     view_collection: 'Kollektion Ansehen', pieces_available: 'St\u00fccke', piece_available: 'St\u00fcck', collection_of: 'Kollektion aus',

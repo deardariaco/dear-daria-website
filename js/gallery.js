@@ -8,20 +8,21 @@ window.DearDaria = window.DearDaria || {};
 // any product type in site-data.json automatically flows into every suite
 // gallery in the right position, with the right caption, with no HTML edits.
 DearDaria.GALLERY_TYPE_ORDER = [
-  'bundle', 'sleeve', 'other', 'save_the_date', 'rsvp',
+  'bundle', 'sleeve', 'jacket', 'other', 'save_the_date', 'rsvp',
   'envelope_liner', 'menu', 'place_card', 'details_card', 'glass_tag',
 ];
 DearDaria.GALLERY_CAPTIONS = {
-  bundle: 'Vue d\u2019ensemble',
-  sleeve: 'Faire-part',
+  bundle: 'Vue d’ensemble',
+  sleeve: 'Faire-part avec pochette',
+  jacket: 'Faire-part avec habillage',
   other: 'Faire-part',
-  save_the_date: 'Carte d\u2019annonce',
-  rsvp: 'Carte-r\u00e9ponse',
-  envelope_liner: 'Doublure d\u2019enveloppe',
+  save_the_date: 'Carte d’annonce',
+  rsvp: 'Carte-réponse',
+  envelope_liner: 'Doublure d’enveloppe',
   menu: 'Menu',
   place_card: 'Marque-place',
-  details_card: 'Carte de d\u00e9roulement',
-  glass_tag: '\u00c9tiquette \u00e0 verre',
+  details_card: 'Carte de déroulement',
+  glass_tag: '\u00c9tiquette à verre',
 };
 
 // Builds the complete gallery for a suite: every image from every coordinated
@@ -37,46 +38,46 @@ DearDaria.GALLERY_CAPTIONS = {
 DearDaria.SUITE_GALLERY_OVERRIDES = {
   hummingbird: [
     // --- Rose colorway ---
-    { image: 'hummingbird-bundle-1.jpg', caption: 'Vue d\u2019ensemble' },
+    { image: 'hummingbird-bundle-1.jpg', caption: 'Vue d’ensemble' },
     { image: 'hummingbird-sleeve-5.jpg', caption: 'Faire-part avec habillage' },
-    { image: 'hummingbird-save_the_date-3.jpg', caption: 'Carte d\u2019annonce' },
-    { image: 'hummingbird-rsvp-2.jpg', caption: 'Carte-r\u00e9ponse' },
+    { image: 'hummingbird-save_the_date-3.jpg', caption: 'Carte d’annonce' },
+    { image: 'hummingbird-rsvp-2.jpg', caption: 'Carte-réponse' },
     { image: 'hummingbird-menu-4.jpg', caption: 'Menu' },
-    { image: 'hummingbird-sleeve-1.jpg', caption: 'D\u00e9tail' },
-    { image: 'hummingbird-sleeve-10.jpg', caption: 'D\u00e9tail' },
-    { image: 'hummingbird-sleeve-15.jpg', caption: 'D\u00e9tail' },
-    { image: 'hummingbird-rsvp-3.jpg', caption: 'D\u00e9tail' },
-    { image: 'hummingbird-place_card-3.jpg', caption: 'D\u00e9tail' },
+    { image: 'hummingbird-sleeve-1.jpg', caption: 'Faire-part avec habillage, détail' },
+    { image: 'hummingbird-sleeve-10.jpg', caption: 'Faire-part avec habillage, détail' },
+    { image: 'hummingbird-sleeve-15.jpg', caption: 'Faire-part avec pochette, détail' },
+    { image: 'hummingbird-rsvp-3.jpg', caption: 'Carte-réponse, détail' },
+    { image: 'hummingbird-place_card-3.jpg', caption: 'Marque-place, détail' },
     // --- Sauge (sage green) colorway ---
-    { image: 'hummingbird-bundle-2.jpg', caption: 'Vue d\u2019ensemble, autre coloris' },
+    { image: 'hummingbird-bundle-2.jpg', caption: 'Vue d’ensemble, autre coloris' },
     { image: 'hummingbird-sleeve-9.jpg', caption: 'Faire-part avec habillage' },
-    { image: 'hummingbird-save_the_date-4.jpg', caption: 'Carte d\u2019annonce' },
+    { image: 'hummingbird-save_the_date-4.jpg', caption: 'Carte d’annonce' },
     { image: 'hummingbird-menu-3.jpg', caption: 'Menu' },
     { image: 'hummingbird-place_card-4.jpg', caption: 'Marque-place' },
-    { image: 'hummingbird-sleeve-2.jpg', caption: 'D\u00e9tail' },
-    { image: 'hummingbird-sleeve-12.jpg', caption: 'D\u00e9tail' },
-    { image: 'hummingbird-sleeve-14.jpg', caption: 'D\u00e9tail' },
+    { image: 'hummingbird-sleeve-2.jpg', caption: 'Faire-part avec habillage, détail' },
+    { image: 'hummingbird-sleeve-12.jpg', caption: 'Faire-part avec habillage, détail' },
+    { image: 'hummingbird-sleeve-14.jpg', caption: 'Faire-part avec pochette, détail' },
     // --- Bleu (blue) colorway ---
-    { image: 'hummingbird-bundle-3.jpg', caption: 'Vue d\u2019ensemble, autre coloris' },
+    { image: 'hummingbird-bundle-3.jpg', caption: 'Vue d’ensemble, autre coloris' },
     { image: 'hummingbird-sleeve-7.jpg', caption: 'Faire-part avec habillage' },
-    { image: 'hummingbird-save_the_date-2.jpg', caption: 'Carte d\u2019annonce' },
-    { image: 'hummingbird-rsvp-1.jpg', caption: 'Carte-r\u00e9ponse' },
+    { image: 'hummingbird-save_the_date-2.jpg', caption: 'Carte d’annonce' },
+    { image: 'hummingbird-rsvp-1.jpg', caption: 'Carte-réponse' },
     { image: 'hummingbird-menu-2.jpg', caption: 'Menu' },
-    { image: 'hummingbird-sleeve-3.jpg', caption: 'D\u00e9tail' },
-    { image: 'hummingbird-sleeve-13.jpg', caption: 'D\u00e9tail' },
-    { image: 'hummingbird-sleeve-16.jpg', caption: 'D\u00e9tail' },
+    { image: 'hummingbird-sleeve-3.jpg', caption: 'Faire-part avec pochette, détail' },
+    { image: 'hummingbird-sleeve-13.jpg', caption: 'Faire-part avec habillage, détail' },
+    { image: 'hummingbird-sleeve-16.jpg', caption: 'Faire-part avec pochette, détail' },
     // --- Ivoire (cream, no suite overview available for this colorway) ---
     { image: 'hummingbird-sleeve-11.jpg', caption: 'Faire-part avec habillage, autre coloris' },
     { image: 'hummingbird-menu-1.jpg', caption: 'Menu' },
-    { image: 'hummingbird-rsvp-4.jpg', caption: 'Carte-r\u00e9ponse' },
-    { image: 'hummingbird-save_the_date-1.jpg', caption: 'Carte d\u2019annonce' },
+    { image: 'hummingbird-rsvp-4.jpg', caption: 'Carte-réponse' },
+    { image: 'hummingbird-save_the_date-1.jpg', caption: 'Carte d’annonce' },
     // --- Remaining detail and multi-colorway group shots ---
-    { image: 'hummingbird-sleeve-4.jpg', caption: 'D\u00e9tail' },
-    { image: 'hummingbird-sleeve-6.jpg', caption: 'D\u00e9tail' },
-    { image: 'hummingbird-sleeve-8.jpg', caption: 'D\u00e9tail' },
-    { image: 'hummingbird-place_card-1.jpg', caption: 'D\u00e9tail' },
-    { image: 'hummingbird-place_card-2.jpg', caption: 'D\u00e9tail' },
-    { image: 'hummingbird-rsvp-5.jpg', caption: 'D\u00e9tail' },
+    { image: 'hummingbird-sleeve-4.jpg', caption: 'Faire-part avec pochette, détail' },
+    { image: 'hummingbird-sleeve-6.jpg', caption: 'Faire-part avec habillage, détail' },
+    { image: 'hummingbird-sleeve-8.jpg', caption: 'Faire-part avec habillage, détail' },
+    { image: 'hummingbird-place_card-1.jpg', caption: 'Marque-place, plusieurs coloris' },
+    { image: 'hummingbird-place_card-2.jpg', caption: 'Marque-place, plusieurs coloris' },
+    { image: 'hummingbird-rsvp-5.jpg', caption: 'Carte d’annonce, détail' },
   ],
 };
 
@@ -207,7 +208,7 @@ DearDaria.initProductGallery = function (opts) {
 
 // Standard arrow button markup - identical on every page that uses the gallery.
 DearDaria.galleryArrowsHTML = function (lang) {
-  const prevLabel = lang === 'en' ? 'Previous image' : lang === 'de' ? 'Vorheriges Bild' : 'Image pr\u00e9c\u00e9dente';
+  const prevLabel = lang === 'en' ? 'Previous image' : lang === 'de' ? 'Vorheriges Bild' : 'Image précédente';
   const nextLabel = lang === 'en' ? 'Next image' : lang === 'de' ? 'N\u00e4chstes Bild' : 'Image suivante';
   return `
     <button type="button" class="gallery-arrow gallery-arrow-prev" id="gallery-prev" aria-label="${prevLabel}">

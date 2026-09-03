@@ -21,6 +21,7 @@ DearDaria.formatPrice = function (price) {
 DearDaria.PRODUCT_TYPE_KEY = {
   bundle: 'label_bundle',
   sleeve: 'label_sleeve',
+  jacket: 'label_jacket',
   place_card: 'label_place_card',
   rsvp: 'label_rsvp',
   save_the_date: 'label_save_the_date',
@@ -36,7 +37,7 @@ DearDaria.productTypeLabel = function (type) {
   return DearDaria.t(key);
 };
 
-DearDaria.PERSONALISABLE_TYPES = ['sleeve', 'bundle', 'other'];
+DearDaria.PERSONALISABLE_TYPES = ['sleeve', 'jacket', 'bundle', 'other'];
 
 // collection.name is still the internal working label (e.g. "Calla Lily",
 // "Boho Peony") - never touched by the French naming pass. Derive a clean
