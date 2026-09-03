@@ -57,8 +57,11 @@
           <div class="breadcrumb"><a href="invitation-jackets.html">${DearDaria.t('nav_pochettes')}</a> &nbsp;/&nbsp; ${DearDaria.collectionDisplayName(collection)}</div>
           <div class="detail-hero">
             <div class="media">
-              <img id="gallery-main-img" src="${DearDaria.imgUrl(galleryImageList[0])}" alt="${DearDaria.collectionDisplayName(collection)}, ${galleryCaptionList[0]}">
-              ${DearDaria.galleryArrowsHTML(DearDaria.getLang())}
+              <div class="media-frame">
+                <img id="gallery-main-img" src="${DearDaria.imgUrl(galleryImageList[0])}" alt="${DearDaria.collectionDisplayName(collection)}, ${galleryCaptionList[0]}">
+                ${DearDaria.galleryArrowsHTML(DearDaria.getLang())}
+              </div>
+              <p class="gallery-caption" id="gallery-caption-main">${galleryCaptionList[0]}</p>
             </div>
             <div class="copy">
               <h1>${DearDaria.collectionDisplayName(collection)}</h1>
@@ -70,7 +73,6 @@
               <p class="photos-example-note">${DearDaria.t('photos_examples_note')}</p>
             </div>
           </div>
-          <p class="gallery-caption" id="gallery-caption-main">${galleryCaptionList[0]}</p>
         </div>
       </section>
 
