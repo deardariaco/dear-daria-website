@@ -174,11 +174,11 @@
   function render() {
     const heroCollection = collections.find(c => c.id === 'hummingbird') || collections[0];
     const heroImages = [
-      { src: 'hummingbird-bundle-2.jpg' },
-      { src: 'calla-lily-jacket-3.jpg', posDesktop: 'center 25%', posMobile: 'center 20%' },
-      { src: 'constellation-bundle-1.jpg' },
-      { src: 'vintage-floral-sleeve-1.jpg' },
-      { src: 'koi-bundle-1.jpg', fit: 'contain' },
+      { src: 'hummingbird-bundle-2.jpg', bg: '#EDE9E2' },
+      { src: 'calla-lily-jacket-3.jpg', bg: '#DDDCD0' },
+      { src: 'constellation-bundle-1.jpg', bg: '#EFE9E1' },
+      { src: 'vintage-floral-sleeve-1.jpg', bg: '#E8E2D9' },
+      { src: 'koi-bundle-1.jpg', bg: '#EEE9E0' },
     ];
     DearDaria.initHeroCarousel(heroImages);
 
