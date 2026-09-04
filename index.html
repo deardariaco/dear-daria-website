@@ -14,52 +14,32 @@
 <!-- 1. HERO (controlled height, single image) -->
 <header class="hero-controlled">
   <div class="hc-media">
-    <img id="hero-image" src="" alt="Beau Papier wedding invitation">
+    <div id="hero-carousel" class="hero-carousel"></div>
   </div>
   <div class="hc-copy">
     <span class="eyebrow" data-i18n="home_eyebrow"></span>
     <h1 data-i18n="hero_heading"></h1>
     <p class="lede" data-i18n="hero_sub"></p>
     <div class="btn-row">
-      <a href="invitation-jackets.html" class="btn primary" data-i18n="hero_cta_pochettes"></a>
-      <a href="wedding-suites.html" class="btn ghost" data-i18n="hero_cta_suites"></a>
+      <a href="consultation.html" class="btn primary" data-i18n="hero_cta_pochettes"></a>
+      <a href="#process" class="btn ghost" data-i18n="hero_cta_suites"></a>
     </div>
   </div>
 </header>
 
-<!-- 2. POCHETTES D'INVITATION -->
-<section class="section border-top">
+<!-- TRUST STRIP -->
+<section class="trust-strip">
   <div class="container">
-    <div class="section-head">
-      <div>
-        <h2 data-i18n="pochettes_heading"></h2>
-        <p class="lede" data-i18n="pochettes_sub"></p>
-      </div>
-      <a href="invitation-jackets.html" class="btn ghost" data-i18n="see_all_pochettes"></a>
-    </div>
-    <div id="pochettes-grid" class="grid cols-3"></div>
-    <div style="text-align:center; margin-top:40px;">
-      <a href="invitation-jackets.html" class="btn primary" data-i18n="see_all_pochettes"></a>
+    <div class="trust-strip-grid">
+      <div class="trust-item"><span data-i18n="trust_1"></span></div>
+      <div class="trust-item"><span data-i18n="trust_2"></span></div>
+      <div class="trust-item"><span data-i18n="trust_3"></span></div>
     </div>
   </div>
 </section>
 
-<!-- 3. SUITES DE MARIAGE -->
-<section class="section border-top">
-  <div class="container">
-    <div class="section-head">
-      <div><h2 data-i18n="suites_heading"></h2><p class="lede" data-i18n="suites_sub"></p></div>
-      <a href="wedding-suites.html" class="btn ghost" data-i18n="see_all_suites"></a>
-    </div>
-    <div id="suites-grid" class="grid cols-3"></div>
-    <div style="text-align:center; margin-top:40px;">
-      <a href="wedding-suites.html" class="btn primary" data-i18n="see_all_suites"></a>
-    </div>
-  </div>
-</section>
-
-<!-- 4. PROCESS -->
-<section class="section border-top">
+<!-- 3. PROCESS -->
+<section class="section border-top" id="process">
   <div class="container">
     <div class="section-head"><div>
       <h2 data-i18n="process_heading"></h2>
@@ -73,10 +53,60 @@
       <div class="step"><span class="num">04</span><h4 data-i18n="process4_title"></h4><p data-i18n="process4_text"></p></div>
       <div class="step"><span class="num">05</span><h4 data-i18n="process5_title"></h4><p data-i18n="process5_text"></p></div>
     </div>
+    <div style="text-align:center; margin-top:48px;">
+      <a href="consultation.html" class="btn primary" data-i18n="nav_request_consultation"></a>
+    </div>
   </div>
 </section>
 
-<!-- 5. CRÉATION SUR MESURE -->
+<!-- 4. INSPIRATION INTRO -->
+<section class="section tight border-top">
+  <div class="container" style="max-width:760px; text-align:center;">
+    <h2 data-i18n="inspiration_heading" style="margin-bottom:16px;"></h2>
+    <p style="color:var(--ink-soft); font-size:15px; line-height:1.8;" data-i18n="inspiration_text"></p>
+  </div>
+</section>
+
+<!-- 5. POCHETTES D'INVITATION -->
+<section class="section border-top">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2 data-i18n="pochettes_heading"></h2>
+        <p class="lede" data-i18n="pochettes_sub"></p>
+      </div>
+      <a href="invitation-jackets.html" class="btn ghost" data-i18n="see_all_pochettes"></a>
+    </div>
+    <div class="card-carousel-wrap">
+      <button type="button" class="card-carousel-arrow prev" id="pochettes-prev" aria-label="Pr\u00e9c\u00e9dent"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
+      <div id="pochettes-grid" class="card-carousel"></div>
+      <button type="button" class="card-carousel-arrow next" id="pochettes-next" aria-label="Suivant"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+    </div>
+    <div style="text-align:center; margin-top:40px;">
+      <a href="invitation-jackets.html" class="btn primary" data-i18n="see_all_pochettes"></a>
+    </div>
+  </div>
+</section>
+
+<!-- 3. SUITES DE MARIAGE -->
+<section class="section border-top">
+  <div class="container">
+    <div class="section-head">
+      <div><h2 data-i18n="suites_heading"></h2><p class="lede" data-i18n="suites_sub"></p></div>
+      <a href="wedding-suites.html" class="btn ghost" data-i18n="see_all_suites"></a>
+    </div>
+    <div class="card-carousel-wrap">
+      <button type="button" class="card-carousel-arrow prev" id="suites-prev" aria-label="Pr\u00e9c\u00e9dent"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
+      <div id="suites-grid" class="card-carousel"></div>
+      <button type="button" class="card-carousel-arrow next" id="suites-next" aria-label="Suivant"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+    </div>
+    <div style="text-align:center; margin-top:40px;">
+      <a href="wedding-suites.html" class="btn primary" data-i18n="see_all_suites"></a>
+    </div>
+  </div>
+</section>
+
+<!-- SUR MESURE -->
 <section class="section custom-dark-section">
   <div class="container">
     <div class="custom-dark-grid">
@@ -118,10 +148,10 @@
   </div>
 </section>
 
-<!-- 9. CONTACT + FOOTER -->
+<!-- 11. FINAL CONSULTATION SECTION -->
 <div class="contact-banner">
-  <h2 data-i18n="nav_request_consultation"></h2>
-  <p data-i18n="signature_selection_note"></p>
+  <h2 data-i18n="final_cta_heading"></h2>
+  <p data-i18n="final_cta_text"></p>
   <a href="consultation.html" class="btn primary" data-i18n="nav_request_consultation"></a>
 </div>
 
@@ -130,6 +160,9 @@
 <script src="js/i18n.js"></script>
 <script src="js/shell.js"></script>
 <script src="js/data.js"></script>
+<script src="js/hero-carousel.js"></script>
+<script src="js/card-carousel.js"></script>
+<script src="js/inspirations.js"></script>
 <script>
 (async function () {
   const data = await DearDaria.loadData();
@@ -137,8 +170,14 @@
 
   function render() {
     const heroCollection = collections.find(c => c.id === 'hummingbird') || collections[0];
-    document.getElementById('hero-image').src = DearDaria.imgUrl(heroCollection.hero);
-    document.getElementById('hero-image').alt = heroCollection.name;
+    const heroImages = [
+      'hummingbird-bundle-2.jpg',
+      'constellation-sleeve-2.jpg',
+      'calla-lily-jacket-3.jpg',
+      'peony-bouquet-sleeve-1.jpg',
+      'hummingbird-menu-3.jpg',
+    ];
+    DearDaria.initHeroCarousel(heroImages);
 
     // Faire-part homepage selection: explicit order from the approved catalogue,
     // not auto-picked. Falls back to nothing if a product lacks an order (so an
@@ -153,7 +192,8 @@
     const pochettesCards = pochetteEntries.map(({ collection, product }) =>
       DearDaria.productCardHTML(collection, product, product.images[0])
     ).join('');
-    DearDaria.renderGrid('pochettes-grid', pochettesCards, 3);
+    document.getElementById('pochettes-grid').innerHTML = pochettesCards;
+    DearDaria.initCardCarousel('pochettes-grid', 'pochettes-prev', 'pochettes-next');
 
     // Suites homepage selection: same explicit-order approach.
     const suiteEntries = [];
@@ -166,7 +206,8 @@
     const suiteCards = suiteEntries.map(({ collection, product }) =>
       DearDaria.productCardHTML(collection, product, product.images[0])
     ).join('');
-    DearDaria.renderGrid('suites-grid', suiteCards, 3);
+    document.getElementById('suites-grid').innerHTML = suiteCards;
+    DearDaria.initCardCarousel('suites-grid', 'suites-prev', 'suites-next');
 
     const customSource = collections.find(c => c.id === 'calla_bloom') || collections[0];
     document.getElementById('custom-dark-img').src = DearDaria.imgUrl(customSource.hero);

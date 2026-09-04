@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="page-title">Mes Inspirations | Beau Papier</title>
+<meta name="description" content="Retrouvez les créations Beau Papier que vous avez enregistrées.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav" id="site-nav"></nav>
+
+<section class="section tight">
+  <div class="container">
+    <h1 data-i18n="inspirations_page_title" style="margin-bottom:28px;"></h1>
+    <div id="inspirations-content"></div>
+  </div>
+</section>
+
+<footer class="site-footer" id="site-footer"></footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/shell.js"></script>
+<script src="js/data.js"></script>
+<script src="js/inspirations.js"></script>
+<script>
+(function () {
+  function render() {
+    const list = DearDaria.getInspirations().slice().sort((a, b) => (b.savedAt || 0) - (a.savedAt || 0));
+    const mount = document.getElementById('inspirations-content');
+    if (!list.length) {
+      mount.innerHTML = `<p class="inspirations-empty">${DearDaria.t('inspirations_empty')}</p>
+        <div style="text-align:center;"><a href="invitation-jackets.html" class="btn primary">${DearDaria.t('see_all_pochettes')}</a></div>`;
+      return;
+    }
+    const cards = list.map(item => `
+      <div class="card inspiration-card">
+        <button type="button" class="remove-btn" data-remove-id="${item.id}" aria-label="${DearDaria.t('inspirations_remove')}">&times;</button>
+        <a href="${item.url}">
+          <div class="card-media"><img class="lazy-img loaded" src="${DearDaria.imgUrl(item.image)}" alt="${item.title}"></div>
+          <div class="card-caption-static design-card-meta">
+            <div class="name">${item.title}</div>
+            <div class="type-row"><span class="type">${item.type}</span></div>
+          </div>
+        </a>
+      </div>`).join('');
+    mount.innerHTML = `
+      <div class="inspirations-grid">${cards}</div>
+      <div style="text-align:center; margin-top:40px; display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+        <a href="consultation.html" class="btn primary">${DearDaria.t('inspirations_start_consultation')}</a>
+        <button type="button" id="clear-all-btn" class="btn ghost">${DearDaria.t('inspirations_clear_all')}</button>
+      </div>`;
+
+    mount.querySelectorAll('[data-remove-id]').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const list2 = DearDaria.getInspirations().filter(i => i.id !== btn.getAttribute('data-remove-id'));
+        DearDaria.saveInspirations(list2);
+        DearDaria.updateInspirationsCount();
+        render();
+      });
+    });
+    const clearBtn = document.getElementById('clear-all-btn');
+    if (clearBtn) {
+      clearBtn.addEventListener('click', () => {
+        if (window.confirm(DearDaria.t('inspirations_clear_confirm'))) {
+          DearDaria.saveInspirations([]);
+          DearDaria.updateInspirationsCount();
+          render();
+        }
+      });
+    }
+  }
+  DearDaria.reRenderDynamic = render;
+  document.addEventListener('DOMContentLoaded', () => window.setTimeout(render, 0));
+})();
+</script>
+</body>
+</html>

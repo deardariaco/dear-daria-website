@@ -17,6 +17,7 @@
 <script src="js/i18n.js"></script>
 <script src="js/shell.js"></script>
 <script src="js/data.js"></script>
+<script src="js/inspirations.js"></script>
 <script src="js/gallery.js"></script>
 <script>
 (async function () {
@@ -77,7 +78,10 @@
             </div>
             <div class="copy">
               <span class="eyebrow">${DearDaria.collectionDisplayName(collection)}, ${label}</span>
-              <h1>${title}</h1>
+              <h1 style="display:flex; align-items:center; gap:14px; justify-content:space-between;">
+                <span>${title}</span>
+                ${DearDaria.heartButtonHTML ? DearDaria.heartButtonHTML({ id: `${collection.slug}__${product.type}`, title, image: galleryImageList[0], url: `product.html?slug=${collection.slug}&type=${product.type}`, type: label }) : ''}
+              </h1>
               <div class="type-row" style="margin-bottom:18px;">${badge}</div>
               <p class="desc">${DearDaria.collectionDescription(collection)}</p>
               <div class="btn-row">
