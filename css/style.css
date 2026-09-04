@@ -680,6 +680,10 @@ p { margin: 0; }
     text-align: center;
     justify-content: center;
   }
+  .hc-trust {
+    order: 4;
+    padding: 0 var(--gutter) 20px;
+  }
 }
 /* ============ FINAL CONTACT BANNER (before footer) ============ */
 .contact-banner {
@@ -877,38 +881,35 @@ p { margin: 0; }
   flex-direction: column;
 }
 
-/* ============ TRUST STRIP ============ */
-.trust-strip {
-  background: var(--ivory);
+/* ============ HERO TRUST LIST (in-column, beneath buttons) ============ */
+.hc-trust {
+  list-style: none;
+  margin: 32px 0 0;
+  padding: 0;
+  max-width: 40ch;
+}
+.hc-trust li {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 11px 0;
   border-bottom: 1px solid var(--mist);
-  padding: 22px 0;
-}
-.trust-strip-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  text-align: center;
-}
-.trust-item span {
   font-family: var(--font-body);
-  font-size: 13.5px;
+  font-size: 13px;
   color: var(--ink-soft);
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
 }
-@media (max-width: 700px) {
-  .trust-strip { padding: 14px 0; }
-  .trust-strip-grid {
-    grid-template-columns: 1fr;
-    gap: 0;
-    max-width: 320px;
-    margin: 0 auto;
-  }
-  .trust-item {
-    padding: 7px 0;
-    border-bottom: 1px solid var(--mist);
-  }
-  .trust-item:last-child { border-bottom: none; }
-  .trust-item span { font-size: 12.5px; }
+.hc-trust li:last-child { border-bottom: none; padding-bottom: 0; }
+.hc-trust li::before {
+  content: '';
+  flex-shrink: 0;
+  width: 10px;
+  height: 1px;
+  background: var(--gold);
+  transform: translateY(-3px);
+}
+@media (max-width: 900px) {
+  .hc-trust { max-width: none; margin-top: 24px; }
 }
 
 /* ============ STICKY MOBILE CONSULTATION BAR ============ */
