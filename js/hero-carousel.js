@@ -25,7 +25,7 @@ DearDaria.initHeroCarousel = function (images) {
   // always shown, centered, never cropped - only the background tint
   // differs per image, sampled from that photo's own palette.
   wrap.innerHTML = images.map((item, i) =>
-    `<img class="hero-carousel-img${i === 0 ? ' active' : ''}" src="${DearDaria.imgUrl(item.src)}" alt="${item.altKey ? DearDaria.t(item.altKey) : ''}" loading="${i === 0 ? 'eager' : 'lazy'}" draggable="false" style="background:${item.bg || 'var(--ivory-deep)'};">`
+    `<img class="hero-carousel-img${i === 0 ? ' active' : ''}" src="${DearDaria.imgUrl(item.src)}" alt="${item.altKey ? DearDaria.t(item.altKey) : ''}" loading="${i === 0 ? 'eager' : 'lazy'}" draggable="false" style="background:${item.bg || 'var(--ivory-deep)'};${item.scale ? ` transform: scale(${item.scale});` : ''}">`
   ).join('')
     + `<button type="button" class="hero-carousel-hit" aria-label="${nextLabel}"></button>`
     + `<div class="hero-carousel-dots" role="tablist">${images.map((_, i) =>

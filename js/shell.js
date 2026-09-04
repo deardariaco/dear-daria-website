@@ -26,7 +26,7 @@ window.DearDaria = window.DearDaria || {};
 
     mount.innerHTML = `
       <div class="container">
-        <a href="index.html" class="nav-logo nav-logo-img"><img src="clean_images/beau-papier-logo-gold.png" alt="Beau Papier"><span class="nav-logo-text">Beau Papier</span></a>
+        <a href="index.html" class="nav-logo nav-logo-img"><img src="clean_images/beau-papier-logo-new.png" alt="Beau Papier"><span class="nav-logo-text">Beau Papier</span></a>
         <ul class="nav-links" id="nav-links">${items}<li class="nav-mobile-cta"><a href="consultation.html" class="btn primary" data-i18n="nav_request_consultation"></a></li></ul>
         <a href="inspirations.html" class="nav-inspirations" aria-label="Mes Inspirations">
           <svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.1C0.3 8.5 1.8 5 5.3 4.2c2-.5 4 .3 5.2 2 .3.4.9.4 1.2 0 1.2-1.7 3.2-2.5 5.2-2C20.2 5 21.7 8.5 20 11.9 18.5 16.4 12 21 12 21z"/></svg>
