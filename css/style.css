@@ -636,7 +636,7 @@ p { margin: 0; }
 .hero-controlled {
   display: grid;
   grid-template-columns: 0.8fr 1fr;
-  height: clamp(560px, 62vw, 680px);
+  height: clamp(560px, calc(100svh - 84px), 680px);
   min-height: 560px;
 }
 .hero-controlled .hc-media { overflow: hidden; background: var(--ivory-deep); height: 100%; position: relative; }
@@ -977,7 +977,12 @@ p { margin: 0; }
 @media (min-width: 901px) {
   .hero-img-hummingbird {
     object-fit: cover !important;
-    object-position: center 52% !important;
+    object-position: center 52.5% !important;
+  }
+  .hero-carousel-img[src*="constellation" i],
+  .hero-carousel-img[src*="celestial" i] {
+    object-fit: cover !important;
+    object-position: center center !important;
   }
 }
 .hero-carousel-hit {
