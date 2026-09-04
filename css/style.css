@@ -589,17 +589,51 @@ p { margin: 0; }
 }
 .hero-controlled .hc-media { overflow: hidden; background: var(--ivory-deep); height: 100%; position: relative; }
 .hero-controlled .hc-media img { width: 100%; height: 100%; object-fit: cover; }
-.hero-controlled .hc-copy {
+.hc-copy-wrap {
   display: flex; flex-direction: column; justify-content: center; gap: 22px;
   padding: 40px clamp(24px, 4vw, 64px);
 }
+.hc-copy { display: flex; flex-direction: column; gap: 14px; }
+.hc-actions { display: flex; gap: 14px; flex-wrap: wrap; }
 .hero-controlled .hc-copy h1 { font-size: clamp(28px, 2.9vw, 40px); line-height: 1.15; max-width: 21ch; font-weight: 500; }
 .hero-controlled .hc-copy .lede { font-size: 15.5px; color: var(--ink-soft); max-width: 40ch; line-height: 1.7; }
-@media (max-width: 900px) {
-  .hero-controlled { grid-template-columns: 1fr; height: auto; }
-  .hero-controlled .hc-media { height: 46vh; min-height: 320px; }
-}
+.hero-lede-short { display: none; }
 
+@media (max-width: 900px) {
+  .hero-controlled {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 0;
+  }
+  .hc-copy-wrap { display: contents; } /* dissolve wrapper so children reorder independently */
+  .hc-copy {
+    order: 1;
+    padding: 22px var(--gutter) 6px;
+    gap: 10px;
+  }
+  .hero-controlled .hc-copy h1 { font-size: clamp(24px, 6vw, 30px); max-width: none; }
+  .hero-lede-full { display: none; }
+  .hero-lede-short { display: block; max-width: none; }
+  .hero-controlled .hc-media {
+    order: 2;
+    height: 52vh;
+    min-height: 300px;
+    max-height: 440px;
+  }
+  .hc-actions {
+    order: 3;
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px var(--gutter) 4px;
+  }
+  .hc-actions .btn {
+    padding: 13px 20px;
+    font-size: 12.5px;
+    text-align: center;
+    justify-content: center;
+  }
+}
 /* ============ FINAL CONTACT BANNER (before footer) ============ */
 .contact-banner {
   background: var(--ivory-deep);
@@ -815,7 +849,19 @@ p { margin: 0; }
   letter-spacing: 0.02em;
 }
 @media (max-width: 700px) {
-  .trust-strip-grid { grid-template-columns: 1fr; gap: 10px; }
+  .trust-strip { padding: 14px 0; }
+  .trust-strip-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  .trust-item {
+    padding: 7px 0;
+    border-bottom: 1px solid var(--mist);
+  }
+  .trust-item:last-child { border-bottom: none; }
+  .trust-item span { font-size: 12.5px; }
 }
 
 /* ============ STICKY MOBILE CONSULTATION BAR ============ */
@@ -834,19 +880,29 @@ p { margin: 0; }
     border-top: 1px solid var(--mist);
     padding: 10px var(--gutter) calc(10px + env(safe-area-inset-bottom));
     backdrop-filter: blur(6px);
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+    pointer-events: auto;
+  }
+  .sticky-mobile-cta.sticky-cta-discreet {
+    transform: translateY(100%);
+    opacity: 0;
+    pointer-events: none;
   }
   .sticky-mobile-cta .btn {
     display: block;
     width: 100%;
     text-align: center;
   }
-  /* keep gallery captions and footer content clear of the fixed bar */
-  body { padding-bottom: 62px; }
+  /* keep gallery captions, footer content and form controls clear of the fixed bar */
+  body { padding-bottom: 76px; }
   .site-footer { padding-bottom: calc(24px + env(safe-area-inset-bottom)); }
 }
 
 /* ============ HERO AUTO CAROUSEL ============ */
-.hero-carousel { position: relative; width: 100%; height: 100%; }
+.hero-carousel { position: relative; width: 100%; height: 100%; cursor: grab; touch-action: pan-y; }
+.hero-carousel:active { cursor: grabbing; }
 .hero-carousel-img {
   position: absolute;
   inset: 0;
@@ -854,7 +910,9 @@ p { margin: 0; }
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  transition: opacity 1.4s ease;
+  transition: opacity 0.7s ease;
+  touch-action: pan-y;
+  user-select: none;
 }
 .hero-carousel-img.active { opacity: 1; }
 .hero-carousel-dots {
@@ -863,15 +921,29 @@ p { margin: 0; }
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 7px;
+  gap: 12px;
   z-index: 3;
 }
 .hc-dot {
+  position: relative;
   width: 6px;
   height: 6px;
+  padding: 0;
+  border: none;
   border-radius: 50%;
   background: rgba(255,255,255,0.55);
+  cursor: pointer;
   transition: background 0.3s ease, transform 0.3s ease;
+}
+.hc-dot::before {
+  /* invisible larger touch target without enlarging the visible dot */
+  content: '';
+  position: absolute;
+  inset: -12px;
+}
+.hc-dot:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 4px;
 }
 .hc-dot.active { background: rgba(255,255,255,0.95); transform: scale(1.2); }
 
