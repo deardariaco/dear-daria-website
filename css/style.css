@@ -977,7 +977,7 @@ p { margin: 0; }
 @media (min-width: 901px) {
   .hero-img-hummingbird {
     object-fit: cover !important;
-    object-position: center 55% !important;
+    object-position: center 52% !important;
   }
 }
 .hero-carousel-hit {
