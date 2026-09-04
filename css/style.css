@@ -976,6 +976,7 @@ p { margin: 0; }
 .hero-carousel-img.active { opacity: 1; }
 @media (min-width: 901px) {
   .hero-img-hummingbird { transform: translateY(-40px); }
+  .hero-carousel-dots.dots-over-shifted-img { bottom: 58px; }
 }
 .hero-carousel-hit {
   position: absolute;
