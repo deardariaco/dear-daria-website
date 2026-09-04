@@ -8,8 +8,8 @@ DearDaria.TRANSLATIONS = {
   fr: {
     // === CONSULTATION-LED SERVICE (this stage) ===
     nav_pochettes: 'Faire-part de Mariage',
-    nav_suites_mariage: 'Suites de Papeterie',
-    breadcrumb_suites: 'Suites de Papeterie',
+    nav_suites_mariage: 'Collections composées',
+    breadcrumb_suites: 'Collections composées',
     nav_sur_mesure_top: 'Sur Mesure',
     nav_a_propos: '\u00c0 Propos',
     nav_faq: 'FAQ',
@@ -38,9 +38,10 @@ DearDaria.TRANSLATIONS = {
     final_cta_heading: 'Imaginons ensemble votre papeterie',
     final_cta_text: 'Chaque projet commence par un \u00e9change personnel avec Daria. Partagez votre histoire, votre date et vos premi\u00e8res id\u00e9es, et recevez une r\u00e9ponse personnalis\u00e9e.',
 
-    suites_heading: 'Suites de Papeterie',
+    suites_heading: 'Collections composées',
     suites_sub: 'Une papeterie coordonn\u00e9e, pens\u00e9e comme un ensemble.',
-    see_all_suites: 'Voir toutes les suites',
+    suites_extra_text: 'Chaque collection peut r\u00e9unir faire-part, carte d\u2019annonce, carte-r\u00e9ponse, menu, marque-place, doublure d\u2019enveloppe et bien plus encore. Toute pi\u00e8ce souhait\u00e9e peut \u00eatre cr\u00e9\u00e9e dans le m\u00eame univers graphique.',
+    see_all_suites: 'Voir toutes les collections composées',
     discover_suite2: 'D\u00e9couvrir la suite',
 
     process_heading: 'Un accompagnement personnel, de la premi\u00e8re rencontre \u00e0 la production',
@@ -157,7 +158,7 @@ DearDaria.TRANSLATIONS = {
     request_this_order: 'Demander Cette Commande',
 
     // Common / product labels
-    label_bundle: 'Suite de Papeterie',
+    label_bundle: 'Collection composée',
     label_sleeve: 'Faire-part avec Pochette',
     label_jacket: 'Faire-part avec Habillage',
     label_place_card: 'Marque-Place',
@@ -188,7 +189,7 @@ DearDaria.TRANSLATIONS = {
     jackets_section_title: 'Pochettes et invitations découpées',
     jackets_section_lede: 'Choisissez un modèle, puis personnalisez les textes, les couleurs et les pièces assorties.',
     see_all_sleeves: 'Voir toutes les pochettes',
-    suites_section_title: 'Suites de papeterie coordonnées',
+    suites_section_title: 'Collections composées coordonnées',
     discover_suite: 'Découvrir la suite',
     two_paths_eyebrow: 'Deux façons de commencer',
     two_paths_title: 'Par où commencer',
