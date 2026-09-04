@@ -16,11 +16,14 @@
   <div class="hc-media">
     <div id="hero-carousel" class="hero-carousel"></div>
   </div>
-  <div class="hc-copy">
-    <span class="eyebrow" data-i18n="home_eyebrow"></span>
-    <h1 data-i18n="hero_heading"></h1>
-    <p class="lede" data-i18n="hero_sub"></p>
-    <div class="btn-row">
+  <div class="hc-copy-wrap">
+    <div class="hc-copy">
+      <span class="eyebrow" data-i18n="home_eyebrow"></span>
+      <h1 data-i18n="hero_heading"></h1>
+      <p class="lede hero-lede-full" data-i18n="hero_sub"></p>
+      <p class="lede hero-lede-short" data-i18n="hero_sub_short"></p>
+    </div>
+    <div class="hc-actions">
       <a href="consultation.html" class="btn primary" data-i18n="hero_cta_pochettes"></a>
       <a href="#process" class="btn ghost" data-i18n="hero_cta_suites"></a>
     </div>
@@ -172,10 +175,10 @@
     const heroCollection = collections.find(c => c.id === 'hummingbird') || collections[0];
     const heroImages = [
       'hummingbird-bundle-2.jpg',
-      'constellation-sleeve-2.jpg',
       'calla-lily-jacket-3.jpg',
-      'peony-bouquet-sleeve-1.jpg',
-      'hummingbird-menu-3.jpg',
+      'constellation-bundle-1.jpg',
+      'lavender-sleeve-7.jpg',
+      'koi-bundle-1.jpg',
     ];
     DearDaria.initHeroCarousel(heroImages);
 
