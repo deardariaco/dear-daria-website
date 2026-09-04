@@ -4,8 +4,9 @@
 // dots select a specific image directly.
 window.DearDaria = window.DearDaria || {};
 
-// images: array of { src, posDesktop, posMobile } - position strings are
-// optional per-image object-position overrides (defaults to 'center center').
+// images: array of { src, bg } - bg is a restrained pale background tint
+// sampled from the photograph, shown around it since every hero photo is
+// a ~3:4 portrait and none are cropped into a landscape fill.
 DearDaria.initHeroCarousel = function (images) {
   const wrap = document.getElementById('hero-carousel');
   if (!wrap || !images || images.length < 2) return;
@@ -18,19 +19,13 @@ DearDaria.initHeroCarousel = function (images) {
   };
   const nextLabel = lang === 'en' ? 'Show the next image' : lang === 'de' ? 'N\u00e4chstes Bild anzeigen' : 'Afficher l\u2019image suivante';
 
-  const isMobile = window.matchMedia('(max-width: 900px)').matches;
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  function posFor(item) {
-    const pos = isMobile ? (item.posMobile || item.posDesktop) : item.posDesktop;
-    return pos || 'center center';
-  }
-  function fitFor(item) {
-    return item.fit || 'cover';
-  }
-
+  // Every slide uses the same fitting rule: the complete photograph is
+  // always shown, centered, never cropped - only the background tint
+  // differs per image, sampled from that photo's own palette.
   wrap.innerHTML = images.map((item, i) =>
-    `<img class="hero-carousel-img${i === 0 ? ' active' : ''}" src="${DearDaria.imgUrl(item.src)}" alt="" loading="${i === 0 ? 'eager' : 'lazy'}" draggable="false" style="object-position:${posFor(item)}; object-fit:${fitFor(item)}; background:${fitFor(item) === 'contain' ? 'var(--ivory-deep)' : 'transparent'};">`
+    `<img class="hero-carousel-img${i === 0 ? ' active' : ''}" src="${DearDaria.imgUrl(item.src)}" alt="" loading="${i === 0 ? 'eager' : 'lazy'}" draggable="false" style="background:${item.bg || 'var(--ivory-deep)'};">`
   ).join('')
     + `<button type="button" class="hero-carousel-hit" aria-label="${nextLabel}"></button>`
     + `<div class="hero-carousel-dots" role="tablist">${images.map((_, i) =>
