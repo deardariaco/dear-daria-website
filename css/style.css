@@ -966,6 +966,9 @@ p { margin: 0; }
   user-select: none;
 }
 .hero-carousel-img.active { opacity: 1; }
+@media (min-width: 901px) {
+  .hero-img-hummingbird { object-position: center 20% !important; }
+}
 .hero-carousel-hit {
   position: absolute;
   inset: 0;
