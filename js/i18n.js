@@ -179,7 +179,7 @@ DearDaria.TRANSLATIONS = {
     caption_details_card: 'Carte de d\u00e9roulement',
     caption_glass_tag: '\u00c9tiquette \u00e0 verre',
     label_details_card: 'Carte de D\u00e9roulement',
-    label_other: 'Invitation',
+    label_other: 'Faire-part',
     view_collection: 'Voir la Collection',
     pieces_available: 'pièces', collection_of: 'Collection de',
     piece_available: 'pièce',

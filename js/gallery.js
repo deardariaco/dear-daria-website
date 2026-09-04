@@ -87,6 +87,8 @@ DearDaria.initProductGallery = function (opts) {
   const { images, captions, mainImgEl, prevBtnEl, nextBtnEl, thumbContainer, altText, captionEl } = opts;
   if (!images || !mainImgEl) return;
 
+  let idx = 0;
+
   function setCaption(i) {
     if (captionEl && captions && captions[i]) captionEl.textContent = captions[i];
   }
@@ -96,10 +98,7 @@ DearDaria.initProductGallery = function (opts) {
     if (prevBtnEl) prevBtnEl.style.display = 'none';
     if (nextBtnEl) nextBtnEl.style.display = 'none';
     setCaption(0);
-    return;
   }
-
-  let idx = 0;
   const mediaWrap = mainImgEl.closest('.media-frame') || mainImgEl.closest('.media');
 
   function preload(i) {
@@ -139,6 +138,108 @@ DearDaria.initProductGallery = function (opts) {
       mediaWrap.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }
+
+  // Full-screen viewer for individual faire-part and suite galleries.
+  // Homepage cards never call initProductGallery, so they remain unchanged.
+  const lang = DearDaria.getLang();
+  const closeLabel = lang === 'en' ? 'Close full-screen image' : lang === 'de' ? 'Vollbild schliessen' : 'Fermer l’image plein écran';
+  const prevLabel = lang === 'en' ? 'Previous image' : lang === 'de' ? 'Vorheriges Bild' : 'Image précédente';
+  const nextLabel = lang === 'en' ? 'Next image' : lang === 'de' ? 'Nächstes Bild' : 'Image suivante';
+  const previousLightbox = document.querySelector('.gallery-lightbox');
+  if (previousLightbox) previousLightbox.remove();
+  document.body.classList.remove('gallery-lightbox-open');
+  const lightbox = document.createElement('div');
+  lightbox.className = 'gallery-lightbox';
+  lightbox.setAttribute('role', 'dialog');
+  lightbox.setAttribute('aria-modal', 'true');
+  lightbox.setAttribute('aria-hidden', 'true');
+  lightbox.setAttribute('aria-label', altText);
+  lightbox.innerHTML = `
+    <button type="button" class="gallery-lightbox-close" aria-label="${closeLabel}">&times;</button>
+    <button type="button" class="gallery-lightbox-arrow gallery-lightbox-prev" aria-label="${prevLabel}">
+      <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+    </button>
+    <img class="gallery-lightbox-image" alt="">
+    <button type="button" class="gallery-lightbox-arrow gallery-lightbox-next" aria-label="${nextLabel}">
+      <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+    </button>
+    <p class="gallery-lightbox-caption"></p>`;
+  document.body.appendChild(lightbox);
+
+  const lightboxImg = lightbox.querySelector('.gallery-lightbox-image');
+  const lightboxCaption = lightbox.querySelector('.gallery-lightbox-caption');
+  const lightboxClose = lightbox.querySelector('.gallery-lightbox-close');
+  const lightboxPrev = lightbox.querySelector('.gallery-lightbox-prev');
+  const lightboxNext = lightbox.querySelector('.gallery-lightbox-next');
+  let lastFocused = null;
+
+  function updateLightbox() {
+    const caption = captions && captions[idx] ? captions[idx] : '';
+    lightboxImg.src = DearDaria.imgUrl(images[idx]);
+    lightboxImg.alt = caption ? `${altText}, ${caption}` : altText;
+    lightboxCaption.textContent = caption;
+    lightboxPrev.disabled = idx === 0;
+    lightboxNext.disabled = idx === images.length - 1;
+    lightboxPrev.style.display = images.length > 1 ? '' : 'none';
+    lightboxNext.style.display = images.length > 1 ? '' : 'none';
+  }
+
+  function openLightbox() {
+    lastFocused = document.activeElement;
+    updateLightbox();
+    lightbox.classList.add('is-open');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('gallery-lightbox-open');
+    lightboxClose.focus();
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('is-open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('gallery-lightbox-open');
+    if (lastFocused && lastFocused.focus) lastFocused.focus();
+  }
+
+  function moveLightbox(newIdx) {
+    if (newIdx < 0 || newIdx >= images.length) return;
+    showIndex(newIdx, false);
+    idx = newIdx;
+    updateLightbox();
+  }
+
+  mainImgEl.setAttribute('tabindex', '0');
+  mainImgEl.setAttribute('role', 'button');
+  mainImgEl.setAttribute('aria-label', `${altText}. ${lang === 'en' ? 'Open full-screen image' : lang === 'de' ? 'Bild im Vollbild öffnen' : 'Ouvrir l’image en plein écran'}`);
+  mainImgEl.addEventListener('click', openLightbox);
+  mainImgEl.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      openLightbox();
+    }
+  });
+  lightboxClose.addEventListener('click', closeLightbox);
+  lightboxPrev.addEventListener('click', () => moveLightbox(idx - 1));
+  lightboxNext.addEventListener('click', () => moveLightbox(idx + 1));
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('is-open')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') { e.preventDefault(); moveLightbox(idx - 1); }
+    if (e.key === 'ArrowRight') { e.preventDefault(); moveLightbox(idx + 1); }
+  });
+
+  let lightboxTouchStartX = null;
+  lightbox.addEventListener('touchstart', (e) => {
+    lightboxTouchStartX = e.touches[0].clientX;
+  }, { passive: true });
+  lightbox.addEventListener('touchend', (e) => {
+    if (lightboxTouchStartX === null) return;
+    const dx = e.changedTouches[0].clientX - lightboxTouchStartX;
+    if (Math.abs(dx) > 40) moveLightbox(dx < 0 ? idx + 1 : idx - 1);
+    lightboxTouchStartX = null;
+  }, { passive: true });
 
   prevBtnEl.addEventListener('click', () => showIndex(idx - 1, false));
   nextBtnEl.addEventListener('click', () => showIndex(idx + 1, false));
