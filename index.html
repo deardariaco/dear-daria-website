@@ -27,19 +27,13 @@
       <a href="consultation.html" class="btn primary" data-i18n="hero_cta_pochettes"></a>
       <a href="#process" class="btn ghost" data-i18n="hero_cta_suites"></a>
     </div>
+    <ul class="hc-trust">
+      <li><span data-i18n="trust_1"></span></li>
+      <li><span data-i18n="trust_2"></span></li>
+      <li><span data-i18n="trust_3"></span></li>
+    </ul>
   </div>
 </header>
-
-<!-- TRUST STRIP -->
-<section class="trust-strip">
-  <div class="container">
-    <div class="trust-strip-grid">
-      <div class="trust-item"><span data-i18n="trust_1"></span></div>
-      <div class="trust-item"><span data-i18n="trust_2"></span></div>
-      <div class="trust-item"><span data-i18n="trust_3"></span></div>
-    </div>
-  </div>
-</section>
 
 <!-- 3. PROCESS -->
 <section class="section border-top" id="process">
@@ -174,9 +168,9 @@
   function render() {
     const heroCollection = collections.find(c => c.id === 'hummingbird') || collections[0];
     const heroImages = [
-      { src: 'hummingbird-sleeve-16.jpg', bg: '#EFEBE2', altKey: 'hero_alt_1' },
+      { src: 'hummingbird-sleeve-16.jpg', bg: '#EFEBE2', altKey: 'hero_alt_1', scale: 0.93 },
       { src: 'calla-bloom-bundle-4.jpg', bg: '#EFEAE2', altKey: 'hero_alt_2' },
-      { src: 'constellation-sleeve-2.jpg', bg: '#ECE8E0', altKey: 'hero_alt_3' },
+      { src: 'constellation-sleeve-2.jpg', bg: '#ECE8E0', altKey: 'hero_alt_3', scale: 0.93 },
       { src: 'calla-lily-sleeve-36.jpg', bg: '#EAE4DC', altKey: 'hero_alt_4' },
       { src: 'vintage-floral-sleeve-5.jpg', bg: '#EBE6DF', altKey: 'hero_alt_5' },
     ];
