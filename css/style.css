@@ -983,7 +983,7 @@ p { margin: 0; }
   .hero-carousel-img[src*="constellation" i],
   .hero-carousel-img[src*="celestial" i] {
     object-fit: cover !important;
-    object-position: center center !important;
+    object-position: center 52.5% !important;
   }
 }
 @media (max-width: 900px) {
@@ -993,7 +993,7 @@ p { margin: 0; }
   .hero-carousel-img[src*="constellation" i],
   .hero-carousel-img[src*="celestial" i] {
     object-fit: cover !important;
-    object-position: center center !important;
+    object-position: center 52.5% !important;
   }
 }
 .hero-carousel-hit {
