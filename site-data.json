@@ -544,7 +544,7 @@
       "description": {
         "fr": "Hortensias pleins et romantiques en bleu poudré, intemporels et inspirés du bord de mer.",
         "en": "Full, romantic hydrangea blooms in dusty blue - coastal and timeless.",
-        "de": "Volle, romantische Hortensienblüten in Staubblau — küstennah und zeitlos."
+        "de": "Volle, romantische Hortensienblüten in Staubblau, küstennah und zeitlos."
       },
       "hero": "hydrangea-bundle-1.jpg",
       "gallery": [
@@ -735,20 +735,20 @@
       "name": "Cherry Blossom",
       "colorway": "blush",
       "description": {
-        "fr": "Branches de sakura en blush tendre — romantique et détail printanier.",
+        "fr": "Branches de sakura en blush tendre, romantiques et délicatement printanières.",
         "en": "Sakura branches in soft blush - romantic, springtime detail.",
-        "de": "Sakura-Zweige in zartem Blush — romantisches Frühlingsdetail."
+        "de": "Sakura-Zweige in zartem Blush, ein romantisches Frühlingsdetail."
       },
-      "hero": "cherry-blossom-bundle-1.jpg",
+      "hero": "cherry-blossom-sleeve-8.jpg",
       "gallery": [
         "cherry-blossom-bundle-1.jpg",
+        "cherry-blossom-sleeve-8.jpg",
         "cherry-blossom-sleeve-2.jpg",
         "cherry-blossom-sleeve-3.jpg",
         "cherry-blossom-sleeve-4.jpg",
         "cherry-blossom-sleeve-5.jpg",
         "cherry-blossom-sleeve-6.jpg",
-        "cherry-blossom-sleeve-7.jpg",
-        "cherry-blossom-sleeve-8.jpg"
+        "cherry-blossom-sleeve-7.jpg"
       ],
       "products": [
         {
@@ -768,13 +768,13 @@
           "type": "sleeve",
           "title": "Faire-part Fleurs de Cerisier",
           "images": [
+            "cherry-blossom-sleeve-8.jpg",
             "cherry-blossom-sleeve-2.jpg",
             "cherry-blossom-sleeve-3.jpg",
             "cherry-blossom-sleeve-4.jpg",
             "cherry-blossom-sleeve-5.jpg",
             "cherry-blossom-sleeve-6.jpg",
-            "cherry-blossom-sleeve-7.jpg",
-            "cherry-blossom-sleeve-8.jpg"
+            "cherry-blossom-sleeve-7.jpg"
           ],
           "seo_title": "Cherry Blossom Wedding Invitation Jacket, Sakura Floral Wrap, Blush DIY, 4 sizes",
           "description_fr": "De délicates branches de cerisier dessinent une composition printanière douce et élégante.",
@@ -2407,7 +2407,7 @@
         "en": "Koi carp and water lilies in a peaceful water garden, for a wedding infused with serenity.",
         "de": "Koi-Karpfen und Seerosen in einem friedlichen Wassergarten, für eine Hochzeit voller Ruhe."
       },
-      "hero": "koi-bundle-1.jpg",
+      "hero": "koi-sleeve-2.jpg",
       "gallery": [
         "koi-bundle-1.jpg",
         "koi-bundle-2.jpg",
@@ -2476,26 +2476,36 @@
         },
         {
           "type": "sleeve",
-          "title": "Faire-part Jardin aux Koïs",
+          "title": "Faire-part Jardin aux Koïs (Pochette)",
           "images": [
-            "koi-sleeve-1.jpg",
             "koi-sleeve-10.jpg",
             "koi-sleeve-11.jpg",
             "koi-sleeve-12.jpg",
-            "koi-sleeve-2.jpg",
-            "koi-sleeve-3.jpg",
-            "koi-sleeve-4.jpg",
-            "koi-sleeve-5.jpg",
-            "koi-sleeve-6.jpg",
             "koi-sleeve-7.jpg",
             "koi-sleeve-8.jpg",
             "koi-sleeve-9.jpg"
           ],
-          "homepage_order_pochette": 4,
-          "catalogue_order_pochette": 2,
-          "title_fr": "Faire-part Jardin aux Koïs",
+          "catalogue_order_pochette": 2.5,
+          "title_fr": "Faire-part Jardin aux Koïs (Pochette)",
           "title_en": "Koi Garden Invitation Sleeve",
           "title_de": "Einladung Koi-Garten (Einsteckhülle)"
+        },
+        {
+          "type": "jacket",
+          "title": "Faire-part Jardin aux Koïs (Habillage)",
+          "images": [
+            "koi-sleeve-2.jpg",
+            "koi-sleeve-1.jpg",
+            "koi-sleeve-3.jpg",
+            "koi-sleeve-4.jpg",
+            "koi-sleeve-5.jpg",
+            "koi-sleeve-6.jpg"
+          ],
+          "homepage_order_pochette": 4,
+          "catalogue_order_pochette": 2,
+          "title_fr": "Faire-part Jardin aux Koïs (Habillage)",
+          "title_en": "Koi Garden Invitation with Jacket",
+          "title_de": "Einladung Koi-Garten (Umschlag)"
         },
         {
           "type": "menu",
@@ -2775,12 +2785,12 @@
     {
       "id": "freesia_b",
       "slug": "freesia-design-2",
-      "name": "Frésia (Modèle 2 - nom à confirmer)",
+      "name": "Frésia II",
       "colorway": "sage",
       "description": {
-        "fr": "Un second modèle de faire-part Frésia. Le nom public définitif reste à confirmer.",
-        "en": "A second Freesia invitation design. The final public name is still to be confirmed.",
-        "de": "Ein zweites Frésien-Design. Der endgültige öffentliche Name muss noch bestätigt werden."
+        "fr": "Un second modèle de faire-part Frésia, aux lignes florales délicates et à l’allure raffinée.",
+        "en": "A second Freesia invitation design with delicate floral lines and a refined character.",
+        "de": "Ein zweites Freesien-Einladungsdesign mit zarten floralen Linien und einer raffinierten Ausstrahlung."
       },
       "hero": "freesia-sleeve-35.jpg",
       "gallery": [
@@ -2796,7 +2806,7 @@
       "products": [
         {
           "type": "sleeve",
-          "title": "Faire-part Frésia (modèle 2 - nom à confirmer)",
+          "title": "Faire-part Frésia II",
           "images": [
             "freesia-sleeve-35.jpg",
             "freesia-sleeve-36.jpg",
@@ -2807,9 +2817,9 @@
             "freesia-sleeve-41.jpg"
           ],
           "catalogue_order_pochette": 23.5,
-          "title_fr": "Faire-part Frésia (modèle 2 - nom à confirmer)",
-          "title_en": "Freesia (Design 2 - name pending) Invitation Sleeve",
-          "title_de": "Einladung Freesie (Design 2 - Name ausstehend) (Einsteckhülle)"
+          "title_fr": "Faire-part Frésia II",
+          "title_en": "Freesia II Invitation Sleeve",
+          "title_de": "Einladung Freesie II (Einsteckhülle)"
         }
       ],
       "display_name": {

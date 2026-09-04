@@ -176,13 +176,12 @@
     ];
     DearDaria.initHeroCarousel(heroImages);
 
-    // Faire-part homepage selection: explicit order from the approved catalogue,
-    // not auto-picked. Falls back to nothing if a product lacks an order (so an
-    // incomplete edit never silently shows the wrong item).
+    // Complete faire-part catalogue. This is separate from the landing hero,
+    // whose curated carousel remains unchanged.
     const pochetteEntries = [];
     collections.forEach(c => {
       c.products.forEach(p => {
-        if (p.homepage_order_pochette) pochetteEntries.push({ collection: c, product: p, order: p.homepage_order_pochette });
+        if (p.catalogue_order_pochette != null) pochetteEntries.push({ collection: c, product: p, order: p.catalogue_order_pochette });
       });
     });
     pochetteEntries.sort((a, b) => a.order - b.order);
@@ -192,11 +191,11 @@
     document.getElementById('pochettes-grid').innerHTML = pochettesCards;
     DearDaria.initCardCarousel('pochettes-grid', 'pochettes-prev', 'pochettes-next');
 
-    // Suites homepage selection: same explicit-order approach.
+    // Complete suite catalogue in its approved order.
     const suiteEntries = [];
     collections.forEach(c => {
       c.products.forEach(p => {
-        if (p.homepage_order_suite) suiteEntries.push({ collection: c, product: p, order: p.homepage_order_suite });
+        if (p.type === 'bundle' && p.catalogue_order_suite != null) suiteEntries.push({ collection: c, product: p, order: p.catalogue_order_suite });
       });
     });
     suiteEntries.sort((a, b) => a.order - b.order);
