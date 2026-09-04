@@ -1,9 +1,11 @@
 // Beau Papier — automatic hero carousel with manual override.
 // Text never changes; only the photograph cycles. No visible prev/next
-// arrows, but dots are real clickable buttons and the image responds to
-// drag (desktop) and swipe (mobile).
+// arrows. Clicking the image (desktop) or swiping (mobile) advances it;
+// dots select a specific image directly.
 window.DearDaria = window.DearDaria || {};
 
+// images: array of { src, posDesktop, posMobile } - position strings are
+// optional per-image object-position overrides (defaults to 'center center').
 DearDaria.initHeroCarousel = function (images) {
   const wrap = document.getElementById('hero-carousel');
   if (!wrap || !images || images.length < 2) return;
@@ -14,17 +16,30 @@ DearDaria.initHeroCarousel = function (images) {
     if (lang === 'de') return `Bild ${n} anzeigen`;
     return `Afficher l\u2019image ${n}`;
   };
+  const nextLabel = lang === 'en' ? 'Show the next image' : lang === 'de' ? 'N\u00e4chstes Bild anzeigen' : 'Afficher l\u2019image suivante';
 
+  const isMobile = window.matchMedia('(max-width: 900px)').matches;
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  wrap.innerHTML = images.map((img, i) =>
-    `<img class="hero-carousel-img${i === 0 ? ' active' : ''}" src="${DearDaria.imgUrl(img)}" alt="" loading="${i === 0 ? 'eager' : 'lazy'}" draggable="false">`
-  ).join('') + `<div class="hero-carousel-dots" role="tablist">${images.map((_, i) =>
-    `<button type="button" class="hc-dot${i === 0 ? ' active' : ''}" role="tab" aria-label="${showLabel(i + 1)}" aria-current="${i === 0}"></button>`
-  ).join('')}</div>`;
+  function posFor(item) {
+    const pos = isMobile ? (item.posMobile || item.posDesktop) : item.posDesktop;
+    return pos || 'center center';
+  }
+  function fitFor(item) {
+    return item.fit || 'cover';
+  }
+
+  wrap.innerHTML = images.map((item, i) =>
+    `<img class="hero-carousel-img${i === 0 ? ' active' : ''}" src="${DearDaria.imgUrl(item.src)}" alt="" loading="${i === 0 ? 'eager' : 'lazy'}" draggable="false" style="object-position:${posFor(item)}; object-fit:${fitFor(item)}; background:${fitFor(item) === 'contain' ? 'var(--ivory-deep)' : 'transparent'};">`
+  ).join('')
+    + `<button type="button" class="hero-carousel-hit" aria-label="${nextLabel}"></button>`
+    + `<div class="hero-carousel-dots" role="tablist">${images.map((_, i) =>
+      `<button type="button" class="hc-dot${i === 0 ? ' active' : ''}" role="tab" aria-label="${showLabel(i + 1)}" aria-current="${i === 0}"></button>`
+    ).join('')}</div>`;
 
   const imgs = wrap.querySelectorAll('.hero-carousel-img');
   const dots = wrap.querySelectorAll('.hc-dot');
+  const hitArea = wrap.querySelector('.hero-carousel-hit');
   let idx = 0;
   let timer = null;
   const INTERVAL = 5000;
@@ -32,7 +47,7 @@ DearDaria.initHeroCarousel = function (images) {
   function preload(i) {
     if (i < 0 || i >= images.length) return;
     const img = new Image();
-    img.src = DearDaria.imgUrl(images[i]);
+    img.src = DearDaria.imgUrl(images[i].src);
   }
 
   function show(next) {
@@ -49,14 +64,8 @@ DearDaria.initHeroCarousel = function (images) {
   }
 
   function tick() { show(idx + 1); }
-
-  function start() {
-    if (timer || reduceMotion) return;
-    timer = window.setInterval(tick, INTERVAL);
-  }
-  function stop() {
-    if (timer) { window.clearInterval(timer); timer = null; }
-  }
+  function start() { if (timer || reduceMotion) return; timer = window.setInterval(tick, INTERVAL); }
+  function stop() { if (timer) { window.clearInterval(timer); timer = null; } }
   function restart() { stop(); start(); }
 
   if (!reduceMotion) start();
@@ -66,6 +75,12 @@ DearDaria.initHeroCarousel = function (images) {
     dot.addEventListener('click', () => { show(i); restart(); });
   });
 
+  // Desktop: click anywhere on the image advances by one. On mobile this
+  // same button exists but swipe (pointer drag) is the primary gesture; a
+  // plain tap that isn't part of a vertical scroll also advances, which is
+  // fine since it mirrors the swipe direction the visitor already used.
+  hitArea.addEventListener('click', () => { show(idx + 1); restart(); });
+
   document.addEventListener('visibilitychange', () => {
     if (document.hidden) stop(); else start();
   });
@@ -74,25 +89,38 @@ DearDaria.initHeroCarousel = function (images) {
   wrap.addEventListener('focusin', stop);
   wrap.addEventListener('focusout', start);
 
-  // Drag (desktop) and swipe (mobile) via pointer events.
+  // Drag (desktop) and swipe (mobile). A short pointerup without meaningful
+  // horizontal movement is treated as a click by the browser already (the
+  // click listener above handles that); this only intercepts real drags.
   let startX = null;
+  let startY = null;
   let dragging = false;
-  wrap.addEventListener('pointerdown', (e) => {
+  hitArea.addEventListener('pointerdown', (e) => {
     startX = e.clientX;
+    startY = e.clientY;
     dragging = true;
-    stop();
   });
-  wrap.addEventListener('pointerup', (e) => {
+  hitArea.addEventListener('pointermove', (e) => {
+    if (!dragging || startX === null) return;
+    // Once horizontal movement clearly dominates, treat as a drag/swipe and
+    // stop the timer; otherwise let vertical page scroll proceed untouched.
+    const dx = Math.abs(e.clientX - startX);
+    const dy = Math.abs(e.clientY - startY);
+    if (dx > 10 && dx > dy) stop();
+  });
+  hitArea.addEventListener('pointerup', (e) => {
     if (!dragging || startX === null) return;
     const dx = e.clientX - startX;
-    if (Math.abs(dx) > 40) {
+    const dy = Math.abs(e.clientY - startY);
+    if (Math.abs(dx) > 40 && Math.abs(dx) > dy) {
       if (dx < 0) show(idx + 1); else show(idx - 1);
     }
     dragging = false;
     startX = null;
+    startY = null;
     restart();
   });
-  wrap.addEventListener('pointerleave', () => {
-    if (dragging) { dragging = false; startX = null; start(); }
+  hitArea.addEventListener('pointerleave', () => {
+    if (dragging) { dragging = false; startX = null; startY = null; start(); }
   });
 };
