@@ -52,10 +52,14 @@
       `<img class="lazy-img" loading="lazy" src="${DearDaria.imgUrl(e.image)}" alt="${DearDaria.collectionDisplayName(collection)}, ${e.caption}">`
     ).join('');
 
+    const collectionHasSuite = collection.products.some(p => p.type === 'bundle');
+    const parentHref = collectionHasSuite ? 'wedding-suites.html' : 'invitation-jackets.html';
+    const parentLabel = collectionHasSuite ? DearDaria.t('breadcrumb_suites') : DearDaria.t('nav_pochettes');
+
     content.innerHTML = `
       <section class="section tight">
         <div class="container">
-          <div class="breadcrumb"><a href="invitation-jackets.html">${DearDaria.t('nav_pochettes')}</a> &nbsp;/&nbsp; ${DearDaria.collectionDisplayName(collection)}</div>
+          <div class="breadcrumb"><a href="${parentHref}">${parentLabel}</a> &nbsp;/&nbsp; ${DearDaria.collectionDisplayName(collection)}</div>
           <div class="detail-hero">
             <div class="media">
               <div class="media-frame">

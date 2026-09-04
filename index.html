@@ -174,11 +174,11 @@
   function render() {
     const heroCollection = collections.find(c => c.id === 'hummingbird') || collections[0];
     const heroImages = [
-      'hummingbird-bundle-2.jpg',
-      'calla-lily-jacket-3.jpg',
-      'constellation-bundle-1.jpg',
-      'lavender-sleeve-7.jpg',
-      'koi-bundle-1.jpg',
+      { src: 'hummingbird-bundle-2.jpg' },
+      { src: 'calla-lily-jacket-3.jpg', posDesktop: 'center 25%', posMobile: 'center 20%' },
+      { src: 'constellation-bundle-1.jpg' },
+      { src: 'vintage-floral-sleeve-1.jpg' },
+      { src: 'koi-bundle-1.jpg', fit: 'contain' },
     ];
     DearDaria.initHeroCarousel(heroImages);
 

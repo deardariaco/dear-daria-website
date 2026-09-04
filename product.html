@@ -62,11 +62,15 @@
 
     const consultUrl = `consultation.html?design=${encodeURIComponent(title)}&slug=${collection.slug}`;
 
+    const isSuiteProduct = product.type === 'bundle';
+    const parentHref = isSuiteProduct ? 'wedding-suites.html' : 'invitation-jackets.html';
+    const parentLabel = isSuiteProduct ? DearDaria.t('breadcrumb_suites') : DearDaria.t('nav_pochettes');
+
     content.innerHTML = `
       <section class="section tight">
         <div class="container">
           <div class="breadcrumb">
-            <a href="invitation-jackets.html">${DearDaria.t('nav_pochettes')}</a> &nbsp;/&nbsp; <a href="collection.html?slug=${collection.slug}">${DearDaria.collectionDisplayName(collection)}</a> &nbsp;/&nbsp; ${label}
+            <a href="${parentHref}">${parentLabel}</a> &nbsp;/&nbsp; <a href="collection.html?slug=${collection.slug}">${DearDaria.collectionDisplayName(collection)}</a> &nbsp;/&nbsp; ${label}
           </div>
           <div class="detail-hero">
             <div class="media">
