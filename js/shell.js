@@ -121,6 +121,23 @@ window.DearDaria = window.DearDaria || {};
     bar.className = 'sticky-mobile-cta';
     bar.innerHTML = `<a href="consultation.html" class="btn primary" data-i18n="nav_request_consultation"></a>`;
     document.body.appendChild(bar);
+
+    // Discreetly hide the sticky bar while another consultation CTA is
+    // already visible on screen, so visitors never see two side by side.
+    if ('IntersectionObserver' in window) {
+      const watchTargets = Array.from(document.querySelectorAll('a[href="consultation.html"].btn.primary'))
+        .filter(el => !bar.contains(el) && !el.closest('.site-nav'));
+      if (watchTargets.length) {
+        const visible = new Set();
+        const io = new IntersectionObserver((entries) => {
+          entries.forEach(e => {
+            if (e.isIntersecting) visible.add(e.target); else visible.delete(e.target);
+          });
+          bar.classList.toggle('sticky-cta-discreet', visible.size > 0);
+        }, { threshold: 0.2 });
+        watchTargets.forEach(el => io.observe(el));
+      }
+    }
   }
   DearDaria.renderStickyMobileBar = renderStickyMobileBar;
 

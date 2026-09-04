@@ -16,6 +16,7 @@ DearDaria.TRANSLATIONS = {
 
     hero_heading: 'Une papeterie imagin\u00e9e sp\u00e9cialement pour votre histoire',
     hero_sub: 'Chaque projet est d\u00e9velopp\u00e9 personnellement par Daria, de la premi\u00e8re rencontre au choix des papiers, puis de la cr\u00e9ation visuelle au prototype physique et \u00e0 la production finale.',
+    hero_sub_short: 'Daria d\u00e9veloppe personnellement chaque projet, du choix des papiers et de la direction visuelle au prototype physique et \u00e0 la production.',
     hero_cta_pochettes: 'Demander une consultation',
     hero_cta_suites: 'D\u00e9couvrir le processus',
 
@@ -238,7 +239,7 @@ DearDaria.TRANSLATIONS = {
 
     // Home
     home_eyebrow: 'Cr\u00e9ation de papeterie sur mesure en Suisse',
-    trust_1: 'Cr\u00e9\u00e9e personnellement en Suisse',
+    trust_1: 'Imagin\u00e9e et r\u00e9alis\u00e9e en Suisse',
     trust_2: 'Rendez-vous physique en Suisse romande',
     trust_3: 'Prototype physique avant production',
     inspiration_heading: 'Des cr\u00e9ations pour vous aider \u00e0 vous projeter',
@@ -408,6 +409,7 @@ DearDaria.TRANSLATIONS = {
     nav_a_propos: 'About', nav_faq: 'FAQ', nav_request_consultation: 'Request a Consultation',
     hero_heading: 'Stationery imagined especially for your story',
     hero_sub: 'Every project is developed personally by Daria, from your first meeting through choosing the papers, to the visual design, the physical prototype and final production.',
+    hero_sub_short: 'Daria personally develops every project, from choosing papers and visual direction to the physical prototype and production.',
     hero_cta_pochettes: 'Request a Consultation', hero_cta_suites: 'Discover the Process',
     pochettes_heading: 'Wedding Invitations', pochettes_sub: 'Discover a selection of die-cut invitations, sleeves and gatefold creations, personalized to your event.',
     see_all_pochettes: 'View All Invitations', discover_model: 'View the Piece', personalisable_badge: 'Example of Past Work',
@@ -548,7 +550,7 @@ DearDaria.TRANSLATIONS = {
     every_piece_personalized: 'Every piece is personalized with your names, wording, date and event details.',
 
     home_eyebrow: 'Bespoke Stationery Design in Switzerland', home_title: 'Beau Papier',
-    trust_1: 'Personally created in Switzerland',
+    trust_1: 'Designed and crafted in Switzerland',
     trust_2: 'In-person appointments across French-speaking Switzerland',
     trust_3: 'Physical prototype before production',
     inspiration_heading: 'Creations to help you imagine your own',
@@ -651,6 +653,7 @@ DearDaria.TRANSLATIONS = {
     nav_a_propos: '\u00dcber Mich', nav_faq: 'FAQ', nav_request_consultation: 'Beratung Anfragen',
     hero_heading: 'Papeterie, eigens f\u00fcr Ihre Geschichte gestaltet',
     hero_sub: 'Jedes Projekt wird pers\u00f6nlich von Daria entwickelt, vom ersten Treffen \u00fcber die Papierwahl bis zum visuellen Design, dem physischen Prototyp und der finalen Produktion.',
+    hero_sub_short: 'Daria entwickelt jedes Projekt pers\u00f6nlich, von der Papierwahl und visuellen Richtung bis zum physischen Prototyp und der Produktion.',
     hero_cta_pochettes: 'Beratung Anfragen', hero_cta_suites: 'Prozess Entdecken',
     pochettes_heading: 'Hochzeitseinladungen', pochettes_sub: 'Entdecken Sie eine Auswahl gestanzter Einladungen und Falteinladungen, personalisiert f\u00fcr Ihre Veranstaltung.',
     see_all_pochettes: 'Alle Einladungen Ansehen', discover_model: 'Arbeit Ansehen', personalisable_badge: 'Beispiel Fr\u00fcherer Arbeit',
@@ -791,7 +794,7 @@ DearDaria.TRANSLATIONS = {
     every_piece_personalized: 'Jedes St\u00fcck wird mit Ihren Namen, Ihrem Text, Datum und Veranstaltungsdetails personalisiert.',
 
     home_eyebrow: 'Ma\u00dfgeschneiderte Papeterie in der Schweiz', home_title: 'Beau Papier',
-    trust_1: 'Pers\u00f6nlich in der Schweiz gestaltet',
+    trust_1: 'In der Schweiz entworfen und gefertigt',
     trust_2: 'Pers\u00f6nliche Termine in der Westschweiz',
     trust_3: 'Physischer Prototyp vor der Produktion',
     inspiration_heading: 'Kreationen, die Ihnen als Inspiration dienen',
