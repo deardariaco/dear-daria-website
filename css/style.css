@@ -981,7 +981,17 @@ p { margin: 0; }
   }
   .hero-carousel-img[src*="constellation" i],
   .hero-carousel-img[src*="celestial" i] {
-    object-fit: cover !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+  }
+}
+@media (max-width: 900px) {
+  .hero-img-hummingbird {
+    object-position: center 53% !important;
+  }
+  .hero-carousel-img[src*="constellation" i],
+  .hero-carousel-img[src*="celestial" i] {
+    object-fit: contain !important;
     object-position: center center !important;
   }
 }
