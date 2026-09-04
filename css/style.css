@@ -23,6 +23,7 @@
   --gold-hover: #A88E68;
   --text-warm-dark: #30291F;
   --ivory-warm: #F8F4EC;
+  --button-text-light: #fffdf8;
 
   /* Type */
   --font-display: 'Philosopher', Georgia, 'Times New Roman', serif;
@@ -226,12 +227,13 @@ p { margin: 0; }
 .btn.primary {
   background: var(--gold);
   border-color: var(--gold);
-  color: var(--text-warm-dark);
+  color: var(--button-text-light);
+  font-weight: 700;
 }
 .btn.primary:hover {
-  background: var(--gold-hover);
-  border-color: var(--gold-hover);
-  color: var(--text-warm-dark);
+  background: var(--gold);
+  border-color: var(--text-warm-dark);
+  color: var(--button-text-light);
 }
 .btn.primary:focus-visible {
   outline: 2px solid var(--text-warm-dark);
@@ -852,7 +854,7 @@ p { margin: 0; }
   white-space: nowrap;
 }
 .nav-logo-img img {
-  height: 52px;
+  height: 76px;
   width: auto;
   display: block;
   flex-shrink: 0;
@@ -866,8 +868,8 @@ p { margin: 0; }
   white-space: nowrap;
 }
 @media (max-width: 700px) {
-  .nav-logo-img img { height: 40px; }
-  .nav-logo-text { font-size: 17px; }
+  .nav-logo-img img { height: 54px; }
+  .nav-logo-text { font-size: 16px; }
 }
 
 .detail-hero .media {
