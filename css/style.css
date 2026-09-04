@@ -974,6 +974,12 @@ p { margin: 0; }
   user-select: none;
 }
 .hero-carousel-img.active { opacity: 1; }
+@media (min-width: 901px) {
+  .hero-img-hummingbird {
+    object-fit: cover !important;
+    object-position: center bottom !important;
+  }
+}
 .hero-carousel-hit {
   position: absolute;
   inset: 0;
