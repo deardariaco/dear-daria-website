@@ -8,8 +8,8 @@ window.Consultation = {};
 // TODO: replace with Daria's real WhatsApp number (country code, digits only,
 // e.g. "41791234567" for a Swiss +41 79 number). Left blank until confirmed -
 // the WhatsApp button is hidden if this is empty, never shown broken.
-Consultation.WHATSAPP_NUMBER = '41786276426';
-Consultation.EMAIL = 'hello@beaupapier.ch';
+Consultation.WHATSAPP_NUMBER = '41782676426';
+Consultation.EMAIL = 'daria@beaupapier.ch';
 
 Consultation.PIECE_OPTIONS = [
   { key: 'sleeve', labelKey: 'piece_opt_sleeve' },
@@ -44,21 +44,22 @@ Consultation.formHTML = function (opts) {
       </div>
 
       <div class="form-grid">
-        <div class="field"><label data-i18n="cf_name"></label><input type="text" name="full_name" required></div>
-        <div class="field"><label data-i18n="cf_email"></label><input type="email" name="email" required></div>
+        <p class="cf-required-legend" data-i18n="cf_required_legend"></p>
+        <div class="field"><label><span data-i18n="cf_name"></span><span class="cf-req">*</span></label><input type="text" name="full_name" autocomplete="name" required></div>
+        <div class="field"><label><span data-i18n="cf_email"></span><span class="cf-req">*</span></label><input type="email" name="email" autocomplete="email" required></div>
 
-        <div class="field"><label data-i18n="cf_project_type"></label>
+        <div class="field"><label><span data-i18n="cf_project_type"></span><span class="cf-req">*</span></label>
           <select name="project_type" id="cf-project-type" required></select>
         </div>
-        <div class="field"><label data-i18n="cf_quantity"></label><input type="text" name="quantity" placeholder="ex. 80" required></div>
+        <div class="field"><label><span data-i18n="cf_quantity"></span><span class="cf-req">*</span></label><input type="text" name="quantity" placeholder="ex. 80" required></div>
 
         <div class="field"><label data-i18n="cf_event_date"></label><input type="date" name="event_date"></div>
         <div class="field"><label data-i18n="cf_delivery_date"></label><input type="date" name="delivery_date"></div>
 
-        <div class="field"><label data-i18n="cf_country"></label><input type="text" name="country"></div>
-        <div class="field"><label data-i18n="cf_postal_code"></label><input type="text" name="postal_code"></div>
+        <div class="field"><label data-i18n="cf_country"></label><input type="text" name="country" autocomplete="country-name"></div>
+        <div class="field"><label data-i18n="cf_postal_code"></label><input type="text" name="postal_code" autocomplete="postal-code"></div>
 
-        <div class="field"><label data-i18n="cf_phone"></label><input type="tel" name="phone"></div>
+        <div class="field"><label><span data-i18n="cf_phone"></span><span class="cf-req">*</span></label><input type="tel" name="phone" autocomplete="tel" required></div>
         <div class="field"><label data-i18n="cf_found_via"></label><input type="text" name="found_via"></div>
 
         <div class="field full">
@@ -72,7 +73,7 @@ Consultation.formHTML = function (opts) {
         <div class="field full"><label data-i18n="cf_message"></label><textarea name="message" rows="4"></textarea></div>
 
         <div class="field full">
-          <label class="consent-row"><input type="checkbox" name="consent" required> <span data-i18n="cf_consent"></span></label>
+          <label class="consent-row"><input type="checkbox" name="consent" required><span data-i18n="cf_consent"></span></label>
         </div>
 
         <div class="field full cf-actions">

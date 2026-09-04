@@ -98,10 +98,14 @@ DearDaria.productCardHTML = function (collection, product, image) {
   const label = DearDaria.productTypeLabel(product.type);
   const title = DearDaria.productTitle(product);
   const badge = DearDaria.PERSONALISABLE_TYPES.includes(product.type) ? `<span class="badge-personalisable">${DearDaria.t('personalisable_badge')}</span>` : '';
+  const url = `product.html?slug=${collection.slug}&type=${product.type}`;
+  const heartId = `${collection.slug}__${product.type}`;
+  const heart = DearDaria.heartButtonHTML ? DearDaria.heartButtonHTML({ id: heartId, title, image, url, type: label }) : '';
   return `
-    <a class="card" href="product.html?slug=${collection.slug}&type=${product.type}">
+    <a class="card" href="${url}">
       <div class="card-media">
         <img class="lazy-img" loading="lazy" src="${DearDaria.imgUrl(image)}" alt="${title}">
+        ${heart}
         <div class="card-hover-caption">
           <div class="unfold-rule"></div>
           <div class="name">${title}</div>

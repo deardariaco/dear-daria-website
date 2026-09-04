@@ -28,6 +28,10 @@ window.DearDaria = window.DearDaria || {};
       <div class="container">
         <a href="index.html" class="nav-logo nav-logo-img"><img src="clean_images/logo_gold.png" alt="Beau Papier"><span class="nav-logo-text">Beau Papier</span></a>
         <ul class="nav-links" id="nav-links">${items}<li class="nav-mobile-cta"><a href="consultation.html" class="btn primary" data-i18n="nav_request_consultation"></a></li></ul>
+        <a href="inspirations.html" class="nav-inspirations" aria-label="Mes Inspirations">
+          <svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.1C0.3 8.5 1.8 5 5.3 4.2c2-.5 4 .3 5.2 2 .3.4.9.4 1.2 0 1.2-1.7 3.2-2.5 5.2-2C20.2 5 21.7 8.5 20 11.9 18.5 16.4 12 21 12 21z"/></svg>
+          <span class="inspirations-count"></span>
+        </a>
         <a href="consultation.html" class="btn primary nav-consult-cta" data-i18n="nav_request_consultation"></a>
         <div class="nav-lang" id="nav-lang-desktop"></div>
         <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
@@ -75,7 +79,7 @@ window.DearDaria = window.DearDaria || {};
             <h4 data-i18n="footer_contact"></h4>
             <ul>
               <li><a href="consultation.html" data-i18n="nav_request_consultation"></a></li>
-              <li><a href="mailto:hello@beaupapier.ch">hello@beaupapier.ch</a></li>
+              <li><a href="mailto:daria@beaupapier.ch">daria@beaupapier.ch</a></li>
             </ul>
           </div>
         </div>
@@ -108,9 +112,22 @@ window.DearDaria = window.DearDaria || {};
 
   DearDaria.initLazyImages = initLazyImages;
 
+  function renderStickyMobileBar() {
+    // Hidden on the consultation page itself - the form is already the destination.
+    if (currentPage() === 'consultation.html') return;
+    if (document.getElementById('sticky-mobile-cta')) return;
+    const bar = document.createElement('div');
+    bar.id = 'sticky-mobile-cta';
+    bar.className = 'sticky-mobile-cta';
+    bar.innerHTML = `<a href="consultation.html" class="btn primary" data-i18n="nav_request_consultation"></a>`;
+    document.body.appendChild(bar);
+  }
+  DearDaria.renderStickyMobileBar = renderStickyMobileBar;
+
   document.addEventListener('DOMContentLoaded', () => {
     renderNav();
     renderFooter();
+    renderStickyMobileBar();
     DearDaria.applyTranslations();
     initLazyImages();
   });
