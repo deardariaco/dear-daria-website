@@ -17,6 +17,12 @@
   --brass: #A3854E;
   --mist: #DBD6C9;
   --white: #FFFEFB;
+  /* Button system (test) - antique gold sampled from the supplied BP logo,
+     verified for WCAG AA contrast against --text-warm-dark below. */
+  --gold: #B79B72;
+  --gold-hover: #A88E68;
+  --text-warm-dark: #30291F;
+  --ivory-warm: #F8F4EC;
 
   /* Type */
   --font-display: 'Philosopher', Georgia, 'Times New Roman', serif;
@@ -209,12 +215,50 @@ p { margin: 0; }
   transition: background 0.3s var(--ease), color 0.3s var(--ease), border-color 0.3s var(--ease);
 }
 .btn:hover { background: var(--ink); color: var(--white); }
+.btn:focus-visible {
+  outline: 2px solid var(--text-warm-dark);
+  outline-offset: 3px;
+}
 
+/* --- ACTIVE: restrained antique-gold system (test) ---
+   To roll back to the previous sage-green system, delete this block and
+   uncomment the "PREVIOUS SAGE SYSTEM" block immediately below it. */
+.btn.primary {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--text-warm-dark);
+}
+.btn.primary:hover {
+  background: var(--gold-hover);
+  border-color: var(--gold-hover);
+  color: var(--text-warm-dark);
+}
+.btn.primary:focus-visible {
+  outline: 2px solid var(--text-warm-dark);
+  outline-offset: 3px;
+}
+
+.btn.ghost {
+  background: var(--ivory-warm);
+  border-color: var(--gold);
+  color: var(--text-warm-dark);
+}
+.btn.ghost:hover {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--text-warm-dark);
+}
+.btn.ghost:focus-visible {
+  outline: 2px solid var(--text-warm-dark);
+  outline-offset: 3px;
+}
+
+/* --- PREVIOUS SAGE SYSTEM (kept for easy rollback, currently inactive) ---
 .btn.primary { background: var(--sage-deep); border-color: var(--sage-deep); color: var(--white); }
 .btn.primary:hover { background: var(--ink); border-color: var(--ink); }
-
 .btn.ghost { border-color: var(--mist); color: var(--ink-soft); }
 .btn.ghost:hover { border-color: var(--ink); background: transparent; color: var(--ink); }
+--- end previous sage system --- */
 
 .btn-row { display: flex; gap: 16px; flex-wrap: wrap; }
 
