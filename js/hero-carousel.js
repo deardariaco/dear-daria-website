@@ -34,10 +34,16 @@ DearDaria.initHeroCarousel = function (images) {
 
   const imgs = wrap.querySelectorAll('.hero-carousel-img');
   const dots = wrap.querySelectorAll('.hc-dot');
+  const dotsWrap = wrap.querySelector('.hero-carousel-dots');
   const hitArea = wrap.querySelector('.hero-carousel-hit');
   let idx = 0;
   let timer = null;
   const INTERVAL = 5000;
+
+  function syncDotsPosition() {
+    if (dotsWrap) dotsWrap.classList.toggle('dots-over-shifted-img', imgs[idx].classList.contains('hero-img-hummingbird'));
+  }
+  syncDotsPosition();
 
   function preload(i) {
     if (i < 0 || i >= images.length) return;
@@ -55,6 +61,7 @@ DearDaria.initHeroCarousel = function (images) {
     imgs[idx].classList.add('active');
     dots[idx].classList.add('active');
     dots[idx].setAttribute('aria-current', 'true');
+    syncDotsPosition();
     preload(idx + 1);
   }
 
