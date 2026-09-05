@@ -178,16 +178,9 @@
 
     // Complete faire-part catalogue. This is separate from the landing hero,
     // whose curated carousel remains unchanged.
-    const featuredFairePartOrder = new Map([
-      ['hummingbird:jacket', 1],
-      ['calla_lily:sleeve', 2],
-      ['koi_garden:jacket', 3],
-      ['orchid_winter:sleeve', 4],
-      ['constellation:sleeve', 5],
-      ['autumn:sleeve', 6],
-      ['vintage_floral:sleeve', 7],
-      ['calla_bloom:other', 8],
-    ]);
+    const fairePartOrder = new Map(
+      (data.faire_part_catalogue_order || []).map((key, index) => [key, index])
+    );
     const pochetteEntries = [];
     collections.forEach(c => {
       c.products.forEach(p => {
@@ -196,7 +189,7 @@
             collection: c,
             product: p,
             order: p.catalogue_order_pochette,
-            featuredOrder: featuredFairePartOrder.get(`${c.id}:${p.type}`) ?? Infinity,
+            featuredOrder: fairePartOrder.get(`${c.id}:${p.type}`) ?? Infinity,
           });
         }
       });

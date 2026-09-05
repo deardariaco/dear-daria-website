@@ -39,6 +39,9 @@
 (async function () {
   const data = await DearDaria.loadData();
   const FAIRE_PART_TYPES = ['sleeve', 'jacket', 'other'];
+  const fairePartOrder = new Map(
+    (data.faire_part_catalogue_order || []).map((key, index) => [key, index])
+  );
   const allFairePartProducts = [];
   data.collections.forEach(c => {
     c.products.forEach(p => {
@@ -54,7 +57,11 @@
 
     const cards = allFairePartProducts
       .slice()
-      .sort((a, b) => a.product.catalogue_order_pochette - b.product.catalogue_order_pochette)
+      .sort((a, b) => {
+        const aOrder = fairePartOrder.get(`${a.collection.id}:${a.product.type}`) ?? Infinity;
+        const bOrder = fairePartOrder.get(`${b.collection.id}:${b.product.type}`) ?? Infinity;
+        return aOrder - bOrder || a.product.catalogue_order_pochette - b.product.catalogue_order_pochette;
+      })
       .map(({ collection, product }) => DearDaria.productCardHTML(collection, product, product.images[0]))
       .join('');
     DearDaria.renderGrid('products-grid', cards, 3);
