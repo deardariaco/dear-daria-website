@@ -84,7 +84,9 @@ DearDaria.buildSuiteGallery = function (collection) {
 };
 
 DearDaria.initProductGallery = function (opts) {
-  const { images, captions, mainImgEl, prevBtnEl, nextBtnEl, thumbContainer, altText, captionEl } = opts;
+  const { images, captions, alts, mainImgEl, prevBtnEl, nextBtnEl, thumbContainer, altText, captionEl } = opts;
+  const altFor = (i) => (alts && alts[i]) ? alts[i].replace(/&quot;/g, '"')
+    : ((captions && captions[i]) ? `${altText}, ${captions[i]}` : altText);
   if (!images || !mainImgEl) return;
 
   let idx = 0;
@@ -126,7 +128,7 @@ DearDaria.initProductGallery = function (opts) {
     mainImgEl.classList.add('gallery-fading');
     window.setTimeout(() => {
       mainImgEl.src = DearDaria.imgUrl(images[idx]);
-      mainImgEl.alt = (captions && captions[idx]) ? `${altText}, ${captions[idx]}` : altText;
+      mainImgEl.alt = altFor(idx);
       mainImgEl.classList.remove('gallery-fading');
       setCaption(idx);
     }, 120);
@@ -176,7 +178,7 @@ DearDaria.initProductGallery = function (opts) {
   function updateLightbox() {
     const caption = captions && captions[idx] ? captions[idx] : '';
     lightboxImg.src = DearDaria.imgUrl(images[idx]);
-    lightboxImg.alt = caption ? `${altText}, ${caption}` : altText;
+    lightboxImg.alt = altFor(idx);
     lightboxCaption.textContent = caption;
     lightboxPrev.disabled = idx === 0;
     lightboxNext.disabled = idx === images.length - 1;

@@ -52,7 +52,7 @@
       <div class="card inspiration-card">
         <button type="button" class="remove-btn" data-remove-id="${item.id}" aria-label="${DearDaria.t('inspirations_remove')}">&times;</button>
         <a href="${item.url}">
-          <div class="card-media"><img class="lazy-img loaded" src="${DearDaria.imgUrl(item.image)}" alt="${item.title}"></div>
+          <div class="card-media"><img class="lazy-img loaded" src="${DearDaria.imgUrlSmall(item.image)}" alt="${item.title} \u2013 ${DearDaria.altSuffix()}"></div>
           <div class="card-caption-static design-card-meta">
             <div class="name">${item.title}</div>
             <div class="type-row"><span class="type">${item.type}</span></div>

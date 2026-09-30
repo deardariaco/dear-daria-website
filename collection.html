@@ -63,7 +63,7 @@
     const galleryImageList = galleryEntries.map(e => e.image);
     const galleryCaptionList = galleryEntries.map(e => e.caption);
     const galleryImgs = galleryEntries.map(e =>
-      `<img class="lazy-img" loading="lazy" src="${DearDaria.imgUrl(e.image)}" alt="${DearDaria.collectionDisplayName(collection)}, ${e.caption}">`
+      `<img class="lazy-img" loading="lazy" src="${DearDaria.imgUrlSmall(e.image)}" alt="${DearDaria.seoAlt(collection, e.type)}">`
     ).join('');
 
     const collectionHasSuite = collection.products.some(p => p.type === 'bundle');
@@ -77,7 +77,7 @@
           <div class="detail-hero">
             <div class="media">
               <div class="media-frame">
-                <img id="gallery-main-img" src="${DearDaria.imgUrl(galleryImageList[0])}" alt="${DearDaria.collectionDisplayName(collection)}, ${galleryCaptionList[0]}">
+                <img id="gallery-main-img" src="${DearDaria.imgUrl(galleryImageList[0])}" alt="${DearDaria.seoAlt(collection, galleryEntries[0] && galleryEntries[0].type)}">
                 ${DearDaria.galleryArrowsHTML(DearDaria.getLang())}
               </div>
               <p class="gallery-caption" id="gallery-caption-main">${galleryCaptionList[0]}</p>
@@ -115,6 +115,7 @@
     DearDaria.initProductGallery({
       images: galleryImageList,
       captions: galleryCaptionList,
+      alts: galleryEntries.map(e => DearDaria.seoAlt(collection, e.type)),
       mainImgEl: document.getElementById('gallery-main-img'),
       prevBtnEl: document.getElementById('gallery-prev'),
       nextBtnEl: document.getElementById('gallery-next'),
