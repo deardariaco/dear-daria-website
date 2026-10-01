@@ -5,23 +5,26 @@
   const messages = {
     fr: {
       title: "Cookies de mesure d’audience",
-      body: "Avec votre accord, Microsoft Clarity utilise des cookies pour relier vos visites entre les pages et nous aider à améliorer ce site. Vous pouvez refuser ou changer d’avis à tout moment.",
+      body: "Avec votre accord, nous utilisons des cookies de mesure d’audience pour comprendre comment le site est consulté et l’améliorer. Vous pouvez refuser ou changer d’avis à tout moment.",
       accept: "Accepter",
       reject: "Refuser",
+      more: "En savoir plus",
       reopen: "Cookies"
     },
     en: {
       title: "Analytics cookies",
-      body: "With your permission, Microsoft Clarity uses cookies to connect your visits across pages and help us improve this site. You can decline or change your choice at any time.",
+      body: "With your permission, we use analytics cookies to understand how the site is used and to improve it. You can decline or change your choice at any time.",
       accept: "Accept",
       reject: "Decline",
+      more: "Learn more",
       reopen: "Cookies"
     },
     de: {
       title: "Analyse-Cookies",
-      body: "Mit Ihrer Zustimmung verwendet Microsoft Clarity Cookies, um Ihre Besuche über mehrere Seiten hinweg zu verbinden und diese Website zu verbessern. Sie können ablehnen oder Ihre Entscheidung jederzeit ändern.",
+      body: "Mit Ihrer Zustimmung verwenden wir Analyse-Cookies, um zu verstehen, wie die Website genutzt wird, und sie zu verbessern. Sie können ablehnen oder Ihre Entscheidung jederzeit ändern.",
       accept: "Akzeptieren",
       reject: "Ablehnen",
+      more: "Mehr erfahren",
       reopen: "Cookies"
     }
   };
@@ -70,16 +73,21 @@
   function initialize() {
     const style = document.createElement("style");
     style.textContent = `
-      .bp-consent-banner{position:fixed;z-index:10000;left:16px;right:16px;bottom:16px;max-width:760px;margin:auto;padding:18px 20px;background:#fffaf2;color:#352b23;border:1px solid #d8cbb8;box-shadow:0 8px 32px rgba(32,25,16,.18);font:14px/1.5 Arial,sans-serif}
+      .bp-consent-banner{position:fixed;z-index:10000;left:16px;right:16px;bottom:16px;max-width:760px;margin:auto;padding:20px 22px;background:var(--ivory-warm,#F8F4EC);color:var(--text-warm-dark,#30291F);border:1px solid var(--mist,#DBD6C9);box-shadow:0 8px 32px rgba(32,25,16,.14);font-family:var(--font-body,'Mulish',-apple-system,'Helvetica Neue',sans-serif);font-size:14px;line-height:1.65}
       .bp-consent-banner[hidden],.bp-consent-reopen[hidden]{display:none!important}
-      .bp-consent-title{font:600 17px/1.3 Georgia,serif;margin:0 0 6px}
-      .bp-consent-body{margin:0 0 14px}
+      .bp-consent-title{font-family:var(--font-display,'Philosopher',Georgia,serif);font-weight:400;font-size:20px;line-height:1.3;letter-spacing:normal;text-transform:none;margin:0 0 6px;color:var(--text-warm-dark,#30291F)}
+      .bp-consent-body{margin:0 0 16px;color:var(--ink-soft,#57534A)}
+      .bp-consent-more{color:var(--text-warm-dark,#30291F);text-decoration:underline;text-underline-offset:3px;margin-left:4px;white-space:nowrap}
       .bp-consent-actions{display:flex;gap:10px;flex-wrap:wrap}
-      .bp-consent-actions button,.bp-consent-reopen{cursor:pointer;border-radius:2px;padding:9px 16px;font:600 13px/1.2 Arial,sans-serif}
-      .bp-consent-accept{background:#9b7845;color:#fff;border:1px solid #9b7845}
-      .bp-consent-reject{background:#fffaf2;color:#352b23;border:1px solid #9b7845}
-      .bp-consent-reopen{position:fixed;z-index:9999;left:12px;bottom:12px;background:#fffaf2;color:#5a4832;border:1px solid #d8cbb8;box-shadow:0 2px 8px rgba(32,25,16,.12);padding:6px 10px;font-size:11px}
-      @media(max-width:520px){.bp-consent-banner{left:8px;right:8px;bottom:8px;padding:15px}.bp-consent-actions button{flex:1}}
+      .bp-consent-actions button,.bp-consent-reopen{cursor:pointer;border-radius:var(--radius,2px);font-family:var(--font-body,'Mulish',-apple-system,'Helvetica Neue',sans-serif)}
+      .bp-consent-actions button{padding:11px 20px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;line-height:1.2}
+      .bp-consent-accept{background:var(--gold,#B79B72);color:var(--button-text-light,#fffdf8);border:1px solid var(--gold,#B79B72)}
+      .bp-consent-accept:hover{border-color:var(--text-warm-dark,#30291F)}
+      .bp-consent-reject{background:var(--ivory-warm,#F8F4EC);color:var(--text-warm-dark,#30291F);border:1px solid var(--gold,#B79B72)}
+      .bp-consent-reject:hover{background:var(--ivory-deep,#EFE9DC)}
+      .bp-consent-actions button:focus-visible,.bp-consent-reopen:focus-visible{outline:2px solid var(--text-warm-dark,#30291F);outline-offset:3px}
+      .bp-consent-reopen{position:fixed;z-index:9999;left:12px;bottom:12px;background:var(--ivory-warm,#F8F4EC);color:var(--ink-soft,#57534A);border:1px solid var(--mist,#DBD6C9);box-shadow:0 2px 8px rgba(32,25,16,.10);padding:6px 11px;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+      @media(max-width:520px){.bp-consent-banner{left:8px;right:8px;bottom:8px;padding:16px}.bp-consent-actions button{flex:1}}
     `;
     document.head.appendChild(style);
 
@@ -104,7 +112,12 @@
     function translate() {
       const copy = messages[currentLanguage()];
       title.textContent = copy.title;
-      body.textContent = copy.body;
+      body.textContent = copy.body + " ";
+      const more = document.createElement("a");
+      more.className = "bp-consent-more";
+      more.href = "/confidentialite.html";
+      more.textContent = copy.more;
+      body.appendChild(more);
       accept.textContent = copy.accept;
       reject.textContent = copy.reject;
       reopen.textContent = copy.reopen;

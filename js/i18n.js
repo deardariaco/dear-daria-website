@@ -411,6 +411,7 @@ DearDaria.TRANSLATIONS = {
     footer_professionals: 'Pour les Professionnels',
     footer_about: '\u00c0 Propos',
     footer_faq: 'FAQ',
+    footer_privacy: 'Confidentialit\u00e9',
     footer_rights: 'Fa\u00e7onn\u00e9 en Suisse.',
     footer_note: 'Con\u00e7u avec soin, une suite \u00e0 la fois.',
   },
@@ -667,6 +668,7 @@ DearDaria.TRANSLATIONS = {
     footer_tagline: 'Handmade wedding &amp; event stationery, designed and crafted by Daria Wälchli in Switzerland.',
     footer_explore: 'Explore', footer_studio: 'Studio', footer_contact: 'Get in Touch',
     footer_professionals: 'For Professionals', footer_about: 'About', footer_faq: 'FAQ',
+    footer_privacy: 'Privacy',
     footer_rights: 'Handmade in Switzerland.', footer_note: 'Designed with care, one suite at a time.',
   },
 
@@ -922,6 +924,7 @@ DearDaria.TRANSLATIONS = {
     footer_tagline: 'Handgefertigte Hochzeits- und Eventpapeterie, entworfen und hergestellt von Daria Wälchli in der Schweiz.',
     footer_explore: 'Entdecken', footer_studio: 'Atelier', footer_contact: 'Kontakt',
     footer_professionals: 'F\u00fcr Profis', footer_about: '\u00dcber Mich', footer_faq: 'FAQ',
+    footer_privacy: 'Datenschutz',
     footer_rights: 'Handgefertigt in der Schweiz.', footer_note: 'Mit Sorgfalt gestaltet, ein Set nach dem anderen.',
   },
 };

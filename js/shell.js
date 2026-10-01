@@ -73,6 +73,7 @@ window.DearDaria = window.DearDaria || {};
               <li><a href="info.html#about" data-i18n="nav_a_propos"></a></li>
               <li><a href="info.html#professionals" data-i18n="footer_professionals"></a></li>
               <li><a href="faq.html" data-i18n="nav_faq"></a></li>
+              <li><a href="confidentialite.html" data-i18n="footer_privacy">Confidentialité</a></li>
             </ul>
           </div>
           <div class="footer-col">
