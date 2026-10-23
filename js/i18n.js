@@ -929,11 +929,16 @@ DearDaria.TRANSLATIONS = {
   },
 };
 
+// Pages under /ru/ set DearDaria.LANG_LOCK = 'ru' before this file loads.
+// A locked page always uses that language and leaves the visitor's saved
+// FR/EN/DE choice untouched.
 DearDaria.getLang = function () {
+  if (DearDaria.LANG_LOCK) return DearDaria.LANG_LOCK;
   return localStorage.getItem('dd_lang') || 'fr';
 };
 
 DearDaria.setLang = function (lang) {
+  if (DearDaria.LANG_LOCK) return;
   localStorage.setItem('dd_lang', lang);
   DearDaria.applyTranslations();
 };
@@ -983,6 +988,7 @@ DearDaria.applyTranslations = function () {
 DearDaria.renderLangSwitcher = function (mountId) {
   const mount = document.getElementById(mountId);
   if (!mount) return;
+  if (DearDaria.LANG_LOCK) { mount.innerHTML = ''; return; }
   const current = DearDaria.getLang();
   mount.innerHTML = DearDaria.LANGS.map(
     (l) => `<button class="lang-btn ${l === current ? 'active' : ''}" data-lang="${l}">${l.toUpperCase()}</button>`

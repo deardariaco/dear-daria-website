@@ -14,10 +14,11 @@ DearDaria.initHeroCarousel = function (images) {
   const lang = DearDaria.getLang ? DearDaria.getLang() : 'fr';
   const showLabel = (n) => {
     if (lang === 'en') return `Show image ${n}`;
+    if (lang === 'ru') return `Показать фото ${n}`;
     if (lang === 'de') return `Bild ${n} anzeigen`;
     return `Afficher l\u2019image ${n}`;
   };
-  const nextLabel = lang === 'en' ? 'Show the next image' : lang === 'de' ? 'N\u00e4chstes Bild anzeigen' : 'Afficher l\u2019image suivante';
+  const nextLabel = lang === 'en' ? 'Show the next image' : lang === 'ru' ? 'Показать следующее фото' : lang === 'de' ? 'N\u00e4chstes Bild anzeigen' : 'Afficher l\u2019image suivante';
 
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 

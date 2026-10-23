@@ -26,8 +26,19 @@
       reject: "Ablehnen",
       more: "Mehr erfahren",
       reopen: "Cookies"
+    },
+    ru: {
+      title: "Аналитические cookie-файлы",
+      body: "С вашего согласия мы используем аналитические cookie-файлы, чтобы понимать, как посетители пользуются сайтом, и улучшать его. Вы можете отказаться или изменить свой выбор в любой момент.",
+      accept: "Принять",
+      reject: "Отклонить",
+      more: "Подробнее",
+      reopen: "Cookies"
     }
   };
+
+  // Pages under /ru/ lock the language (see js/i18n.js).
+  const lockedLanguage = window.DearDaria && window.DearDaria.LANG_LOCK;
 
   function readChoice() {
     try {
@@ -56,6 +67,7 @@
   sendToClarity(readChoice());
 
   function currentLanguage() {
+    if (lockedLanguage && messages[lockedLanguage]) return lockedLanguage;
     let stored = null;
     try { stored = localStorage.getItem("dd_lang"); } catch (_) { /* Use HTML language. */ }
     const language = stored || document.documentElement.lang || "fr";
@@ -106,7 +118,7 @@
     banner.append(title, body, actions);
 
     const reopen = makeButton("", "bp-consent-reopen");
-    reopen.setAttribute("aria-label", "Cookie preferences");
+    reopen.setAttribute("aria-label", lockedLanguage === "ru" ? "Настройки cookie-файлов" : "Cookie preferences");
     document.body.append(banner, reopen);
 
     function translate() {
@@ -115,7 +127,7 @@
       body.textContent = copy.body + " ";
       const more = document.createElement("a");
       more.className = "bp-consent-more";
-      more.href = "/confidentialite.html";
+      more.href = lockedLanguage === "ru" ? "/ru/confidentialite.html" : "/confidentialite.html";
       more.textContent = copy.more;
       body.appendChild(more);
       accept.textContent = copy.accept;
