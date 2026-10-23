@@ -144,9 +144,9 @@ DearDaria.initProductGallery = function (opts) {
   // Full-screen viewer for individual faire-part and suite galleries.
   // Homepage cards never call initProductGallery, so they remain unchanged.
   const lang = DearDaria.getLang();
-  const closeLabel = lang === 'en' ? 'Close full-screen image' : lang === 'de' ? 'Vollbild schliessen' : 'Fermer l’image plein écran';
-  const prevLabel = lang === 'en' ? 'Previous image' : lang === 'de' ? 'Vorheriges Bild' : 'Image précédente';
-  const nextLabel = lang === 'en' ? 'Next image' : lang === 'de' ? 'Nächstes Bild' : 'Image suivante';
+  const closeLabel = lang === 'en' ? 'Close full-screen image' : lang === 'ru' ? 'Закрыть полноэкранный просмотр' : lang === 'de' ? 'Vollbild schliessen' : 'Fermer l’image plein écran';
+  const prevLabel = lang === 'en' ? 'Previous image' : lang === 'ru' ? 'Предыдущее фото' : lang === 'de' ? 'Vorheriges Bild' : 'Image précédente';
+  const nextLabel = lang === 'en' ? 'Next image' : lang === 'ru' ? 'Следующее фото' : lang === 'de' ? 'Nächstes Bild' : 'Image suivante';
   const previousLightbox = document.querySelector('.gallery-lightbox');
   if (previousLightbox) previousLightbox.remove();
   document.body.classList.remove('gallery-lightbox-open');
@@ -211,7 +211,7 @@ DearDaria.initProductGallery = function (opts) {
 
   mainImgEl.setAttribute('tabindex', '0');
   mainImgEl.setAttribute('role', 'button');
-  mainImgEl.setAttribute('aria-label', `${altText}. ${lang === 'en' ? 'Open full-screen image' : lang === 'de' ? 'Bild im Vollbild öffnen' : 'Ouvrir l’image en plein écran'}`);
+  mainImgEl.setAttribute('aria-label', `${altText}. ${lang === 'en' ? 'Open full-screen image' : lang === 'ru' ? 'Открыть фото во весь экран' : lang === 'de' ? 'Bild im Vollbild öffnen' : 'Ouvrir l’image en plein écran'}`);
   mainImgEl.addEventListener('click', openLightbox);
   mainImgEl.addEventListener('keydown', (e) => {
     if (e.key === 'Enter' || e.key === ' ') {
@@ -289,8 +289,8 @@ DearDaria.initProductGallery = function (opts) {
 
 // Standard arrow button markup - identical on every page that uses the gallery.
 DearDaria.galleryArrowsHTML = function (lang) {
-  const prevLabel = lang === 'en' ? 'Previous image' : lang === 'de' ? 'Vorheriges Bild' : 'Image précédente';
-  const nextLabel = lang === 'en' ? 'Next image' : lang === 'de' ? 'N\u00e4chstes Bild' : 'Image suivante';
+  const prevLabel = lang === 'en' ? 'Previous image' : lang === 'ru' ? 'Предыдущее фото' : lang === 'de' ? 'Vorheriges Bild' : 'Image précédente';
+  const nextLabel = lang === 'en' ? 'Next image' : lang === 'ru' ? 'Следующее фото' : lang === 'de' ? 'N\u00e4chstes Bild' : 'Image suivante';
   return `
     <button type="button" class="gallery-arrow gallery-arrow-prev" id="gallery-prev" aria-label="${prevLabel}">
       <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>

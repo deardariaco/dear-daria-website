@@ -47,7 +47,8 @@
       "description": {
         "fr": "Pivoines généreuses et eucalyptus en blush chaud, pour une célébration libre et bohème.",
         "en": "Loose peonies and eucalyptus in warm blush, for a free-spirited celebration.",
-        "de": "Lockere Pfingstrosen und Eukalyptus in warmem Blush, für eine freigeistige Feier."
+        "de": "Lockere Pfingstrosen und Eukalyptus in warmem Blush, für eine freigeistige Feier.",
+        "ru": "Пышные пионы и эвкалипт в тёплом пудрово-розовом цвете для свободного праздника в стиле бохо."
       },
       "hero": "boho-peony-bundle-1.jpg",
       "gallery": [
@@ -89,7 +90,8 @@
           "catalogue_order_suite": 9,
           "title_fr": "Suite Pivoine Bohème",
           "title_en": "Boho Peony Suite",
-          "title_de": "Papeterie-Set Boho-Pfingstrose"
+          "title_de": "Papeterie-Set Boho-Pfingstrose",
+          "title_ru": "Коллекция «Пион в стиле бохо»"
         },
         {
           "type": "menu",
@@ -105,7 +107,8 @@
           "description_fr": "Un menu assorti à l’univers Pivoine Bohème, conçu pour prolonger la papeterie jusque sur la table.",
           "title_fr": "Menu Pivoine Bohème",
           "title_en": "Boho Peony Menu",
-          "title_de": "Menükarte Boho-Pfingstrose"
+          "title_de": "Menükarte Boho-Pfingstrose",
+          "title_ru": "Меню «Пион в стиле бохо»"
         },
         {
           "type": "place_card",
@@ -121,7 +124,8 @@
           "description_fr": "Un marque-place découpé inspiré de l’univers Pivoine Bohème, pour apporter une touche délicate à chaque couvert.",
           "title_fr": "Marque-place Pivoine Bohème",
           "title_en": "Boho Peony Place Card",
-          "title_de": "Platzkarte Boho-Pfingstrose"
+          "title_de": "Platzkarte Boho-Pfingstrose",
+          "title_ru": "Рассадочная карточка «Пион в стиле бохо»"
         },
         {
           "type": "rsvp",
@@ -138,7 +142,8 @@
           "description_fr": "Une carte-réponse assortie à l’univers Pivoine Bohème, conçue pour s’intégrer naturellement au faire-part.",
           "title_fr": "Carte-réponse Pivoine Bohème",
           "title_en": "Boho Peony RSVP Card",
-          "title_de": "Antwortkarte Boho-Pfingstrose"
+          "title_de": "Antwortkarte Boho-Pfingstrose",
+          "title_ru": "Карточка-ответ «Пион в стиле бохо»"
         },
         {
           "type": "save_the_date",
@@ -153,7 +158,8 @@
           "description_fr": "Une carte d’annonce assortie à l’univers Pivoine Bohème, pour dévoiler la date dans le même langage graphique.",
           "title_fr": "Carte d’annonce Pivoine Bohème",
           "title_en": "Boho Peony Save the Date",
-          "title_de": "Save-the-Date-Karte Boho-Pfingstrose"
+          "title_de": "Save-the-Date-Karte Boho-Pfingstrose",
+          "title_ru": "Карточка Save the Date «Пион в стиле бохо»"
         },
         {
           "type": "sleeve",
@@ -169,14 +175,16 @@
           "catalogue_order_pochette": 7,
           "title_fr": "Faire-part Pivoine Bohème",
           "title_en": "Boho Peony Invitation Sleeve",
-          "title_de": "Einladung Boho-Pfingstrose (Einsteckhülle)"
+          "title_de": "Einladung Boho-Pfingstrose (Einsteckhülle)",
+          "title_ru": "Приглашение «Пион в стиле бохо»"
         }
       ],
       "featured": true,
       "display_name": {
         "fr": "Pivoine Bohème",
         "en": "Boho Peony",
-        "de": "Boho-Pfingstrose"
+        "de": "Boho-Pfingstrose",
+        "ru": "Пион в стиле бохо"
       }
     },
     {
@@ -187,7 +195,8 @@
       "description": {
         "fr": "Une invitation interactive à volets, où les callas se déploient autour de vos noms.",
         "en": "An interactive trifold gatefold invitation, calla lilies unfolding around your names.",
-        "de": "Eine interaktive Dreifach-Falteinladung, bei der sich Calla-Lilien um Ihre Namen entfalten."
+        "de": "Eine interaktive Dreifach-Falteinladung, bei der sich Calla-Lilien um Ihre Namen entfalten.",
+        "ru": "Интерактивное раскладное приглашение, в котором каллы раскрываются вокруг ваших имён."
       },
       "hero": "calla-bloom-bundle-1.jpg",
       "gallery": [
@@ -214,14 +223,16 @@
           "catalogue_order_pochette": 8,
           "title_fr": "Faire-part Éclosion de Callas",
           "title_en": "Calla Blossom Invitation",
-          "title_de": "Einladung Calla-Blüte"
+          "title_de": "Einladung Calla-Blüte",
+          "title_ru": "Приглашение «Цветение калл»"
         }
       ],
       "featured": true,
       "display_name": {
         "fr": "Éclosion de Callas",
         "en": "Calla Blossom",
-        "de": "Calla-Blüte"
+        "de": "Calla-Blüte",
+        "ru": "Цветение калл"
       }
     },
     {
@@ -232,7 +243,8 @@
       "description": {
         "fr": "Callas épurés en vert sauge, pour un mariage moderne et botanique.",
         "en": "Clean-lined calla lilies in sage green, for a modern, botanical wedding.",
-        "de": "Klar-linige Calla-Lilien in Salbeigrün, für eine moderne, botanische Hochzeit."
+        "de": "Klar-linige Calla-Lilien in Salbeigrün, für eine moderne, botanische Hochzeit.",
+        "ru": "Лаконичные каллы в шалфейно-зелёном цвете для современной ботанической свадьбы."
       },
       "hero": "calla-lily-bundle-1.jpg",
       "gallery": [
@@ -294,7 +306,8 @@
           "catalogue_order_suite": 2,
           "title_fr": "Suite Calla",
           "title_en": "Calla Suite",
-          "title_de": "Papeterie-Set Calla"
+          "title_de": "Papeterie-Set Calla",
+          "title_ru": "Коллекция «Калла»"
         },
         {
           "type": "menu",
@@ -311,7 +324,8 @@
           "description_fr": "Un menu assorti à l’univers Calla, conçu pour prolonger la papeterie jusque sur la table.",
           "title_fr": "Menu Calla",
           "title_en": "Calla Menu",
-          "title_de": "Menükarte Calla"
+          "title_de": "Menükarte Calla",
+          "title_ru": "Меню «Калла»"
         },
         {
           "type": "place_card",
@@ -328,7 +342,8 @@
           "description_fr": "Un marque-place découpé inspiré de l’univers Calla, pour apporter une touche délicate à chaque couvert.",
           "title_fr": "Marque-place Calla",
           "title_en": "Calla Place Card",
-          "title_de": "Platzkarte Calla"
+          "title_de": "Platzkarte Calla",
+          "title_ru": "Рассадочная карточка «Калла»"
         },
         {
           "type": "rsvp",
@@ -348,7 +363,8 @@
           "description_fr": "Une carte-réponse assortie à l’univers Calla, conçue pour s’intégrer naturellement au faire-part.",
           "title_fr": "Carte-réponse Calla",
           "title_en": "Calla RSVP Card",
-          "title_de": "Antwortkarte Calla"
+          "title_de": "Antwortkarte Calla",
+          "title_ru": "Карточка-ответ «Калла»"
         },
         {
           "type": "save_the_date",
@@ -370,7 +386,8 @@
           "description_fr": "Une carte d’annonce assortie à l’univers Calla, pour dévoiler la date dans le même langage graphique.",
           "title_fr": "Carte d’annonce Calla",
           "title_en": "Calla Save the Date",
-          "title_de": "Save-the-Date-Karte Calla"
+          "title_de": "Save-the-Date-Karte Calla",
+          "title_ru": "Карточка Save the Date «Калла»"
         },
         {
           "type": "sleeve",
@@ -386,7 +403,8 @@
           "catalogue_order_pochette": 9,
           "title_fr": "Faire-part Calla",
           "title_en": "Calla Invitation Sleeve",
-          "title_de": "Einladung Calla (Einsteckhülle)"
+          "title_de": "Einladung Calla (Einsteckhülle)",
+          "title_ru": "Приглашение «Калла»"
         },
         {
           "type": "jacket",
@@ -402,14 +420,16 @@
           "catalogue_order_pochette": 9.5,
           "title_fr": "Faire-part Calla (Habillage)",
           "title_en": "Calla Invitation with Sleeve",
-          "title_de": "Einladung Calla (Umschlag)"
+          "title_de": "Einladung Calla (Umschlag)",
+          "title_ru": "Приглашение «Калла» (обложка)"
         }
       ],
       "featured": true,
       "display_name": {
         "fr": "Calla",
         "en": "Calla",
-        "de": "Calla"
+        "de": "Calla",
+        "ru": "Калла"
       }
     },
     {
@@ -420,7 +440,8 @@
       "description": {
         "fr": "Colibris et branches de magnolia, en pochette ou en enveloppe.",
         "en": "Hummingbirds and magnolia branches, in sleeve and jacket silhouettes.",
-        "de": "Kolibris und Magnolienzweige, als Hülle oder Umschlag."
+        "de": "Kolibris und Magnolienzweige, als Hülle oder Umschlag.",
+        "ru": "Колибри и ветви магнолии в конверте-кармашке или в обложке."
       },
       "hero": "hummingbird-bundle-2.jpg",
       "gallery": [
@@ -478,7 +499,8 @@
           "catalogue_order_suite": 3,
           "title_fr": "Suite Magnolia et Colibri",
           "title_en": "Magnolia and Hummingbird Suite",
-          "title_de": "Papeterie-Set Magnolie und Kolibri"
+          "title_de": "Papeterie-Set Magnolie und Kolibri",
+          "title_ru": "Коллекция «Магнолия и колибри»"
         },
         {
           "type": "sleeve",
@@ -495,7 +517,8 @@
           "catalogue_order_pochette": 10,
           "title_fr": "Faire-part Magnolia et Colibri (Pochette)",
           "title_en": "Magnolia and Hummingbird Invitation Sleeve",
-          "title_de": "Einladung Magnolie und Kolibri (Einsteckhülle)"
+          "title_de": "Einladung Magnolie und Kolibri (Einsteckhülle)",
+          "title_ru": "Приглашение «Магнолия и колибри» (конверт-кармашек)"
         },
         {
           "type": "menu",
@@ -508,7 +531,8 @@
           ],
           "title_fr": "Menu Magnolia et Colibri",
           "title_en": "Magnolia and Hummingbird Menu",
-          "title_de": "Menükarte Magnolie und Kolibri"
+          "title_de": "Menükarte Magnolie und Kolibri",
+          "title_ru": "Меню «Магнолия и колибри»"
         },
         {
           "type": "place_card",
@@ -521,7 +545,8 @@
           ],
           "title_fr": "Marque-place Magnolia et Colibri",
           "title_en": "Magnolia and Hummingbird Place Card",
-          "title_de": "Platzkarte Magnolie und Kolibri"
+          "title_de": "Platzkarte Magnolie und Kolibri",
+          "title_ru": "Рассадочная карточка «Магнолия и колибри»"
         },
         {
           "type": "save_the_date",
@@ -534,7 +559,8 @@
           ],
           "title_fr": "Carte d’annonce Magnolia et Colibri",
           "title_en": "Magnolia and Hummingbird Save the Date",
-          "title_de": "Save-the-Date-Karte Magnolie und Kolibri"
+          "title_de": "Save-the-Date-Karte Magnolie und Kolibri",
+          "title_ru": "Карточка Save the Date «Магнолия и колибри»"
         },
         {
           "type": "rsvp",
@@ -548,7 +574,8 @@
           ],
           "title_fr": "Carte-réponse Magnolia et Colibri",
           "title_en": "Magnolia and Hummingbird RSVP Card",
-          "title_de": "Antwortkarte Magnolie und Kolibri"
+          "title_de": "Antwortkarte Magnolie und Kolibri",
+          "title_ru": "Карточка-ответ «Магнолия и колибри»"
         },
         {
           "type": "jacket",
@@ -565,14 +592,16 @@
           "catalogue_order_pochette": 10.5,
           "title_fr": "Faire-part Magnolia et Colibri (Habillage)",
           "title_en": "Magnolia and Hummingbird Invitation with Sleeve",
-          "title_de": "Einladung Magnolie und Kolibri (Umschlag)"
+          "title_de": "Einladung Magnolie und Kolibri (Umschlag)",
+          "title_ru": "Приглашение «Магнолия и колибри» (обложка)"
         }
       ],
       "featured": true,
       "display_name": {
         "fr": "Magnolia et Colibri",
         "en": "Magnolia and Hummingbird",
-        "de": "Magnolie und Kolibri"
+        "de": "Magnolie und Kolibri",
+        "ru": "Магнолия и колибри"
       }
     },
     {
@@ -583,7 +612,8 @@
       "description": {
         "fr": "Hortensias pleins et romantiques en bleu poudré, intemporels et inspirés du bord de mer.",
         "en": "Full, romantic hydrangea blooms in dusty blue - coastal and timeless.",
-        "de": "Volle, romantische Hortensienblüten in Staubblau, küstennah und zeitlos."
+        "de": "Volle, romantische Hortensienblüten in Staubblau, küstennah und zeitlos.",
+        "ru": "Пышные романтичные гортензии в пудрово-голубом цвете, вне времени и с настроением морского побережья."
       },
       "hero": "hydrangea-bundle-1.jpg",
       "gallery": [
@@ -633,7 +663,8 @@
           "catalogue_order_suite": 8,
           "title_fr": "Suite Hortensia",
           "title_en": "Hydrangea Suite",
-          "title_de": "Papeterie-Set Hortensie"
+          "title_de": "Papeterie-Set Hortensie",
+          "title_ru": "Коллекция «Гортензия»"
         },
         {
           "type": "save_the_date",
@@ -648,7 +679,8 @@
           "description_fr": "Une carte d’annonce assortie à l’univers Hortensia, pour dévoiler la date dans le même langage graphique.",
           "title_fr": "Carte d’annonce Hortensia",
           "title_en": "Hydrangea Save the Date",
-          "title_de": "Save-the-Date-Karte Hortensie"
+          "title_de": "Save-the-Date-Karte Hortensie",
+          "title_ru": "Карточка Save the Date «Гортензия»"
         },
         {
           "type": "place_card",
@@ -663,7 +695,8 @@
           "description_fr": "Un marque-place découpé inspiré de l’univers Hortensia, pour apporter une touche délicate à chaque couvert.",
           "title_fr": "Marque-place Hortensia",
           "title_en": "Hydrangea Place Card",
-          "title_de": "Platzkarte Hortensie"
+          "title_de": "Platzkarte Hortensie",
+          "title_ru": "Рассадочная карточка «Гортензия»"
         },
         {
           "type": "rsvp",
@@ -678,7 +711,8 @@
           "description_fr": "Une carte-réponse assortie à l’univers Hortensia, conçue pour s’intégrer naturellement au faire-part.",
           "title_fr": "Carte-réponse Hortensia",
           "title_en": "Hydrangea RSVP Card",
-          "title_de": "Antwortkarte Hortensie"
+          "title_de": "Antwortkarte Hortensie",
+          "title_ru": "Карточка-ответ «Гортензия»"
         },
         {
           "type": "menu",
@@ -695,7 +729,8 @@
           "description_fr": "Un menu assorti à l’univers Hortensia, conçu pour prolonger la papeterie jusque sur la table.",
           "title_fr": "Menu Hortensia",
           "title_en": "Hydrangea Menu",
-          "title_de": "Menükarte Hortensie"
+          "title_de": "Menükarte Hortensie",
+          "title_ru": "Меню «Гортензия»"
         },
         {
           "type": "sleeve",
@@ -712,14 +747,16 @@
           "catalogue_order_pochette": 21,
           "title_fr": "Faire-part Hortensia",
           "title_en": "Hydrangea Invitation Sleeve",
-          "title_de": "Einladung Hortensie (Einsteckhülle)"
+          "title_de": "Einladung Hortensie (Einsteckhülle)",
+          "title_ru": "Приглашение «Гортензия»"
         }
       ],
       "featured": true,
       "display_name": {
         "fr": "Hortensia",
         "en": "Hydrangea",
-        "de": "Hortensie"
+        "de": "Hortensie",
+        "ru": "Гортензия"
       }
     },
     {
@@ -730,7 +767,8 @@
       "description": {
         "fr": "Une invitation à volets en forme de porte d'église, s'ouvrant sur la scène de la cérémonie.",
         "en": "A church gatefold invitation, doors opening onto the ceremony scene.",
-        "de": "Eine Kirchen-Falteinladung, deren Türen sich zur Zeremonie öffnen."
+        "de": "Eine Kirchen-Falteinladung, deren Türen sich zur Zeremonie öffnen.",
+        "ru": "Раскладное приглашение в форме церковных дверей, которые открываются на сцену церемонии."
       },
       "hero": "chapel-other-1.jpg",
       "gallery": [
@@ -758,14 +796,16 @@
           "catalogue_order_pochette": 16,
           "title_fr": "Faire-part Chapelle",
           "title_en": "Chapel Invitation",
-          "title_de": "Einladung Kapelle"
+          "title_de": "Einladung Kapelle",
+          "title_ru": "Приглашение «Часовня»"
         }
       ],
       "featured": false,
       "display_name": {
         "fr": "Chapelle",
         "en": "Chapel",
-        "de": "Kapelle"
+        "de": "Kapelle",
+        "ru": "Часовня"
       }
     },
     {
@@ -776,7 +816,8 @@
       "description": {
         "fr": "Branches de sakura en blush tendre, romantiques et délicatement printanières.",
         "en": "Sakura branches in soft blush - romantic, springtime detail.",
-        "de": "Sakura-Zweige in zartem Blush, ein romantisches Frühlingsdetail."
+        "de": "Sakura-Zweige in zartem Blush, ein romantisches Frühlingsdetail.",
+        "ru": "Ветви сакуры в нежном пудрово-розовом цвете, романтичные и по-весеннему лёгкие."
       },
       "hero": "cherry-blossom-sleeve-8.jpg",
       "gallery": [
@@ -801,7 +842,8 @@
           "catalogue_order_suite": 13,
           "title_fr": "Suite Fleurs de Cerisier",
           "title_en": "Cherry Blossom Suite",
-          "title_de": "Papeterie-Set Kirschblüte"
+          "title_de": "Papeterie-Set Kirschblüte",
+          "title_ru": "Коллекция «Цветы сакуры»"
         },
         {
           "type": "sleeve",
@@ -820,14 +862,16 @@
           "catalogue_order_pochette": 11,
           "title_fr": "Faire-part Fleurs de Cerisier",
           "title_en": "Cherry Blossom Invitation Sleeve",
-          "title_de": "Einladung Kirschblüte (Einsteckhülle)"
+          "title_de": "Einladung Kirschblüte (Einsteckhülle)",
+          "title_ru": "Приглашение «Цветы сакуры»"
         }
       ],
       "featured": false,
       "display_name": {
         "fr": "Fleurs de Cerisier",
         "en": "Cherry Blossom",
-        "de": "Kirschblüte"
+        "de": "Kirschblüte",
+        "ru": "Цветы сакуры"
       }
     },
     {
@@ -838,7 +882,8 @@
       "description": {
         "fr": "Scènes de falaises et traits côtiers pour une célébration de destination.",
         "en": "Cliffside scenes and coastal linework for a destination celebration.",
-        "de": "Kliffszenen und küstennahe Liniengrafik für eine Destination-Feier."
+        "de": "Kliffszenen und küstennahe Liniengrafik für eine Destination-Feier.",
+        "ru": "Скалы и линии побережья для свадьбы в другой стране."
       },
       "hero": "coastal-villa-sleeve-23.jpg",
       "gallery": [
@@ -891,7 +936,8 @@
           "description_fr": "Une carte-réponse assortie à l’univers Riviera, conçue pour s’intégrer naturellement au faire-part.",
           "title_fr": "Carte-réponse Riviera",
           "title_en": "Riviera RSVP Card",
-          "title_de": "Antwortkarte Riviera"
+          "title_de": "Antwortkarte Riviera",
+          "title_ru": "Карточка-ответ «Ривьера»"
         },
         {
           "type": "save_the_date",
@@ -909,7 +955,8 @@
           "description_fr": "Une carte d’annonce assortie à l’univers Riviera, pour dévoiler la date dans le même langage graphique.",
           "title_fr": "Carte d’annonce Riviera",
           "title_en": "Riviera Save the Date",
-          "title_de": "Save-the-Date-Karte Riviera"
+          "title_de": "Save-the-Date-Karte Riviera",
+          "title_ru": "Карточка Save the Date «Ривьера»"
         },
         {
           "type": "menu",
@@ -927,7 +974,8 @@
           "description_fr": "Un menu assorti à l’univers Riviera, conçu pour prolonger la papeterie jusque sur la table.",
           "title_fr": "Menu Riviera",
           "title_en": "Riviera Menu",
-          "title_de": "Menükarte Riviera"
+          "title_de": "Menükarte Riviera",
+          "title_ru": "Меню «Ривьера»"
         },
         {
           "type": "sleeve",
@@ -947,14 +995,16 @@
           "catalogue_order_pochette": 17,
           "title_fr": "Faire-part Riviera",
           "title_en": "Riviera Invitation Sleeve",
-          "title_de": "Einladung Riviera (Einsteckhülle)"
+          "title_de": "Einladung Riviera (Einsteckhülle)",
+          "title_ru": "Приглашение «Ривьера»"
         }
       ],
       "featured": false,
       "display_name": {
         "fr": "Riviera",
         "en": "Riviera",
-        "de": "Riviera"
+        "de": "Riviera",
+        "ru": "Ривьера"
       }
     },
     {
@@ -965,7 +1015,8 @@
       "description": {
         "fr": "Un motif de bouquet floral classique en blush tendre.",
         "en": "A classic floral bouquet motif in soft blush.",
-        "de": "Ein klassisches Blumenstraußmotiv in zartem Blush."
+        "de": "Ein klassisches Blumenstraußmotiv in zartem Blush.",
+        "ru": "Классический мотив цветочного букета в нежном пудрово-розовом цвете."
       },
       "hero": "floral-bouquet-sleeve-1.jpg",
       "gallery": [
@@ -995,14 +1046,16 @@
           "catalogue_order_pochette": 22,
           "title_fr": "Faire-part Bouquet de Jardin",
           "title_en": "Garden Bouquet Invitation Sleeve",
-          "title_de": "Einladung Gartenstrauß (Einsteckhülle)"
+          "title_de": "Einladung Gartenstrauß (Einsteckhülle)",
+          "title_ru": "Приглашение «Садовый букет»"
         }
       ],
       "featured": false,
       "display_name": {
         "fr": "Bouquet de Jardin",
         "en": "Garden Bouquet",
-        "de": "Gartenstrauß"
+        "de": "Gartenstrauß",
+        "ru": "Садовый букет"
       }
     },
     {
@@ -1013,7 +1066,8 @@
       "description": {
         "fr": "Fines grappes de frésias en vert sauge, aériennes et fantaisistes.",
         "en": "Delicate freesia sprays in sage, airy and whimsical.",
-        "de": "Zarte Fresienzweige in Salbei, luftig und verspielt."
+        "de": "Zarte Fresienzweige in Salbei, luftig und verspielt.",
+        "ru": "Тонкие веточки фрезии в шалфейно-зелёном цвете, воздушные и причудливые."
       },
       "hero": "freesia-bundle-1.jpg",
       "gallery": [
@@ -1072,7 +1126,8 @@
           "homepage_order_suite": 7,
           "title_fr": "Suite Frésia",
           "title_en": "Freesia Suite",
-          "title_de": "Papeterie-Set Freesie"
+          "title_de": "Papeterie-Set Freesie",
+          "title_ru": "Коллекция «Фрезия»"
         },
         {
           "type": "place_card",
@@ -1089,7 +1144,8 @@
           "description_fr": "Un marque-place découpé inspiré de l’univers Frésia, pour apporter une touche délicate à chaque couvert.",
           "title_fr": "Marque-place Frésia",
           "title_en": "Freesia Place Card",
-          "title_de": "Platzkarte Freesie"
+          "title_de": "Platzkarte Freesie",
+          "title_ru": "Рассадочная карточка «Фрезия»"
         },
         {
           "type": "rsvp",
@@ -1107,7 +1163,8 @@
           "description_fr": "Une carte-réponse assortie à l’univers Frésia, conçue pour s’intégrer naturellement au faire-part.",
           "title_fr": "Carte-réponse Frésia",
           "title_en": "Freesia RSVP Card",
-          "title_de": "Antwortkarte Freesie"
+          "title_de": "Antwortkarte Freesie",
+          "title_ru": "Карточка-ответ «Фрезия»"
         },
         {
           "type": "save_the_date",
@@ -1126,7 +1183,8 @@
           "description_fr": "Une carte d’annonce assortie à l’univers Frésia, pour dévoiler la date dans le même langage graphique.",
           "title_fr": "Carte d’annonce Frésia",
           "title_en": "Freesia Save the Date",
-          "title_de": "Save-the-Date-Karte Freesie"
+          "title_de": "Save-the-Date-Karte Freesie",
+          "title_ru": "Карточка Save the Date «Фрезия»"
         },
         {
           "type": "menu",
@@ -1142,7 +1200,8 @@
           "description_fr": "Un menu assorti à l’univers Frésia, conçu pour prolonger la papeterie jusque sur la table.",
           "title_fr": "Menu Frésia",
           "title_en": "Freesia Menu",
-          "title_de": "Menükarte Freesie"
+          "title_de": "Menükarte Freesie",
+          "title_ru": "Меню «Фрезия»"
         },
         {
           "type": "sleeve",
@@ -1161,14 +1220,16 @@
           "catalogue_order_pochette": 23,
           "title_fr": "Faire-part Frésia",
           "title_en": "Freesia Invitation Sleeve",
-          "title_de": "Einladung Freesie (Einsteckhülle)"
+          "title_de": "Einladung Freesie (Einsteckhülle)",
+          "title_ru": "Приглашение «Фрезия»"
         }
       ],
       "featured": false,
       "display_name": {
         "fr": "Frésia",
         "en": "Freesia",
-        "de": "Freesie"
+        "de": "Freesie",
+        "ru": "Фрезия"
       }
     },
     {
@@ -1179,7 +1240,8 @@
       "description": {
         "fr": "Un motif de portail de jardin s'ouvrant sur une scène de château.",
         "en": "A garden gate motif opening onto a chateau venue scene.",
-        "de": "Ein Gartentor-Motiv, das sich zu einer Schlossszene öffnet."
+        "de": "Ein Gartentor-Motiv, das sich zu einer Schlossszene öffnet.",
+        "ru": "Мотив садовых ворот, которые открываются на вид замка."
       },
       "hero": "gatefold-garden-other-1.jpg",
       "gallery": [
@@ -1207,14 +1269,16 @@
           "catalogue_order_pochette": 18,
           "title_fr": "Faire-part Jardin du Château",
           "title_en": "Château Garden Invitation",
-          "title_de": "Einladung Schlossgarten"
+          "title_de": "Einladung Schlossgarten",
+          "title_ru": "Приглашение «Сад замка»"
         }
       ],
       "featured": false,
       "display_name": {
         "fr": "Jardin du Château",
         "en": "Château Garden",
-        "de": "Schlossgarten"
+        "de": "Schlossgarten",
+        "ru": "Сад замка"
       }
     },
     {
@@ -1225,7 +1289,8 @@
       "description": {
         "fr": "Iris botaniques en bleu poudré, élégants et inspirés du jardin.",
         "en": "Dusty blue iris botanicals, elegant and garden-inspired.",
-        "de": "Staubblaue Iris-Motive, elegant und garteninspiriert."
+        "de": "Staubblaue Iris-Motive, elegant und garteninspiriert.",
+        "ru": "Ботанические ирисы в пудрово-голубом цвете, элегантные и вдохновлённые садом."
       },
       "hero": "iris-sleeve-3.jpg",
       "gallery": [
@@ -1247,14 +1312,16 @@
           "catalogue_order_pochette": 24,
           "title_fr": "Faire-part Iris",
           "title_en": "Iris Invitation Sleeve",
-          "title_de": "Einladung Iris (Einsteckhülle)"
+          "title_de": "Einladung Iris (Einsteckhülle)",
+          "title_ru": "Приглашение «Ирис»"
         }
       ],
       "featured": false,
       "display_name": {
         "fr": "Iris",
         "en": "Iris",
-        "de": "Iris"
+        "de": "Iris",
+        "ru": "Ирис"
       }
     },
     {
@@ -1265,7 +1332,8 @@
       "description": {
         "fr": "Lys gracieux en bleu poudré, inspirés du jardin et intemporels.",
         "en": "Graceful lilies in dusty blue, garden-inspired and classic.",
-        "de": "Anmutige Lilien in Staubblau, garteninspiriert und klassisch."
+        "de": "Anmutige Lilien in Staubblau, garteninspiriert und klassisch.",
+        "ru": "Изящные лилии в пудрово-голубом цвете, вдохновлённые садом и вне времени."
       },
       "hero": "lily-bundle-1.jpg",
       "gallery": [
@@ -1326,7 +1394,8 @@
           "catalogue_order_suite": 11,
           "title_fr": "Suite Lys",
           "title_en": "Lily Suite",
-          "title_de": "Papeterie-Set Lilie"
+          "title_de": "Papeterie-Set Lilie",
+          "title_ru": "Коллекция «Лилия»"
         },
         {
           "type": "menu",
@@ -1343,7 +1412,8 @@
           "description_fr": "Un menu assorti à l’univers Lys, conçu pour prolonger la papeterie jusque sur la table.",
           "title_fr": "Menu Lys",
           "title_en": "Lily Menu",
-          "title_de": "Menükarte Lilie"
+          "title_de": "Menükarte Lilie",
+          "title_ru": "Меню «Лилия»"
         },
         {
           "type": "place_card",
@@ -1361,7 +1431,8 @@
           "description_fr": "Un marque-place découpé inspiré de l’univers Lys, pour apporter une touche délicate à chaque couvert.",
           "title_fr": "Marque-place Lys",
           "title_en": "Lily Place Card",
-          "title_de": "Platzkarte Lilie"
+          "title_de": "Platzkarte Lilie",
+          "title_ru": "Рассадочная карточка «Лилия»"
         },
         {
           "type": "rsvp",
@@ -1377,7 +1448,8 @@
           "description_fr": "Une carte-réponse assortie à l’univers Lys, conçue pour s’intégrer naturellement au faire-part.",
           "title_fr": "Carte-réponse Lys",
           "title_en": "Lily RSVP Card",
-          "title_de": "Antwortkarte Lilie"
+          "title_de": "Antwortkarte Lilie",
+          "title_ru": "Карточка-ответ «Лилия»"
         },
         {
           "type": "save_the_date",
@@ -1395,7 +1467,8 @@
           "description_fr": "Une carte d’annonce assortie à l’univers Lys, pour dévoiler la date dans le même langage graphique.",
           "title_fr": "Carte d’annonce Lys",
           "title_en": "Lily Save the Date",
-          "title_de": "Save-the-Date-Karte Lilie"
+          "title_de": "Save-the-Date-Karte Lilie",
+          "title_ru": "Карточка Save the Date «Лилия»"
         },
         {
           "type": "sleeve",
@@ -1416,7 +1489,8 @@
           "catalogue_order_pochette": 12,
           "title_fr": "Faire-part Lys (Pochette)",
           "title_en": "Lily Invitation Sleeve",
-          "title_de": "Einladung Lilie (Einsteckhülle)"
+          "title_de": "Einladung Lilie (Einsteckhülle)",
+          "title_ru": "Приглашение «Лилия» (конверт-кармашек)"
         },
         {
           "type": "jacket",
@@ -1433,14 +1507,16 @@
           "catalogue_order_pochette": 12.5,
           "title_fr": "Faire-part Lys (Jacket)",
           "title_en": "Lily Invitation with Sleeve",
-          "title_de": "Einladung Lilie (Umschlag)"
+          "title_de": "Einladung Lilie (Umschlag)",
+          "title_ru": "Приглашение «Лилия» (обложка)"
         }
       ],
       "featured": false,
       "display_name": {
         "fr": "Lys",
         "en": "Lily",
-        "de": "Lilie"
+        "de": "Lilie",
+        "ru": "Лилия"
       }
     },
     {
@@ -1451,7 +1527,8 @@
       "description": {
         "fr": "Un bouquet de jardin mélangé en blush, romantique et généreux.",
         "en": "A mixed garden bouquet in blush, romantic and abundant.",
-        "de": "Ein gemischter Gartenstrauß in Blush, romantisch und üppig."
+        "de": "Ein gemischter Gartenstrauß in Blush, romantisch und üppig.",
+        "ru": "Смешанный садовый букет в пудрово-розовом цвете, романтичный и пышный."
       },
       "hero": "mixed-floral-sleeve-1.jpg",
       "gallery": [
@@ -1479,14 +1556,16 @@
           "catalogue_order_pochette": 25,
           "title_fr": "Faire-part Jardin Romantique",
           "title_en": "Romantic Garden Invitation Sleeve",
-          "title_de": "Einladung Romantischer Garten (Einsteckhülle)"
+          "title_de": "Einladung Romantischer Garten (Einsteckhülle)",
+          "title_ru": "Приглашение «Романтический сад»"
         }
       ],
       "featured": false,
       "display_name": {
         "fr": "Jardin Romantique",
         "en": "Romantic Garden",
-        "de": "Romantischer Garten"
+        "de": "Romantischer Garten",
+        "ru": "Романтический сад"
       }
     },
     {
@@ -1497,7 +1576,8 @@
       "description": {
         "fr": "Rameaux d'olivier méditerranéens, minimalistes et prêts pour une destination.",
         "en": "Mediterranean olive branches, minimal and destination-ready.",
-        "de": "Mediterrane Olivenzweige, minimalistisch und reisebereit."
+        "de": "Mediterrane Olivenzweige, minimalistisch und reisebereit.",
+        "ru": "Средиземноморские оливковые ветви, минималистичные и идеальные для свадьбы в другой стране."
       },
       "hero": "olive-branch-sleeve-2.jpg",
       "gallery": [
@@ -1525,14 +1605,16 @@
           "catalogue_order_pochette": 13,
           "title_fr": "Faire-part Rameau d’Olivier",
           "title_en": "Olive Branch Invitation Sleeve",
-          "title_de": "Einladung Olivenzweig (Einsteckhülle)"
+          "title_de": "Einladung Olivenzweig (Einsteckhülle)",
+          "title_ru": "Приглашение «Оливковая ветвь»"
         }
       ],
       "featured": false,
       "display_name": {
         "fr": "Rameau d’Olivier",
         "en": "Olive Branch",
-        "de": "Olivenzweig"
+        "de": "Olivenzweig",
+        "ru": "Оливковая ветвь"
       }
     },
     {
@@ -1543,7 +1625,8 @@
       "description": {
         "fr": "Fleurs d'agrumes en terracotta chaud, pour un mariage d'été italien.",
         "en": "Citrus blossoms in warm terracotta for an Italian summer wedding.",
-        "de": "Zitrusblüten in warmem Terrakotta für eine italienische Sommerhochzeit."
+        "de": "Zitrusblüten in warmem Terrakotta für eine italienische Sommerhochzeit.",
+        "ru": "Цветы цитрусовых в тёплом терракотовом цвете для летней свадьбы в итальянском стиле."
       },
       "hero": "orange-blossom-sleeve-1.jpg",
       "gallery": [
@@ -1571,14 +1654,16 @@
           "catalogue_order_pochette": 19,
           "title_fr": "Faire-part Fleur d’Oranger",
           "title_en": "Orange Blossom Invitation Sleeve",
-          "title_de": "Einladung Orangenblüte (Einsteckhülle)"
+          "title_de": "Einladung Orangenblüte (Einsteckhülle)",
+          "title_ru": "Приглашение «Флёрдоранж»"
         }
       ],
       "featured": false,
       "display_name": {
         "fr": "Fleur d’Oranger",
         "en": "Orange Blossom",
-        "de": "Orangenblüte"
+        "de": "Orangenblüte",
+        "ru": "Флёрдоранж"
       }
     },
     {
@@ -1589,7 +1674,8 @@
       "description": {
         "fr": "Pivoines blush généreuses, romantiques et pleines.",
         "en": "Full blush peonies, romantic and lush.",
-        "de": "Volle Blush-Pfingstrosen, romantisch und üppig."
+        "de": "Volle Blush-Pfingstrosen, romantisch und üppig.",
+        "ru": "Пышные пудрово-розовые пионы, романтичные и щедрые."
       },
       "hero": "peony-sleeve-1.jpg",
       "gallery": [
@@ -1627,7 +1713,8 @@
           "catalogue_order_pochette": 26,
           "title_fr": "Faire-part Pivoine",
           "title_en": "Peony Invitation Sleeve",
-          "title_de": "Einladung Pfingstrose (Einsteckhülle)"
+          "title_de": "Einladung Pfingstrose (Einsteckhülle)",
+          "title_ru": "Приглашение «Пион»"
         },
         {
           "type": "jacket",
@@ -1642,14 +1729,16 @@
           "catalogue_order_pochette": 26.5,
           "title_fr": "Faire-part Pivoine (Jacket)",
           "title_en": "Peony Invitation with Sleeve",
-          "title_de": "Einladung Pfingstrose (Umschlag)"
+          "title_de": "Einladung Pfingstrose (Umschlag)",
+          "title_ru": "Приглашение «Пион» (обложка)"
         }
       ],
       "featured": false,
       "display_name": {
         "fr": "Pivoine",
         "en": "Peony",
-        "de": "Pfingstrose"
+        "de": "Pfingstrose",
+        "ru": "Пион"
       }
     },
     {
@@ -1660,7 +1749,8 @@
       "description": {
         "fr": "Champs de lavande de Provence, dessinés en fins traits violets.",
         "en": "Provence lavender fields rendered in soft violet linework.",
-        "de": "Provenzalische Lavendelfelder in zarter violetter Liniengrafik."
+        "de": "Provenzalische Lavendelfelder in zarter violetter Liniengrafik.",
+        "ru": "Лавандовые поля Прованса, нарисованные тонкими фиолетовыми линиями."
       },
       "hero": "lavender-sleeve-7.jpg",
       "gallery": [
@@ -1692,14 +1782,16 @@
           "catalogue_order_pochette": 14,
           "title_fr": "Faire-part Lavande de Provence",
           "title_en": "Provence Lavender Invitation Sleeve",
-          "title_de": "Einladung Provence-Lavendel (Einsteckhülle)"
+          "title_de": "Einladung Provence-Lavendel (Einsteckhülle)",
+          "title_ru": "Приглашение «Прованская лаванда»"
         }
       ],
       "featured": false,
       "display_name": {
         "fr": "Lavande de Provence",
         "en": "Provence Lavender",
-        "de": "Provence-Lavendel"
+        "de": "Provence-Lavendel",
+        "ru": "Прованская лаванда"
       }
     },
     {
@@ -1710,7 +1802,8 @@
       "description": {
         "fr": "Coquillages et étoiles de mer pour un mariage au bord de l'océan.",
         "en": "Nautical shell and starfish motifs for a seaside wedding.",
-        "de": "Maritime Muschel- und Seesternmotive für eine Hochzeit am Meer."
+        "de": "Maritime Muschel- und Seesternmotive für eine Hochzeit am Meer.",
+        "ru": "Ракушки и морские звёзды для свадьбы на берегу океана."
       },
       "hero": "seashell-bundle-1.jpg",
       "gallery": [
@@ -1773,7 +1866,8 @@
           "catalogue_order_suite": 5,
           "title_fr": "Suite Rivage",
           "title_en": "Shoreline Suite",
-          "title_de": "Papeterie-Set Ufer"
+          "title_de": "Papeterie-Set Ufer",
+          "title_ru": "Коллекция «Морской берег»"
         },
         {
           "type": "rsvp",
@@ -1788,7 +1882,8 @@
           "description_fr": "Une carte-réponse assortie à l’univers Rivage, conçue pour s’intégrer naturellement au faire-part.",
           "title_fr": "Carte-réponse Rivage",
           "title_en": "Shoreline RSVP Card",
-          "title_de": "Antwortkarte Ufer"
+          "title_de": "Antwortkarte Ufer",
+          "title_ru": "Карточка-ответ «Морской берег»"
         },
         {
           "type": "glass_tag",
@@ -1804,7 +1899,8 @@
           "description_fr": "Un marque-verre découpé assorti à l’univers Rivage, à la fois décoratif et pratique.",
           "title_fr": "Marque-verre Rivage",
           "title_en": "Shoreline Glass Tag",
-          "title_de": "Glasanhänger Ufer"
+          "title_de": "Glasanhänger Ufer",
+          "title_ru": "Бирка для бокала «Морской берег»"
         },
         {
           "type": "place_card",
@@ -1825,7 +1921,8 @@
           "description_fr": "Un marque-place découpé inspiré de l’univers Rivage, pour apporter une touche délicate à chaque couvert.",
           "title_fr": "Marque-place Rivage",
           "title_en": "Shoreline Place Card",
-          "title_de": "Platzkarte Ufer"
+          "title_de": "Platzkarte Ufer",
+          "title_ru": "Рассадочная карточка «Морской берег»"
         },
         {
           "type": "menu",
@@ -1844,7 +1941,8 @@
           "description_fr": "Un menu assorti à l’univers Rivage, conçu pour prolonger la papeterie jusque sur la table.",
           "title_fr": "Menu Rivage",
           "title_en": "Shoreline Menu",
-          "title_de": "Menükarte Ufer"
+          "title_de": "Menükarte Ufer",
+          "title_ru": "Меню «Морской берег»"
         },
         {
           "type": "save_the_date",
@@ -1860,7 +1958,8 @@
           "description_fr": "Une carte d’annonce assortie à l’univers Rivage, pour dévoiler la date dans le même langage graphique.",
           "title_fr": "Carte d’annonce Rivage",
           "title_en": "Shoreline Save the Date",
-          "title_de": "Save-the-Date-Karte Ufer"
+          "title_de": "Save-the-Date-Karte Ufer",
+          "title_ru": "Карточка Save the Date «Морской берег»"
         },
         {
           "type": "sleeve",
@@ -1882,14 +1981,16 @@
           "catalogue_order_pochette": 15,
           "title_fr": "Faire-part Rivage",
           "title_en": "Shoreline Invitation Sleeve",
-          "title_de": "Einladung Ufer (Einsteckhülle)"
+          "title_de": "Einladung Ufer (Einsteckhülle)",
+          "title_ru": "Приглашение «Морской берег»"
         }
       ],
       "featured": false,
       "display_name": {
         "fr": "Rivage",
         "en": "Shoreline",
-        "de": "Ufer"
+        "de": "Ufer",
+        "ru": "Морской берег"
       }
     },
     {
@@ -1900,7 +2001,8 @@
       "description": {
         "fr": "Tulipes de jardin pour une célébration printanière fraîche et joyeuse.",
         "en": "Garden tulips for a fresh, cheerful springtime celebration.",
-        "de": "Gartentulpen für eine frische, fröhliche Frühlingsfeier."
+        "de": "Gartentulpen für eine frische, fröhliche Frühlingsfeier.",
+        "ru": "Садовые тюльпаны для свежего и радостного весеннего праздника."
       },
       "hero": "tulip-bundle-1.jpg",
       "gallery": [
@@ -1938,7 +2040,8 @@
           "catalogue_order_suite": 12,
           "title_fr": "Suite Tulipe",
           "title_en": "Tulip Suite",
-          "title_de": "Papeterie-Set Tulpe"
+          "title_de": "Papeterie-Set Tulpe",
+          "title_ru": "Коллекция «Тюльпан»"
         },
         {
           "type": "glass_tag",
@@ -1951,7 +2054,8 @@
           "description_fr": "Un marque-verre découpé assorti à l’univers Tulipe, à la fois décoratif et pratique.",
           "title_fr": "Marque-verre Tulipe",
           "title_en": "Tulip Glass Tag",
-          "title_de": "Glasanhänger Tulpe"
+          "title_de": "Glasanhänger Tulpe",
+          "title_ru": "Бирка для бокала «Тюльпан»"
         },
         {
           "type": "rsvp",
@@ -1968,7 +2072,8 @@
           "description_fr": "Une carte-réponse assortie à l’univers Tulipe, conçue pour s’intégrer naturellement au faire-part.",
           "title_fr": "Carte-réponse Tulipe",
           "title_en": "Tulip RSVP Card",
-          "title_de": "Antwortkarte Tulpe"
+          "title_de": "Antwortkarte Tulpe",
+          "title_ru": "Карточка-ответ «Тюльпан»"
         },
         {
           "type": "save_the_date",
@@ -1983,7 +2088,8 @@
           "description_fr": "Une carte d’annonce assortie à l’univers Tulipe, pour dévoiler la date dans le même langage graphique.",
           "title_fr": "Carte d’annonce Tulipe",
           "title_en": "Tulip Save the Date",
-          "title_de": "Save-the-Date-Karte Tulpe"
+          "title_de": "Save-the-Date-Karte Tulpe",
+          "title_ru": "Карточка Save the Date «Тюльпан»"
         },
         {
           "type": "sleeve",
@@ -2001,7 +2107,8 @@
           "catalogue_order_pochette": 20,
           "title_fr": "Faire-part Tulipe (Pochette)",
           "title_en": "Tulip Invitation Sleeve",
-          "title_de": "Einladung Tulpe (Einsteckhülle)"
+          "title_de": "Einladung Tulpe (Einsteckhülle)",
+          "title_ru": "Приглашение «Тюльпан» (конверт-кармашек)"
         },
         {
           "type": "jacket",
@@ -2013,14 +2120,16 @@
           "catalogue_order_pochette": 20.5,
           "title_fr": "Faire-part Tulipe (Jacket)",
           "title_en": "Tulip Invitation with Sleeve",
-          "title_de": "Einladung Tulpe (Umschlag)"
+          "title_de": "Einladung Tulpe (Umschlag)",
+          "title_ru": "Приглашение «Тюльпан» (обложка)"
         }
       ],
       "featured": false,
       "display_name": {
         "fr": "Tulipe",
         "en": "Tulip",
-        "de": "Tulpe"
+        "de": "Tulpe",
+        "ru": "Тюльпан"
       }
     },
     {
@@ -2031,7 +2140,8 @@
       "description": {
         "fr": "Motifs floraux toile bleue, esprit grandmillennial et patrimoine familial.",
         "en": "Blue toile florals with a grandmillennial, heirloom feel.",
-        "de": "Blaue Toile-Blumenmuster mit grandmillennial-Erbstück-Gefühl."
+        "de": "Blaue Toile-Blumenmuster mit grandmillennial-Erbstück-Gefühl.",
+        "ru": "Цветочные мотивы в стиле синей туали, с настроением бабушкиного шика и семейных традиций."
       },
       "hero": "vintage-floral-sleeve-1.jpg",
       "gallery": [
@@ -2076,7 +2186,8 @@
           "catalogue_order_pochette": 6,
           "title_fr": "Faire-part Toile Botanique",
           "title_en": "Botanical Toile Invitation Sleeve",
-          "title_de": "Einladung Botanisches Toile (Einsteckhülle)"
+          "title_de": "Einladung Botanisches Toile (Einsteckhülle)",
+          "title_ru": "Приглашение «Ботаническая туаль»"
         },
         {
           "type": "bundle",
@@ -2088,7 +2199,8 @@
           "catalogue_order_suite": 6,
           "title_fr": "Suite Toile Botanique",
           "title_en": "Botanical Toile Suite",
-          "title_de": "Papeterie-Set Botanisches Toile"
+          "title_de": "Papeterie-Set Botanisches Toile",
+          "title_ru": "Коллекция «Ботаническая туаль»"
         },
         {
           "type": "menu",
@@ -2102,7 +2214,8 @@
           ],
           "title_fr": "Menu Toile Botanique",
           "title_en": "Botanical Toile Menu",
-          "title_de": "Menükarte Botanisches Toile"
+          "title_de": "Menükarte Botanisches Toile",
+          "title_ru": "Меню «Ботаническая туаль»"
         },
         {
           "type": "place_card",
@@ -2114,7 +2227,8 @@
           ],
           "title_fr": "Marque-place Toile Botanique",
           "title_en": "Botanical Toile Place Card",
-          "title_de": "Platzkarte Botanisches Toile"
+          "title_de": "Platzkarte Botanisches Toile",
+          "title_ru": "Рассадочная карточка «Ботаническая туаль»"
         },
         {
           "type": "save_the_date",
@@ -2126,7 +2240,8 @@
           ],
           "title_fr": "Carte d’annonce Toile Botanique",
           "title_en": "Botanical Toile Save the Date",
-          "title_de": "Save-the-Date-Karte Botanisches Toile"
+          "title_de": "Save-the-Date-Karte Botanisches Toile",
+          "title_ru": "Карточка Save the Date «Ботаническая туаль»"
         },
         {
           "type": "details_card",
@@ -2139,14 +2254,16 @@
           ],
           "title_fr": "Carte de Déroulement Toile Botanique",
           "title_en": "Botanical Toile Details Card",
-          "title_de": "Ablaufkarte Botanisches Toile"
+          "title_de": "Ablaufkarte Botanisches Toile",
+          "title_ru": "Карточка с программой дня «Ботаническая туаль»"
         }
       ],
       "featured": false,
       "display_name": {
         "fr": "Toile Botanique",
         "en": "Botanical Toile",
-        "de": "Botanisches Toile"
+        "de": "Botanisches Toile",
+        "ru": "Ботаническая туаль"
       }
     },
     {
@@ -2157,7 +2274,8 @@
       "description": {
         "fr": "Motifs botaniques doux et peints à l'aquarelle, pour une suite aérienne et romantique.",
         "en": "Soft painterly botanicals for an airy, romantic suite.",
-        "de": "Weiche, gemalte botanische Motive für ein luftiges, romantisches Set."
+        "de": "Weiche, gemalte botanische Motive für ein luftiges, romantisches Set.",
+        "ru": "Нежные ботанические мотивы, написанные акварелью, для воздушной и романтичной коллекции."
       },
       "hero": "watercolor-floral-sleeve-1.jpg",
       "gallery": [
@@ -2185,14 +2303,16 @@
           "catalogue_order_pochette": 27,
           "title_fr": "Faire-part Jardin Aquarelle",
           "title_en": "Watercolor Garden Invitation Sleeve",
-          "title_de": "Einladung Aquarell-Garten (Einsteckhülle)"
+          "title_de": "Einladung Aquarell-Garten (Einsteckhülle)",
+          "title_ru": "Приглашение «Акварельный сад»"
         }
       ],
       "featured": false,
       "display_name": {
         "fr": "Jardin Aquarelle",
         "en": "Watercolor Garden",
-        "de": "Aquarell-Garten"
+        "de": "Aquarell-Garten",
+        "ru": "Акварельный сад"
       }
     },
     {
@@ -2203,7 +2323,8 @@
       "description": {
         "fr": "Anémones blanches et baies de symphorine, pour un style hivernal et graphique.",
         "en": "White anemones and snowberries, for a graphic winter style.",
-        "de": "Weiße Anemonen und Schneebeeren, für einen grafischen Winterstil."
+        "de": "Weiße Anemonen und Schneebeeren, für einen grafischen Winterstil.",
+        "ru": "Белые анемоны и ягоды снежноягодника в зимнем графичном стиле."
       },
       "hero": "anemone-sleeve-1.jpg",
       "gallery": [
@@ -2220,13 +2341,15 @@
           "catalogue_order_pochette": 4,
           "title_fr": "Faire-part Anémone & Symphorine",
           "title_en": "Anemone & Snowberry Invitation Sleeve",
-          "title_de": "Einladung Anemone & Schneebeere (Einsteckhülle)"
+          "title_de": "Einladung Anemone & Schneebeere (Einsteckhülle)",
+          "title_ru": "Приглашение «Анемона и снежноягодник»"
         }
       ],
       "display_name": {
         "fr": "Anémone & Symphorine",
         "en": "Anemone & Snowberry",
-        "de": "Anemone & Schneebeere"
+        "de": "Anemone & Schneebeere",
+        "ru": "Анемона и снежноягодник"
       }
     },
     {
@@ -2237,7 +2360,8 @@
       "description": {
         "fr": "Un bouquet chaleureux de fleurs et feuillages d’automne, pour un mariage aux couleurs de saison.",
         "en": "A warm bouquet of autumn flowers and foliage, for a seasonally-colored wedding.",
-        "de": "Ein warmer Strauß aus Herbstblumen und -blättern, für eine Hochzeit in Saisonfarben."
+        "de": "Ein warmer Strauß aus Herbstblumen und -blättern, für eine Hochzeit in Saisonfarben.",
+        "ru": "Тёплый букет осенних цветов и листвы для свадьбы в сезонных красках."
       },
       "hero": "autumn-sleeve-6.jpg",
       "gallery": [
@@ -2283,13 +2407,15 @@
           "catalogue_order_pochette": 5,
           "title_fr": "Faire-part Bouquet d’Automne",
           "title_en": "Autumn Bouquet Invitation Sleeve",
-          "title_de": "Einladung Herbststrauß (Einsteckhülle)"
+          "title_de": "Einladung Herbststrauß (Einsteckhülle)",
+          "title_ru": "Приглашение «Осенний букет»"
         }
       ],
       "display_name": {
         "fr": "Bouquet d’Automne",
         "en": "Autumn Bouquet",
-        "de": "Herbststrauß"
+        "de": "Herbststrauß",
+        "ru": "Осенний букет"
       }
     },
     {
@@ -2300,7 +2426,8 @@
       "description": {
         "fr": "Un ciel étoilé et graphique, pour un mariage nocturne et céleste.",
         "en": "A graphic starry sky, for a nocturnal, celestial wedding.",
-        "de": "Ein grafischer Sternenhimmel, für eine nächtliche, himmlische Hochzeit."
+        "de": "Ein grafischer Sternenhimmel, für eine nächtliche, himmlische Hochzeit.",
+        "ru": "Графичное звёздное небо для вечерней свадьбы в небесном настроении."
       },
       "hero": "constellation-bundle-1.jpg",
       "gallery": [
@@ -2345,7 +2472,8 @@
           "catalogue_order_suite": 7,
           "title_fr": "Suite Constellation",
           "title_en": "Constellation Suite",
-          "title_de": "Papeterie-Set Sternbilder"
+          "title_de": "Papeterie-Set Sternbilder",
+          "title_ru": "Коллекция «Созвездие»"
         },
         {
           "type": "envelope_liner",
@@ -2356,7 +2484,8 @@
           ],
           "title_fr": "Doublure d’enveloppe Constellation",
           "title_en": "Constellation Envelope Liner",
-          "title_de": "Umschlagfutter Sternbilder"
+          "title_de": "Umschlagfutter Sternbilder",
+          "title_ru": "Вкладыш для конверта «Созвездие»"
         },
         {
           "type": "menu",
@@ -2370,7 +2499,8 @@
           ],
           "title_fr": "Menu Constellation",
           "title_en": "Constellation Menu",
-          "title_de": "Menükarte Sternbilder"
+          "title_de": "Menükarte Sternbilder",
+          "title_ru": "Меню «Созвездие»"
         },
         {
           "type": "place_card",
@@ -2383,7 +2513,8 @@
           ],
           "title_fr": "Marque-place Constellation",
           "title_en": "Constellation Place Card",
-          "title_de": "Platzkarte Sternbilder"
+          "title_de": "Platzkarte Sternbilder",
+          "title_ru": "Рассадочная карточка «Созвездие»"
         },
         {
           "type": "rsvp",
@@ -2397,7 +2528,8 @@
           ],
           "title_fr": "Carte-réponse Constellation",
           "title_en": "Constellation RSVP Card",
-          "title_de": "Antwortkarte Sternbilder"
+          "title_de": "Antwortkarte Sternbilder",
+          "title_ru": "Карточка-ответ «Созвездие»"
         },
         {
           "type": "save_the_date",
@@ -2411,7 +2543,8 @@
           ],
           "title_fr": "Carte d’annonce Constellation",
           "title_en": "Constellation Save the Date",
-          "title_de": "Save-the-Date-Karte Sternbilder"
+          "title_de": "Save-the-Date-Karte Sternbilder",
+          "title_ru": "Карточка Save the Date «Созвездие»"
         },
         {
           "type": "sleeve",
@@ -2427,13 +2560,15 @@
           "catalogue_order_pochette": 3,
           "title_fr": "Faire-part Constellation",
           "title_en": "Constellation Invitation Sleeve",
-          "title_de": "Einladung Sternbilder (Einsteckhülle)"
+          "title_de": "Einladung Sternbilder (Einsteckhülle)",
+          "title_ru": "Приглашение «Созвездие»"
         }
       ],
       "display_name": {
         "fr": "Constellation",
         "en": "Constellation",
-        "de": "Sternbilder"
+        "de": "Sternbilder",
+        "ru": "Созвездие"
       }
     },
     {
@@ -2444,7 +2579,8 @@
       "description": {
         "fr": "Carpes koï et nénuphars dans un jardin d’eau paisible, pour un mariage empreint de sérénité.",
         "en": "Koi carp and water lilies in a peaceful water garden, for a wedding infused with serenity.",
-        "de": "Koi-Karpfen und Seerosen in einem friedlichen Wassergarten, für eine Hochzeit voller Ruhe."
+        "de": "Koi-Karpfen und Seerosen in einem friedlichen Wassergarten, für eine Hochzeit voller Ruhe.",
+        "ru": "Карпы кои и кувшинки в спокойном водном саду для умиротворённой свадьбы."
       },
       "hero": "koi-sleeve-2.jpg",
       "gallery": [
@@ -2500,7 +2636,8 @@
           "catalogue_order_suite": 1,
           "title_fr": "Suite Jardin aux Koïs",
           "title_en": "Koi Garden Suite",
-          "title_de": "Papeterie-Set Koi-Garten"
+          "title_de": "Papeterie-Set Koi-Garten",
+          "title_ru": "Коллекция «Сад с карпами кои»"
         },
         {
           "type": "envelope_liner",
@@ -2511,7 +2648,8 @@
           ],
           "title_fr": "Doublure d’enveloppe Jardin aux Koïs",
           "title_en": "Koi Garden Envelope Liner",
-          "title_de": "Umschlagfutter Koi-Garten"
+          "title_de": "Umschlagfutter Koi-Garten",
+          "title_ru": "Вкладыш для конверта «Сад с карпами кои»"
         },
         {
           "type": "sleeve",
@@ -2527,7 +2665,8 @@
           "catalogue_order_pochette": 2.5,
           "title_fr": "Faire-part Jardin aux Koïs (Pochette)",
           "title_en": "Koi Garden Invitation Sleeve",
-          "title_de": "Einladung Koi-Garten (Einsteckhülle)"
+          "title_de": "Einladung Koi-Garten (Einsteckhülle)",
+          "title_ru": "Приглашение «Сад с карпами кои» (конверт-кармашек)"
         },
         {
           "type": "jacket",
@@ -2544,7 +2683,8 @@
           "catalogue_order_pochette": 2,
           "title_fr": "Faire-part Jardin aux Koïs (Habillage)",
           "title_en": "Koi Garden Invitation with Jacket",
-          "title_de": "Einladung Koi-Garten (Umschlag)"
+          "title_de": "Einladung Koi-Garten (Umschlag)",
+          "title_ru": "Приглашение «Сад с карпами кои» (обложка)"
         },
         {
           "type": "menu",
@@ -2558,7 +2698,8 @@
           ],
           "title_fr": "Menu Jardin aux Koïs",
           "title_en": "Koi Garden Menu",
-          "title_de": "Menükarte Koi-Garten"
+          "title_de": "Menükarte Koi-Garten",
+          "title_ru": "Меню «Сад с карпами кои»"
         },
         {
           "type": "place_card",
@@ -2572,7 +2713,8 @@
           ],
           "title_fr": "Marque-place Jardin aux Koïs",
           "title_en": "Koi Garden Place Card",
-          "title_de": "Platzkarte Koi-Garten"
+          "title_de": "Platzkarte Koi-Garten",
+          "title_ru": "Рассадочная карточка «Сад с карпами кои»"
         },
         {
           "type": "rsvp",
@@ -2585,7 +2727,8 @@
           ],
           "title_fr": "Carte-réponse Jardin aux Koïs",
           "title_en": "Koi Garden RSVP Card",
-          "title_de": "Antwortkarte Koi-Garten"
+          "title_de": "Antwortkarte Koi-Garten",
+          "title_ru": "Карточка-ответ «Сад с карпами кои»"
         },
         {
           "type": "save_the_date",
@@ -2598,13 +2741,15 @@
           ],
           "title_fr": "Carte d’annonce Jardin aux Koïs",
           "title_en": "Koi Garden Save the Date",
-          "title_de": "Save-the-Date-Karte Koi-Garten"
+          "title_de": "Save-the-Date-Karte Koi-Garten",
+          "title_ru": "Карточка Save the Date «Сад с карпами кои»"
         }
       ],
       "display_name": {
         "fr": "Jardin aux Koïs",
         "en": "Koi Garden",
-        "de": "Koi-Garten"
+        "de": "Koi-Garten",
+        "ru": "Сад с карпами кои"
       }
     },
     {
@@ -2615,7 +2760,8 @@
       "description": {
         "fr": "Orchidées et branches hivernales pour un mariage élégant en saison froide.",
         "en": "Orchids and winter branches for an elegant cold-season wedding.",
-        "de": "Orchideen und Winterzweige für eine elegante Hochzeit in der kalten Jahreszeit."
+        "de": "Orchideen und Winterzweige für eine elegante Hochzeit in der kalten Jahreszeit.",
+        "ru": "Орхидеи и зимние ветви для элегантной свадьбы в холодное время года."
       },
       "hero": "orchid_winter-sleeve-3.jpg",
       "gallery": [
@@ -2639,13 +2785,15 @@
           "catalogue_order_pochette": 1,
           "title_fr": "Faire-part Orchidée d’Hiver",
           "title_en": "Winter Orchid Invitation Sleeve",
-          "title_de": "Einladung Winterorchidee (Einsteckhülle)"
+          "title_de": "Einladung Winterorchidee (Einsteckhülle)",
+          "title_ru": "Приглашение «Зимняя орхидея»"
         }
       ],
       "display_name": {
         "fr": "Orchidée d’Hiver",
         "en": "Winter Orchid",
-        "de": "Winterorchidee"
+        "de": "Winterorchidee",
+        "ru": "Зимняя орхидея"
       }
     },
     {
@@ -2656,7 +2804,8 @@
       "description": {
         "fr": "Un faire-part découpé en forme de feuille d’automne, pour un mariage chaleureux en saison.",
         "en": "An invitation die-cut in an autumn leaf silhouette, for a warm seasonal wedding.",
-        "de": "Eine Einladung im gestanzten Herbstblatt-Design, für eine warme Hochzeit zur Jahreszeit."
+        "de": "Eine Einladung im gestanzten Herbstblatt-Design, für eine warme Hochzeit zur Jahreszeit.",
+        "ru": "Приглашение с вырубкой в форме осеннего листа для тёплой сезонной свадьбы."
       },
       "hero": "autumn-sleeve-1.jpg",
       "gallery": [
@@ -2698,7 +2847,8 @@
           "catalogue_order_pochette": 5.5,
           "title_fr": "Faire-part Feuille d’Automne",
           "title_en": "Autumn Leaves Invitation Sleeve",
-          "title_de": "Einladung Herbstblätter (Einsteckhülle)"
+          "title_de": "Einladung Herbstblätter (Einsteckhülle)",
+          "title_ru": "Приглашение «Осенние листья»"
         },
         {
           "type": "bundle",
@@ -2711,7 +2861,8 @@
           "catalogue_order_suite": 4,
           "title_fr": "Suite Feuilles d’Automne",
           "title_en": "Autumn Leaves Suite",
-          "title_de": "Papeterie-Set Herbstblätter"
+          "title_de": "Papeterie-Set Herbstblätter",
+          "title_ru": "Коллекция «Осенние листья»"
         },
         {
           "type": "menu",
@@ -2725,7 +2876,8 @@
           ],
           "title_fr": "Menu Feuilles d’Automne",
           "title_en": "Autumn Leaves Menu",
-          "title_de": "Menükarte Herbstblätter"
+          "title_de": "Menükarte Herbstblätter",
+          "title_ru": "Меню «Осенние листья»"
         },
         {
           "type": "place_card",
@@ -2737,7 +2889,8 @@
           ],
           "title_fr": "Marque-place Feuilles d’Automne",
           "title_en": "Autumn Leaves Place Card",
-          "title_de": "Platzkarte Herbstblätter"
+          "title_de": "Platzkarte Herbstblätter",
+          "title_ru": "Рассадочная карточка «Осенние листья»"
         },
         {
           "type": "rsvp",
@@ -2750,7 +2903,8 @@
           ],
           "title_fr": "Carte-réponse Feuilles d’Automne",
           "title_en": "Autumn Leaves RSVP Card",
-          "title_de": "Antwortkarte Herbstblätter"
+          "title_de": "Antwortkarte Herbstblätter",
+          "title_ru": "Карточка-ответ «Осенние листья»"
         },
         {
           "type": "save_the_date",
@@ -2764,13 +2918,15 @@
           ],
           "title_fr": "Carte d’annonce Feuilles d’Automne",
           "title_en": "Autumn Leaves Save the Date",
-          "title_de": "Save-the-Date-Karte Herbstblätter"
+          "title_de": "Save-the-Date-Karte Herbstblätter",
+          "title_ru": "Карточка Save the Date «Осенние листья»"
         }
       ],
       "display_name": {
         "fr": "Feuilles d’Automne",
         "en": "Autumn Leaves",
-        "de": "Herbstblätter"
+        "de": "Herbstblätter",
+        "ru": "Осенние листья"
       }
     },
     {
@@ -2781,7 +2937,8 @@
       "description": {
         "fr": "Un bouquet dense d’hortensias et de roses, pour un faire-part romantique et généreux.",
         "en": "A dense bouquet of hydrangeas and roses, for a romantic and generous invitation.",
-        "de": "Ein dichter Strauß aus Hortensien und Rosen, für eine romantische Einladung."
+        "de": "Ein dichter Strauß aus Hortensien und Rosen, für eine romantische Einladung.",
+        "ru": "Пышный букет гортензий и роз для романтичного и щедрого приглашения."
       },
       "hero": "hydrangea-sleeve-20.jpg",
       "gallery": [
@@ -2812,13 +2969,15 @@
           "catalogue_order_pochette": 21.5,
           "title_fr": "Faire-part Hortensia Bouquet",
           "title_en": "Hydrangea Bouquet Invitation Sleeve",
-          "title_de": "Einladung Hortensienstrauß (Einsteckhülle)"
+          "title_de": "Einladung Hortensienstrauß (Einsteckhülle)",
+          "title_ru": "Приглашение «Букет гортензий»"
         }
       ],
       "display_name": {
         "fr": "Hortensia Bouquet",
         "en": "Hydrangea Bouquet",
-        "de": "Hortensienstrauß"
+        "de": "Hortensienstrauß",
+        "ru": "Букет гортензий"
       }
     },
     {
@@ -2829,7 +2988,8 @@
       "description": {
         "fr": "Un second modèle de faire-part Frésia, aux lignes florales délicates et à l’allure raffinée.",
         "en": "A second Freesia invitation design with delicate floral lines and a refined character.",
-        "de": "Ein zweites Freesien-Einladungsdesign mit zarten floralen Linien und einer raffinierten Ausstrahlung."
+        "de": "Ein zweites Freesien-Einladungsdesign mit zarten floralen Linien und einer raffinierten Ausstrahlung.",
+        "ru": "Вторая модель приглашения «Фрезия» с тонкими цветочными линиями и утончённым образом."
       },
       "hero": "freesia-sleeve-35.jpg",
       "gallery": [
@@ -2858,13 +3018,15 @@
           "catalogue_order_pochette": 23.5,
           "title_fr": "Faire-part Frésia II",
           "title_en": "Freesia II Invitation Sleeve",
-          "title_de": "Einladung Freesie II (Einsteckhülle)"
+          "title_de": "Einladung Freesie II (Einsteckhülle)",
+          "title_ru": "Приглашение «Фрезия II»"
         }
       ],
       "display_name": {
         "fr": "Frésia",
         "en": "Freesia",
-        "de": "Freesie"
+        "de": "Freesie",
+        "ru": "Фрезия"
       }
     },
     {
@@ -2875,7 +3037,8 @@
       "description": {
         "fr": "Un bouquet de pivoines dessiné en fines lignes, pour un faire-part épuré et romantique.",
         "en": "A peony bouquet drawn in fine lines, for a refined and romantic invitation.",
-        "de": "Ein Pfingstrosenstrauss in feinen Linien gezeichnet, für eine raffinierte Einladung."
+        "de": "Ein Pfingstrosenstrauss in feinen Linien gezeichnet, für eine raffinierte Einladung.",
+        "ru": "Букет пионов, нарисованный тонкими линиями, для лаконичного и романтичного приглашения."
       },
       "hero": "peony-bouquet-sleeve-1.jpg",
       "gallery": [
@@ -2894,13 +3057,15 @@
           "catalogue_order_pochette": 26.7,
           "title_fr": "Faire-part Pivoine Bouquet",
           "title_en": "Peony Bouquet Invitation Sleeve",
-          "title_de": "Einladung Pfingstrosenstrauß (Einsteckhülle)"
+          "title_de": "Einladung Pfingstrosenstrauß (Einsteckhülle)",
+          "title_ru": "Приглашение «Букет пионов»"
         }
       ],
       "display_name": {
         "fr": "Pivoine Bouquet",
         "en": "Peony Bouquet",
-        "de": "Pfingstrosenstrauß"
+        "de": "Pfingstrosenstrauß",
+        "ru": "Букет пионов"
       }
     }
   ]

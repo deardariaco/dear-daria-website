@@ -20,21 +20,22 @@ window.DearDaria = window.DearDaria || {};
     const mount = document.getElementById('site-nav');
     if (!mount) return;
     const current = currentPage();
+    const ru = DearDaria.getLang() === 'ru';
     const items = NAV_LINKS.map(
       (l) => `<li><a href="${l.href}" data-i18n="${l.key}" class="${l.href === current ? 'active' : ''}"></a></li>`
     ).join('');
 
     mount.innerHTML = `
       <div class="container">
-        <a href="index.html" class="nav-logo nav-logo-img"><img src="img/logo-nav.webp" alt="Beau Papier, papeterie de mariage en Suisse"><span class="nav-logo-text">Beau Papier</span></a>
+        <a href="index.html" class="nav-logo nav-logo-img"><img src="${(DearDaria.ASSET_ROOT || '') + 'img/logo-nav.webp'}" alt="${ru ? 'Beau Papier, свадебная полиграфия в Швейцарии' : 'Beau Papier, papeterie de mariage en Suisse'}"><span class="nav-logo-text">Beau Papier</span></a>
         <ul class="nav-links" id="nav-links">${items}<li class="nav-mobile-cta"><a href="consultation.html" class="btn primary" data-i18n="nav_request_consultation"></a></li></ul>
-        <a href="inspirations.html" class="nav-inspirations" aria-label="Mes Inspirations">
+        <a href="inspirations.html" class="nav-inspirations" aria-label="${ru ? 'Моё избранное' : 'Mes Inspirations'}">
           <svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.1C0.3 8.5 1.8 5 5.3 4.2c2-.5 4 .3 5.2 2 .3.4.9.4 1.2 0 1.2-1.7 3.2-2.5 5.2-2C20.2 5 21.7 8.5 20 11.9 18.5 16.4 12 21 12 21z"/></svg>
           <span class="inspirations-count"></span>
         </a>
         <a href="consultation.html" class="btn primary nav-consult-cta" data-i18n="nav_request_consultation"></a>
         <div class="nav-lang" id="nav-lang-desktop"></div>
-        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <button class="nav-toggle" id="nav-toggle" aria-label="${ru ? 'Открыть меню' : 'Toggle menu'}" aria-expanded="false">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
         </button>
       </div>`;

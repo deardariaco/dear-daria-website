@@ -26,6 +26,7 @@ Consultation.PROJECT_TYPES = ['type_existing', 'type_suite', 'type_bespoke', 'ty
 
 Consultation.formHTML = function (opts) {
   opts = opts || {};
+  const ru = DearDaria.getLang() === 'ru';
   const pieceCheckboxes = Consultation.PIECE_OPTIONS.map(p =>
     `<label class="piece-check"><input type="checkbox" name="pieces" value="${p.key}"> <span data-i18n="${p.labelKey}"></span></label>`
   ).join('');
@@ -51,7 +52,7 @@ Consultation.formHTML = function (opts) {
         <div class="field"><label><span data-i18n="cf_project_type"></span><span class="cf-req">*</span></label>
           <select name="project_type" id="cf-project-type" required></select>
         </div>
-        <div class="field"><label><span data-i18n="cf_quantity"></span><span class="cf-req">*</span></label><input type="text" name="quantity" placeholder="ex. 80" required></div>
+        <div class="field"><label><span data-i18n="cf_quantity"></span><span class="cf-req">*</span></label><input type="text" name="quantity" placeholder="${ru ? 'напр. 80' : 'ex. 80'}" required></div>
 
         <div class="field"><label data-i18n="cf_event_date"></label><input type="date" name="event_date"></div>
         <div class="field"><label data-i18n="cf_delivery_date"></label><input type="date" name="delivery_date"></div>
@@ -67,7 +68,7 @@ Consultation.formHTML = function (opts) {
           <div class="piece-check-grid">${pieceCheckboxes}</div>
         </div>
 
-        <div class="field"><label data-i18n="cf_colors"></label><input type="text" name="colors" placeholder="ex. sauge, blush"></div>
+        <div class="field"><label data-i18n="cf_colors"></label><input type="text" name="colors" placeholder="${ru ? 'напр. шалфейный, пудрово-розовый' : 'ex. sauge, blush'}"></div>
         <div class="field"><label data-i18n="cf_paper_pref"></label><input type="text" name="paper_pref"></div>
 
         <div class="field full"><label data-i18n="cf_message"></label><textarea name="message" rows="4"></textarea></div>
@@ -149,7 +150,8 @@ Consultation.wireForm = function () {
     const text = validateAndBuild();
     if (!text) return;
     const designName = document.getElementById('cf-design-name').value;
-    const subject = encodeURIComponent(designName ? `Demande de consultation \u2014 ${designName}` : 'Demande de consultation');
+    const subjectText = DearDaria.getLang() === 'ru' ? 'Запрос на консультацию' : 'Demande de consultation';
+    const subject = encodeURIComponent(designName ? `${subjectText} \u2014 ${designName}` : subjectText);
     const url = `mailto:${Consultation.EMAIL}?subject=${subject}&body=${encodeURIComponent(text)}`;
     window.location.href = url;
     document.getElementById('cf-success-note').style.display = 'block';
