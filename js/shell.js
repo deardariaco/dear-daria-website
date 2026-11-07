@@ -80,6 +80,8 @@ window.DearDaria = window.DearDaria || {};
           <div class="footer-col">
             <h4 data-i18n="footer_contact"></h4>
             <ul>
+              <li style="font-size:14px;">Daria Wälchli</li>
+              <li><a href="tel:+41782676426">+41 78 267 64 26</a></li>
               <li><a href="consultation.html" data-i18n="nav_request_consultation"></a></li>
               <li><a href="mailto:daria@beaupapier.ch">daria@beaupapier.ch</a></li>
             </ul>
