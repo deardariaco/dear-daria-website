@@ -22,7 +22,7 @@
     let line = 0;
     revealEls.forEach((el) => {
       if (el.classList.contains('reveal-line')) {
-        el.style.transitionDelay = (line++ % 3) * 0.22 + 's';
+        el.style.transitionDelay = (line++ % 3) * 0.14 + 's';
         const wrap = el.parentElement;
         wrap.__revealTarget = el;
         io.observe(wrap);
@@ -52,7 +52,7 @@
     scenes.forEach((s) => {
       const t = target(s.el);
       if (s.cur === null) s.cur = t;
-      const next = s.cur + (t - s.cur) * 0.075;
+      const next = s.cur + (t - s.cur) * 0.14;
       s.cur = Math.abs(t - next) < 0.0004 ? t : next;
       if (s.cur !== t) moving = true;
       s.el.style.setProperty('--p', s.cur.toFixed(4));
