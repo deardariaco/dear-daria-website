@@ -7,6 +7,7 @@ window.DearDaria = window.DearDaria || {};
     { href: 'invitation-jackets.html', key: 'nav_pochettes' },
     { href: 'wedding-suites.html', key: 'nav_suites_mariage' },
     { href: 'bespoke.html', key: 'nav_sur_mesure_top' },
+    { href: 'professionnels.html', key: 'nav_professionnels', noRu: true },
     { href: 'info.html#about', key: 'nav_a_propos' },
     { href: 'faq.html', key: 'nav_faq' },
   ];
@@ -21,7 +22,8 @@ window.DearDaria = window.DearDaria || {};
     if (!mount) return;
     const current = currentPage();
     const ru = DearDaria.getLang() === 'ru';
-    const items = NAV_LINKS.map(
+    // The professionals page has no Russian version yet, so /ru keeps it out of the menu.
+    const items = NAV_LINKS.filter((l) => !(ru && l.noRu)).map(
       (l) => `<li><a href="${l.href}" data-i18n="${l.key}" class="${l.href === current ? 'active' : ''}"></a></li>`
     ).join('');
 

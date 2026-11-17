@@ -11,6 +11,7 @@ DearDaria.TRANSLATIONS = {
     nav_suites_mariage: 'Collections composées',
     breadcrumb_suites: 'Collections composées',
     nav_sur_mesure_top: 'Sur Mesure',
+    nav_professionnels: 'Professionnels',
     nav_a_propos: '\u00c0 Propos',
     nav_faq: 'FAQ',
     nav_request_consultation: 'Demander une Consultation',
@@ -418,7 +419,7 @@ DearDaria.TRANSLATIONS = {
 
   en: {
     // === CONSULTATION-LED SERVICE (draft - pending approval) ===
-    nav_pochettes: 'Wedding Invitations', nav_suites_mariage: 'Stationery Suites', nav_sur_mesure_top: 'Bespoke',
+    nav_pochettes: 'Wedding Invitations', nav_suites_mariage: 'Stationery Suites', nav_sur_mesure_top: 'Bespoke', nav_professionnels: 'Professionals',
     breadcrumb_suites: 'Stationery Suites',
     nav_a_propos: 'About', nav_faq: 'FAQ', nav_request_consultation: 'Request a Consultation',
     hero_heading: 'Stationery imagined especially for your story',
@@ -674,7 +675,7 @@ DearDaria.TRANSLATIONS = {
 
   de: {
     // === CONSULTATION-LED SERVICE (draft - pending approval) ===
-    nav_pochettes: 'Hochzeitseinladungen', nav_suites_mariage: 'Hochzeits-Sets', nav_sur_mesure_top: 'Ma\u00dfanfertigung',
+    nav_pochettes: 'Hochzeitseinladungen', nav_suites_mariage: 'Hochzeits-Sets', nav_sur_mesure_top: 'Ma\u00dfanfertigung', nav_professionnels: 'F\u00fcr Profis',
     breadcrumb_suites: 'Papeterie-Suiten',
     nav_a_propos: '\u00dcber Mich', nav_faq: 'FAQ', nav_request_consultation: 'Beratung Anfragen',
     hero_heading: 'Papeterie, eigens f\u00fcr Ihre Geschichte gestaltet',
