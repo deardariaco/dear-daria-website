@@ -44,35 +44,38 @@ body.pro .nav-links { background: var(--paper); }
 }
 .pro-layer { position: absolute; left: 50%; max-width: none; pointer-events: none; user-select: none; }
 
-/* far: the pencil study, very faint, barely moves */
-.pro-layer-pencil {
-  width: max(52vw, 560px);
-  top: 16%;
-  opacity: calc(0.05 + var(--p) * 0.22);
-  transform: translate(-50%, calc(var(--p) * -8vh)) scale(calc(1 + var(--p) * 0.08));
-}
-/* middle: the embossed mountains rise from below the fold */
+/* the mountain drawing fades in and rises behind the title */
 .pro-layer-mountains {
-  width: max(112vw, 980px);
-  bottom: 13vh;
-  transform: translate(-50%, calc((1 - var(--p)) * 26vh)) scale(calc(1.08 - var(--p) * 0.06));
+  width: min(80vw, 1040px);
+  bottom: 24vh;
+  opacity: calc(0.16 + min(1, max(0, var(--p) - 0.12) * 2) * 0.84);
+  transform: translate(-50%, calc((1 - var(--p)) * 16vh)) scale(calc(1.06 - var(--p) * 0.06));
   transform-origin: 50% 100%;
 }
-/* near: the lake slides up faster and covers the foot of the mountains */
+/* the lake slides up faster; the boat sails across as you scroll */
 .pro-layer-lake {
-  width: max(112vw, 980px);
+  width: max(110vw, 900px);
+  height: 30vh;
   bottom: -2vh;
-  transform: translate(-50%, calc((1 - var(--p)) * 40vh));
+  transform: translate(-50%, calc((1 - var(--p)) * 22vh));
+}
+.pro-water { width: 100%; height: auto; display: block; }
+.pro-boat {
+  position: absolute;
+  width: clamp(44px, 4.6vw, 68px);
+  top: 0;
+  left: 50%;
+  transform: translate(calc(-50% + (var(--p) - 0.45) * 46vw), -62%);
 }
 .pro-hero-copy {
   position: absolute; inset: 0; z-index: 2;
   display: flex; flex-direction: column; align-items: center;
   padding: clamp(40px, 9vh, 110px) var(--gutter) 0;
   text-align: center;
-  opacity: calc(1 - var(--p) * 1.6);
-  transform: translateY(calc(var(--p) * -12vh));
+  opacity: calc(1 - var(--p) * 3);
+  transform: translateY(calc(var(--p) * -16vh));
 }
-.pro-layer-mountains, .pro-layer-lake { z-index: 1; }
+.pro-layer-mountains { z-index: 1; } .pro-layer-lake { z-index: 3; }
 .pro-title {
   font-size: clamp(42px, 7.2vw, 104px);
   line-height: 0.98;
@@ -154,8 +157,8 @@ body.pro .nav-links { background: var(--paper); }
 .pro-btn { background: var(--graphite) !important; color: #F3F0E8 !important; border: 1px solid var(--graphite) !important; letter-spacing: 0.16em; text-transform: uppercase; font-size: 12px; padding: 18px 34px; border-radius: 0; }
 .pro-btn:hover { background: var(--graphite-2) !important; }
 .pro-link { font-size: 14px; letter-spacing: 0.06em; border-bottom: 1px solid var(--brass-pro); padding-bottom: 3px; }
-.pro-cta-lake { margin-top: clamp(50px, 7vw, 90px); height: clamp(110px, 13vw, 190px); position: relative; }
-.pro-cta-lake img { position: absolute; top: 0; left: 50%; width: max(130vw, 1100px); max-width: none; transform: translateX(calc(-50% + (0.5 - var(--p)) * 14vw)); }
+.pro-cta-lake { margin: clamp(60px, 8vw, 110px) auto 0; position: relative; width: max(100%, 760px); left: 50%; transform: translateX(-50%); }
+.pro-cta-lake .pro-boat { width: clamp(40px, 4vw, 60px); transform: translate(calc(-50% + (var(--p) - 0.5) * 50vw), -62%); }
 
 /* ---------- reveal on scroll ---------- */
 .pro .reveal, .pro .reveal-line { opacity: 0; transform: translateY(26px); transition: opacity 1s var(--ease), transform 1s var(--ease); }
@@ -168,8 +171,9 @@ body.pro .nav-links { background: var(--paper); }
 @media (max-width: 700px) {
   .pro-hero { height: 190vh; }
   .pro-hero-stage { top: 84px; }
-  .pro-layer-mountains, .pro-layer-lake { width: 980px; }
-  .pro-layer-mountains { bottom: 15vh; }
+  .pro-layer-mountains { width: 125vw; bottom: 22vh; }
+  .pro-layer-lake { width: 190vw; }
+  .pro-boat { width: 40px; transform: translate(calc(-50% + (var(--p) - 0.45) * 60vw), -62%); }
   .pro-statement-body { margin-left: 0; }
 }
 
