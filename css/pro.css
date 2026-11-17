@@ -46,12 +46,11 @@ body.pro .nav-links { background: var(--paper); }
 
 /* the mountain drawing fades in and rises behind the title */
 .pro-layer-mountains {
-  width: min(80vw, 1040px);
+  width: min(70vw, 920px);
   bottom: 24vh;
   opacity: calc(0.16 + min(1, max(0, var(--p) - 0.12) * 2) * 0.84);
   transform: translate(-50%, calc((1 - var(--p)) * 16vh)) scale(calc(1.06 - var(--p) * 0.06));
   transform-origin: 50% 100%;
-  filter: blur(calc((1 - min(1, var(--p) * 1.6)) * 5px));
 }
 /* the lake slides up faster; the boat sails across as you scroll */
 .pro-layer-lake {
